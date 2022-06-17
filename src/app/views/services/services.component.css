@@ -1,0 +1,128 @@
+.bg-tab {
+    background-image: url('../../../assets/img/nosotros-esedor.png');
+    background-repeat: no-repeat;
+}
+
+.bg-tab2 {
+    background-image: url('../../../assets/img/bg-tab2.svg');
+    background-repeat: no-repeat;
+}
+
+.bg-tab3 {
+    background-image: url('../../../assets/img/bg-tab3.svg');
+    background-repeat: no-repeat;
+}
+
+.bg-tab4 {
+    background-image: url('../../../assets/img/bg-tab4.svg');
+    background-repeat: no-repeat;
+}
+
+section {
+    padding-inline: 1rem;
+}
+
+.tab-header {
+    border-bottom: 1px solid rgba(0,0,0,.12);
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    flex-shrink: 0;
+}
+
+.tab-label {
+    height: 48px;
+    padding: 0 24px;
+    cursor: pointer;
+    box-sizing: border-box;
+    opacity: .6;
+    min-width: 160px;
+    text-align: center;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+    position: relative;
+}
+
+.text-label {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+}
+
+/* :host ::ng-deep.mat-tab-group {
+    position: relative;
+}
+
+:host ::ng-deep.mat-tab-header {
+    width: 100%;
+    background: white;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    max-width: calc(100% - 2rem);
+} */
+
+.fixed {
+    position: fixed;
+    width: 100%;
+    transition: 0.2s linear;
+    top: 0px;
+}
+
+.nofixed {
+    position: static;
+    transition: 0.2s linear;
+    top: -50px;
+}
+
+@media screen and (min-width: 1024px) {
+
+    :host ::ng-deep.mat-tab-header-pagination-controls-enabled .mat-tab-header-pagination {
+        display: none;
+    }
+
+    :host ::ng-deep.mat-tab-group.mat-primary .mat-ink-bar {
+        background-color: #000000
+    }
+
+    :host ::ng-deep.mat-tab-labels {
+        justify-content: space-between;
+    }
+
+    :host ::ng-deep.mat-tab-label {
+        min-width: 120px;
+        justify-content: left;
+        color: #000000;
+        padding: 0;
+    }
+
+    :host ::ng-deep.mat-tab-label:hover {
+        color: #5682FF;
+    }
+
+    :host ::ng-deep.mat-tab-body-content {
+        overflow-x: hidden;
+    }
+
+
+
+}
+
+@media screen and (min-width: 1120px) {
+    :host ::ng-deep.mat-tab-label {
+        color: #000000;
+        padding: 0 20px 0 0;
+        margin: 0;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    :host ::ng-deep.mat-tab-label {
+        color: #000000;
+        padding: 0 50px 0 0;
+        margin: 0;
+    }
+}

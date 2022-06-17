@@ -1,0 +1,90 @@
+<ngu-carousel #myCarousel [inputs]="carouselConfig" [dataSource]="[first, second, third, fourth]">
+    <div *nguCarouselDef="let item;" class="item py-4">
+
+        <div class="tile">
+            <ng-container *ngTemplateOutlet="item"></ng-container>
+        </div>
+    </div>
+    <ng-template #first>
+        <!-- <img class="min-w-[400px] h-[450px]" src="assets/img/person.png" alt=""> -->
+        <div class="space-y-4">
+            <img class="max-h-[540px]" src="assets/img/person.png" alt="">
+            <div class="px-5">
+                <h3 data-aos="fade-up" class="lexendli text-[30px] 2xl:text-[36px] leading-[53.3px]">Mijalys Silva</h3>
+                <p data-aos="fade-up" class="lexendb text-sm mb-4">CEO & Co-Founder</p>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M19 3H5C3.895 3 3 3.895 3 5V19C3 20.105 3.895 21 5 21H19C20.105 21 21 20.105 21 19V5C21 3.895 20.105 3 19 3ZM9 17H6.477V10H9V17ZM7.694 8.717C6.923 8.717 6.408 8.203 6.408 7.517C6.408 6.831 6.922 6.317 7.779 6.317C8.55 6.317 9.065 6.831 9.065 7.517C9.065 8.203 8.551 8.717 7.694 8.717ZM18 17H15.558V13.174C15.558 12.116 14.907 11.872 14.663 11.872C14.419 11.872 13.605 12.035 13.605 13.174C13.605 13.337 13.605 17 13.605 17H11.082V10H13.605V10.977C13.93 10.407 14.581 10 15.802 10C17.023 10 18 10.977 18 13.174V17Z"
+                        fill="#626973" />
+                </svg>
+            </div>
+        </div>
+    </ng-template>
+    <ng-template #second>
+        <div class="space-y-4">
+            <img class="max-h-[540px]" src="assets/img/person2.png" alt="">
+            <div class="px-5">
+                <h3  data-aos="fade-up" class="lexendli text-[30px] 2xl:text-[36px] leading-[53.3px]">Ken Ramirez</h3>
+                <p  data-aos="fade-up" class="lexendb text-sm mb-4">Head of TI & Co-Founder</p>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M19 3H5C3.895 3 3 3.895 3 5V19C3 20.105 3.895 21 5 21H19C20.105 21 21 20.105 21 19V5C21 3.895 20.105 3 19 3ZM9 17H6.477V10H9V17ZM7.694 8.717C6.923 8.717 6.408 8.203 6.408 7.517C6.408 6.831 6.922 6.317 7.779 6.317C8.55 6.317 9.065 6.831 9.065 7.517C9.065 8.203 8.551 8.717 7.694 8.717ZM18 17H15.558V13.174C15.558 12.116 14.907 11.872 14.663 11.872C14.419 11.872 13.605 12.035 13.605 13.174C13.605 13.337 13.605 17 13.605 17H11.082V10H13.605V10.977C13.93 10.407 14.581 10 15.802 10C17.023 10 18 10.977 18 13.174V17Z"
+                        fill="#626973" />
+                </svg>
+            </div>
+        </div>
+    </ng-template>
+    <ng-template #third>
+        <div class="space-y-4">
+            <img class="max-h-[540px]" src="assets/img/person3.png" alt="">
+            <div class="px-5">
+                <h3  data-aos="fade-up" class="lexendli text-[30px] 2xl:text-[36px] leading-[53.3px]">Claudia Irribarren</h3>
+                <p  data-aos="fade-up" class="lexendb text-sm mb-4">Desarrollo de negocios</p>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M19 3H5C3.895 3 3 3.895 3 5V19C3 20.105 3.895 21 5 21H19C20.105 21 21 20.105 21 19V5C21 3.895 20.105 3 19 3ZM9 17H6.477V10H9V17ZM7.694 8.717C6.923 8.717 6.408 8.203 6.408 7.517C6.408 6.831 6.922 6.317 7.779 6.317C8.55 6.317 9.065 6.831 9.065 7.517C9.065 8.203 8.551 8.717 7.694 8.717ZM18 17H15.558V13.174C15.558 12.116 14.907 11.872 14.663 11.872C14.419 11.872 13.605 12.035 13.605 13.174C13.605 13.337 13.605 17 13.605 17H11.082V10H13.605V10.977C13.93 10.407 14.581 10 15.802 10C17.023 10 18 10.977 18 13.174V17Z"
+                        fill="#626973" />
+                </svg>
+            </div>
+        </div>
+    </ng-template>
+    <ng-template #fourth>
+        <div class="space-y-4">
+            <img class="max-h-[540px]" src="assets/img/person.png" alt="">
+            <div class="px-5">
+                <h3  data-aos="fade-up" class="lexendli text-[30px] 2xl:text-[36px] leading-[53.3px]">Mijalys Silva</h3>
+                <p  data-aos="fade-up" class="lexendb text-sm mb-4">CEO & Co-Founder</p>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M19 3H5C3.895 3 3 3.895 3 5V19C3 20.105 3.895 21 5 21H19C20.105 21 21 20.105 21 19V5C21 3.895 20.105 3 19 3ZM9 17H6.477V10H9V17ZM7.694 8.717C6.923 8.717 6.408 8.203 6.408 7.517C6.408 6.831 6.922 6.317 7.779 6.317C8.55 6.317 9.065 6.831 9.065 7.517C9.065 8.203 8.551 8.717 7.694 8.717ZM18 17H15.558V13.174C15.558 12.116 14.907 11.872 14.663 11.872C14.419 11.872 13.605 12.035 13.605 13.174C13.605 13.337 13.605 17 13.605 17H11.082V10H13.605V10.977C13.93 10.407 14.581 10 15.802 10C17.023 10 18 10.977 18 13.174V17Z"
+                        fill="#626973" />
+                </svg>
+            </div>
+        </div>
+    </ng-template>
+
+    <button NguCarouselNext class="rightRs hidden lg:block">
+        <svg width="55" height="24" viewBox="0 0 55 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M54.0607 13.0607C54.6464 12.4749 54.6464 11.5251 54.0607 10.9393L44.5147 1.3934C43.9289 0.807615 42.9792 0.807615 42.3934 1.3934C41.8076 1.97919 41.8076 2.92894 42.3934 3.51472L50.8787 12L42.3934 20.4853C41.8076 21.0711 41.8076 22.0208 42.3934 22.6066C42.9792 23.1924 43.9289 23.1924 44.5147 22.6066L54.0607 13.0607ZM-1.31134e-07 13.5L53 13.5L53 10.5L1.31134e-07 10.5L-1.31134e-07 13.5Z"
+                fill="black" />
+        </svg>
+    </button>
+    <button NguCarouselPrev class="leftRs hidden lg:block">
+        <svg width="55" height="24" viewBox="0 0 55 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M0.939342 10.9393C0.353558 11.5251 0.353558 12.4749 0.939343 13.0607L10.4853 22.6066C11.0711 23.1924 12.0208 23.1924 12.6066 22.6066C13.1924 22.0208 13.1924 21.0711 12.6066 20.4853L4.12132 12L12.6066 3.51472C13.1924 2.92894 13.1924 1.97919 12.6066 1.3934C12.0208 0.807615 11.0711 0.807615 10.4853 1.3934L0.939342 10.9393ZM55 10.5L2 10.5L2 13.5L55 13.5L55 10.5Z"
+                fill="black" />
+        </svg>
+    </button>
+
+    <!-- <button NguCarouselNext class="rightRs">></button>
+	<button NguCarouselPrev class="leftRs"><</button> -->
+    <!-- <ul class="myPoint" NguCarouselPoint>
+        <span class="text-white text-sm lexendzetta pr-2">01</span>
+        <li *ngFor="let i of myCarousel.pointNumbers; let ind = index" [class.active]="i==myCarousel.activePoint"
+            (click)="myCarousel.moveTo(i)"></li>
+        <span class="text-white text-sm lexendzetta pl-2">04</span>
+
+    </ul> -->
+</ngu-carousel>

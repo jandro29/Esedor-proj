@@ -1,0 +1,6 @@
+::ng-deep.mat-snack-bar-container {
+    max-width: 95%;
+    margin: 1rem;
+    margin-inline: auto;
+    background-color: #000000;
+}

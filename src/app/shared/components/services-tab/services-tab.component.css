@@ -1,0 +1,14 @@
+@media screen and (min-width: 1024px) {
+    .arrow-rotate{
+        transform: rotate(-45deg);
+        transition: transform .6s cubic-bezier(.4,0,0,1);
+    }
+
+    .arrow:hover g line {
+        stroke: #FFFFFF;
+    }
+    
+    .arrow:hover g path {
+        stroke: #FFFFFF;
+    }
+}

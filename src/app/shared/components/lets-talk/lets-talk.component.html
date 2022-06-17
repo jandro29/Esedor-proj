@@ -1,0 +1,19 @@
+<div class="bg-[#F2F4F5] pt-[7rem] lg:pt-[13rem] pb-[5rem] lg:pb-[10.5rem] px-4 flex flex-col">
+    <h5 data-aos="fade-up" data-aos-duration="500"
+        class="lexendzettaextrali text-[28px] lg:text-[80px] 2xl:text-[86px] leading-[45px] lg:leading-[107.5px] pb-[3.5rem] lg:pb-[4rem]">
+        Programe una sesión gratuita con uno de nuestros asesores</h5>
+
+    <button data-aos="fade-right" matRipple (mouseover)="btnStyle = true" (mouseout)="btnStyle = false" [ngClass]="{ 'arrow' : btnStyle}"
+        (click)="letsForm.emit()"
+        class="lexendli cursor-pointer bg-white lg:hover:bg-[#5682FF] text-[15.5px] text-[#141C26] lg:hover:text-white flex items-center justify-start lg:justify-center shadow w-full lg:w-[236px] h-[65px] 2xl:h-[82px] lg:ml-4 px-6 lg:p-4 rounded-[50px]">
+        <svg class="transition duration-700 ease-in-out mr-16 lg:mr-4 w-[24px] lg:w-[32px]" width="33" height="31"
+            viewBox="0 0 33 31" [ngClass]="{ 'arrow-rotate' : btnStyle }" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <g class="text-white">
+                <line x1="5.7105e-09" y1="14.7539" x2="30.6479" y2="14.7539" stroke="black" stroke-width="2" />
+                <path d="M16.2585 1.00146L30.5917 15.2188L16.2585 29.436" stroke="black" stroke-width="2" />
+            </g>
+        </svg>
+        Conversemos
+    </button>
+</div>

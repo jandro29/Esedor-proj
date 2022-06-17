@@ -1,0 +1,34 @@
+<div class="grid grid-cols-1 lg:grid-cols-4 gap-[5rem]">
+    <div
+        class="py-2 px-4 lg:p-0 bg-[#5682FF] lg:bg-transparent fixed bottom-0 ml-[-1rem] lg:ml-0 w-full lg:w-auto lg:relative">
+        <button matRipple (mouseover)="btnStyle = true" (mouseout)="btnStyle = false" [ngClass]="{ 'arrow' : btnStyle}"
+            (click)="letsForm.emit()"
+            class="lexendli cursor-pointer bg-white lg:hover:bg-[#5682FF] text-[15.5px] text-[#141C26] lg:hover:text-white flex items-center justify-start lg:justify-center shadow w-full lg:w-[236px] h-[45px] lg:h-[65px] 2xl:h-[82px] px-6 lg:p-4 rounded-[50px]">
+            <svg class="transition duration-700 ease-in-out mr-16 lg:mr-4 w-[24px] lg:w-[32px]" width="33" height="31"
+                viewBox="0 0 33 31" [ngClass]="{ 'arrow-rotate' : btnStyle }" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <g class="text-white">
+                    <line x1="5.7105e-09" y1="14.7539" x2="30.6479" y2="14.7539" stroke="black" stroke-width="2" />
+                    <path d="M16.2585 1.00146L30.5917 15.2188L16.2585 29.436" stroke="black" stroke-width="2" />
+                </g>
+            </svg>
+            Estimar proyecto
+        </button>
+    </div>
+    <div
+        class="border-t border-black col-span-4 lg:col-span-3 py-[2rem] lg:py-[7.5rem] lg:pr-[5rem] xl:pr-[8rem] lg:mt-[2.5rem] grid gap-[4rem]">
+        <!-- lg:col-end-5  -->
+        <h1 data-aos="fade-up" data-aos-duration="1500"
+            class="lexendzettali lg:text-[46px] leading-[20px] lg:leading-[84.5px]">Productos
+            excepcionales con
+            soporte de
+            inicio a fin y orientación experta</h1>
+        <div class="flex lg:grid grid-cols-2 gap-[4rem] overflow-x-auto lg:overflow-hidden py-[2rem] lg:py-0">
+            <div class="lexendli space-y-4 min-w-[235px]" *ngFor="let item of paragraphGroup">
+                <h4 class="text-sm lg:text-[21px] leading-[17px] lg:leading-[26px]">{{item.text}}</h4>
+                <h3 class="text-[21px] lg:text-[30px] 2xl:text-[36px] leading-[26px] lg:leading-[53.3px]">
+                    {{item.secondText}}</h3>
+            </div>
+        </div>
+    </div>
+</div>

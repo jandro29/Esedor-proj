@@ -1,0 +1,221 @@
+<app-toolbar [colorWhite]="colorWhite"></app-toolbar>
+<div>
+    <section class="bg-tab h-[310px] lg:h-[760px] text-white flex justify-center items-center py-8 2xl:py-[4rem]">
+        <!-- py-[6rem]  h-screen 2xl:grid-cols-2 *ngIf="bgTab"-->
+            <div class="text-[36px] lg:text-[140px]  xl:text-[160px] 2xl:text-[180px] lexendzettaextrali leading-[125px] flex textleft">
+              <div data-aos="fade-down-right" data-aos-duration="500">S</div>
+              <div data-aos="fade-down-right" data-aos-duration="550">e</div>
+              <div data-aos="fade-down-right" data-aos-duration="600">r</div>
+              <div data-aos="fade-down-right" data-aos-duration="650">v</div>
+              <div data-aos="fade-down-right" data-aos-duration="700">i</div>
+              <div data-aos="fade-down-right" data-aos-duration="750">c</div>
+              <div data-aos="fade-down-right" data-aos-duration="800">i</div>
+              <div data-aos="fade-down-right" data-aos-duration="850">o</div>
+              <div data-aos="fade-down-right" data-aos-duration="900">s</div>
+            </div>
+    </section>
+    <!-- <section class="bg-tab2 h-[310px] lg:h-[760px] text-white flex flex-col justify-end py-8 2xl:py-[4rem]"
+        *ngIf="bgTab2">
+        <h5
+            class="lexendzettali w-[70%] lg:ml-[-15px] text-[24px] lg:text-[55px] xl:text-[60px] 2xl:text-[86px] leading-[30px] lg:leading-[80px] 2xl:leading-[107px] pb-[4rem]">
+            Soluciones a
+            medida para su negocio</h5>
+        <h4 class="lexendzettali w-[70%] text-[17px] 2xl:text-[24px] leading-[35.8px]">Permítenos ayudarte con nuestras
+            habilidades y servicios especializados, los acompañaremos en todas las
+            etapas del servicio.</h4>
+    </section> -->
+    <section class="flex flex-col w-full p-4 relative">
+        <div
+            class="grid grid-cols-1 lg:grid-cols-4 lg:gap-[3rem] xl:gap-[5rem] py-[2rem] lg:pb-[15rem] lg:pt-[9rem] justify-items-center items-center">
+            <img class="w-[94px] lg:w-auto" src="assets/img/services-icon.svg" alt="">
+            <!-- 2xl:w-[60%] -->
+            <h5 data-aos="fade-up"
+                class="col-start-2 col-span-4 lexendzettaextrali lg:ml-[-15px] text-[24px] lg:text-[55px] xl:text-[60px] 2xl:text-[66px] leading-[30px] lg:leading-[80px] 2xl:leading-[82.5px] pt-[3.5rem] lg:mt-[15rem] border-t border-black">
+                Soluciones a medida
+                para su negocio</h5>
+            <!-- <h3 data-aos="fade-up" data-aos-duration="1500"
+                class="lexendli lg:text-[22px] xl:text-[30px] 2xl:text-[36px] leading-[32.8px] lg:leading-[40px] 2xl:leading-[53.3px] pt-[1.5rem]">
+                Permítenos ayudarte a
+                cumplir tus objetivos con nuestras
+                habilidades y servicios especializados, los
+                acompañaremos en todas las etapas del servicio.</h3> -->
+        </div>
+        <!-- <div class="tab-header">
+            <div class="tab-label" *ngFor="let item of labelGroup">
+                <p class="text-label">{{item.label}}</p>
+            </div>
+        </div> -->
+        <!-- (selectedTabChange)="test($event)" -->
+        <!-- <mat-tab-header (scroll)="onscroll()" [ngClass]="navbarfixed?'fixed':'nofixed'"></mat-tab-header> -->
+        <mat-tab-group>
+            <mat-tab label="Descubrimiento de producto">
+                <div class="grid grid-cols-4 gap-[2.5rem] lg:gap-[5rem] py-[2.5rem] lg:py-[4rem]">
+                    <h1 data-aos="fade-up"
+                        class="col-span-4 lg:col-span-2 lg:ml-[-8px] lg:text-[46px] lexendzettali">Dale forma a tu idea
+                        de producto. </h1>
+                    <h3 data-aos="fade-up"
+                        class="col-span-4 lg:col-span-2 text-[18px] text-[22px] xl:text-[30px] 2xl:text-[36px] lexendli">
+                        Planifique y evalúe las características esenciales de su
+                        producto para lograr sus objetivos comerciales
+                        y eliminar posibles errores.</h3>
+                    <!-- <p data-aos="fade-up" data-aos-duration="1500" class="lexend col-span-4 text-sm lg:text-base">LOS
+                        ENTREGABLES INCLUYEN </p> -->
+                    <div
+                        class="col-span-4 grid grid-cols-1 lg:grid-cols-4 gap-[3.5rem] lg:gap-[4rem] xl:gap-[5rem] py-[2rem] lg:py-0 lg:mt-[4rem]">
+                        <div data-aos="fade-up" *ngFor="let item of firstTab" class="space-y-4 lg:space-y-[1.5rem] xl:min-w-[250px]">
+                            <img src="{{item.img}}" alt="">
+                            <h4 class="lexendzettali text-[17px] 2xl:text-[24px] leading-[35.8px]">{{item.title}}</h4>
+                            <p class="lexendli text-[18px] 2xl:text-[21px]">{{item.text}}</p>
+                        </div>
+                    </div>
+                    <div  data-aos="fade-right"   class="col-span-4">
+                        <app-services-tab (letsForm)="showFormEvent()"></app-services-tab>
+                    </div>
+                </div>
+            </mat-tab>
+
+            <mat-tab data-aos="fade-up" label="Diseño UX/UI">
+                <div class="grid grid-cols-4 gap-[2.5rem] lg:gap-[5rem] py-[2.5rem] lg:py-[4rem]">
+                    <h1 data-aos="fade-up"
+                        class="col-span-4 lg:col-span-2 lg:ml-[-8px] lg:text-[46px] lexendzettali">Conduce la
+                        experiencia al siguiente nivel.
+                    </h1>
+                    <h3 data-aos="fade-up"
+                        class="col-span-4 lg:col-span-2 text-[18px] text-[22px] xl:text-[30px] 2xl:text-[36px] lexendli">
+                        Crea experiencias de usuario para sus productos digitales. Resuelva problemas reales y mejore
+                        sus métricas comerciales a través de interfaces estéticas.</h3>
+                    <div
+                        class="col-span-4 grid grid-cols-1 lg:grid-cols-4 gap-[3.5rem] lg:gap-[4rem] xl:gap-[5rem] py-[2rem] lg:py-0 lg:mt-[4rem]">
+                        <div *ngFor="let item of secondTab" class="space-y-4 lg:space-y-[1.5rem] xl:min-w-[250px]">
+                            <img src="{{item.img}}" alt="">
+                            <h4 class="lexendzettali text-[17px] 2xl:text-[24px] leading-[35.8px]">{{item.title}}</h4>
+                            <p class="lexendli text-[18px] 2xl:text-[21px]">{{item.text}}</p>
+                        </div>
+                    </div>
+                    <div class="col-span-4">
+                        <app-services-tab (letsForm)="showFormEvent()"></app-services-tab>
+                    </div>
+                </div>
+            </mat-tab>
+
+            <mat-tab label="Desarrollo de software">
+                <div class="grid grid-cols-4 gap-[2.5rem] lg:gap-[5rem] py-[2.5rem] lg:py-[4rem]">
+                    <h1 data-aos="fade-up"
+                        class="col-span-4 lg:col-span-2 lg:ml-[-8px] lg:text-[46px] lexendzettali">Ejecuta proyectos de
+                        forma ágil
+                    </h1>
+                    <h3 data-aos="fade-up"
+                        class="col-span-4 lg:col-span-2 text-[18px] text-[22px] xl:text-[30px] 2xl:text-[36px] lexendli">
+                        Permítanos encargarnos de crear un software escalable y flexible sólo para usted.</h3>
+                    <div
+                        class="col-span-4 grid grid-cols-1 lg:grid-cols-4 gap-[3.5rem] lg:gap-[4rem] xl:gap-[5rem] py-[2rem] lg:py-0 lg:mt-[4rem]">
+                        <div *ngFor="let item of thirdTab"
+                            class="space-y-4 lg:space-y-[1.5rem] xl:min-w-[250px] {{item.style}}">
+                            <img src="{{item.img}}" alt="">
+                            <h4 class="lexendzettali text-[17px] 2xl:text-[24px] leading-[35.8px]">{{item.title}}</h4>
+                            <p class="lexendli text-[18px] 2xl:text-[21px]">{{item.text}}</p>
+                        </div>
+                    </div>
+                    <div class="col-span-4">
+                        <app-services-tab (letsForm)="showFormEvent()"></app-services-tab>
+                    </div>
+                </div>
+            </mat-tab>
+
+            <mat-tab label="Sistemas de diseño">
+                <div class="grid grid-cols-4 gap-[2.5rem] lg:gap-[5rem] py-[2.5rem] lg:py-[4rem]">
+                    <h1 data-aos="fade-up"
+                        class="col-span-4 lg:col-span-2 lg:ml-[-8px] lg:text-[46px] lexendzettali">Democratiza el diseño
+                        y desarrollo de productos
+                    </h1>
+                    <h3 data-aos="fade-up"
+                        class="col-span-4 lg:col-span-2 text-[18px] text-[22px] xl:text-[30px] 2xl:text-[36px] lexendli">
+                        Define una única fuente certificada que guía las decisiones de diseño, para una experiencia de
+                        usuario sobresaliente y una mayor eficiencia en la creación.</h3>
+                    <div
+                        class="col-span-4 grid grid-cols-1 lg:grid-cols-4 gap-[3.5rem] lg:gap-[4rem] xl:gap-[5rem] py-[2rem] lg:py-0 lg:mt-[4rem]">
+                        <div *ngFor="let item of fourthTab" class="space-y-4 lg:space-y-[1.5rem] xl:min-w-[250px]">
+                            <img src="{{item.img}}" alt="">
+                            <h4 class="lexendzettali text-[17px] 2xl:text-[24px] leading-[35.8px]">{{item.title}}</h4>
+                            <p class="lexendli text-[18px] 2xl:text-[21px]">{{item.text}}</p>
+                        </div>
+                    </div>
+                    <div class="col-span-4">
+                        <app-services-tab (letsForm)="showFormEvent()"></app-services-tab>
+                    </div>
+                </div>
+            </mat-tab>
+
+            <mat-tab label="Validación  Cuantitativa">
+                <div class="grid grid-cols-4 gap-[2.5rem] lg:gap-[5rem] py-[2.5rem] lg:py-[4rem]">
+                    <h1 data-aos="fade-up"
+                        class="col-span-4 lg:col-span-2 lg:ml-[-8px] lg:text-[46px] lexendzettali">Entiende el
+                        comportamiento de tu usuario
+                    </h1>
+                    <h3 data-aos="fade-up"
+                        class="col-span-4 lg:col-span-2 text-[18px] text-[22px] xl:text-[30px] 2xl:text-[36px] lexendli">
+                        Tome las decisiones correctas y realice investigación en sus usuarios. Entiende su
+                        comportamiento y decodifica sus intereses.</h3>
+                    <div
+                        class="col-span-4 grid grid-cols-1 lg:grid-cols-4 gap-[3.5rem] lg:gap-[4rem] xl:gap-[5rem] py-[2rem] lg:py-0 lg:mt-[4rem]">
+                        <div *ngFor="let item of fifthTab" class="space-y-4 lg:space-y-[1.5rem] xl:min-w-[250px]">
+                            <img src="{{item.img}}" alt="">
+                            <h4 class="lexendzettali text-[17px] 2xl:text-[24px] leading-[35.8px]">{{item.title}}</h4>
+                            <p class="lexendli text-[18px] 2xl:text-[21px]">{{item.text}}</p>
+                        </div>
+                    </div>
+                    <div class="col-span-4">
+                        <app-services-tab (letsForm)="showFormEvent()"></app-services-tab>
+                    </div>
+                </div>
+            </mat-tab>
+
+            <mat-tab label="Transformación Cultural">
+                <div class="grid grid-cols-4 gap-[2.5rem] lg:gap-[5rem] py-[2.5rem] lg:py-[4rem]">
+                    <h1 data-aos="fade-up"
+                        class="col-span-4 lg:col-span-2 lg:ml-[-8px] lg:text-[46px] lexendzettali">Dale forma a tu idea
+                        de producto.
+                    </h1>
+                    <h3 data-aos="fade-up"
+                        class="col-span-4 lg:col-span-2 text-[18px] text-[22px] xl:text-[30px] 2xl:text-[36px] lexendli">
+                        Planifique y evalúe las características esenciales de su producto para lograr sus objetivos
+                        comerciales y eliminar posibles errores.</h3>
+                    <div
+                        class="col-span-4 grid grid-cols-1 lg:grid-cols-4 gap-[3.5rem] lg:gap-[4rem] xl:gap-[5rem] py-[2rem] lg:py-0 lg:mt-[4rem]">
+                        <div *ngFor="let item of sixthTab" class="space-y-4 lg:space-y-[1.5rem] xl:min-w-[250px]">
+                            <img src="{{item.img}}" alt="">
+                            <h4 class="lexendzettali text-[17px] 2xl:text-[24px] leading-[35.8px]">{{item.title}}</h4>
+                            <p class="lexendli text-[18px] 2xl:text-[21px]">{{item.text}}</p>
+                        </div>
+                    </div>
+                    <div class="col-span-4">
+                        <app-services-tab (letsForm)="showFormEvent()"></app-services-tab>
+                    </div>
+                </div>
+            </mat-tab>
+        </mat-tab-group>
+    </section>
+
+    <app-allies></app-allies>
+
+    <section class="bg-[#141C26]">
+        <div class="pt-[3rem] pb-2 border-b border-white">
+            <h5 class="lexendzettaextrali lg:ml-[-15px] text-[32px] lg:text-[86px] text-white">Proyectos</h5>
+        </div>
+
+        <div class="pt-[2rem] pb-[10rem] ml-[-10px]">
+            <app-projects-slide></app-projects-slide>
+        </div>
+    </section>
+
+    <div class="hidden lg:block">
+        <app-lets-talk (letsForm)="showFormEvent()"></app-lets-talk>
+    </div>
+
+    <div *ngIf="showForm">
+        <app-contact-dashboard (closeForm)="closeFormEvent()"></app-contact-dashboard>
+    </div>
+
+    <app-footer></app-footer>
+
+</div>

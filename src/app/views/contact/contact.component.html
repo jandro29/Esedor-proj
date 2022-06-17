@@ -1,0 +1,198 @@
+<app-toolbar [colorWhite]="colorWhite"></app-toolbar>
+
+<!-- <section class="bg-image h-[310px] lg:h-[760px] text-white flex justify-center items-center py-8 2xl:py-[4rem]">
+  <h1 data-aos="fade-down" class="text-[36px] lg:text-[140px] xl:text-[180px] lexendzettaextrali leading-[125px]">
+    Contacto</h1>
+</section> -->
+<section class="hidden lg:block">
+  <section class="bg-image h-[310px] lg:h-[760px] text-white flex justify-center items-center py-8 2xl:py-[4rem]">
+    <div class="text-[36px] lg:text-[140px]  xl:text-[160px] 2xl:text-[180px] lexendzettaextrali leading-[125px] flex textleft">
+      <div data-aos="fade-down-right" data-aos-duration="500">C</div>
+      <div data-aos="fade-down-right" data-aos-duration="550">o</div>
+      <div data-aos="fade-down-right" data-aos-duration="600">n</div>
+      <div data-aos="fade-down-right" data-aos-duration="650">t</div>
+      <div data-aos="fade-down-right" data-aos-duration="700">a</div>
+      <div data-aos="fade-down-right" data-aos-duration="750">c</div>
+      <div data-aos="fade-down-right" data-aos-duration="800">t</div>
+      <div data-aos="fade-down-right" data-aos-duration="850">o</div>
+    </div>
+  </section>
+<!-- <section class="hidden lg:block"> -->
+
+<!-- </section> -->
+
+<section class="px-4 pt-[3rem] lg:pt-[2rem] pb-[8rem] lg:pb-[10rem]">
+  <div class="flex flex-wrap content-center justify-center grid grid-cols-1 lg:grid-cols-4 space-y-[3rem] lg:space-y-0">
+    <h1 data-aos="fade-right"
+      class="mt-[24%] text-[28px] lg:text-[32px] xl:text-[46px] 2xl:text-[60px] leading-[35px] lg:leading-[57.5px] pb-8 lg:pb-[5rem] 2xl:pb-[6rem] col-span-2">
+      ¿Deseas estimar un proyecto?</h1>
+    <img data-aos="fade-up" class="w-[129px] lg:w-auto lg:ml-[80%]" src="assets/img/img-contacto1.png" alt="">
+  </div>
+
+  <div
+    class="border-t border-black lg:ml-[22%] grid grid-cols-1 lg:grid-cols-7 lg:px-[4rem] xl:pr-[4rem] 2xl:pl-0 2xl:pr-[8rem] pt-[3rem] lg:pt-[7rem] mx-auto items-center">
+    <div class=" mt-[-12%] lg:ml-[-4rem] 2xl:ml-[0rem] col-span-5 2xl:col-span-4 space-y-[3rem] pt-6 lg:pt-0 ">
+      <h3 data-aos="fade-up" class=" lexendli text-[18px] lg:text-[21px] 2xl:text-[21px] col-span-1 pb-[1rem]">
+        Permítenos ayudarte a
+        cumplirlo con nuestras
+        habilidades y servicios especializados. En Esedor los acompañaremos en todas las etapas del servicio.</h3>
+      <!-- <button data-aos="fade-right" class="btn-1 lexendli text-[21px] flex items-center">
+          <img class="pr-5" src="assets/img/arrow-black.png" alt="">
+          Ver proyecto
+        </button> -->
+      <button data-aos="fade-right" matRipple (mouseover)="btnStyle = true" (mouseout)="btnStyle = false"
+        [ngClass]="{ 'arrow' : btnStyle}" (click)="showFormEvent()"
+        class="lexendli cursor-pointer bg-white lg:hover:bg-[#5682FF] text-[15.5px] text-[#141C26] lg:hover:text-white flex items-center justify-start lg:justify-center shadow w-full lg:w-[236px] h-[65px] 2xl:h-[82px] px-6 lg:p-4 rounded-[50px]">
+        <svg class="transition duration-700 ease-in-out mr-16 lg:mr-4 w-[24px] lg:w-[32px]" width="33" height="31"
+          viewBox="0 0 33 31" [ngClass]="{ 'arrow-rotate' : btnStyle }" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g class="text-white">
+            <line x1="5.7105e-09" y1="14.7539" x2="30.6479" y2="14.7539" stroke="black" stroke-width="2" />
+            <path d="M16.2585 1.00146L30.5917 15.2188L16.2585 29.436" stroke="black" stroke-width="2" />
+          </g>
+        </svg>
+        Conversemos
+      </button>
+    </div>
+  </div>
+
+  <div
+    class="border-t border-black mt-10 lg:ml-[22%] lg:px-[4rem] xl:pl-[6rem] xl:pr-[4rem] 2xl:pl-0 2xl:pr-[8rem] pt-[3rem] lg:pt-[7rem] mx-auto items-center">
+    <div
+      class="lg:ml-[-4rem] 2xl:ml-[0rem] mt-[-13%] 2xl:col-start-4 col-span-5 space-y-[3rem] pt-6 lg:pt-0 xl:pt-16 2xl:pt-20 lg:pl-[0rem] xl:pl-[0rem] 2xl:pl-0">
+      <h3 data-aos="fade-up" class="lexendli text-[18px] lg:text-[36px] col-span-1 pb-[1rem]">Contactanos</h3>
+      <div data-aos="fade-up" class="flex flex-col lg:flex-row text-left">
+        <div>
+          <h3 class="text-[16px]">Correo</h3>
+          <div class="mt-[17px]">
+            <a class="border-b border-black text-[18px] lg:text-[32px]" href="">Hola@esedor.com</a>
+          </div>
+        </div>
+        <div class="lg:ml-40 2xl:ml-[35%]">
+          <h3 class="text-[16px]">Telefono</h3>
+          <div class="mt-[17px]">
+            <a class="border-b border-black text-[18px] lg:text-[32px]" href="">(+01) 773 8905</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex text-left ">
+        <div class="mt-[20px] w-full">
+          <h3 data-aos="fade-up" class="text-[16px]">Siguenos</h3>
+          <div data-aos="fade-up" class="mt-[17px] flex text-left ">
+            <a href=""><img src="assets/img/LinkedIn-gris.png" alt=""></a>
+            <a class="px-[40px]" href=""> <img src="assets/img/Facebook-gris.png" alt=""></a>
+            <a href=""><img src="assets/img/Instagram-gris.png" alt=""></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class=" lg:flex justify-between">
+  <div class="lg:w-[50%] lg:h-auto bg-black pb-[12rem] flex flex-wrap ">
+    <div>
+      <h3 data-aos="fade-right" class="text-white mt-10 px-4 text-[18px] lg:text-[10px] xl:text-[15px] 2xl:text-[20px]">
+        ubicanos
+      </h3>
+    </div>
+    <div data-aos="fade-right" class="text-[#626973] px-4 lg:px-0 lg:ml-[-2rem] flex flex-wrap mt-16 lg:mt-48">
+      <a href="" class="lexendzetta text-sm lg:text-[20px] xl:text-[25px] 2xl:text-[32px] leading-[55px] ">
+        <a href="" class="text-white">Lima <br></a>
+        Swiss Tower <br>
+        Av. Alfredo Benavides 1944 <br>
+        Piso 09 <br>
+        Miraflores <br>
+        <img class="w-[41.01px] h-[38.23px] mt-4" src="assets/img/arrow-footer.png" alt=""> </a>
+    </div>
+  </div>
+  <div class="lg:w-[50%] lg:h-auto flex flex-wrap bg-mitad">
+  </div>
+</section>
+
+<app-allies></app-allies>
+
+<!---->
+<!--   RESPONVISE -->
+<!---->
+
+<!-- <section class="lg:hidden bg-responsive h-[309px] text-white flex justify-center items-center py-8">
+  <h1 class="text-[36px] lexendzettaextrali leading-[125px]">Contacto</h1>
+</section>
+
+<section class="lg:hidden pt-[6rem]">
+  <div class="flex text-left pb-8">
+    <h3 class="lexendzetta text-[24px] w-[80%] px-4">¿Deseas estimar un proyecto?</h3>
+    <img class="mt-[-3rem]" src="assets/img/contacto-mitad-img.png" alt="">
+  </div>
+
+  <div class="border-t border-black ml-[20px] mr-[20px] pb-8">
+    <h3 class="lexend mt-10 text-[18px]">Permítenos ayudarte a cumplirlo <br> con nuestras habilidades y <br> servicios
+      especializados. En Esedor <br> los acompañaremos
+      en todas las <br> etapas del servicio.</h3>
+
+    <button class="mt-[40px] btn-responsive lexendli text-[17px] flex items-center ">
+      <img class="px-8" src="assets/img/arrow-black.png" alt="">
+      Conversemos
+    </button>
+  </div>
+
+  <div class="border-t border-black ml-[20px] mr-[20px]">
+
+    <h3 class="lexend mt-8 text-[18px]">Contactanos</h3>
+
+    <div class="mt-16 lexendb leading-[38px]">
+      <h3>Correo</h3>
+      <div>
+        <a class="lexendzetta border-b border-black" href="">Hola@esedor.com</a>
+      </div>
+    </div>
+
+    <div class="mt-6 lexendb leading-[38px]">
+      <h3>Telefono</h3>
+      <div>
+        <a class="lexendzetta border-b border-black" href="">(+01) 773 8905</a>
+      </div>
+    </div>
+
+    <div class="mt-6 lexendb leading-[38px] pb-[266px]">
+      <h3>siguenos</h3>
+      <div class="flex text-left mt-4">
+        <a href=""><img src="assets/img/LinkedIn-gris.png" alt=""></a>
+        <a class="px-[40px]" href=""><img src="assets/img/Facebook-gris.png" alt=""></a>
+        <a href=""><img src="assets/img/Instagram-gris.png" alt=""></a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="bg-mitad-responsive h-[267px] lg:hidden">
+</section>
+
+<section class="lg:hidden bg-black h-[315px] px-4">
+  <div class="bg-black flex flex-wrap ">
+    <div>
+      <h3 class="text-white mt-10 px-4 text-[18px]">ubicanos</h3>
+    </div>
+    <div class="text-[#626973] ml-[1rem] flex flex-wrap mt-10">
+      <a href="" class=" lexendzetta text-[14px] leading-[25px] ">
+        <a href="" class="text-white">Lima <br></a>
+        Swiss Tower <br>
+        Av. Alfredo Benavides 1944 <br>
+        Piso 09 <br>
+        Miraflores <br>
+        <img class="w-[22px] h-[20.51px] mt-4" src="assets/img/arrow-footer.png" alt=""> </a>
+    </div>
+  </div>
+</section>
+
+<section class="lg:hidden">
+  <app-allies></app-allies>
+</section> -->
+
+<div *ngIf="showForm">
+  <app-contact-dashboard (closeForm)="closeFormEvent()"></app-contact-dashboard>
+</div>
+
+<app-footer></app-footer>

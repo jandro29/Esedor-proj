@@ -1,0 +1,92 @@
+<app-toolbar [colorWhite]="colorWhite"></app-toolbar>
+
+<app-first-section [date]="date" [industry]="industry" [client]="client" [image]="image" [styles]="styles"
+  [display]="display" [paragraphOne]="paragraphOne" [paragraphTwo]="paragraphTwo" [serviceList]="serviceList"
+  [definitionsList]="definitionsList" [animatedTitle]="animatedTitle"></app-first-section>
+
+<section class="h-[110%] lg:mt-80 ">
+  <div class="w-full h-screen bg-no-repeat bg-cover bg-fixed h-[110%]"
+    style="background-image: url(assets/img/Parallax-Ripley.png);">
+  </div>
+</section>
+
+<app-second-section [firstText]="firstText" [secondText]="secondText" [thirdText]="thirdText"
+  [displayContent]="displayContent" [imageSection]="imageSection">
+</app-second-section>
+
+<section class="mt-[60%] lg:mt-[30%] xl:mt-[20%]">
+  <div data-aos="fade-up" data-aos-duration="500" class="px-4 h-full flex flex-wrap content-center ">
+    <img class="w-[350px]  lg:w-[900px] 2xl:w-[1253px] ml-12" src="assets/img/acumulacion-ripley.png" alt="">
+  </div>
+
+  <div data-aos="fade-up" data-aos-duration="500" class="px-4 h-full flex flex-wrap content-center ">
+    <img class="w-[350px]  lg:w-[900px] 2xl:w-[1253px] mt-60 ml-[25rem]" src="assets/img/cuentas-ripley.png" alt="">
+  </div>
+
+  <div data-aos="fade-up" data-aos-duration="500" class=" h-full flex justify-center flex-wrap content-center ">
+    <img class="w-[350px]  lg:w-[900px] 2xl:w-[1253px] mt-10 lg:mt-40" src="assets/img/reglas-ripley.png" alt="">
+  </div>
+</section>
+<!-- <section
+  class="px-4 pt-2 lg:pt-[5rem] pb-5 bg-[#141C26] text-[#FFFFFF] flex flex-col lg:justify-start justify-end h-screen lg:h-auto">
+  <p class="lexendzetta font-semibold text-[18px] pl-[4rem] lg:px-[4rem]">Esedor</p>
+  <p class="lexend pl-[4rem] lg:px-[4rem]">Transformando el presente</p>
+  <div class="flex justify-center lg:justify-between flex-col lg:h-[700px] pt-[1.5rem] lg:pt-0 lg:px-[4rem]">
+    <div class="relative">
+      <div class="w-full h-[10px] transition-all duration-700 ease-in-out mt-[7.5rem] hidden lg:block"
+        [ngClass]="{ 'bg-hover' : bgHover }">
+      </div>
+      <div (mouseover)="bgHover = true" (mouseout)="bgHover = false" style="z-index: 4;"
+        class="flex lg:flex-row items-center h-[130px] lg:h-[200px] w-full border-t-[1px] border-b-[1px] border-white justify-between lg:justify-start lg:absolute top-[7.5rem]">
+        <p class="lexendzetta text-[36px] lg:text-[96px]">Redeban</p>
+        <p class="lexend text-[21px] ml-auto mr-[6rem] hidden lg:block">Ir a proyecto</p>
+        <img class="mr-4" src="assets/img/arrow-footer.png" alt="" srcset="">
+      </div>
+      <div class="w-full h-[10px] transition-all duration-700 ease-in-out hidden lg:block absolute top-[20rem]"
+        style="z-index: 1;" [ngClass]="{ 'bg-hover2' : bgHoverTwo }">
+      </div>
+      <div (mouseover)="bgHoverTwo = true" (mouseout)="bgHoverTwo = false" style="z-index: 4;"
+        class="flex lg:flex-row items-center h-[130px] lg:h-[200px] w-full border-b-[1px] border-white justify-between lg:justify-start lg:absolute top-[20.2rem]">
+        <p class="lexendzetta text-[36px] lg:text-[96px]">Notifai</p>
+        <p class="lexend text-[21px] ml-auto mr-[6rem] hidden lg:block">Ir a proyecto</p>
+        <img class="mr-4" src="assets/img/arrow-footer.png" alt="" srcset="">
+      </div>
+    </div>
+    <div class="flex lg:justify-between mt-auto py-[2rem]">
+      <button mat-raised-button
+        class="bg-[#FFFFFF] text-black w-full lg:w-[250px] rounded-[12px] h-[70px]">Conversemos</button>
+    </div>
+  </div>
+
+  <div class="flex mt-auto lg:pl-[4rem] lg:pr-4 items-end relative">
+    <p class="lexend text-[13px] font-medium ">Esedor © 2022</p>
+
+    <ul
+      class="ml-auto text-white text-xs lg:text-sm lexend flex flex-col lg:flex-row items-end justify-between w-[55%] lg:pr-[9rem] space-y-[1.5rem] lg:space-y-0">
+      <li>Proyectos</li>
+      <li>Services</li>
+      <li>Who we are</li>
+      <li>Blog</li>
+      <li>Careers</li>
+    </ul>
+    <div class="space-y-[2rem] absolute lg:relative bottom-[2.5rem] lg:bottom-0">
+      <a class="block" href="">
+        <img src="assets/img/Linkedin.png" alt="">
+      </a>
+      <a class="block" href="">
+        <img src="assets/img/Facebook.png" alt="">
+      </a>
+      <a class="block" href="">
+        <img src="assets/img/Instagram.png" alt="">
+      </a>
+    </div>
+  </div>
+</section> -->
+
+<app-lets-talk (letsForm)="showFormEvent()"></app-lets-talk>
+
+<div *ngIf="showForm">
+  <app-contact-dashboard (closeForm)="closeFormEvent()"></app-contact-dashboard>
+</div>
+
+<app-footer></app-footer>

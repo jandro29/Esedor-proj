@@ -1,0 +1,47 @@
+.bg-image {
+    background-image: url('../../../assets/img/talento-esedor.png');
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: top;
+}
+
+h1 {
+    font-family: LexendZettaExtraLight;
+}
+
+.talent-shadow {
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+@media screen and (min-width: 1024px) {
+
+    .bg-image {
+        background-position-x: inherit;
+        background-position-y: inherit;
+    }
+
+    .arrow:hover g line {
+        stroke: #5682FF;
+    }
+
+    .arrow:hover g path {
+        stroke: #5682FF;
+    }
+
+    .arrow-btn:hover g line {
+        stroke: #FFFFFF;
+    }
+
+    .arrow-btn:hover g path {
+        stroke: #FFFFFF;
+    }
+
+    .font-color {
+       color: #5682FF;
+    }
+
+    .arrow-rotate {
+        transform: rotate(-45deg);
+        transition: transform .6s cubic-bezier(.4,0,0,1);
+    }
+}

@@ -1,0 +1,21 @@
+.shadow {
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+@media screen and (min-width: 1024px ) {
+
+    .arrow-rotate{
+        transform: rotate(-45deg);
+        transition: transform .6s cubic-bezier(.4,0,0,1);
+    }
+
+    .arrow:hover g line {
+        stroke: #FFFFFF;
+    }
+    
+    .arrow:hover g path {
+        stroke: #FFFFFF;
+    }
+
+}
+

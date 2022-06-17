@@ -1,0 +1,317 @@
+<app-toolbar [colorWhite]="colorWhite"></app-toolbar>
+
+<app-loader></app-loader>
+
+<div class="fixed top-0 z-[99] w-full h-screen bg-[#000000] pt-3" *ngIf="showVideo">
+  <div class="flex justify-end px-[1.5rem]">
+    <button class="rounded-[50%] w-[46px] h-[46px] bg-[#141C26] flex justify-center items-center" (click)="showVideo = false">
+      <!-- (click)="closeForm.emit()" -->
+      <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M7.80318 1.13013L7.07359 0.40625L4.18113 3.27612L1.28867 0.40625L0.559082 1.13013L3.45155 4L0.559082 6.86987L1.28867 7.59375L4.18113 4.72388L7.07359 7.59375L7.80318 6.86987L4.91071 4L7.80318 1.13013Z"
+          fill="white" />
+      </svg>
+    </button>
+  </div>
+
+  <div class="flex justify-center items-center 2xl:pt-8">
+    <video controls autoplay style="max-height: 90vh;">
+      <source src="assets/img/esedor_video.mp4" type="video/mp4">
+    </video>
+  </div>
+</div>
+
+<div>
+  <section #slideContent class="lg:pt-28 px-4 flex flex-col justify-center bg-[#F2F4F5] h-screen">
+    <!-- <p class="text-right text-sm lexendzetta font-bold text-white hidden lg:block">EN</p> -->
+    <div>
+      <!-- class="w-[98.5%]" -->
+      <app-main-slider (getDown)="getDownSection()"></app-main-slider>
+    </div>
+  </section>
+
+  <section class="py-[5rem] lg:py-[13rem] px-4 bg-white" id="nextContent">
+    <div class="grid grid-cols-1 lg:grid-cols-3 xl:gap-x-[5rem] border-b border-black pb-[5rem] lg:pb-[13rem]" >
+      <div
+        class="flex flex-row-reverse lg:flex-col justify-between items-center lg:items-start pt-[4rem] lg:pt-0 lg:py-4 pr-[2.5rem] lg:pr-0 order-last lg:order-none">
+        <h4 data-aos="fade-right" data-aos-duration="500" class="text-[21px] lexendli">Conócenos</h4>
+        <!-- <svg class="ml-[-1rem]" width="102" height="102" viewBox="0 0 142 142" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g filter="url(#filter0_d_3214_14929)">
+          <circle cx="71" cy="66" r="51" fill="white"/>
+          <path d="M87.1394 65.9947L62.9305 79.9717L62.9305 52.0177L87.1394 65.9947Z" fill="black"/>
+          </g>
+          <defs>
+          <filter id="filter0_d_3214_14929" x="0" y="0" width="142" height="142" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+          <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+          <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+          <feOffset dy="5"/>
+          <feGaussianBlur stdDeviation="10"/>
+          <feComposite in2="hardAlpha" operator="out"/>
+          <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0"/>
+          <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_3214_14929"/>
+          <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_3214_14929" result="shape"/>
+          </filter>
+          </defs>
+        </svg> -->
+        <!-- <img class="max-w-[102px] ml-[-1rem]" src="assets/img/video_play.png" alt=""> -->
+        <lottie-player (click)="showVideo = true" class="ml-[-4rem]" src="https://assets10.lottiefiles.com/packages/lf20_getcwdyd.json"
+          background="transparent" speed="1" style="width: 200px; height: 200px;" hover></lottie-player>
+      </div>
+      <div class="col-span-2 space-y-[3rem]">
+        <h1 data-aos="fade-up" data-aos-duration="500"
+          class="text-[28px] lgtext-[40px] xl:text-[46px] lexendzettali leading-[35px] lg:leading-[57.5px]">Generando
+          valor y experiencias increíbles para negocios ambiciosos.</h1>
+        <h3 data-aos="fade-up" data-aos-duration="500"
+          class="text-[21px] lg:text-[30px] xl:text-[36px] lexendli leading-[33.5px] lg:leading-[53.3px]">Esedor es
+          una compañía que te
+          acompaña en todas las etapas de
+          tu proyecto, maximizando tus objetivos de negocio.</h3>
+      </div>
+    </div>
+
+    
+
+    <div class="grid grid-cols-1 lg:grid-cols-3 xl:gap-x-[5rem] pt-[5rem] lg:pt-[13rem]">
+      <div
+        class="border-b border-black col-span-2 col-end-4 pb-[5rem] lg:pb-[13rem] space-y-[3rem] xl:pr-[4rem] 2xl:pr-[6rem]">
+        <div data-aos="fade-right" data-aos-duration="500" class="flex space-x-4 items-center">
+          <div class="border-b border-black w-[43px]"></div>
+          <p class="text-[17.5px] lexend">Conozca lo que necesita su negocio</p>
+        </div>
+        <h1 data-aos="fade-up-right" data-aos-duration="500"
+          class="text-[28px] lg:text-[40px] xl:text-[46px] lexendzettali leading-[35px] lg:leading-[57.5px]">¿Cuál es
+          tu objetivo final? </h1>
+        <h3 data-aos="fade-up" data-aos-duration="500"
+          class="text-[21px] lg:text-[30px] xl:text-[36px] lexendli leading-[33.5px] lg:leading-[53.3px]">Permítenos
+          ayudarte a cumplirlo con nuestras
+          habilidades y
+          servicios especializados los acompañaremos en todas las etapas del servicio.</h3>
+      </div>
+
+      <div
+        class="col-span-2 col-end-4 grid grid-cols-1 lg:grid-cols-2 gap-[.5rem] pt-[5rem] xl:pr-[2rem] 2xl:pr-[3rem]">
+        <div [ngClass]="{ 'service-shadow' : item.state}" (click)="serviceRoute(item.route)"
+          class="flex flex-col justify-between cursor-pointer py-[3rem] px-5 xl:p-[3rem] mobile-shadow arrow"
+          *ngFor="let item of servicesItems" (mouseover)="item.state = true" (mouseout)="item.state = false">
+          <!-- max-w-[400px] h-[270px]  h-[330px]-->
+          <div data-aos="fade-up" data-aos-duration="500" class="space-y-[2rem]">
+            <p class="lexendzettali text-[24px] leading-[35.8px] {{item.length}}">{{item.title}}</p>
+            <h4 class="lexendli text-[21px] leading-[33.6px]">{{item.text}}</h4>
+          </div>
+          <button data-aos="fade-right" data-aos-duration="500"
+            class="lexendli text-[21px] flex items-center mt-auto pt-6"
+            [ngClass]="{ 'lg:text-[#5682FF] lg:font-bold' : item.state}">
+            <svg [ngClass]="{ 'arrow-rotate' : item.state}"
+              class="transition duration-700 ease-in-out w-[20px] lg:w-auto mr-5" width="33" height="31"
+              viewBox="0 0 33 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g>
+                <line x1="5.7105e-09" y1="14.7539" x2="30.6479" y2="14.7539" stroke="black" stroke-width="2" />
+                <path d="M16.2585 1.00146L30.5917 15.2188L16.2585 29.436" stroke="black" stroke-width="2" />
+              </g>
+            </svg>
+            Saber más
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- <section class="bg-[#EE6F57] h-screen flex justify-center items-center icon-video">
+    <mat-icon class="text-white text-[84px] w-[84px] h-[84px]">play_circle</mat-icon>
+  </section> -->
+
+  <section class="bg-[#141C26] px-4">
+    <!-- pt-[9rem] lg:pt-[20rem] -->
+    <!-- <div class="border-b-[1px] border-white pb-2 flex flex-col-reverse md:flex-row lg:items-end justify-between">
+      <div class="flex items-center pt-12 lg:pt-0">
+        <img #arrow class="w-[48px] lg:w-auto" src="assets/img/arrow-right.png" alt="">
+        <a class="text-[21px] lg:text-[36px] lexend text-white ml-5">Quienes somos</a>
+      </div>
+      <div class="lg:w-[65%] space-y-5 lg:space-y-8">
+        <h1 class=" quote text-[18px] lg:text-[40px] 2xl:text-[49px] lexendzetta text-white">Creamos
+          experiencias. Generando
+          impacto. <br>
+          Para marcas ambiciosas.</h1>
+        <h4 class="hidentext text-[14.5px] lg:text-[21px] lexendli text-white lg:w-[85%]">Colaboramos en compañías
+          ambiciosas para
+          crear experiencias <br>
+          digitales en millones de usuarios de todo el mundo.</h4>
+      </div>
+    </div> -->
+    <div
+      class=" border-b-[1px] border-white space-y-7 lg:space-y-0 flex flex-col lg:flex-row items-start lg:items-end justify-end lg:justify-between h-[190px] lg:h-[250px]">
+      <div class="flex flex-col lg:flex-row lg:items-end justify-between w-full space-y-[2rem] lg:space-y-0">
+        <div class="text-[42px] lg:text-[96px] type-family text-white flex textleft">
+          <div data-aos="fade-down-right" data-aos-duration="1000">P</div>
+          <div data-aos="fade-down-right" data-aos-duration="1050">r</div>
+          <div data-aos="fade-down-right" data-aos-duration="1100">o</div>
+          <div data-aos="fade-down-right" data-aos-duration="1150">y</div>
+          <div data-aos="fade-down-right" data-aos-duration="1200">e</div>
+          <div data-aos="fade-down-right" data-aos-duration="1250">c</div>
+          <div data-aos="fade-down-right" data-aos-duration="1300">t</div>
+          <div data-aos="fade-down-right" data-aos-duration="1350">o</div>
+          <div data-aos="fade-down-right" data-aos-duration="1400">s</div>
+          <!-- class="border-b-[1px] border-white space-y-7 lg:space-y-0 flex flex-col lg:flex-row items-start lg:items-end justify-end lg:justify-between h-[190px] lg:h-[250px]">
+       lg:h-[600px]
+      <div class="flex flex-col lg:flex-row lg:items-end justify-between w-full space-y-[1.5rem] lg:space-y-0">
+        <div class="text-[42px] lg:text-[96px] type-family text-white">
+          <div data-aos="fade-down-right" data-aos-duration="1400" class="absolute left-[80%] lg:left-[53%]">s</div>
+          <div data-aos="fade-down-right" data-aos-duration="1350" class="absolute left-[68%] lg:left-[46%]">o</div>
+          <div data-aos="fade-down-right" data-aos-duration="1300" class="absolute left-[61%] lg:left-[41%]">t</div>
+          <div data-aos="fade-down-right" data-aos-duration="1250" class="absolute left-[52%] lg:left-[34%]">c</div>
+          <div data-aos="fade-down-right" data-aos-duration="1200" class="absolute left-[42%] lg:left-[27%]">e</div>
+          <div data-aos="fade-down-right" data-aos-duration="1150" class="absolute left-[32%] lg:left-[20%]">y</div>
+          <div data-aos="fade-down-right" data-aos-duration="1100" class="absolute left-[22%] lg:left-[13%]">o</div>
+          <div data-aos="fade-down-right" data-aos-duration="1050" class="absolute left-[13%] lg:left-[7.5%]">r</div>
+          <div data-aos="fade-down-right" data-aos-duration="1000" class="ml-[-5px] lg:ml-[-15px]">P</div>-->
+        </div>
+        <!-- <div >
+          <img class="translate-x-0 transition duration-700 ease-in-out" src="assets/img/short-arrow-right.png" alt="" [ngClass]="{ 'arrow-rotate' : arrowRotate}">
+          <p class="text-[21px] lg:text-[21px] lexend text-white ml-5">Ver proyectos</p> routerLink="/proyectos"
+        </div> -->
+        <button (click)="redirectProject()"
+          class="flex items-center lg:justify-end pb-4 lg:p-[15px] transition duration-700 ease-in-out btn-hover"
+          (mouseover)="arrowRotate = true" (mouseout)="arrowRotate = false">
+          <img class="w-[31px] lg:w-auto translate-x-0 transition duration-700 ease-in-out"
+            src="assets/img/short-arrow-right.png" alt="" [ngClass]="{ 'arrow-rotate' : arrowRotate}">
+          <p class="text-[21px] lg:text-[21px] lexendli text-white ml-5">Ver proyectos</p>
+        </button>
+      </div>
+
+    </div>
+    <div class="pt-[5rem] pb-[20rem] ml-[-10px]">
+      <app-projects-slide></app-projects-slide>
+    </div>
+  </section>
+
+  <section class="bg-[#5682FF] pb-[9rem]">
+    <div
+      class="lg:border-b-[1px] border-white flex flex-col lg:flex-row justify-between space-y-8 lg:space-y-0 px-4 py-[5rem] lg:pt-[8rem] lg:pb-[6.5rem]">
+      <p data-aos="fade-right" data-aos-duration="500" class="text-[22px] lg:text-[28px] lexendli text-[#FFFFFF] mt-3">
+        Confían en nosotros</p>
+      <h1 data-aos="fade-up" data-aos-duration="500"
+        class="text-[28px] lg:text-[40px] xl:text-[46px] lexendzettali text-[#FFFFFF] lg:w-[60%] leading-[35px] lg:leading-[57px]">
+        Nos sentimos orgullosos de nuestros proyectos y de los clientes que confían en nosotros. </h1>
+    </div>
+    <app-allies [displayElement]="displayElement"></app-allies>
+  </section>
+
+  <section class="grid grid-cols-1 lg:grid-cols-3 items-center h-[1024px] bg-[#141C26] px-4 lg:px-0 lg:pr-[5rem]">
+    <img src="assets/img/tornillo.png" alt="">
+    <div
+      class="col-span-2 grid grid-cols-1 lg:grid-cols-2 pb-[4rem] lg:pt-[8rem] 2xl:pt-[10rem] lg:pb-[5rem] 2xl:pb-[7rem] text-white">
+      <h3 data-aos="fade-right" data-aos-duration="500"
+        class="lexendli text-[18px] lg:text-[21px] pb-8 lg:pb-[5rem] 2xl:pb-[8rem] lg:col-span-2 ">Level Up</h3>
+      <div class="space-y-8 lg:space-y-[4rem] 2xl:space-y-[6rem] lg:col-span-2 ">
+        <h1 data-aos="fade-up" data-aos-duration="500"
+          class="text-[28px] lg:text-[36px] xl:text-[46px] leading-[35px] lg:leading-[57.5px] ">
+          ¿Buscas una manera de iniciar tu carrera?</h1>
+        <h4 data-aos="fade-up" data-aos-duration="500"
+          class="lexendli text-[18px] xl:text-[21px] leading-[25.6px] lg:leading-[33.6px]">
+          Se parte de nuestro Programa Trainee y desarrolla tu potencial en 6 meses. ¡Será una experiencia increíble! En
+          el que no sólo ofrecemos habilidades prácticas, sino también tutoría de personas realmente talentosas en un
+          ambiente increíble centrado en las personas, mientras pone sus manos en proyectos reales junto con nuestro
+          equipo calificado de Diseño y Desarrollo de Productos en Esedor.
+        </h4>
+        <h4 data-aos="fade-up" data-aos-duration="500"
+          class="lexendli text-[18px] xl:text-[21px] leading-[25.6px] lg:leading-[33.6px]">Envia
+          tu CV y datos personales:</h4>
+
+      </div>
+      <p data-aos="fade-up" data-aos-duration="500"
+        class="lexendzettali text-[32px] pt-[2rem] col-span-2 hidden lg:block">talento@esedor.com</p>
+    </div>
+  </section>
+
+  <!-- <section
+    class="bg-[#141C26] flex flex-col lg:flex-row space-y-[167px] lg:space-y-0 lg:justify-between px-4 pb-[5rem] lg:py-[12rem]">
+    <div class="inline-block ml-[-15px]">
+      <div class="text-[64px] lg:text-[96px] type-family text-[#FFFFFF] flex text-left">
+        <div data-aos="fade-down-right" data-aos-duration="1000">B</div>
+        <div data-aos="fade-down-right" data-aos-duration="1100">l</div>
+        <div data-aos="fade-down-right" data-aos-duration="1200">o</div>
+        <div data-aos="fade-down-right" data-aos-duration="1300">g</div>
+      </div>
+    </div>
+
+    <div class="inline-block lg:w-[50%] xl:w-[40%] space-y-[2.5rem] lg:space-y-24 lg:pt-8">
+      <div class="relative flex cursor-pointer" (mouseover)="bgBlog = true" (mouseout)="bgBlog = false">
+        <div class="w-[10px] h-[165px] lg:h-[222px] bg-transparent transition-all duration-500 ease-linear"
+          [ngClass]="{ 'bg-blog' : bgBlog}"></div>
+        <div data-aos="fade-right" data-aos-duration="500"
+          class="border-l border-white px-4 py-2 absolute lg:h-[222px] flex flex-col">
+          <div class="flex justify-between text-sm text-white">
+            <p class="lexendb">01.10.21</p>
+            <p class="lexend">Ver más</p>
+          </div>
+          <h3 class="text-[16px] lg:text-[36px] lexendli text-[#FFFFFF] pt-5 pb-3">La democratización del diseño:
+            “Design
+            Systems”</h3>
+          <svg [ngClass]="{ 'arrow-rotate' : bgBlog}"
+            class="transition duration-700 ease-in-out w-[31px] lg:w-[52px] lg:h-[46px] mt-auto" width="33" height="31"
+            viewBox="0 0 33 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g>
+              <line x1="5.7105e-09" y1="14.7539" x2="30.6479" y2="14.7539" stroke="white" stroke-width="2" />
+              <path d="M16.2585 1.00146L30.5917 15.2188L16.2585 29.436" stroke="white" stroke-width="2" />
+            </g>
+          </svg>
+        </div>
+      </div>
+
+      <div class="relative flex cursor-pointer" (mouseover)="bgBlogTwo = true" (mouseout)="bgBlogTwo = false">
+        <div class="w-[10px] h-[165px] lg:h-[222px] bg-transparent transition-all duration-500 ease-linear"
+          [ngClass]="{ 'bg-blog' : bgBlogTwo}"></div>
+        <div data-aos="fade-right" data-aos-duration="500"
+          class="border-l border-white px-4 py-2 absolute lg:h-[222px] flex flex-col">
+          <div class="flex justify-between text-sm text-white">
+            <p class="lexendb">01.10.21</p>
+            <p class="lexend">Ver más</p>
+          </div>
+          <h3 class="text-[16px] lg:text-[36px] lexendli text-[#FFFFFF] pt-5 pb-3">La experiencia de usuario en los
+            chatbots
+          </h3>
+          <svg [ngClass]="{ 'arrow-rotate' : bgBlogTwo}"
+            class="transition duration-700 ease-in-out w-[31px] lg:w-[52px] lg:h-[46px] mt-auto" width="33" height="31"
+            viewBox="0 0 33 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g>
+              <line x1="5.7105e-09" y1="14.7539" x2="30.6479" y2="14.7539" stroke="white" stroke-width="2" />
+              <path d="M16.2585 1.00146L30.5917 15.2188L16.2585 29.436" stroke="white" stroke-width="2" />
+            </g>
+          </svg>
+        </div>
+      </div>
+
+      <div class="relative flex cursor-pointer" (mouseover)="bgBlogThree = true" (mouseout)="bgBlogThree = false">
+        <div class="w-[10px] h-[165px] lg:h-[222px] bg-transparent transition-all duration-500 ease-linear"
+          [ngClass]="{ 'bg-blog' : bgBlogThree}"></div>
+        <div data-aos="fade-right" data-aos-duration="500"
+          class="border-l border-white px-4 py-2 absolute lg:h-[222px] flex flex-col">
+          <div class="flex justify-between text-sm text-white">
+            <p class="lexendb">01.10.21</p>
+            <p class="lexend">Ver más</p>
+          </div>
+          <h3 class="text-[16px] lg:text-[36px] lexendli text-[#FFFFFF] pt-5 pb-3">La experiencia de usuario en los
+            chatbots
+          </h3>
+          <svg [ngClass]="{ 'arrow-rotate' : bgBlogThree}"
+            class="transition duration-700 ease-in-out w-[31px] lg:w-[52px] lg:h-[46px] mt-auto" width="33" height="31"
+            viewBox="0 0 33 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g>
+              <line x1="5.7105e-09" y1="14.7539" x2="30.6479" y2="14.7539" stroke="white" stroke-width="2" />
+              <path d="M16.2585 1.00146L30.5917 15.2188L16.2585 29.436" stroke="white" stroke-width="2" />
+            </g>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  <app-lets-talk (letsForm)="showFormEvent()"></app-lets-talk>
+
+  <app-footer></app-footer>
+
+  <div *ngIf="showForm">
+    <app-contact-dashboard (closeForm)="closeFormEvent()"></app-contact-dashboard>
+  </div>
+
+</div>

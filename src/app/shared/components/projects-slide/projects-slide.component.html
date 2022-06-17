@@ -1,0 +1,201 @@
+<!-- <div class="py-[7rem] flex space-x-4 relative overflow-hidden" #wrapper>
+
+            <div class="lg:w-[32%] cursor-pointer relative" style="flex-shrink: 0;" #itemC>
+                <div class=" h-[500px] bg-[#454C59] flex items-center justify-center">
+                    <img src="assets/img/proyect-laptop.png" alt="">
+                </div>
+                <div class="flex flex-wrap items-start py-2 justify-between">
+                    <div class="w-[85%] space-y-3">
+                        <p class="text-[28px] lg:text-[34.5px] lexendzetta text-[#626973]">Redeban</p>
+                        <p class="text-[13px] lg:text-[14.5px] lexendzetta text-[#626973] tracking-[0.005em]">Investigación
+                            y
+                            estrategía - Definición
+                            de producto - Sistema de diseño - Experiencia de usuario </p>
+                    </div>
+                    <img src="assets/img/short-arrow-right.png" alt="">
+                </div>
+            </div>
+</div> -->
+<ngu-carousel #myCarousel [inputs]="carouselConfig"
+  [dataSource]="[first, second, third, fourth, fifth, sixth, seventh]">
+  <div *nguCarouselDef="let item;" class="item py-4">
+    <div class="tile">
+      <ng-container *ngTemplateOutlet="item"></ng-container>
+    </div>
+  </div>
+  <ng-template #first>
+    <div data-aos="fade-down-left" data-aos-duration="700" class="cursor-pointer relative" (mouseover)="bgColor = false"
+      (mouseout)="bgColor = true" routerLink="/proyectos/primax">
+      <div
+        class="h-[380px] lg:h-[480px] flex items-center justify-center bg-[#454C59] transition-all duration-700 ease-in-out"
+        [ngClass]="{ 'bg-color' : !bgColor }">
+        <div class="h-[380px] lg:h-[455px] absolute top-0 flex justify-center items-center">
+          <img class="translate-x-0 transition duration-700 ease-in-out w-[85%] lg:w-auto"
+            src="assets/img/phone-right.png" alt="" [ngClass]="{ 'img-project' : !bgColor }">
+        </div>
+      </div>
+      <div
+        class="flex flex-wrap items-start p-2 justify-between absolute top-[24rem] lg:top-[30.5rem] xl:top-[30rem] 2xl:top-[31rem]">
+        <div class="w-[77%] lg:w-[80%] xl:w-[85%] space-y-3">
+          <p data-aos="fade-up" data-aos-duration="900"
+            class="text-[24px] lg:text-[30.5px] xl:text-[34.5px] lexendzettali text-white">Primax</p>
+          <p data-aos="fade-up" data-aos-duration="900"
+            class="text-[9.5px] lg:text-[13.5px] xl:text-[14.5px] lexendzetta text-white tracking-[0.005em]">
+            INVESTIGACIÓN Y CONSULTORÍA - DESCUBRIMIENTO DE PRODUCTO - DISEÑO DE PRODUCTO - DESIGN SYSTEM </p>
+        </div>
+        <img class="w-[31px] lg:w-auto translate-x-0 transition duration-700 ease-in-out"
+          src="assets/img/short-arrow-right.png" alt="" [ngClass]="{ 'arrow-rotate' : !bgColor }">
+      </div>
+    </div>
+  </ng-template>
+
+  <ng-template #second>
+    <div data-aos="fade-down-left" data-aos-duration="800" class="cursor-pointer relative"
+      (mouseover)="bgColorTwo = false" (mouseout)="bgColorTwo = true" routerLink="/proyectos/ripley">
+      <div
+        class="h-[380px] lg:h-[480px] flex items-center justify-center bg-[#454C59] transition-all duration-700 ease-in-out"
+        [ngClass]="{ 'bg-two' : !bgColorTwo }">
+        <img class="w-[350px] lg:translate-x-0 lg:transition lg:duration-700 ease-in-out absolute top-[100px]"
+          src="assets/img/Ripley-slider.png" alt="" [ngClass]="{ 'img-project' : !bgColorTwo }">
+      </div>
+      <div
+        class="flex flex-wrap items-start p-2 justify-between absolute top-[24rem] lg:top-[30.5rem] xl:top-[30rem] 2xl:top-[31rem]">
+        <div class="w-[77%] lg:w-[80%] xl:w-[85%] space-y-3">
+          <p data-aos="fade-up" data-aos-duration="900"
+            class="text-[24px] lg:text-[30.5px] xl:text-[34.5px] lexendzettali text-white">Ripley</p>
+          <p data-aos="fade-up" data-aos-duration="900"
+            class="text-[9.5px] lg:text-[13.5px] xl:text-[14.5px] lexendzetta text-white tracking-[0.005em]">
+            DESCUBRIMIENTO DE PRODUCTO - DISEÑO DE PRODUCTO - DESARROLLO DE SOFTWARE</p>
+        </div>
+        <img class="w-[31px] lg:w-auto translate-x-0 transition duration-700 ease-in-out"
+          src="assets/img/short-arrow-right.png" alt="" [ngClass]="{ 'arrow-rotate' : !bgColorTwo }">
+      </div>
+    </div>
+  </ng-template>
+
+  <ng-template #third>
+    <div data-aos="fade-down-left" data-aos-duration="900" class="cursor-pointer relative"
+      (mouseover)="bgColorThree = false" (mouseout)="bgColorThree = true" routerLink="/descripcion">
+      <div
+        class="h-[380px] lg:h-[480px] flex items-center justify-center bg-[#454C59] transition-all duration-700 ease-in-out"
+        [ngClass]="{ 'bg-three' : !bgColorThree }">
+        <div class="h-[380px] lg:h-[455px] absolute top-0 flex justify-center items-center">
+          <img class="translate-x-0 transition duration-700 ease-in-out" src="assets/img/proyect-laptop.png" alt=""
+            [ngClass]="{ 'img-project' : !bgColorThree }">
+        </div>
+      </div>
+      <div
+        class="flex flex-wrap items-start p-2 justify-between absolute top-[24rem] lg:top-[30.5rem] xl:top-[30rem] 2xl:top-[31rem]">
+        <div class="w-[77%] lg:w-[80%] xl:w-[85%] space-y-3">
+          <p data-aos="fade-up" data-aos-duration="900"
+            class="text-[24px] lg:text-[30.5px] xl:text-[34.5px] lexendzettali text-white">Redeban</p>
+          <p data-aos="fade-up" data-aos-duration="900"
+            class="text-[9.5px] lg:text-[13.5px] xl:text-[14.5px] lexendzetta text-white tracking-[0.005em]">
+            DESCUBRIMIENTO DE PRODUCTO - DISEÑO DE PRODUCTO - DESARROLLO DE SOFTWARE </p>
+        </div>
+        <img class="w-[31px] lg:w-auto translate-x-0 transition duration-700 ease-in-out"
+          src="assets/img/short-arrow-right.png" alt="" [ngClass]="{ 'arrow-rotate' : !bgColorThree }">
+      </div>
+    </div>
+  </ng-template>
+
+  <ng-template #fourth>
+    <div data-aos="fade-down-left" data-aos-duration="900" class="cursor-pointer relative"
+      (mouseover)="bgColorFourth = false" (mouseout)="bgColorFourth = true" routerLink="/proyectos/notifai">
+      <div
+        class="h-[380px] lg:h-[480px] flex items-center justify-center bg-[#454C59] transition-all duration-700 ease-in-out"
+        [ngClass]="{ 'bg-fourth' : !bgColorFourth }">
+        <div class="h-[380px] lg:h-[455px] absolute top-0 flex justify-center items-center">
+          <img class="translate-x-0 transition duration-700 ease-in-out" src="assets/img/laptop-estadis.png" alt=""
+            [ngClass]="{ 'img-project' : !bgColorFourth }">
+        </div>
+      </div>
+      <div
+        class="flex flex-wrap items-start p-2 justify-between absolute top-[24rem] lg:top-[30.5rem] xl:top-[30rem] 2xl:top-[31rem]">
+        <div class="w-[77%] lg:w-[80%] xl:w-[85%] space-y-3">
+          <p data-aos="fade-up" data-aos-duration="900"
+            class="text-[24px] lg:text-[30.5px] xl:text-[34.5px] lexendzettali text-white">Notifai</p>
+          <p data-aos="fade-up" data-aos-duration="900"
+            class="text-[9.5px] lg:text-[13.5px] xl:text-[14.5px] lexendzetta text-white tracking-[0.005em]">
+            DESCUBRIMIENTO DE PRODUCTO - DISEÑO DE PRODUCTO - DESARROLLO DE SOFTWARE </p>
+        </div>
+        <img class="w-[31px] lg:w-auto translate-x-0 transition duration-700 ease-in-out"
+          src="assets/img/short-arrow-right.png" alt="" [ngClass]="{ 'arrow-rotate' : !bgColorFourth }">
+      </div>
+    </div>
+  </ng-template>
+
+  <ng-template #fifth>
+    <div class="cursor-pointer relative" (mouseover)="bgColorFifth = false" (mouseout)="bgColorFifth = true"
+      >
+      <!-- routerLink="/proyectos/" -->
+      <div
+        class="h-[380px] lg:h-[480px] flex items-center justify-center bg-[#454C59] transition-all duration-700 ease-in-out"
+        [ngClass]="{ 'bg-fifth' : !bgColorFifth }">
+        <div class="h-[380px] lg:h-[455px] absolute top-0 flex justify-center items-center">
+          <img class="translate-x-0 transition duration-700 ease-in-out w-[85%] lg:w-auto"
+            src="assets/img/cmetropolitano-slider.png" alt="" [ngClass]="{ 'img-project' : !bgColorFifth }">
+        </div>
+      </div>
+      <div
+        class="flex flex-wrap items-start p-2 justify-between absolute top-[24rem] lg:top-[30.5rem] xl:top-[30rem] 2xl:top-[31rem]">
+        <div class="w-[77%] lg:w-[80%] xl:w-[85%] space-y-3">
+          <p data-aos="fade-up" data-aos-duration="900" class="text-[24px] lg:text-[30.5px] xl:text-[34.5px] lexendzettali text-white">En Proceso</p>
+          <p data-aos="fade-up" data-aos-duration="900" class="text-[9.5px] lg:text-[13.5px] xl:text-[14.5px] lexendzetta text-white tracking-[0.005em]">
+            CAJA METROPOLITANA DE LIMA - HOME BANKING </p>
+        </div>
+        <img class="w-[31px] lg:w-auto translate-x-0 transition duration-700 ease-in-out"
+          src="assets/img/short-arrow-right.png" alt="" [ngClass]="{ 'arrow-rotate' : !bgColorFifth }">
+
+      </div>
+    </div>
+  </ng-template>
+
+  <ng-template #sixth>
+    <div class="cursor-pointer relative" (mouseover)="bgColorSixth = false" (mouseout)="bgColorSixth = true"
+      >
+      <!-- routerLink="/proyectos/" -->
+      <div
+        class="h-[380px] lg:h-[480px] flex items-center justify-center bg-[#454C59] transition-all duration-700 ease-in-out"
+        [ngClass]="{ 'bg-sixth' : !bgColorSixth }">
+        <img class="w-[350px] translate-x-0 transition duration-700 ease-in-out absolute top-[100px]"
+          src="assets/img/CCusco-slider.png" alt="" [ngClass]="{ 'img-project' : !bgColorSixth }">
+      </div>
+      <div
+        class="flex flex-wrap items-start p-2 justify-between absolute top-[24rem] lg:top-[30.5rem] xl:top-[30rem] 2xl:top-[31rem]">
+        <div class="w-[77%] lg:w-[80%] xl:w-[85%] space-y-3">
+          <p data-aos="fade-up" data-aos-duration="900" class="text-[24px] lg:text-[30.5px] xl:text-[34.5px] lexendzettali text-white">En Proceso</p>
+          <p data-aos="fade-up" data-aos-duration="900" class="text-[9.5px] lg:text-[13.5px] xl:text-[14.5px] lexendzetta text-white tracking-[0.005em]">
+            CAJA CUSCO - UN NUEVO SISTEMA DE GESTION DE TARJETAS </p>
+        </div>
+        <img class="w-[31px] lg:w-auto translate-x-0 transition duration-700 ease-in-out"
+          src="assets/img/short-arrow-right.png" alt="" [ngClass]="{ 'arrow-rotate' : !bgColorSixth }">
+      </div>
+    </div>
+  </ng-template>
+
+  <ng-template #seventh>
+    <div class="cursor-pointer relative" (mouseover)="bgColorSeventh = false" (mouseout)="bgColorSeventh = true"
+      >
+      <!-- routerLink="/proyectos/" -->
+      <div
+        class="h-[380px] lg:h-[480px] flex items-center justify-center bg-[#454C59] transition-all duration-700 ease-in-out"
+        [ngClass]="{ 'bg-seventh' : !bgColorSeventh }">
+        <div class="h-[380px] lg:h-[455px] absolute top-0 flex justify-center items-center">
+          <img class="translate-x-0 transition duration-700 ease-in-out" src="assets/img/nubiz-sileder.png" alt=""
+            [ngClass]="{ 'img-project' : !bgColorSeventh }">
+        </div>
+      </div>
+      <div
+        class="flex flex-wrap items-start p-2 justify-between absolute top-[24rem] lg:top-[30.5rem] xl:top-[30rem] 2xl:top-[31rem]">
+        <div class="w-[77%] lg:w-[80%] xl:w-[85%] space-y-3">
+          <p data-aos="fade-up" data-aos-duration="900" class="text-[24px] lg:text-[30.5px] xl:text-[34.5px] lexendzettali text-white">En Proceso</p>
+          <p data-aos="fade-up" data-aos-duration="900" class="text-[9.5px] lg:text-[13.5px] xl:text-[14.5px] lexendzetta text-white tracking-[0.005em]">
+            NIUBIZ - SISTEMA DE GESTIÓN DE USUARIOS</p>
+        </div>
+        <img class="w-[31px] lg:w-auto translate-x-0 transition duration-700 ease-in-out"
+          src="assets/img/short-arrow-right.png" alt="" [ngClass]="{ 'arrow-rotate' : !bgColorSeventh }">
+      </div>
+    </div>
+  </ng-template>
+</ngu-carousel>

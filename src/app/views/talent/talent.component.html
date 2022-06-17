@@ -1,0 +1,126 @@
+<app-toolbar [colorWhite]="colorWhite"></app-toolbar>
+<div>
+  <section class="bg-image h-[310px] lg:h-[760px] text-white flex justify-center items-center py-8 2xl:py-[4rem]">
+
+    <div class="text-[36px] lg:text-[140px]  xl:text-[160px] 2xl:text-[180px] lexendzettaextrali leading-[125px] flex textleft">
+      <div data-aos="fade-down-right" data-aos-duration="500">T</div>
+      <div data-aos="fade-down-right" data-aos-duration="550">a</div>
+      <div data-aos="fade-down-right" data-aos-duration="600">l</div>
+      <div data-aos="fade-down-right" data-aos-duration="650">e</div>
+      <div data-aos="fade-down-right" data-aos-duration="700">n</div>
+      <div data-aos="fade-down-right" data-aos-duration="750">t</div>
+      <div data-aos="fade-down-right" data-aos-duration="800">o</div>
+    </div>
+  </section>
+
+  <section class="px-4 pt-[3rem] lg:pt-[5rem] pb-4 lg:pb-[10rem]">
+    <div class="grid grid-cols-1 lg:grid-cols-4 space-y-[3rem] lg:space-y-0">
+      <h3 data-aos="fade-right" class="lexendli text-[18px] lg:text-[21px] lg:leading-[53.3px]">Buscamos talento</h3>
+      <div class="col-span-3 lg:pb-[9rem] lg:pr-[5rem] 2xl:pr-[10rem]">
+        <h1 data-aos="fade-up"
+          class="text-[28px] lg:text-[36px] xl:text-[46px] leading-[35px] lg:leading-[57.5px] pb-8 lg:pb-[5rem] 2x:pb-[6rem]">
+          No solo ofrecemos trabajos; ofrecemos un lugar para crecer</h1>
+        <h3 data-aos="fade-up" class="lexendli text-[18px] lg:text-[21px] pb-[3rem]">Trabajar en Netguru significa flexibilidad, confianza
+          y elecciones significativas
+          En nuestro constante crecimiento y evolución, buscamos profesionales que se identifiquen con nuestra cultura y
+          nuestros valores, explore nuestras principales vacantes:</h3>
+      </div>
+
+      <div class="lg:col-start-2 col-span-3 pb-[4rem] lg:pb-[9rem] border-t border-black">
+        <div
+          class="h-[73px] lg:h-[189px] px-2 lg:px-[1.5rem] 2xl:px-[2.5rem] grid grid-cols-2 lg:grid-cols-3 border-b border-black items-center arrow transition duration-700 ease-in-out lg:hover:bg-[#F2F4F5]"
+          [ngClass]="{ 'font-color' : item.state}" *ngFor="let item of talentGroup" (mouseover)="item.state = true"
+          (mouseout)="item.state = false">
+          <h3 data-aos="fade-right" class="lexendli text-[14.5px] lg:text-[30px] 2xl:text-[36px]">{{item.text}}</h3>
+          <div data-aos="fade-right" class="lg:col-start-3 col-span-1 grid grid-cols-2 justify-items-end items-center">
+            <h3 class="lexendli text-[14.5px] lg:text-[30px] 2xl:text-[36px]">Remoto</h3>
+            <svg [ngClass]="{ 'arrow-rotate' : item.state}"
+              class="transition duration-700 ease-in-out w-[20px] lg:w-auto" width="33" height="31" viewBox="0 0 33 31"
+              fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g>
+                <line x1="5.7105e-09" y1="14.7539" x2="30.6479" y2="14.7539" stroke="black" stroke-width="2" />
+                <path d="M16.2585 1.00146L30.5917 15.2188L16.2585 29.436" stroke="black" stroke-width="2" />
+              </g>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="grid grid-cols-1 lg:grid-cols-4 items-center h-[1024px] bg-[#141C26] px-4 lg:px-0">
+    <img src="assets/img/tornillo.png" alt="">
+    <div
+      class="col-span-3 grid grid-cols-1 lg:grid-cols-3 pb-[4rem] lg:pt-[8rem] 2xl:pt-[10rem] lg:pb-[5rem] 2xl:pb-[7rem] text-white">
+      <h3 data-aos="fade-right" class="lexendli text-[18px] lg:text-[21px] pb-8 lg:pb-[5rem] 2xl:pb-[8rem] lg:col-span-2 ">Level Up</h3>
+      <div class="space-y-8 lg:space-y-[4rem] 2xl:space-y-[6rem] lg:col-span-2 ">
+        <h1 data-aos="fade-up" class="text-[28px] lg:text-[36px] xl:text-[46px] leading-[35px] lg:leading-[57.5px] ">¿Buscas una manera de
+          comenzar tu carrera? </h1>
+        <h4 data-aos="fade-up" class="lexendli text-[18px] xl:text-[21px] leading-[25.6px] lg:leading-[33.6px]">Ven y únete a nuestro
+          Programa Trainee y desarrolla tu potencial en 6 meses. ¡Será una experiencia increíble! No sólo ofrecemos
+          habilidades prácticas, sino también tutoría de personas realmente talentosas en un entorno increíble centrado
+          en las personas, mientras pone sus manos en proyectos reales junto con nuestro equipo calificado de Diseño y
+          Desarrollo de Productos en Zemoga.</h4>
+        <h4 data-aos="fade-up" class="lexendli text-[18px] xl:text-[21px] leading-[25.6px] lg:leading-[33.6px]">Envia
+          tu CV y datos personales:</h4>
+
+      </div>
+      <p data-aos="fade-up" class="lexendzettali text-[32px] pt-[2rem] col-span-2 hidden lg:block">talento@esedor.com</p>
+    </div>
+  </section>
+
+  <section class="grid grid-cols-1 lg:grid-cols-4 pt-[10rem] lg:pt-[20rem] pb-[5rem] lg:pb-[10rem] px-4">
+    <div class="col-span-4 flex flex-col-reverse lg:grid grid-cols-1 lg:grid-cols-3 xl:grid-cols-4 items-center">
+      <h1 data-aos="fade-right"
+        class="lg:col-span-1 xl:col-span-2 text-[28px] lg:text-[36px] xl:text-[46px] leading-[35px] lg:leading-[57.5px]">
+        ¿Tienes un proyecto
+        en mente?</h1>
+      <div class="col-span-2 h-[300px] lg:h-[500px] pb-[5rem] lg:pb-0 flex justify-between w-full lg:w-auto">
+        <img class="w-[77px] lg:w-auto mb-auto" src="assets/img/tube_long.png" alt="">
+        <img class="w-[70px] lg:w-auto mt-auto" src="assets/img/tube.png" alt="">
+        <img class="w-[129px] lg:w-auto my-auto pb-[5rem]" src="assets/img/circle_3d.png" alt="">
+
+      </div>
+    </div>
+
+    <div
+      class="lg:col-start-2 col-span-3 grid grid-cols-1 lg:grid-cols-3 border-t border-black mt-[2.5rem] lg:mt-[10rem]">
+      <h4 data-aos="fade-up"
+        class="col-span-2 lexendli text-[18px] xl:text-[21px] leading-[28.6px] lg:leading-[33.6px] py-[2.5rem] lg:py-[5rem]">
+        Buscamos negocios que compartan esta visión y que puedan colaborar con nuestra iniciativa. Permítenos ayudar a
+        personas jóvenes con trabajo convenientedigno que les permita desarrollar sus habilidades y generargenera un
+        impacto en su sociedad, ponte en contacto con nosotros y vuélvete partevuelvetese parte de este programa.</h4>
+      <!-- <button
+        class="col-span-2 lexendli text-[21px] flex items-center justify-start lg:justify-center talent-shadow w-full lg:w-[235px] h-[65px] px-5 lg:p-4 rounded-[20px]">
+        <svg class="mr-12 lg:mr-4 w-[24px] lg:w-auto" width="33" height="31" viewBox="0 0 33 31" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <line x1="5.7105e-09" y1="14.7539" x2="30.6479" y2="14.7539" stroke="black" stroke-width="2" />
+          <path d="M16.2585 1.00146L30.5917 15.2188L16.2585 29.436" stroke="black" stroke-width="2" />
+        </svg>
+        Quiero Ayudar
+      </button> -->
+      <div
+        class="col-span-2 py-2 px-4 lg:p-0 bg-[#5682FF] lg:bg-transparent fixed bottom-0 ml-[-1rem] lg:ml-0 w-full lg:w-auto lg:relative z-50">
+        <button data-aos="fade-right" matRipple (mouseover)="btnStyle = true" (mouseout)="btnStyle = false" (click)="showFormEvent()"
+          [ngClass]="{ 'arrow-btn' : btnStyle}"
+          class="lexendli cursor-pointer bg-white lg:hover:bg-[#5682FF] text-[15.5px] text-[#141C26] lg:hover:text-white flex items-center justify-start lg:justify-center shadow w-full lg:w-[236px] h-[45px] lg:h-[65px] 2xl:h-[82px] px-6 lg:p-4 rounded-[50px]">
+          <svg class="transition duration-700 ease-in-out mr-16 lg:mr-4 w-[24px] lg:w-[32px]" width="33" height="31"
+            viewBox="0 0 33 31" [ngClass]="{ 'arrow-rotate' : btnStyle }" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <g class="text-white">
+              <line x1="5.7105e-09" y1="14.7539" x2="30.6479" y2="14.7539" stroke="black" stroke-width="2" />
+              <path d="M16.2585 1.00146L30.5917 15.2188L16.2585 29.436" stroke="black" stroke-width="2" />
+            </g>
+          </svg>
+          Quiero Ayudar
+        </button>
+      </div>
+    </div>
+  </section>
+</div>
+
+<div data-aos="fade-up" *ngIf="showForm">
+  <app-contact-dashboard (closeForm)="closeFormEvent()"></app-contact-dashboard>
+</div>
+
+<app-footer data-aos="fade-up" ></app-footer>

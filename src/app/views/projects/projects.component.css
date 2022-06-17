@@ -1,0 +1,109 @@
+section {
+  overflow-x: hidden;
+}
+
+.section{
+  mix-blend-mode: multiply;
+  opacity: 0.85;
+}
+
+.main-header {
+  position: fixed;
+  top: 4vh;
+  left: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  z-index: 10;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  -webkit-transition: all .2s;
+  -o-transition: all .2s;
+  transition: all .2s;
+}
+
+.main-menu__logo {
+  width: 8rem;
+  margin: 0;
+  top: 6.8vh;
+  left: 3vw;
+}
+
+::ng-deep .mat-form-field-appearance-outline .mat-form-field-outline {
+  background-color: #222DE9;
+  border-radius: 5px;
+}
+
+input, select, textarea{
+  color: #ffffff;
+}
+
+textarea:focus, input:focus {
+  color: #ffffff;
+}
+
+::placeholder {
+  color: #efefef;
+}
+
+.backgroung-gradient{
+  background: linear-gradient(3.37deg, #000000 2.68%, #454C59 154.23%);
+}
+
+
+#parallax{
+  width: 100%;
+  height: 110vh;
+  padding:7rem 0;
+  background:url('https://firma.esedor.com/portafolio1.jpeg') center center / cover no-repeat fixed;
+}
+
+#parallax2{
+  width: 100%;
+  height: 110vh;
+  padding:7rem 0;
+  background:url('https://firma.esedor.com/portafolio2.jpeg') center center / cover no-repeat fixed;
+}
+
+#parallax3{
+
+  width: 100%;
+  height: 100%;
+  padding:7rem 0;
+  background:url('https://firma.esedor.com/portafolio3.jpeg') center center / cover no-repeat fixed;
+  background-size: 1171px 638px;
+
+}
+
+.shadowlap{
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.indent {
+  text-indent: 0rem;
+}
+
+
+
+.bg-hover, .bg-hover2 {
+  height: 200px;
+  background: #0166FF;
+  transition: all .4s ease-in;
+}
+
+.probando:hover {
+  height: 200px;
+  background: #0166FF;
+}
+
+@media screen and (min-width: 1024px) {
+  .indent {
+    text-indent: 15rem;
+  }
+}
+
+

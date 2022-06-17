@@ -1,0 +1,79 @@
+:host ::ng-deep.mat-horizontal-content-container {
+    padding: 0 0 24px 0;
+}
+
+:host ::ng-deep.mat-horizontal-stepper-header-container {
+    width: 90%;
+    margin-inline: auto;
+}
+
+.shadow {
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+@media screen and (min-width: 1024px) {
+    :host ::ng-deep.mat-horizontal-stepper-header-container {
+        width: 15%;
+    }
+
+    .start-col {
+        grid-column-start: 2;
+    }
+}
+
+:host ::ng-deep.mat-step-header .mat-step-icon-selected {
+    background-color: #000000 !important;
+    color: #FFFFFF !important;
+}
+
+::ng-deep.mat-step-header .mat-step-icon {
+    background-color: #FFFFFF;
+    color: #000000
+}
+
+::ng-deep.mat-step-header:hover:not([aria-disabled]) {
+    background-color: transparent;
+}
+
+::ng-deep.mat-checkbox-frame {
+    background-color: #FFFFFF !important;
+}
+
+::ng-deep.mat-checkbox-checked.mat-accent .mat-checkbox-background {
+    background-color: #FFFFFF !important;
+}
+
+::ng-deep.mat-checkbox-checkmark-path {
+    stroke: #000000 !important;
+}
+
+.btn-checked {
+    color: #FFFFFF;
+    background-color: #141C26;
+}
+
+.form-input ::ng-deep.mat-form-field-appearance-fill .mat-form-field-flex {
+    background-color: #FFFFFF;
+    height: 65px;
+}
+
+::ng-deep textarea.mat-input-element {
+    height: 215px;
+    resize: none;
+}
+
+::ng-deep.mat-form-field-appearance-fill .mat-form-field-flex {
+    background-color: #FFFFFF;
+}
+
+::ng-deep.mat-form-field-ripple {
+    background-color: transparent;
+}
+
+/* ::ng-deep.mat-stepper-horizontal-line {
+    border-top-color: #FFFFFF !important;
+} */
+
+::ng-deep.mat-horizontal-stepper-header::before, ::ng-deep.mat-horizontal-stepper-header::after, ::ng-deep.mat-stepper-horizontal-line {
+    border-top-color: #FFFFFF !important;
+}

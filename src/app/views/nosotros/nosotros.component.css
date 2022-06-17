@@ -1,0 +1,52 @@
+.bg-image {
+    background-image: url('../../../assets/img/nosotros-esedor.png' );
+    background-repeat: no-repeat;
+}
+
+.bg-image2 {
+    background-image: url('../../../assets/img/3d_us.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #000000;
+}
+
+.bg-image3 {
+    background-image: url('../../../assets/img/bg-image3.png');
+    background-repeat: no-repeat;
+}
+
+.us-shadow {
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+h1 {
+    font-family: LexendZettaExtraLight;
+    /* font-size: 46px;
+    line-height: 55px; */
+}
+
+@media screen and (min-width: 1024px) {
+    .bg-blue {
+        background: #5682FF;
+        transition: all .4s ease-in-out;
+    }
+
+    .style-hover {
+        border-color: #000000;
+        width: 135px;
+        transition: all .4s ease-in-out;
+    }
+
+    .arrow-rotate{
+        transform: rotate(-45deg);
+        transition: transform .6s cubic-bezier(.4,0,0,1);
+    }
+
+    .arrow:hover g line {
+        stroke: #FFFFFF;
+    }
+
+    .arrow:hover g path {
+        stroke: #FFFFFF;
+    }
+}

@@ -1,0 +1,74 @@
+<section class="lg:py-[4rem] px-4 lg:px-[5rem] xl:px-[6rem] 2xl:px-[7rem]">
+    <div class="flex flex-col-reverse lg:flex-row items-center lg:justify-between h-[750px] lg:mt-[4.5rem]">
+        <div class="w-full lg:w-[41%]">
+
+            <div data-aos="fade-up" data-aos-duration="500" class="hidden lg:flex items-center space-x-[8rem]">
+                <div>
+                    <h4 class="text-sm lexendb">FECHA</h4>
+                    <p class="text-base lexend">{{date}}</p>
+                </div>
+                <div>
+                    <h4 class="text-sm lexendb">INDUSTRIA</h4>
+                    <p class="text-base lexend uppercase">{{industry}}</p>
+                </div>
+            </div>
+
+            <h4 data-aos="fade-up" data-aos-duration="500" class="text-sm lexendb mt-[4.5rem] lg:mt-[6.5rem]">CLIENTE</h4>
+            <p data-aos="fade-up" data-aos-duration="500"
+                class="text-[#141C26] lg:text-black lg:leading-[7.5rem] text-[36px] lg:text-[76px] xl:text-[86px] 2xl:text-[96px] lexendzetta -ml-2 lg:ml-[-1rem]">
+                {{client}}
+            </p>
+            <div class="block lg:hidden mt-8">
+                <h4 class="text-sm lexendb">FECHA</h4>
+                <p class="text-base lexend">{{date}}</p>
+            </div>
+            <div data-aos="fade-up" data-aos-duration="500"
+                class="flex justify-between mt-[4.5rem] lg:pt-[6.5rem] space-x-4 lg:space-x-[8rem]">
+                <div>
+                    <h4 class="text-sm lexendb mb-6">SERVICIOS</h4>
+                    <p *ngFor="let item of serviceList" class="w-[20rem] text-sm lg:text-base lexend">
+                        {{item}}
+                    </p>
+                </div>
+                <div>
+                    <h4 class="ml-[-4rem] text-sm lexendb mb-6">ENTREGABLES</h4>
+                    <p *ngFor="let item of definitionsList" class="ml-[-4rem] w-[20rem] text-sm lg:text-base lexend">
+                        {{item}}
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="{{styles}}" data-aos="flip-right" data-aos-duration="500">
+            <img class="mx-auto" src="{{image}}">
+            <!--w-[200px] lg:w-[400px]  mt-[6rem]  -->
+        </div>
+    </div>
+    <div class="lg:grid lg:grid-cols-2 gap-[5.5rem] lg:gap-[2rem] xl:gap-[8rem] mt-[4rem] space-y-[3rem] lg:space-y-0">
+        <div data-aos="fade-up" data-aos-duration="500" class="lexend">
+            <p class="text-sm lg:text-[16px] pb-8 font-bold lg:font-normal">{{client}} y el reto</p>
+            <h3 class="text-[21px] lg:text-[36px]">{{paragraphOne}}</h3>
+        </div>
+        <div data-aos="fade-up" data-aos-duration="500" class="lexend">
+            <p class="text-sm lg:text-[16px] pb-8 font-bold lg:font-normal">El trabajo de Esedor</p>
+            <h3 class="text-[21px] lg:text-[36px]">{{paragraphTwo}}</h3>
+        </div>
+    </div>
+    <div class="lg:grid lg:grid-cols-2 gap-[5.5rem] lg:gap-[2rem] xl:gap-[8rem] py-[2rem] lg:py-0 lg:mt-[8rem]">
+        <!-- flex flex-wrap justify-between w-full py-[4rem] lg:py-0 lg:mt-[8rem] space-y-[2rem] lg:space-y-0 -->
+        <div class="w-[175px] lg:w-[400px] xl:w-[430px] 2xl:w-[490px] ml-[-1.3rem] {{display}}" data-aos="zoom-in-up"
+            data-aos-duration="500">
+            <img src="assets/img/Redeban-logo.png" alt="logo-redeban">
+        </div>
+        <div
+            class="col-end-5 lexendb text-[48px] lg:text-[90px] 2xl:text-[128px] py-[2rem] lg:py-0 leading-[60px] lg:leading-[140px] 2xl:leading-[160px]">
+            <!-- text-[48px] lg:text-[80px] xl:text-[100px] 2xl:text-[128px] leading-[60px] lg:leading-[120px] xl:leading-[140px] 2xl:leading-[160px] 2xl:w-[800px] lexendb lg:ml-auto lg:w-auto 2xl:w-[820px]-->
+            <!-- <h2 data-aos="fade-right" data-aos-duration="1000">Data Driven</h2>
+          <h2 data-aos="fade-right" data-aos-duration="1100"> y producto</h2>
+          <h2 data-aos="fade-right" data-aos-duration="1200"> digital</h2> -->
+            <h2 data-aos="fade-right" [attr.data-aos-duration]="item.aos" *ngFor="let item of animatedTitle">
+                {{item.label}}
+            </h2>
+        </div>
+    </div>
+</section>

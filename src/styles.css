@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Font*/
+
+@font-face {
+  font-family: LexendZettaExtraLight;
+  src: url("assets/font/LexendZetta-ExtraLight.ttf");
+}
+
+@font-face {
+  font-family: LexendZettaLight;
+  src: url("assets/font/LexendZetta-Light.ttf");
+}
+
+@font-face {
+  font-family: LexendZetta;
+  src: url("assets/font/LexendZetta.ttf");
+}
+
+@font-face {
+  font-family: LexendZettaMedium;
+  src: url("assets/font/LexendZetta-Medium.ttf");
+}
+
+@font-face {
+  font-family: LexendZettaBold;
+  src: url("assets/font/LexendZetta-Bold.ttf");
+}
+
+@font-face {
+  font-family: LexendLight;
+  src: url("assets/font/Lexend-Light.ttf");
+}
+
+@font-face {
+  font-family: Lexend;
+  src: url("assets/font/Lexend.ttf");
+}
+
+@font-face {
+  font-family: LexendBold;
+  src: url("assets/font/Lexend-Bold.ttf");
+}
+
+.lexendli {
+  font-family: LexendLight;
+}
+
+.lexend {
+  font-family: Lexend;
+}
+
+.lexendb {
+  font-family: LexendBold;
+}
+
+.lexendzettaextrali {
+  font-family: LexendZettaExtraLight;
+}
+
+.lexendzettali {
+  font-family: LexendZettaLight;
+}
+
+.lexendzetta {
+  font-family: LexendZetta;
+}
+
+.lexendzettabd {
+  font-family: LexendZettaBold;
+}
+
+
+html, body { width: 100%; height: 100%; padding: 0; margin: 0;}
+body { 
+  margin: 0;
+  padding: 0;
+  font-family: Lexend;
+  overflow-x: hidden;
+  display: block;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* ::-webkit-scrollbar {display: none;} */

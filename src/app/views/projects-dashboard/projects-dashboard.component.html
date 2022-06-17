@@ -1,0 +1,89 @@
+<app-toolbar [colorWhite]="colorWhite"></app-toolbar>
+<section class="bg-image h-[310px] lg:h-[760px] text-white flex justify-center items-center py-8 2xl:py-[4rem]">
+
+
+  <div class="text-[36px] lg:text-[140px]  xl:text-[160px] 2xl:text-[180px] lexendzettaextrali leading-[125px] flex textleft">
+    <div data-aos="fade-down-right" data-aos-duration="500">P</div>
+    <div data-aos="fade-down-right" data-aos-duration="550">r</div>
+    <div data-aos="fade-down-right" data-aos-duration="600">o</div>
+    <div data-aos="fade-down-right" data-aos-duration="650">y</div>
+    <div data-aos="fade-down-right" data-aos-duration="700">e</div>
+    <div data-aos="fade-down-right" data-aos-duration="750">c</div>
+    <div data-aos="fade-down-right" data-aos-duration="800">t</div>
+    <div data-aos="fade-down-right" data-aos-duration="850">o</div>
+    <div data-aos="fade-down-right" data-aos-duration="900">s</div>
+  </div>
+</section>
+
+<mat-drawer-container class="w-full mt-12 min-h-full px-4 lg:px-24 bg-white">
+  <mat-drawer mode="side" class="lg:w-[250px] flex justify-end hidden lg:block" opened>
+    <div class="border-l border-black">
+      <mat-list role="list" class="mt-20 ml-6 lexend text-[0.875rem] sidebar">
+        <mat-list-item data-aos="fade-right" *ngFor="let list of listGroup" class="cursor-pointer" role="listitem"
+          (click)="filterEmpresas(list.types); list.state = true" [ngClass]="{ 'item-focus' : list.state }">
+          <mat-icon class="opacity-0" [ngClass]="{ 'icon-hover' : list.state}">arrow_right</mat-icon>
+          {{list.name}}
+        </mat-list-item>
+      </mat-list>
+    </div>
+  </mat-drawer>
+  <mat-drawer-content class="flex bg-white justify-center flex-wrap content-center">
+    <div class="overflow-hidden lg:pt-[6rem]">
+      <p data-aos="fade-up" style="line-height: 17px; letter-spacing: 0.0015em" class="text-sm lexendb pb-5">Proyectos
+        recientes</p>
+      <h3 data-aos="fade-up" class="lexend text-[14.5px] lg:text-[2.188rem] leading-[18.13px] lg:leading-[53.3px]">
+        Proyectos Destacados
+        Cada proyecto es una oportunidad de probar algo nuevo, mirar algo con una nueva perspectiva o hacer algo por
+        primera vez.
+      </h3>
+      <!-- <mat-tab-group>  [ngClass]="{ 'selected'}"
+        <mat-tab label="First"> Content 1 </mat-tab>
+        <mat-tab label="Second"> Content 2 </mat-tab>
+        <mat-tab label="Third"> Content 3 </mat-tab>
+      </mat-tab-group> -->
+      <div class="my-[2rem] flex overflow-x-auto border-b border-black space-x-4 btn-list lg:hidden">
+        <button (click)="filterEmpresas('todos')">Todos</button>
+        <button (click)="filterEmpresas('banca')">Banca</button>
+        <button (click)="filterEmpresas('educación')">Educación</button>
+        <button (click)="filterEmpresas('salud')">Salud</button>
+        <button (click)="filterEmpresas('automotriz')">Automotriz</button>
+        <button (click)="filterEmpresas('ecomerce')">Ecommerce</button>
+      </div>
+
+      <section class="grid lg:grid-cols-2 gap-10 my-[3rem] lg:my-16">
+        <div *ngFor="let emp of filtrado">
+          <div data-aos="fade-down-left" class="cursor-pointer relative h-[650px]" (click)="redirectInternas(emp.ruta)"
+            (mouseover)="emp.state = false" (mouseout)="emp.state = true">
+            <!-- (mouseout)=""  (mouseover)="probando(emp)"  -->
+            <div class="h-[480px] flex items-center justify-center bg-[#454C59] transition-all duration-700 ease-in-out"
+              [ngClass]="{'bg-color':!emp.state}">
+              <!-- [ngClass]="{ '{{emp.background}}' : emp.state }" -->
+              <div class="h-[455px] absolute top-[10px] flex justify-center items-center">
+                <img class="translate-x-0 transition duration-700 ease-in-out" src="{{emp.img}}" alt=""
+                  [ngClass]="{ 'img-project' : !emp.state}" style="max-width: 350px;">
+              </div>
+            </div>
+            <div class="flex flex-wrap items-start p-2 justify-between absolute top-[30rem] w-full">
+              <div class="w-[85%] space-y-3 text-black transition-all duration-700 ease-in-out"
+                [ngClass]="{ 'text-color' : !emp.state }">
+                <p class="text-[24px] lg:text-[30.5px] xl:text-[34.5px] lexendzetta">{{emp.name}}</p>
+                <p class="text-[9.5px] lg:text-[13.5px] xl:text-[14.5px] lexendzetta tracking-[0.005em]">
+                  {{emp.descripcion}}</p>
+              </div>
+              <img class="translate-x-0 transition duration-700 ease-in-out" src="assets/img/short-arrow-right.png"
+                alt="" [ngClass]="{ 'arrow-rotate' : !emp.state }">
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </mat-drawer-content>
+</mat-drawer-container>
+
+<app-lets-talk (letsForm)="showFormEvent()"></app-lets-talk>
+
+<div *ngIf="showForm">
+  <app-contact-dashboard (closeForm)="closeFormEvent()"></app-contact-dashboard>
+</div>
+
+<app-footer></app-footer>
