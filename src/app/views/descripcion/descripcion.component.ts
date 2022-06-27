@@ -25,8 +25,8 @@ export class DescripcionComponent implements OnInit {
   client: string = 'Redeban';
   image: string = 'assets/img/laptop-estadisticas.png';
   styles: string = 'lg:relative lg:bottom-[5rem] lg:left-[4rem] 2xl:bottom-0 2xl:left-0 2xl:w-[55%]'
-  paragraphOne: string = 'Redeban empresa de origen Colombiano, tenía como objetivo crear nuevos métodos de pago de cara a los comercios que usan su sistema de pagos digitales.';
-  paragraphTwo: string = 'Definir la nueva generación de productos digitales y crear su primera tienda virtual b2b de productos y servicios de marketing que ofrece primax';
+  paragraphOne: string = 'Redeban es un banco de origen Colombiano, tenía como objetivo crear nuevos métodos de pago para los comercios y tarjetahabientes, además necesitaban identificar las necesidades del usuario.';
+  paragraphTwo: string = 'Iniciamos con sesiones de entendimiento e ideación con el P.O y líderes del proyecto, una las principales tareas fue definir realmente los requerimiento de usuario y sistema, para llevar a cabo esta tarea definimos las historias de usuario, diseñamos un prototipo UX/UI y terminamos implementando la solución en Amazon Cloud.';
 
   serviceList: Array<String> = [
     'DISEÑO DE PRODUCTO',

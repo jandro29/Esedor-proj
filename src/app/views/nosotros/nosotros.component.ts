@@ -34,7 +34,7 @@ export class NosotrosComponent implements OnInit {
     {step: '01', title: 'Kick off', text: 'Entendemos la necesidad de elaborar una idea para un producto nuevo tener la oportunidad de evaluar la calidad de uno ya existente, en cualquiera de los casos estamos aquí para ayudarlo.', state: false},
     {step: '02', title: 'Ideación y Evaluación', text: 'Brindale a tu idea de producto una enfoque real. Planifique y evalúe los requerimientos del sistema y del usuario más esenciales de su producto para lograr sus objetivos comerciales y descartar posibles errores.', state: false},
     {step: '03', title: 'Proceso de diseño', text: 'Cree experiencias de usuario cautivadoras para sus productos digitales. Resuelva problemas reales y mejore sus métricas comerciales vitales a través de muy buenas interfaces estéticas.', state: false},
-    {step: '04', title: 'Proceso de desarrollo', text: 'Cree aplicaciones estéticas, ágiles y seguras, adaptadas con precisión a sus objetivos de usuario y negocio.', state: false}
+    {step: '04', title: 'Proceso de desarrollo', text: 'Ejecuta aplicaciones para móvil y ordenador que sean estéticas, ágiles y seguras, adaptadas con precisión a sus objetivos de usuario y negocio.', state: false}
   ]
 
   principles = [
