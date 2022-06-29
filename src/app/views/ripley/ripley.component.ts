@@ -27,7 +27,7 @@ export class RipleyComponent implements OnInit {
   display: string = 'hidden'
   image: string = 'assets/img/Ripley-FP.png';
   paragraphOne: string = 'Ripley es una empresa de retail en Perú y Chile, su objetivo era migrar su sistema de puntos a la nube, teniendo como primer objetivo rediseñar el producto actual';
-  paragraphTwo: string = 'Realizamos una auditoría UX que le permitiera tener a Ripley los puntos a mejorar del sistema actual e hicimos un diseño UX/UI alineado a los requerimientos del sistema.';
+  paragraphTwo: string = 'Realizamos sesiones de trabajo con los equipos técnicos para entender un sistema que fue creado hace más de 8 años, listando los requerimientos del sistema, una vez identificado a los usuarios realizamos entrevistas de usuario y recorridos cognitivos. Identificamos los requerimientos del usuario, creamos un nuevo prototipo y utilizamos su sistema de diseño llamado “Morita” para el diseño UI y Frontend. Migramos a la nube todo el sistema con ayuda del equipo de arquitectos y backend. ';
 
   serviceList: Array<String> = [
     'DESCUBRIMIENTO DE PRODUCTO',
@@ -47,7 +47,7 @@ export class RipleyComponent implements OnInit {
     {aos: 1000, label: '& Migración'},
   ]
 
-  firstText: string = 'Auditoría de Experiencia de Usuario';
+  firstText: string = 'Auditoría UX';
   secondText: string = 'Realizamos una revisión exhaustiva del sistema actual, haciendo uso de la heurística detectamos una serie de oportunidades que le permitieran mejorar en el rediseño del nuevo sistema de puntos de Ripley.';
   thirdText: string = ' “During these uncertain times, many of us find ourselves in introspection mode, with new ideas and resolving to do better. We wish we could help everyone and fix everything. “ ';
   // fourthText: string = 'Cómo empatizar con ellos';

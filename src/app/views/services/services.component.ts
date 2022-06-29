@@ -36,7 +36,7 @@ export class ServicesComponent implements OnInit {
     } else if (a.index == 1 ) {
       this.bgTab2 = true;
       this.bgTab = false;
-    } 
+    }
     console.log(a.index)
   }
 
@@ -67,21 +67,21 @@ export class ServicesComponent implements OnInit {
   ]
 
   firstTab = [
-    {title: 'Comportamiento de usuarios', text: 'Extrae información detallada sobre las necesidades de sus clientes.', img: 'assets/img/users.png'},
+    {title: 'Comportamiento de usuarios', text: 'Sustrae información detallada sobre los intereses y necesidades de sus clientes analizando sus comportamientos.', img: 'assets/img/users.png'},
     {title: 'Sprint de diseño de producto', text: 'Un taller de cinco días para responder preguntas comerciales cruciales, planificar las características esenciales de su producto y reducir el riesgo de lanzar un producto al mercado.', img: 'assets/img/products.png'},
-    {title: 'Creación rápida de prototipos', text: 'Extrae información detallada sobre las necesidades de sus clientes.', img: 'assets/img/prototypes.png'},
-    {title: 'Sesión de alcance', text: 'Sesión de alcance', img: 'assets/img/scope.png'},
-    {title: 'Diseño visual', text: 'Extrae información detallada sobre las necesidades de sus clientes.', img: 'assets/img/design.png'},
-    {title: 'Arquitectura de informacion', text: 'Extrae información detallada sobre las necesidades de sus clientes.', img: 'assets/img/architecture.png'},
-    {title: 'Usabilidad', text: 'Extrae información detallada sobre las necesidades de sus clientes.', img: 'assets/img/usability.png'},
-    {title: 'Accesibilidad', text: 'Extrae información detallada sobre las necesidades de sus clientes.', img: 'assets/img/accessibility.png'}
+    {title: 'Creación rápida de prototipos', text: 'Valida tus ideas con prototipos que te permitan explorar y validar rápidamente tus objetivos de producto. para reducir el riesgo de fallas.', img: 'assets/img/prototypes.png'},
+    {title: 'Sesión de alcance', text: 'Destina a dar forma a tu idea de negocio, respondiendo dudas sobre planificación de proyectos, estimación de tiempos y presupuestos.', img: 'assets/img/scope.png'},
+    {title: 'Diseño visual', text: 'Aporta al usuario un valor diferencial a través de un producto bien diseñado y estético', img: 'assets/img/design.png'},
+    {title: 'Arquitectura de informacion', text: 'Cree una navegación intuitiva basada en los modelos mentales de tu usuario con una arquitectura de información eficaz.', img: 'assets/img/architecture.png'},
+    {title: 'Usabilidad y accesibilidad', text: ' Brinda una experiencia amigable que le permita tener el control a tu cliente dentro del producto digital', img: 'assets/img/usability.png'},
+
   ]
 
   secondTab = [
-    {title: 'Diseño de sistemas web y móviles', text: 'Crea un UX perfecto para diferentes plataformas y dispositivos que se adapten a los requerimientos del sistema', img: 'assets/img/users.png'},
+    {title: 'Diseño de sistemas web y móviles', text: 'Crea un UX perfecto para diferentes plataformas y dispositivos que se adapten a los requerimientos del sistema.', img: 'assets/img/users.png'},
     {title: 'Entiende a tus usuarios', text: 'Asegúrese de que las soluciones se centran en el cliente con la investigación y el análisis del comportamiento de los usuarios.', img: 'assets/img/products.png'},
     {title: 'Valida tus ideas', text: 'Crea prototipos y valida rápidamente diferentes opciones para reducir el riesgo de fallas.', img: 'assets/img/prototypes.png'},
-    {title: 'Mejora la experiencia del cliente', text: 'Utilice el mapa de recorrido del cliente para entender problemas y patrones que le otorguen nuevas oportunidades de mejora', img: 'assets/img/scope.png'},
+    {title: 'Mejora la experiencia del cliente', text: 'Utilice el mapa de recorrido del cliente para entender problemas y patrones que le otorguen nuevas oportunidades de mejora.', img: 'assets/img/scope.png'},
     {title: 'Construye productos responsivos', text: 'Define experiencias adaptables y táctiles para móviles construidas en torno a las necesidades de los usuarios.', img: 'assets/img/design.png'},
     {title: 'Vende creando contenido relevante', text: 'Proporcione a los usuarios la información correcta en el momento adecuado y en el lugar adecuado gracias a la redacción UX inteligente.', img: 'assets/img/architecture.png'},
     {title: 'Organiza la estructura del sitio web', text: 'Cree una navegación intuitiva basada en los modelos mentales de tu usuario con una arquitectura de información eficaz.', img: 'assets/img/usability.png'},
@@ -95,7 +95,7 @@ export class ServicesComponent implements OnInit {
     {title: 'Node.js', text: 'Implementa aplicaciones web de alto rentabilidad basadas en Javascript, un lenguaje para el desarrollo completo.', img: 'assets/img/scope.png', style: ''},
     {title: 'Java', text: 'El diseño de aplicaciones web rápidas y escalables requiere una combinación de la arquitectura de desarrollo adecuada y un equipo experto.', img: 'assets/img/design.png', style: 'lg:col-start-2'},
     {title: 'React Native', text: 'Escriba el código una vez e impleméntelo tanto en Android como en iOS para llegar a toda su audiencia al mismo tiempo.', img: 'assets/img/architecture.png', style: ''},
-    {title: 'Kotlin', text: 'lenguaje de programación de tipado estático que corre sobre la máquina virtual de Java y que también puede ser compilado a código fuente de JavaScript.', img: 'assets/img/usability.png', style: ''},
+    {title: 'iOS', text: 'Evoluciona aplicaciones iOS de alta calidad con tecnología de punta y acelere los resultados comerciales con el desarrollo de aplicaciones para iOS.', img: 'assets/img/usability.png', style: ''},
     {title: 'Kotlin', text: 'Innovación de aplicaciones móviles atractivas y escalables con la máxima rentabilidad utilizando los lenguajes de programación Java y Kotlin.', img: 'assets/img/accessibility.png', style: 'lg:col-start-2'},
     {title: 'Flutter', text: 'Traslada su idea a la siguiente etapa e incremente la comercialización de su producto con el desarrollo de Flutter.', img: 'assets/img/prototypes.png', style: ''},
   ]
@@ -108,7 +108,7 @@ export class ServicesComponent implements OnInit {
     {title: 'Sesiones de equipo', text: 'Es posible que desee incluir personas de otras disciplinas, como gerentes de productos, líderes en la organización, investigadores y estrategas de contenido.', img: 'assets/img/design.png'},
     {title: 'Reduce el mantenimiento', text: 'Los sistemas de diseño no solo ayudan a prevenir errores, sino que también muestran qué hacer en caso de que se produzca un error, ya sea menor o colosal.', img: 'assets/img/architecture.png'},
     {title: 'Ahorre tiempo y dinero', text: 'Los equipos pueden reutilizar de manera efectiva las piezas existentes en lugar de crearlas desde cero.', img: 'assets/img/usability.png'},
-    {title: 'Reducir la carga en el equipo', text: 'Tener una documentación extensa, además de componentes y código reutilizables en el sistema de diseño, permite a los diseñadores y desarrolladores concentrarse en lo que agrega valor', img: 'assets/img/accessibility.png'},
+    {title: 'Reducir la carga en el equipo', text: 'Tener una documentación extensa, además de componentes y código reutilizables en el sistema de diseño, permite a los diseñadores y desarrolladores concentrarse en lo que agrega valor.', img: 'assets/img/accessibility.png'},
   ]
 
   fifthTab = [
@@ -126,11 +126,7 @@ export class ServicesComponent implements OnInit {
     {title: 'Equipos ágiles', text: 'Haz que tus proyectos se ejecuten bajo un manifiesto simple y veloz.', img: 'assets/img/products.png'},
     {title: 'Creación rápida de prototipos', text: 'Extrae información detallada sobre las necesidades de sus clientes.', img: 'assets/img/prototypes.png'},
     {title: 'Talleres de Co-creación', text: 'Un taller destinado a dar forma a tu idea de negocio, respondiendo dudas sobre planificación de proyectos, estimación de tiempos y presupuestos.', img: 'assets/img/scope.png'},
-    {title: 'Conferencias', text: 'Extrae información detallada sobre las necesidades de sus clientes.', img: 'assets/img/design.png'},
-    {title: 'Reduce el mantenimiento', text: 'Los sistemas de diseño no solo ayudan a prevenir errores, sino que también muestran qué hacer en caso de que se produzca un error, ya sea menor o colosal.', img: 'assets/img/architecture.png'},
-    {title: 'Ahorre tiempo y dinero', text: 'Los equipos pueden reutilizar de manera efectiva las piezas existentes en lugar de crearlas desde cero.', img: 'assets/img/usability.png'},
-    {title: 'Reducir la carga en el equipo', text: 'Tener una documentación extensa, además de componentes y código reutilizables en el sistema de diseño, permite a los diseñadores y desarrolladores concentrarse en lo que agrega valor', img: 'assets/img/accessibility.png'},
   ]
-  
+
 
 }

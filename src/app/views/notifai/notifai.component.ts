@@ -28,8 +28,8 @@ export class NotifaiComponent implements OnInit {
   styles: string = 'w-[100%] '
   display: string = 'hidden'
   image: string = 'assets/img/laptop-notifai.png';
-  paragraphOne: string = 'Nuestro cliente es una solución SaaS que permite automatizar las comunicaciones outbound usando bots de inteligencia artificial, tenía como objetivo posicionar su marca y realizar investigación en sus usuarios actuales.';
-  paragraphTwo: string = 'Realizamos viajes de usuarios para entender el comportamiento de sus usuarios de inicio a fin, creamos un nuevo lenguaje de marca a través de un sistema de diseño basado en componentes reutilizables.';
+  paragraphOne: string = 'Nuestro cliente es una solución SaaS que permite automatizar las comunicaciones outbound usando bots de inteligencia artificial, tenía como objetivo posicionar su marca y realizar investigación en sus usuarios actuales para realizar mejoras en su producto digital.';
+  paragraphTwo: string = 'Pasamos muchas horas con el equipo de Notifai identificando el viaje de cliente, a partir de ahí , identificamos oportunidades y puntos de estrés, que validamos con usuarios con sesiones de recorrido cognitivo, mejorando las funcionalidades del sistema.';
 
   serviceList: Array<String> = [
     'DESCUBRIMIENTO DE PRODUCTO',
@@ -52,7 +52,7 @@ export class NotifaiComponent implements OnInit {
   ]
 
   firstText: string = 'Investigación y definición de experiencia de cliente (CX)';
-  secondText: string = 'During these uncertain times, many of us find ourselves in introspection mode, with new ideas and resolving to do better. We wish we could help everyone and fix everything.';
+  secondText: string = 'Realizamos sesiones de trabajo con el cliente y los usuarios involucrados para poder entender los recorridos de cada cliente y perfil de usuario, generamos escenarios hipotéticos que le permitieran ver las oportunidades de mejora.';
   thirdText: string = ' “During these uncertain times, many of us find ourselves in introspection mode, with new ideas and resolving to do better. We wish we could help everyone and fix everything. “ ';
   // fourthText: string = 'Cómo empatizar con ellos';
   displayContent: any = 'block';
