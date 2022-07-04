@@ -43,6 +43,9 @@ import { ContactDashboardComponent } from './views/contact-dashboard/contact-das
 import { ServicesTabComponent } from './shared/components/services-tab/services-tab.component';
 import { CookiesComponent } from './views/cookies/cookies.component';
 import { CookiesBarComponent } from './shared/components/cookies-bar/cookies-bar.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
+import { HttpClientModule, HttpClient } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -88,9 +91,14 @@ import { CookiesBarComponent } from './shared/components/cookies-bar/cookies-bar
     MatRippleModule,
     MatStepperModule,
     MatCheckboxModule,
-    MatSnackBarModule
+    MatSnackBarModule,
+    FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule,
   ],
-  providers: [],
+  providers: [
+    HttpClientModule,
+  ],
   bootstrap: [AppComponent],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA ]
 })

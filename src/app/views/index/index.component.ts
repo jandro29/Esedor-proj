@@ -9,6 +9,7 @@ import { MatSnackBar } from '@angular/material/snack-bar';
 import { CookiesBarComponent } from 'src/app/shared/components/cookies-bar/cookies-bar.component';
 
 import * as AOS from 'aos';
+import { Title } from '@angular/platform-browser';
 
 // gsap.registerPlugin(ScrollTrigger, Draggable);
 
@@ -18,7 +19,6 @@ import * as AOS from 'aos';
   styleUrls: ['./index.component.css']
 })
 export class IndexComponent implements AfterViewInit, OnInit {
-
   // @ViewChild('nextContent', { static: true }) nextContent!: ElementRef<HTMLDivElement>;
   // @ViewChild('title', { static: true }) title!: ElementRef<HTMLDivElement>;
   @ViewChild('slideContent', {static: true}) slideContent!: ElementRef<HTMLDivElement>;
@@ -62,15 +62,6 @@ export class IndexComponent implements AfterViewInit, OnInit {
     this.router.navigateByUrl(route);
   }
 
-  ngOnInit(): void {
-    AOS.init()
-    // this._snackBar.openFromComponent(CookiesBarComponent, {
-    //   horizontalPosition: 'center',
-    //   verticalPosition: 'bottom',
-    //   panelClass: ['custom-snack'],
-    // });
-  }
-
   // baseTimeline = gsap.timeline({ paused: true });
 
   // animation = gsap
@@ -99,7 +90,18 @@ export class IndexComponent implements AfterViewInit, OnInit {
   // actualprimero!: string;
   // actualsegundo!: string;
 
-  constructor(private router: Router, public _snackBar: MatSnackBar) { }
+  constructor(private title: Title, private router: Router, public _snackBar: MatSnackBar) { }
+
+  ngOnInit(): void {
+    AOS.init()
+    // this.title.setTitle("Desarrollo y Diseño UX/UI de Software a Medida | Esedor");
+
+    // this._snackBar.openFromComponent(CookiesBarComponent, {
+    //   horizontalPosition: 'center',
+    //   verticalPosition: 'bottom',
+    //   panelClass: ['custom-snack'],
+    // });
+  }
 
   public redirectProject() {
     this.router.navigateByUrl('/proyectos');

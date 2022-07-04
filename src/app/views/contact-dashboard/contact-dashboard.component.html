@@ -1,153 +1,255 @@
-<div class="bg-[#5682FF] h-screen pt-2 fixed top-0 z-[99] w-full pb-[3.5rem] lg:pb-0 overflow-y-scroll lg:overflow-y-hidden" *ngIf="!finalStep">
-    <!-- pb-[10rem] overflow-y-scroll h-[650px] lg:-->
+<div
+  class="bg-[#5682FF] h-screen pt-2 fixed top-0 z-[99] w-full pb-[3.5rem] lg:pb-0 overflow-y-scroll lg:overflow-y-hidden"
+  *ngIf="!finalStep"
+>
+  <!-- pb-[10rem] overflow-y-scroll h-[650px] lg:-->
+  <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
     <div class="flex justify-end px-[1.5rem]">
-        <!-- mb-[5rem] -->
-        <button class="rounded-[50%] w-[46px] h-[46px] bg-[#000000] flex justify-center items-center" (click)="closeForm.emit()">
-            <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M7.80318 1.13013L7.07359 0.40625L4.18113 3.27612L1.28867 0.40625L0.559082 1.13013L3.45155 4L0.559082 6.86987L1.28867 7.59375L4.18113 4.72388L7.07359 7.59375L7.80318 6.86987L4.91071 4L7.80318 1.13013Z" fill="white"/>
-            </svg>
-        </button>
+      <!-- mb-[5rem] -->
+      <button
+        class="rounded-[50%] w-[46px] h-[46px] bg-[#000000] flex justify-center items-center"
+        (click)="closeForm.emit()"
+      >
+        <svg
+          width="8"
+          height="8"
+          viewBox="0 0 8 8"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M7.80318 1.13013L7.07359 0.40625L4.18113 3.27612L1.28867 0.40625L0.559082 1.13013L3.45155 4L0.559082 6.86987L1.28867 7.59375L4.18113 4.72388L7.07359 7.59375L7.80318 6.86987L4.91071 4L7.80318 1.13013Z"
+            fill="white"
+          />
+        </svg>
+      </button>
     </div>
 
-    <mat-stepper labelPosition="bottom" linear #stepper class="bg-[#5682FF] lg:mt-[-3rem] 2xl:mt-0">
-        <mat-step state="edit">
-            <div class="grid lg:grid-cols-8 xl:grid-cols-6 2xl:grid-cols-5 pt-[1.5rem] lg:pt-2 2xl:pt-[3.5rem]">
-                <h3
-                    class="start-col lg:col-span-6 xl:col-span-4 2xl:col-span-3 lexendli text-white text-[14.5px] lg:text-[26px] 2xl:text-[36px] text-center leading-[18.13px] lg:leading-[53.3px] lg:px-[5rem]">
-                    ¿Cuáles son los principales retos a los que te enfrentas en este momento?</h3>
-                <div
-                    class="start-col lg:col-span-6 xl:col-span-4 2xl:col-span-3 grid grid-cols-1 lg:grid-cols-3 gap-[1.5rem] justify-items-center pt-8 lg:pt-[4rem] 2xl:pt-[6rem] px-2 lg:px-0 2xl:px-[5rem]">
-                    <button matStepperNext
-                        class="w-full lg:h-[83px] rounded-[50px] p-4 bg-white focus:text-white focus:bg-[#141C26]"
-                        *ngFor="let btn of firstStepBtn">
-                        {{btn.name}}
-                    </button>
-                </div>
-            </div>
-            <!-- [stepControl]="firstFormGroup" [editable]="isEditable"
-              <button mat-button matStepperNext>Next</button>
-            </div> -->
-            <!-- </form> -->
-        </mat-step>
+    <mat-stepper
+      labelPosition="bottom"
+      linear
+      #stepper
+      class="bg-[#5682FF] lg:mt-[-3rem] 2xl:mt-0"
+    >
+      <mat-step state="edit">
+        <div
+          class="grid lg:grid-cols-8 xl:grid-cols-6 2xl:grid-cols-5 pt-[1.5rem] lg:pt-2 2xl:pt-[3.5rem]"
+        >
+          <h3
+            class="start-col lg:col-span-6 xl:col-span-4 2xl:col-span-3 lexendli text-white text-[14.5px] lg:text-[26px] 2xl:text-[36px] text-center leading-[18.13px] lg:leading-[53.3px] lg:px-[5rem]"
+          >
+            ¿Cuáles son los principales retos a los que te enfrentas en este
+            momento?
+          </h3>
+          <div
+            class="start-col lg:col-span-6 xl:col-span-4 2xl:col-span-3 grid grid-cols-1 lg:grid-cols-3 gap-[1.5rem] justify-items-center pt-8 lg:pt-[4rem] 2xl:pt-[6rem] px-2 lg:px-0 2xl:px-[5rem]"
+          >
+            <button
+              matStepperNext
+              type="button"
+              class="w-full lg:h-[83px] rounded-[50px] p-4 bg-white focus:text-white focus:bg-[#141C26]"
+              (click)="selectChallenge(btn.name)"
+              *ngFor="let btn of firstStepBtn"
+            >
+              {{ btn.name }}
+            </button>
+          </div>
+        </div>
+        <!-- [stepControl]="firstFormGroup" [editable]="isEditable"
+                  <button mat-button matStepperNext>Next</button>
+                </div> -->
+        <!-- </form> -->
+      </mat-step>
 
-        <mat-step state="edit">
-            <div class="grid lg:grid-cols-8 xl:grid-cols-6 2xl:grid-cols-5">
-                <!-- pt-[1.5rem] lg:pt-[3.5rem] -->
-                <h3
-                    class="start-col lg:col-span-6 xl:col-span-4 2xl:col-span-3 lexendli text-white text-[14.5px] lg:text-[26px] 2xl:text-[36px] text-center leading-[18.13px] lg:leading-[53.3px] lg:px-[5rem]">
-                    ¿Hay alguna tecnología específica que buscas?</h3>
-                <div
-                    class="start-col lg:col-span-6 xl:col-span-4 2xl:col-span-3 grid grid-cols-2 lg:grid-cols-8 gap-[1.5rem] justify-items-center pt-8 lg:pt-[2rem] 2xl:pt-[6rem] px-2 lg:px-0 2xl:px-[5rem]">
-                    <button *ngFor="let btn of secondStepBtn" (click)="btn.state = !btn.state"
-                        [ngClass]="{ 'btn-checked' : btn.state }"
-                        class="lg:col-span-2 w-full lg:h-[48px] 2xl:h-[65px] rounded-[50px] p-4 bg-white flex justify-around items-center {{btn.style}}">
-                        <mat-checkbox [checked]="btn.state"></mat-checkbox>
-                        {{btn.name}}
-                    </button>
-                </div>
-                <div
-                    class="start-col lg:col-span-6 xl:col-span-4 2xl:col-span-3 flex justify-center gap-4 lg:gap-[2rem] p-2 lg:pt-[2.5rem] 2xl:pt-[5rem] fixed bottom-0 lg:relative w-full bg-[#5682FF]">
-                    <button
-                        class="w-full lg:w-[250px] xl:w-[260px] 2xl:w-[280px] h-[45px] lg:h-[65px] 2xl:h-[82px] text-white rounded-[50px] lg:p-4 bg-transparent border boder-white"
-                        mat-button matStepperPrevious>Volver</button>
-                    <button
-                        class="w-full lg:w-[250px] xl:w-[260px] 2xl:w-[280px] h-[45px] lg:h-[65px] 2xl:h-[82px] rounded-[50px] lg:p-4 bg-white"
-                        mat-button matStepperNext>Continuar</button>
-                </div>
-            </div>
+      <mat-step state="edit">
+        <div class="grid lg:grid-cols-8 xl:grid-cols-6 2xl:grid-cols-5">
+          <!-- pt-[1.5rem] lg:pt-[3.5rem] -->
+          <h3
+            class="start-col lg:col-span-6 xl:col-span-4 2xl:col-span-3 lexendli text-white text-[14.5px] lg:text-[26px] 2xl:text-[36px] text-center leading-[18.13px] lg:leading-[53.3px] lg:px-[5rem]"
+          >
+            ¿Hay alguna tecnología específica que buscas?
+          </h3>
+          <div
+            class="start-col lg:col-span-6 xl:col-span-4 2xl:col-span-3 grid grid-cols-2 lg:grid-cols-8 gap-[1.5rem] justify-items-center pt-8 lg:pt-[2rem] 2xl:pt-[6rem] px-2 lg:px-0 2xl:px-[5rem]"
+          >
+            <button
+              type="button"
+              *ngFor="let btn of secondStepBtn"
+              (click)="btn.state = !btn.state"
+              [ngClass]="{ 'btn-checked': btn.state }"
+              class="lg:col-span-2 w-full lg:h-[48px] 2xl:h-[65px] rounded-[50px] p-4 bg-white flex justify-around items-center {{
+                btn.style
+              }}"
+            >
+              <mat-checkbox [checked]="btn.state"></mat-checkbox>
+              {{ btn.name }}
+            </button>
+          </div>
+          <div
+            class="start-col lg:col-span-6 xl:col-span-4 2xl:col-span-3 flex justify-center gap-4 lg:gap-[2rem] p-2 lg:pt-[2.5rem] 2xl:pt-[5rem] fixed bottom-0 lg:relative w-full bg-[#5682FF]"
+          >
+            <button
+              type="button"
+              class="w-full lg:w-[250px] xl:w-[260px] 2xl:w-[280px] h-[45px] lg:h-[65px] 2xl:h-[82px] text-white rounded-[50px] lg:p-4 bg-transparent border boder-white"
+              mat-button
+              matStepperPrevious
+            >
+              Volver
+            </button>
+            <button
+              type="button"
+              (click)="selectTechnologies()"
+              class="w-full lg:w-[250px] xl:w-[260px] 2xl:w-[280px] h-[45px] lg:h-[65px] 2xl:h-[82px] rounded-[50px] lg:p-4 bg-white"
+              matStepperNext
+            >
+              Continuar
+            </button>
+          </div>
+        </div>
+      </mat-step>
 
+      <mat-step state="edit">
+        <div
+          class="grid lg:grid-cols-8 xl:grid-cols-6 2xl:grid-cols-5 pt-[1.5rem] lg:pt-2 2xl:pt-[3.5rem]"
+        >
+          <h3
+            class="start-col lg:col-span-6 xl:col-span-4 2xl:col-span-3 lexendli text-white text-[14.5px] lg:text-[26px] 2xl:text-[36px] text-center leading-[18.13px] lg:leading-[53.3px] lg:px-[5rem]"
+          >
+            Cuentanos más sobre tu proyecto
+          </h3>
+          <div
+            class="start-col lg:col-span-6 xl:col-span-4 2xl:col-span-3 grid grid-cols-1 lg:grid-cols-6 gap-y-[1.5rem] justify-items-center pt-8 lg:pt-[4rem] 2xl:pt-[6rem] px-2 lg:px-0"
+          >
+            <!-- <textarea class="start-col col-span-4 w-full h-[215px]" placeholder="Describe tu proyecto aquí..."
+                            name="" id="" cols="30" rows="10"></textarea> -->
+            <mat-form-field
+              appearance="fill"
+              class="start-col col-span-4 w-full h-[215px]"
+            >
+              <mat-label>Describe tu proyecto aquí...</mat-label>
+              <textarea matInput formControlName="descripcion"></textarea>
+            </mat-form-field>
+          </div>
+          <div
+            class="start-col lg:col-span-6 xl:col-span-4 2xl:col-span-3 flex justify-center gap-4 lg:gap-[2rem] p-2 lg:pt-[2.5rem] 2xl:pt-[5rem] fixed bottom-0 lg:relative w-full bg-[#5682FF]"
+          >
+            <button
+              type="button"
+              class="w-full lg:w-[250px] xl:w-[260px] 2xl:w-[280px] h-[45px] lg:h-[65px] 2xl:h-[82px] text-white rounded-[50px] lg:p-4 bg-transparent border boder-white"
+              mat-button
+              matStepperPrevious
+            >
+              Volver
+            </button>
+            <button
+              type="button"
+              class="w-full lg:w-[250px] xl:w-[260px] 2xl:w-[280px] h-[45px] lg:h-[65px] 2xl:h-[82px] rounded-[50px] lg:p-4 bg-white"
+              mat-button
+              matStepperNext
+            >
+              Continuar
+            </button>
+          </div>
+        </div>
+      </mat-step>
 
-        </mat-step>
+      <mat-step state="edit">
+        <div
+          class="grid lg:grid-cols-8 xl:grid-cols-6 2xl:grid-cols-5 pt-[1.5rem] lg:pt-2 2xl:pt-[3.5rem]"
+        >
+          <h3
+            class="start-col lg:col-span-6 xl:col-span-4 2xl:col-span-3 lexendli text-white text-[14.5px] lg:text-[26px] 2xl:text-[36px] text-center leading-[18.13px] lg:leading-[53.3px] lg:px-[5rem]"
+          >
+            Ingresa tus datos de contacto
+          </h3>
+          <div
+            class="start-col lg:col-span-6 xl:col-span-4 2xl:col-span-3 grid grid-cols-1 lg:grid-cols-2 gap-x-[2rem] justify-items-center pt-8 lg:pt-[3rem] 2xl:pt-[6rem] form-input px-2 lg:px-0"
+          >
+            <!-- <input class="h-[60px]" type="text"> -->
+            <!-- <input class="h-[60px]" type="text"> -->
+            <mat-form-field appearance="fill" class="w-full">
+              <mat-label>Nombres*</mat-label>
+              <input matInput formControlName="nombres" />
+            </mat-form-field>
+            <mat-form-field appearance="fill" class="w-full">
+              <mat-label>Apellidos*</mat-label>
+              <input matInput formControlName="apellidos" />
+            </mat-form-field>
+            <mat-form-field appearance="fill" class="w-full">
+              <mat-label>Dirección de correo electrónico*</mat-label>
+              <input matInput formControlName="correo" />
+            </mat-form-field>
+            <mat-form-field appearance="fill" class="w-full">
+              <mat-label>Número de teléfono o celular*</mat-label>
+              <input matInput formControlName="telefono" />
+            </mat-form-field>
+            <mat-form-field appearance="fill" class="w-full">
+              <mat-label>Empresa y cargo*</mat-label>
+              <input matInput formControlName="empresaCargo" />
+            </mat-form-field>
+            <mat-form-field appearance="fill" class="w-full">
+              <mat-label>Tiempo de entrega*</mat-label>
+              <input matInput formControlName="tiempoEntrega" />
+            </mat-form-field>
+          </div>
 
-        <mat-step state="edit">
-            <div class="grid lg:grid-cols-8 xl:grid-cols-6 2xl:grid-cols-5 pt-[1.5rem] lg:pt-2 2xl:pt-[3.5rem]">
-                <h3
-                    class="start-col lg:col-span-6 xl:col-span-4 2xl:col-span-3 lexendli text-white text-[14.5px] lg:text-[26px] 2xl:text-[36px] text-center leading-[18.13px] lg:leading-[53.3px] lg:px-[5rem]">
-                    Cuentanos más sobre tu proyecto</h3>
-                <div
-                    class="start-col lg:col-span-6 xl:col-span-4 2xl:col-span-3 grid grid-cols-1 lg:grid-cols-6 gap-y-[1.5rem] justify-items-center pt-8 lg:pt-[4rem] 2xl:pt-[6rem] px-2 lg:px-0">
-                    <!-- <textarea class="start-col col-span-4 w-full h-[215px]" placeholder="Describe tu proyecto aquí..."
-                        name="" id="" cols="30" rows="10"></textarea> -->
-                        <mat-form-field appearance="fill" class="start-col col-span-4 w-full h-[215px]">
-                            <mat-label>Describe tu proyecto aquí...</mat-label>
-                            <textarea matInput></textarea>
-                          </mat-form-field>
-                </div>
-                <div
-                    class="start-col lg:col-span-6 xl:col-span-4 2xl:col-span-3 flex justify-center gap-4 lg:gap-[2rem] p-2 lg:pt-[2.5rem] 2xl:pt-[5rem] fixed bottom-0 lg:relative w-full bg-[#5682FF]">
-                    <button
-                        class="w-full lg:w-[250px] xl:w-[260px] 2xl:w-[280px] h-[45px] lg:h-[65px] 2xl:h-[82px] text-white rounded-[50px] lg:p-4 bg-transparent border boder-white"
-                        mat-button matStepperPrevious>Volver</button>
-                    <button
-                        class="w-full lg:w-[250px] xl:w-[260px] 2xl:w-[280px] h-[45px] lg:h-[65px] 2xl:h-[82px] rounded-[50px] lg:p-4 bg-white"
-                        mat-button matStepperNext>Continuar</button>
-                </div>
-            </div>
-        </mat-step>
-
-        <mat-step state="edit">
-            <div class="grid lg:grid-cols-8 xl:grid-cols-6 2xl:grid-cols-5 pt-[1.5rem] lg:pt-2 2xl:pt-[3.5rem]">
-                <h3
-                    class="start-col lg:col-span-6 xl:col-span-4 2xl:col-span-3 lexendli text-white text-[14.5px] lg:text-[26px] 2xl:text-[36px] text-center leading-[18.13px] lg:leading-[53.3px] lg:px-[5rem]">
-                    Ingresa tus datos de contacto</h3>
-                <div
-                    class="start-col lg:col-span-6 xl:col-span-4 2xl:col-span-3 grid grid-cols-1 lg:grid-cols-2 gap-x-[2rem] justify-items-center pt-8 lg:pt-[3rem] 2xl:pt-[6rem] form-input px-2 lg:px-0">
-                    <!-- <input class="h-[60px]" type="text"> -->
-                    <!-- <input class="h-[60px]" type="text"> -->
-                    <mat-form-field appearance="fill" class="w-full">
-                        <mat-label>Nombres*</mat-label>
-                        <input matInput>
-                    </mat-form-field>
-                    <mat-form-field appearance="fill" class="w-full">
-                        <mat-label>Apellidos*</mat-label>
-                        <input matInput>
-                    </mat-form-field>
-                    <mat-form-field appearance="fill" class="w-full">
-                        <mat-label>Dirección de correo electrónico*</mat-label>
-                        <input matInput>
-                    </mat-form-field>
-                    <mat-form-field appearance="fill" class="w-full">
-                        <mat-label>Número de teléfono o celular*</mat-label>
-                        <input matInput>
-                    </mat-form-field>
-                    <mat-form-field appearance="fill" class="w-full">
-                        <mat-label>Empresa y cargo*</mat-label>
-                        <input matInput>
-                    </mat-form-field>
-                    <mat-form-field appearance="fill" class="w-full">
-                        <mat-label>Tiempo de entrega*</mat-label>
-                        <input matInput>
-                    </mat-form-field>
-                </div>
-
-                <div
-                    class="start-col lg:col-span-6 xl:col-span-4 2xl:col-span-3 flex justify-center gap-4 lg:gap-[2rem] p-2 lg:pt-[2.5rem] 2xl:pt-[5rem] fixed bottom-0 lg:relative w-full bg-[#5682FF]">
-                    <button
-                        class="w-full lg:w-[250px] xl:w-[260px] 2xl:w-[280px] h-[45px] lg:h-[65px] 2xl:h-[82px] text-white rounded-[50px] lg:p-4 bg-transparent border boder-white"
-                        mat-button matStepperPrevious>Volver</button>
-                    <button (click)="messageSent()"
-                        class="w-full lg:w-[250px] xl:w-[260px] 2xl:w-[280px] h-[45px] lg:h-[65px] 2xl:h-[82px] rounded-[50px] lg:p-4 bg-white"
-                        mat-button>Enviar</button>
-                </div>
-            </div>
-            <!-- 
-            <div>
-              <button mat-button matStepperPrevious>Back</button>
-              <button mat-button (click)="stepper.reset()">Reset</button>
-            </div> -->
-        </mat-step>
-        <ng-template matStepperIcon="edit" let-index="index">
-            {{index + 1}}
-          </ng-template>
+          <div
+            class="start-col lg:col-span-6 xl:col-span-4 2xl:col-span-3 flex justify-center gap-4 lg:gap-[2rem] p-2 lg:pt-[2.5rem] 2xl:pt-[5rem] fixed bottom-0 lg:relative w-full bg-[#5682FF]"
+          >
+            <button
+              type="button"
+              class="w-full lg:w-[250px] xl:w-[260px] 2xl:w-[280px] h-[45px] lg:h-[65px] 2xl:h-[82px] text-white rounded-[50px] lg:p-4 bg-transparent border boder-white"
+              mat-button
+              matStepperPrevious
+            >
+              Volver
+            </button>
+            <button
+              type="submit"
+              class="w-full lg:w-[250px] xl:w-[260px] 2xl:w-[280px] h-[45px] lg:h-[65px] 2xl:h-[82px] rounded-[50px] lg:p-4 bg-white"
+              mat-button
+            >
+              Enviar
+            </button>
+          </div>
+        </div>
+        <!-- 
+                <div>
+                  <button mat-button matStepperPrevious>Back</button>
+                  <button mat-button (click)="stepper.reset()">Reset</button>
+                </div> -->
+      </mat-step>
+      <ng-template matStepperIcon="edit" let-index="index">
+        {{ index + 1 }}
+      </ng-template>
     </mat-stepper>
+  </form>
 </div>
 
-<div class="bg-[#F2F4F5] fixed top-0 z-[99] flex flex-col justify-center items-center text-[#141C26] text-center w-full h-screen px-4 lg:px-0" *ngIf="finalStep">
-    <h5 class="lexendzettaextrali text-[32px] lg:text[66px] leading-[40px] lg:leading-[82.5px] pb-5">¡Gracias!</h5>
-    <h3 class="lexendli text-[21px] lg:text-[36px] leading-[33.6px] lg:leading-[53.3px]">Su solicitud ha sido enviada.</h3>
-    <p class="lexendli text-[14.5px] lg:text-[21px] leading-[18.5px] lg:leading-[33.6px]">Nos pondremos en contacto contigo pronto para darte detalles sobre el precio de tu proyecto.</p>
-    <button class="lexend text-[15.5px] text-[#141C26] w-full lg:w-[280px] h-[82px] rounded-[50px] shadow mt-5" (click)="closeForm.emit()">
-        Ir a esedor.com
-    </button>
-
+<div
+  class="bg-[#F2F4F5] fixed top-0 z-[99] flex flex-col justify-center items-center text-[#141C26] text-center w-full h-screen px-4 lg:px-0"
+  *ngIf="finalStep"
+>
+  <h5
+    class="lexendzettaextrali text-[32px] lg:text[66px] leading-[40px] lg:leading-[82.5px] pb-5"
+  >
+    ¡Gracias!
+  </h5>
+  <h3
+    class="lexendli text-[21px] lg:text-[36px] leading-[33.6px] lg:leading-[53.3px]"
+  >
+    Su solicitud ha sido enviada.
+  </h3>
+  <p
+    class="lexendli text-[14.5px] lg:text-[21px] leading-[18.5px] lg:leading-[33.6px]"
+  >
+    Nos pondremos en contacto contigo pronto para darte detalles sobre el precio
+    de tu proyecto.
+  </p>
+  <button
+    class="lexend text-[15.5px] text-[#141C26] w-full lg:w-[280px] h-[82px] rounded-[50px] shadow mt-5"
+    (click)="closeForm.emit()"
+  >
+    Ir a esedor.com
+  </button>
 </div>
