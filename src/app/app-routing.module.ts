@@ -20,37 +20,37 @@ import { RipleyComponent } from './views/ripley/ripley.component';
 import { CookiesComponent } from './views/cookies/cookies.component';
 
 const routes: Routes = [
+  // {
+  //   path: '',
+  //   redirectTo: 'index',
+  //   pathMatch: 'full',
+  //   data: {
+  //     seo: {
+  //       title: 'Desarrollo y Diseño UX/UI de Software a Medida | Esedor',
+  //       metaTags: [
+  //         {
+  //           name: 'description',
+  //           content:
+  //             'Empresa especializada en diseño UX/UI y desarrollo de software a medida con +7 años de experiencia | Esedor',
+  //         },
+  //         {
+  //           property: 'og:title',
+  //           content: 'Desarrollo y Diseño UX/UI de Software a Medida | Esedor',
+  //         },
+  //         {
+  //           proprety: 'og:description',
+  //           content:
+  //             'Empresa especializada en diseño UX/UI y desarrollo de software a medida con +7 años de experiencia | Esedor',
+  //         },
+  //         // { property: 'og:image', content: environment.appUrl + 'assets/image/characters.png' },
+  //         // { property: 'og:url', content: environment.appUrl + 'characters' },
+  //         // { name: "twitter:card", content: "summary_large_image" },
+  //       ],
+  //     },
+  //   },
+  // },nbpm ru
   {
     path: '',
-    redirectTo: 'index',
-    pathMatch: 'full',
-    data: {
-      seo: {
-        title: 'Desarrollo y Diseño UX/UI de Software a Medida | Esedor',
-        metaTags: [
-          {
-            name: 'description',
-            content:
-              'Empresa especializada en diseño UX/UI y desarrollo de software a medida con +7 años de experiencia | Esedor',
-          },
-          {
-            property: 'og:title',
-            content: 'Desarrollo y Diseño UX/UI de Software a Medida | Esedor',
-          },
-          {
-            proprety: 'og:description',
-            content:
-              'Empresa especializada en diseño UX/UI y desarrollo de software a medida con +7 años de experiencia | Esedor',
-          },
-          // { property: 'og:image', content: environment.appUrl + 'assets/image/characters.png' },
-          // { property: 'og:url', content: environment.appUrl + 'characters' },
-          // { name: "twitter:card", content: "summary_large_image" },
-        ],
-      },
-    },
-  },
-  {
-    path: 'index',
     component: IndexComponent,
     data: {
       seo: {

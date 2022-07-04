@@ -1,11 +1,11 @@
 <mat-toolbar class="main-header text-black -mt-6 bg-transparent">
   <div class="flex justify-between w-full text-[0.875rem] 3xl:text-[1.875rem]" [ngClass]="{ 'text-white' : colorWhite}">
     <div class="flex items-center w-full lg:w-[30%]" #logo>
-      <div class="cursor-pointer" routerLink="/index">
+      <div class="cursor-pointer" routerLink="/">
         <img class="w-[2.313] h-[2rem]" [ngClass]="{ 'hidden' : colorWhite}" src="assets/img/logoE.svg">
         <img class="w-[2.313] h-[2rem]" [ngClass]="{ 'hidden' : !colorWhite}" src="assets/img/logo_white.png">
       </div>
-      <span [class.header_variable]="header_variable" routerLink="/index"
+      <span [class.header_variable]="header_variable" routerLink="/"
         class="text-sm lg:text-[1.125rem] lexend ml-2 lg:ml-4 leading-[22px] lexendzetta font-medium cursor-pointer">Esedor</span>
     </div>
     <div #menu class="flex justify-end w-full lexendzetta font-bold">
@@ -44,8 +44,8 @@
 <div class="h-screen w-full flex flex-col-reverse lg:block top-0 fixed bg-black z-50" *ngIf="openMenu">
   <div class="lg:h-[30%] menu-celes text-white flex items-center lg:items-start lg:justify-between lg:pb-[1.5rem] 2xl:pb-[3rem] p-4 lg:relative min-h-[99px] lg:min-h-[220px]">
     <div class="flex items-center absolute lg:relative top-4 lg:top-auto">
-      <img routerLink="/index" class="w-[2.313] h-[2rem] cursor-pointer" src="assets/img/logo_white.png">
-      <p routerLink="/index"
+      <img routerLink="/" class="w-[2.313] h-[2rem] cursor-pointer" src="assets/img/logo_white.png">
+      <p routerLink="/"
         class="text-sm lg:text-[1.125rem] lexend ml-2 lg:ml-4 leading-[22px] lexendzetta font-medium cursor-pointer">
         Esedor</p>
     </div>

@@ -1,5 +1,6 @@
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatIconModule } from "@angular/material/icon";
@@ -97,6 +98,7 @@ import { HttpClientModule, HttpClient } from '@angular/common/http';
     HttpClientModule,
   ],
   providers: [
+    {provide: LocationStrategy, useClass: HashLocationStrategy},
     HttpClientModule,
   ],
   bootstrap: [AppComponent],
