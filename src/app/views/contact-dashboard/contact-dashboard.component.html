@@ -24,11 +24,10 @@
     </button>
   </div>
 
-  <mat-progress-spinner color="accent"></mat-progress-spinner>
   <form
     [formGroup]="contactForm"
     class="transition-all"
-    [ngClass]="{'opacity-50 pointer-events-none select-none': formLoading }"
+    [ngClass]="{ 'opacity-50 pointer-events-none select-none': formLoading }"
     (ngSubmit)="onSubmit()"
   >
     <mat-stepper
