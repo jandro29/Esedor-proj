@@ -3,28 +3,34 @@
   *ngIf="!finalStep"
 >
   <!-- pb-[10rem] overflow-y-scroll h-[650px] lg:-->
-  <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
-    <div class="flex justify-end px-[1.5rem]">
-      <!-- mb-[5rem] -->
-      <button
-        class="rounded-[50%] w-[46px] h-[46px] bg-[#000000] flex justify-center items-center"
-        (click)="closeForm.emit()"
+  <div class="flex justify-end px-[1.5rem]">
+    <!-- mb-[5rem] -->
+    <button
+      class="rounded-[50%] w-[46px] h-[46px] bg-[#000000] flex justify-center items-center"
+      (click)="closeForm.emit()"
+    >
+      <svg
+        width="8"
+        height="8"
+        viewBox="0 0 8 8"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
       >
-        <svg
-          width="8"
-          height="8"
-          viewBox="0 0 8 8"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M7.80318 1.13013L7.07359 0.40625L4.18113 3.27612L1.28867 0.40625L0.559082 1.13013L3.45155 4L0.559082 6.86987L1.28867 7.59375L4.18113 4.72388L7.07359 7.59375L7.80318 6.86987L4.91071 4L7.80318 1.13013Z"
-            fill="white"
-          />
-        </svg>
-      </button>
-    </div>
+        <path
+          d="M7.80318 1.13013L7.07359 0.40625L4.18113 3.27612L1.28867 0.40625L0.559082 1.13013L3.45155 4L0.559082 6.86987L1.28867 7.59375L4.18113 4.72388L7.07359 7.59375L7.80318 6.86987L4.91071 4L7.80318 1.13013Z"
+          fill="white"
+        />
+      </svg>
+    </button>
+  </div>
 
+  <mat-progress-spinner color="accent"></mat-progress-spinner>
+  <form
+    [formGroup]="contactForm"
+    class="transition-all"
+    [ngClass]="{'opacity-50 pointer-events-none select-none': formLoading }"
+    (ngSubmit)="onSubmit()"
+  >
     <mat-stepper
       labelPosition="bottom"
       linear
@@ -209,7 +215,8 @@
               class="w-full lg:w-[250px] xl:w-[260px] 2xl:w-[280px] h-[45px] lg:h-[65px] 2xl:h-[82px] rounded-[50px] lg:p-4 bg-white"
               mat-button
             >
-              Enviar
+              <span *ngIf="formLoading">Espere...</span>
+              <span *ngIf="!formLoading">Enviar</span>
             </button>
           </div>
         </div>

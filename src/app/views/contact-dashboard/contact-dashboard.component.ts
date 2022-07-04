@@ -11,6 +11,8 @@ export class ContactDashboardComponent implements OnInit {
   paso2 = false;
   paso3 = false;
 
+  formLoading: boolean = false;
+
   finalStep!: boolean;
 
   @Output() closeForm = new EventEmitter<any>();
@@ -46,13 +48,20 @@ export class ContactDashboardComponent implements OnInit {
       tiempoEntrega: this.contactForm.value.tiempoEntrega,
     }
 
+    this.formLoading = true;
     this.http
       .post<any>('https://esedor.com/send-mail.php', contactData)
-      .subscribe((resp) => {
-        console.log('resp', resp);
-        this.messageSent();
-        this.resetForm();
-      });
+      .subscribe(
+        resp => {
+          this.formLoading = false;
+          this.messageSent();
+          this.resetForm();
+        },
+        error => {
+          alert("Ocurrió un error. Por favor, inténtelo nuevamente en unos minutos.");
+          this.formLoading = false;
+        }
+      );
   }
 
   resetForm() {
