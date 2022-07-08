@@ -23,9 +23,11 @@ export class AppComponent {
       filter((route) => route.outlet === 'primary'),
       mergeMap((route) => route.data),
     ).subscribe(data => {
-      let seoData = data['seo'];
-      this.seoService.updateTitle(seoData['title']);
-      this.seoService.updateMetaTags(seoData['metaTags']);
+      if (data) {
+        let seoData = data['seo'];
+        this.seoService.updateTitle(seoData['title']);
+        this.seoService.updateMetaTags(seoData['metaTags']);
+      }
     });
   }
 }

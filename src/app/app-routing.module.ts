@@ -19,6 +19,32 @@ import { TalentComponent } from './views/talent/talent.component';
 import { RipleyComponent } from './views/ripley/ripley.component';
 import { CookiesComponent } from './views/cookies/cookies.component';
 
+const projectsMetaData = {
+  seo: {
+    title: 'Proyectos - Acompañamiento a Nuestros Clientes de Inicio a Fin  | Esedor',
+    metaTags: [
+      {
+        name: 'description',
+        content:
+          'Esedor es una compañía que te acompaña en todas las etapas de tu proyecto maximizando tus objetivos de negocio | Esedor',
+      },
+      {
+        property: 'og:title',
+        content:
+          'Proyectos - Acompañamiento a Nuestros Clientes de Inicio a Fin  | Esedor',
+      },
+      {
+        proprety: 'og:description',
+        content:
+          'Esedor es una compañía que te acompaña en todas las etapas de tu proyecto maximizando tus objetivos de negocio | Esedor',
+      },
+      // { property: 'og:image', content: environment.appUrl + 'assets/image/characters.png' },
+      // { property: 'og:url', content: environment.appUrl + 'characters' },
+      // { name: "twitter:card", content: "summary_large_image" },
+    ],
+  },
+}
+
 const routes: Routes = [
   // {
   //   path: '',
@@ -141,36 +167,12 @@ const routes: Routes = [
     path: 'proyectos',
     component: ProjectsDashboardComponent,
     children: [
-      { path: 'primax', component: ProjectsComponent },
-      { path: 'notifai', component: NotifaiComponent },
-      { path: 'ripley', component: RipleyComponent },
-      { path: 'cookies', component: CookiesComponent },
+      { data: projectsMetaData, path: 'primax', component: ProjectsComponent },
+      { data: projectsMetaData, path: 'notifai', component: NotifaiComponent },
+      { data: projectsMetaData, path: 'ripley', component: RipleyComponent },
+      { data: projectsMetaData, path: 'cookies', component: CookiesComponent },
     ],
-    data: {
-      seo: {
-        title: 'Proyectos - Acompañamiento a Nuestros Clientes de Inicio a Fin  | Esedor',
-        metaTags: [
-          {
-            name: 'description',
-            content:
-              'Esedor es una compañía que te acompaña en todas las etapas de tu proyecto maximizando tus objetivos de negocio | Esedor',
-          },
-          {
-            property: 'og:title',
-            content:
-              'Proyectos - Acompañamiento a Nuestros Clientes de Inicio a Fin  | Esedor',
-          },
-          {
-            proprety: 'og:description',
-            content:
-              'Esedor es una compañía que te acompaña en todas las etapas de tu proyecto maximizando tus objetivos de negocio | Esedor',
-          },
-          // { property: 'og:image', content: environment.appUrl + 'assets/image/characters.png' },
-          // { property: 'og:url', content: environment.appUrl + 'characters' },
-          // { name: "twitter:card", content: "summary_large_image" },
-        ],
-      },
-    },
+    data: projectsMetaData
   },
   {
     path: 'servicios',

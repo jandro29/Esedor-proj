@@ -7,7 +7,6 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NotifaiComponent implements OnInit {
 
-
   bgHover!: boolean;
   bgHoverTwo!: boolean;
 
@@ -61,6 +60,7 @@ export class NotifaiComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    console.log("ghol"); // eslint-disable-line
   }
 
 }
