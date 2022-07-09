@@ -68,7 +68,7 @@ export class ProjectsDashboardComponent implements OnInit {
 
   empresas = [
     {name: 'Primax', descripcion: 'INVESTIGACIÓN Y CONSULTORÍA - DESCUBRIMIENTO DE PRODUCTO - DISEÑO DE PRODUCTO - DESIGN SYSTEM', img: 'assets/img/phone-right.png', alt: 'Primax', tipo: 'automotriz', ruta: '/proyectos/primax', state: true, background: 'bg-color'},
-    {name: 'Ripley', descripcion: 'DESCUBRIMIENTO DE PRODUCTO - DISEÑO DE PRODUCTO - DESARROLLO DE SOFTWARE ', img: 'assets/img/Ripley-slider.png', alt: 'Ripley', tipo: 'banca', ruta: 'proyectos/ripley', state: true, background: 'bg-two'},
+    {name: 'Ripley', descripcion: 'DESCUBRIMIENTO DE PRODUCTO - DISEÑO DE PRODUCTO - DESARROLLO DE SOFTWARE ', img: 'assets/img/Ripley-slider.png', alt: 'Ripley', tipo: 'banca', ruta: '/proyectos/ripley', state: true, background: 'bg-two'},
     {name: 'Redeban', descripcion: 'DESCUBRIMIENTO DE PRODUCTO - DISEÑO DE PRODUCTO - DESARROLLO DE SOFTWARE', img: 'assets/img/proyect-laptop.png', alt: 'Redeban', tipo: 'ecommerce', ruta: '/descripcion', state: true, background: 'bg-three'},
     {name: 'Notifai', descripcion: 'DESCUBRIMIENTO DE PRODUCTO - DISEÑO DE PRODUCTO - DESARROLLO DE SOFTWARE', img: 'assets/img/laptop-estadis.png', alt: 'Notifai', tipo: 'ecommerce', ruta: '/proyectos/notifai', state: true, background: 'bg-fourth'},
     {name: 'En Proceso', descripcion: 'CAJA METROPOLITANA DE LIMA - HOME BANKING ', img: 'assets/img/cmetropolitano-slider.png', alt: 'CajaMetropolitana', tipo: 'ecommerce', ruta: '/proyectos', state: true, background: 'bg-color'},

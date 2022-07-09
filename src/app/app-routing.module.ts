@@ -19,7 +19,7 @@ import { TalentComponent } from './views/talent/talent.component';
 import { RipleyComponent } from './views/ripley/ripley.component';
 import { CookiesComponent } from './views/cookies/cookies.component';
 
-const projectsMetaData = {
+const PROJECTS_METADATA = {
   seo: {
     title: 'Proyectos - Acompañamiento a Nuestros Clientes de Inicio a Fin  | Esedor',
     metaTags: [
@@ -46,35 +46,6 @@ const projectsMetaData = {
 }
 
 const routes: Routes = [
-  // {
-  //   path: '',
-  //   redirectTo: 'index',
-  //   pathMatch: 'full',
-  //   data: {
-  //     seo: {
-  //       title: 'Desarrollo y Diseño UX/UI de Software a Medida | Esedor',
-  //       metaTags: [
-  //         {
-  //           name: 'description',
-  //           content:
-  //             'Empresa especializada en diseño UX/UI y desarrollo de software a medida con +7 años de experiencia | Esedor',
-  //         },
-  //         {
-  //           property: 'og:title',
-  //           content: 'Desarrollo y Diseño UX/UI de Software a Medida | Esedor',
-  //         },
-  //         {
-  //           proprety: 'og:description',
-  //           content:
-  //             'Empresa especializada en diseño UX/UI y desarrollo de software a medida con +7 años de experiencia | Esedor',
-  //         },
-  //         // { property: 'og:image', content: environment.appUrl + 'assets/image/characters.png' },
-  //         // { property: 'og:url', content: environment.appUrl + 'characters' },
-  //         // { name: "twitter:card", content: "summary_large_image" },
-  //       ],
-  //     },
-  //   },
-  // },nbpm ru
   {
     path: '',
     component: IndexComponent,
@@ -161,19 +132,16 @@ const routes: Routes = [
       },
     },
   },
-  
   { path: 'descripcion', component: DescripcionComponent },
   {
     path: 'proyectos',
     component: ProjectsDashboardComponent,
-    children: [
-      { data: projectsMetaData, path: 'primax', component: ProjectsComponent },
-      { data: projectsMetaData, path: 'notifai', component: NotifaiComponent },
-      { data: projectsMetaData, path: 'ripley', component: RipleyComponent },
-      { data: projectsMetaData, path: 'cookies', component: CookiesComponent },
-    ],
-    data: projectsMetaData
+    data: PROJECTS_METADATA
   },
+  { path: 'proyectos/primax', component: ProjectsComponent, data: PROJECTS_METADATA },
+  { path: 'proyectos/notifai', component: NotifaiComponent, data: PROJECTS_METADATA },
+  { path: 'proyectos/ripley', component: RipleyComponent, data: PROJECTS_METADATA },
+  { path: 'proyectos/cookies', component: CookiesComponent, data: PROJECTS_METADATA },
   {
     path: 'servicios',
     component: ServicesComponent,

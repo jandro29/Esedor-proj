@@ -49,7 +49,6 @@
         <button (click)="filterEmpresas('automotriz')">Automotriz</button>
         <button (click)="filterEmpresas('ecomerce')">Ecommerce</button>
       </div>
-
       <section class="grid lg:grid-cols-2 gap-10 my-[3rem] lg:my-16">
         <div *ngFor="let emp of filtrado">
           <div data-aos="fade-down-left" class="cursor-pointer relative h-[650px]" (click)="redirectInternas(emp.ruta)"
