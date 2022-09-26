@@ -49,10 +49,10 @@ export class RipleyComponent implements OnInit {
 
   firstText: string = 'Auditoría UX';
   secondText: string = 'Realizamos una revisión exhaustiva del sistema actual, haciendo uso de la heurística detectamos una serie de oportunidades que le permitieran mejorar en el rediseño del nuevo sistema de puntos de Ripley.';
-  thirdText: string = ' “During these uncertain times, many of us find ourselves in introspection mode, with new ideas and resolving to do better. We wish we could help everyone and fix everything. “ ';
+  thirdText: string = '';
   // fourthText: string = 'Cómo empatizar con ellos';
   displayContent: any = 'block';
-  imageSection: any = '../../../assets/img/Ripley-A-D.png';
+  imageSection: any = 'assets/img/Ripley-A-D.png';
 
   constructor() { }
 
