@@ -12,10 +12,10 @@ export class NiubizComponent implements OnInit {
 
   date: number = 2021;
   industry: string = 'INTELIGENCIA ARTIFICIAL';
-  client: string = 'Redeban';
-  styles: string = 'w-[100%] '
+  client: string = 'Niubiz';
+  styles: string = 'w-[100%] ml-20'
   display: string = 'hidden'
-  image: string = 'assets/img/cajacuzco.jpg';
+  image: string = 'assets/img/primeraimg-niubiz.png';
   paragraphOne: string = 'During these uncertain times, many of us find ourselves in introspection mode, with new ideas and resolving to do better. We wish we could help everyone and fix everything. ';
   paragraphTwo: string = 'During these uncertain times, many of us find ourselves in introspection mode, with new ideas and resolving to do better. ';
 
