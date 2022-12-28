@@ -13,9 +13,9 @@
                 </div>
             </div>
 
-            <h4 data-aos="fade-up" data-aos-duration="500" class="text-sm lexendb mt-[4.5rem] lg:mt-[6.5rem]">CLIENTE</h4>
+            <h4 data-aos="fade-up" data-aos-duration="500" class="text-sm lexendb mt-[4.5rem] lg:mt-[6.5rem] ">CLIENTE</h4>
             <p data-aos="fade-up" data-aos-duration="500"
-                class="text-[#141C26] lg:text-black lg:leading-[7.5rem] text-[36px] lg:text-[76px] xl:text-[86px] 2xl:text-[96px] lexendzetta -ml-2 lg:ml-[-1rem]">
+                class=" text-[#141C26] lg:text-black lg:leading-[7.5rem] text-[36px] lg:text-[76px] xl:text-[86px] 2xl:text-[96px] lexendzetta ml-2 lg:ml-[-1rem]">
                 {{client}}
             </p>
             <div class="block lg:hidden mt-8">
@@ -40,13 +40,13 @@
         </div>
 
         <div class="{{styles}}" data-aos="flip-right" data-aos-duration="500">
-            <img class="mx-auto" src="{{image}}">
+            <img class="mx-auto mt-[-20px] lg:mt-[-95px] 2xl:w-[700px] xl:w-[620px] lg:w-[400px] lg:ml-[80px] xl:ml-[0px]" src="{{image}}">
             <!--w-[200px] lg:w-[400px]  mt-[6rem]  -->
         </div>
     </div>
     <div class="lg:grid lg:grid-cols-2 gap-[5.5rem] lg:gap-[2rem] xl:gap-[8rem] mt-[4rem] space-y-[3rem] lg:space-y-0">
         <div data-aos="fade-up" data-aos-duration="500" class="lexend">
-            <p class="text-sm lg:text-[16px] pb-8 font-bold lg:font-normal">{{client}} y el reto</p>
+            <p class=" text-sm lg:text-[16px] pb-8 font-bold lg:font-normal ">{{client}} y el reto</p>
             <h3 class="text-[21px] lg:text-[36px]">{{paragraphOne}}</h3>
         </div>
         <div data-aos="fade-up" data-aos-duration="500" class="lexend">
@@ -60,13 +60,20 @@
             data-aos-duration="500">
             <img src="assets/img/Redeban-logo.png" alt="logo-redeban">
         </div>
+
+        <div class="lg:block hidden w-[175px] lg:w-[350px] xl:w-[380px] 2xl:w-[400px] ml-[-1.3rem] {{styles}}" data-aos="zoom-in-up"
+        data-aos-duration="500">
+        <img src="{{imageTwo}}" alt="logo-redeban">
+    </div>
+
+
         <div
             class="col-end-5 lexendb text-[48px] lg:text-[90px] 2xl:text-[128px] py-[2rem] lg:py-0 leading-[60px] lg:leading-[140px] 2xl:leading-[160px]">
             <!-- text-[48px] lg:text-[80px] xl:text-[100px] 2xl:text-[128px] leading-[60px] lg:leading-[120px] xl:leading-[140px] 2xl:leading-[160px] 2xl:w-[800px] lexendb lg:ml-auto lg:w-auto 2xl:w-[820px]-->
             <!-- <h2 data-aos="fade-right" data-aos-duration="1000">Data Driven</h2>
           <h2 data-aos="fade-right" data-aos-duration="1100"> y producto</h2>
           <h2 data-aos="fade-right" data-aos-duration="1200"> digital</h2> -->
-            <h2 data-aos="fade-right" [attr.data-aos-duration]="item.aos" *ngFor="let item of animatedTitle">
+            <h2 class="lg:text-[75px] xl:text-[90px]" data-aos="fade-right" [attr.data-aos-duration]="item.aos" *ngFor="let item of animatedTitle">
                 {{item.label}}
             </h2>
         </div>

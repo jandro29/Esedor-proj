@@ -49,6 +49,9 @@ import { CookiesBarComponent } from './shared/components/cookies-bar/cookies-bar
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { HttpClientModule, HttpClient } from '@angular/common/http';
+import { CajacuzcoComponent } from './views/cajacuzco/cajacuzco.component';
+import { FirstSectionSegundoComponent } from './shared/components/project-internals/first-section-segundo/first-section-segundo.component';
+import { NiubizComponent } from './views/niubiz/niubiz.component';
 
 @NgModule({
   declarations: [
@@ -76,7 +79,10 @@ import { HttpClientModule, HttpClient } from '@angular/common/http';
     ContactDashboardComponent,
     ServicesTabComponent,
     CookiesComponent,
-    CookiesBarComponent
+    CookiesBarComponent,
+    CajacuzcoComponent,
+    FirstSectionSegundoComponent,
+    NiubizComponent
   ],
   imports: [
     RouterModule,

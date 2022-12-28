@@ -18,6 +18,8 @@ import { ServicesComponent } from './views/services/services.component';
 import { TalentComponent } from './views/talent/talent.component';
 import { RipleyComponent } from './views/ripley/ripley.component';
 import { CookiesComponent } from './views/cookies/cookies.component';
+import { CajacuzcoComponent } from './views/cajacuzco/cajacuzco.component';
+import { NiubizComponent } from './views/niubiz/niubiz.component';
 
 const PROJECTS_METADATA = {
   seo: {
@@ -141,6 +143,10 @@ const routes: Routes = [
   { path: 'proyectos/primax', component: ProjectsComponent, data: PROJECTS_METADATA },
   { path: 'proyectos/notifai', component: NotifaiComponent, data: PROJECTS_METADATA },
   { path: 'proyectos/ripley', component: RipleyComponent, data: PROJECTS_METADATA },
+  { path: 'proyectos/notifai-vista1', component: NotifaiVista1Component, data: PROJECTS_METADATA },
+  { path: 'proyectos/cajacuzco', component:CajacuzcoComponent, data: PROJECTS_METADATA},
+  { path: 'proyectos/niubiz', component:NiubizComponent, data:PROJECTS_METADATA},
+
   { path: 'proyectos/cookies', component: CookiesComponent, data: PROJECTS_METADATA },
   {
     path: 'servicios',
@@ -201,7 +207,7 @@ const routes: Routes = [
     },
   },
   // { path: 'descripcion', component: DescripcionComponent},
-  { path: 'notifai-vista1', component: NotifaiVista1Component },
+
 ];
 
 @NgModule({

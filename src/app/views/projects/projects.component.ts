@@ -32,6 +32,7 @@ export class ProjectsComponent implements OnInit {
   client: string = 'Primax';
   styles: string = 'w-[40%]'
   display: string = 'hidden'
+  imageTwo: string = 'hidden'
   image: string = 'assets/img/iphone.png';
   paragraphOne: string = 'Nuestro cliente tenía la necesidad de  involucrar a todos sus equipos dentro de esta tienda virtual y crear una plataforma de venta de productos y servicios de marketing.';
   paragraphTwo: string = 'Definir la nueva generación de productos digitales y crear su primera tienda virtual b2b de productos y servicios de marketing que ofrece primax';

@@ -26,6 +26,7 @@ export class NotifaiComponent implements OnInit {
   client: string = 'Notifai';
   styles: string = 'w-[100%] '
   display: string = 'hidden'
+  imageTwo: string = 'hidden'
   image: string = 'assets/img/laptop-notifai.png';
   paragraphOne: string = 'Nuestro cliente es una solución SaaS que permite automatizar las comunicaciones outbound usando bots de inteligencia artificial, tenía como objetivo posicionar su marca y realizar investigación en sus usuarios actuales para realizar mejoras en su producto digital.';
   paragraphTwo: string = 'Pasamos muchas horas con el equipo de Notifai identificando el viaje de cliente, a partir de ahí , identificamos oportunidades y puntos de estrés, que validamos con usuarios con sesiones de recorrido cognitivo, mejorando las funcionalidades del sistema.';

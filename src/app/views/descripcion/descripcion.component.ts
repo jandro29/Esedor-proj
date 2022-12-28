@@ -23,6 +23,7 @@ export class DescripcionComponent implements OnInit {
   date: number = 2021;
   industry: string = 'Fintech';
   client: string = 'Redeban';
+  imageTwo: string = 'hidden'
   image: string = 'assets/img/laptop-estadisticas.png';
   styles: string = 'lg:relative lg:bottom-[5rem] lg:left-[4rem] 2xl:bottom-0 2xl:left-0 2xl:w-[55%]'
   paragraphOne: string = 'Redeban es un banco de origen Colombiano, tenía como objetivo crear nuevos métodos de pago para los comercios y tarjetahabientes, además necesitaban identificar las necesidades del usuario.';

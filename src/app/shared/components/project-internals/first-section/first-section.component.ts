@@ -16,7 +16,7 @@ export class FirstSectionComponent implements OnInit {
   @Input() paragraphTwo!: string;
   @Input() styles!: string;
   @Input() display!: string;
-
+  @Input() imageTwo!: string;
   @Input() serviceList!: Array<String>;
   @Input() definitionsList!: Array<String>;
   @Input() animatedTitle!: Array<{aos: number, label:String}>;
