@@ -52,6 +52,7 @@ import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { CajacuzcoComponent } from './views/cajacuzco/cajacuzco.component';
 import { FirstSectionSegundoComponent } from './shared/components/project-internals/first-section-segundo/first-section-segundo.component';
 import { NiubizComponent } from './views/niubiz/niubiz.component';
+import { PrimaxBlackofficeComponent } from './views/primax-blackoffice/primax-blackoffice.component';
 
 @NgModule({
   declarations: [
@@ -82,7 +83,8 @@ import { NiubizComponent } from './views/niubiz/niubiz.component';
     CookiesBarComponent,
     CajacuzcoComponent,
     FirstSectionSegundoComponent,
-    NiubizComponent
+    NiubizComponent,
+    PrimaxBlackofficeComponent
   ],
   imports: [
     RouterModule,

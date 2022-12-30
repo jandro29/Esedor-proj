@@ -45,10 +45,7 @@
       <!--w-[200px] lg:w-[400px]  mt-[6rem]  -->
     </div>
 
-    <div class="lg:block hidden w-[175px] lg:w-[350px] xl:w-[380px] 2xl:w-[400px] ml-[-1.3rem]" data-aos="zoom-in-up"
-      data-aos-duration="500">
-      <img src="{{imageTwo}}" alt="logo-redeban">
-    </div>
+
   </div>
   <div class="lg:grid lg:grid-cols-2 gap-[5.5rem] lg:gap-[2rem] xl:gap-[8rem] mt-[4rem] space-y-[3rem] lg:space-y-0">
     <div data-aos="fade-up" data-aos-duration="500" class="lexend">
@@ -68,7 +65,10 @@
     </div>
 
 
-
+    <div class="lg:block hidden w-[175px] lg:w-[350px] xl:w-[380px] 2xl:w-[400px] ml-[-1.3rem]" data-aos="zoom-in-up"
+    data-aos-duration="500">
+    <img src="{{imageTwo}}" alt="logo-redeban">
+  </div>
     <div
       class="col-end-5 lexendb text-[48px] lg:text-[90px] 2xl:text-[128px] py-[2rem] lg:py-0 leading-[60px] lg:leading-[140px] 2xl:leading-[160px]">
       <!-- text-[48px] lg:text-[80px] xl:text-[100px] 2xl:text-[128px] leading-[60px] lg:leading-[120px] xl:leading-[140px] 2xl:leading-[160px] 2xl:w-[800px] lexendb lg:ml-auto lg:w-auto 2xl:w-[820px]-->
@@ -79,6 +79,7 @@
         *ngFor="let item of animatedTitle">
         {{item.label}}
       </h2>
+
     </div>
   </div>
 </section>

@@ -25,12 +25,11 @@ export class CajacuzcoComponent implements OnInit {
   industry: string = 'INTELIGENCIA ARTIFICIAL';
   client: string = 'Caja Cuzco';
   styles: string = 'w-[100%] '
-  display: string = 'hidden'
-  imageTwo: string = 'assets/img/cajacuzcologo.png';
+  display: string = 'hidden';
   image: string = 'assets/img/cajacuzco.jpg';
   paragraphOne: string = 'Caja Cusco y el reto Es una de las financieras municipales más importantes a nivel nacional, con una red de 105 agencias en 13 regiones del país, uno de los principales problemas era el tiempo de evaluación de los clientes que buscaban acceder a una tarjeta de crédito.';
   paragraphTwo: string = 'El trabajo de Esedor Evaluamos los requerimientos del sistema y las necesidades del usuario, definiendo un producto digital que los ayude a reducir la carga en la ejecución de las tareas más recurrentes en la evaluación de los créditos de los clientes.';
-
+  imageTwo: string = 'assets/img/cajacuzcologo.png';
 
   serviceList: Array<String> = [
     'INTEGRATED',

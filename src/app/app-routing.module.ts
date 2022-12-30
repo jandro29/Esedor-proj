@@ -20,6 +20,7 @@ import { RipleyComponent } from './views/ripley/ripley.component';
 import { CookiesComponent } from './views/cookies/cookies.component';
 import { CajacuzcoComponent } from './views/cajacuzco/cajacuzco.component';
 import { NiubizComponent } from './views/niubiz/niubiz.component';
+import { PrimaxBlackofficeComponent } from './views/primax-blackoffice/primax-blackoffice.component';
 
 const PROJECTS_METADATA = {
   seo: {
@@ -146,6 +147,7 @@ const routes: Routes = [
   { path: 'proyectos/notifai-vista1', component: NotifaiVista1Component, data: PROJECTS_METADATA },
   { path: 'proyectos/cajacuzco', component:CajacuzcoComponent, data: PROJECTS_METADATA},
   { path: 'proyectos/niubiz', component:NiubizComponent, data:PROJECTS_METADATA},
+  { path: 'proyectos/primax-blackoffice', component:PrimaxBlackofficeComponent, data:PROJECTS_METADATA},
 
   { path: 'proyectos/cookies', component: CookiesComponent, data: PROJECTS_METADATA },
   {
