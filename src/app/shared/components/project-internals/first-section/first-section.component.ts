@@ -14,7 +14,7 @@ export class FirstSectionComponent implements OnInit {
   @Input() image!: string;
   @Input() paragraphOne!: string;
   @Input() paragraphTwo!: string;
-
+  @Input() imgstyle!:string
   @Input() styles!: string;
   @Input() display!: string;
   @Input() imageTwo!: string;

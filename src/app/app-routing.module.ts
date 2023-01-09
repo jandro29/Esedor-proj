@@ -21,6 +21,8 @@ import { CookiesComponent } from './views/cookies/cookies.component';
 import { CajacuzcoComponent } from './views/cajacuzco/cajacuzco.component';
 import { NiubizComponent } from './views/niubiz/niubiz.component';
 import { PrimaxBlackofficeComponent } from './views/primax-blackoffice/primax-blackoffice.component';
+import { InformaticaComponent } from './views/informatica/informatica.component';
+import { CajametropolitanaComponent } from './views/cajametropolitana/cajametropolitana.component';
 
 const PROJECTS_METADATA = {
   seo: {
@@ -148,7 +150,8 @@ const routes: Routes = [
   { path: 'proyectos/cajacuzco', component:CajacuzcoComponent, data: PROJECTS_METADATA},
   { path: 'proyectos/niubiz', component:NiubizComponent, data:PROJECTS_METADATA},
   { path: 'proyectos/primax-blackoffice', component:PrimaxBlackofficeComponent, data:PROJECTS_METADATA},
-
+  { path: 'proyectos/infomatica', component:InformaticaComponent, data:PROJECTS_METADATA},
+  { path: 'proyectos/cajametropolitanadelima', component:CajametropolitanaComponent, data:PROJECTS_METADATA},
   { path: 'proyectos/cookies', component: CookiesComponent, data: PROJECTS_METADATA },
   {
     path: 'servicios',

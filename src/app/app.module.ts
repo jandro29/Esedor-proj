@@ -53,6 +53,8 @@ import { CajacuzcoComponent } from './views/cajacuzco/cajacuzco.component';
 import { FirstSectionSegundoComponent } from './shared/components/project-internals/first-section-segundo/first-section-segundo.component';
 import { NiubizComponent } from './views/niubiz/niubiz.component';
 import { PrimaxBlackofficeComponent } from './views/primax-blackoffice/primax-blackoffice.component';
+import { InformaticaComponent } from './views/informatica/informatica.component';
+import { CajametropolitanaComponent } from './views/cajametropolitana/cajametropolitana.component';
 
 @NgModule({
   declarations: [
@@ -84,7 +86,9 @@ import { PrimaxBlackofficeComponent } from './views/primax-blackoffice/primax-bl
     CajacuzcoComponent,
     FirstSectionSegundoComponent,
     NiubizComponent,
-    PrimaxBlackofficeComponent
+    PrimaxBlackofficeComponent,
+    InformaticaComponent,
+    CajametropolitanaComponent
   ],
   imports: [
     RouterModule,
