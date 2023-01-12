@@ -23,6 +23,7 @@ import { NiubizComponent } from './views/niubiz/niubiz.component';
 import { PrimaxBlackofficeComponent } from './views/primax-blackoffice/primax-blackoffice.component';
 import { InformaticaComponent } from './views/informatica/informatica.component';
 import { CajametropolitanaComponent } from './views/cajametropolitana/cajametropolitana.component';
+import { CyberstratComponent } from './views/cyberstrat/cyberstrat.component';
 
 const PROJECTS_METADATA = {
   seo: {
@@ -152,6 +153,7 @@ const routes: Routes = [
   { path: 'proyectos/primax-blackoffice', component:PrimaxBlackofficeComponent, data:PROJECTS_METADATA},
   { path: 'proyectos/infomatica', component:InformaticaComponent, data:PROJECTS_METADATA},
   { path: 'proyectos/cajametropolitanadelima', component:CajametropolitanaComponent, data:PROJECTS_METADATA},
+  { path: 'proyectos/cyberstrat', component:CyberstratComponent, data:PROJECTS_METADATA},
   { path: 'proyectos/cookies', component: CookiesComponent, data: PROJECTS_METADATA },
   {
     path: 'servicios',

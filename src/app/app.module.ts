@@ -55,6 +55,7 @@ import { NiubizComponent } from './views/niubiz/niubiz.component';
 import { PrimaxBlackofficeComponent } from './views/primax-blackoffice/primax-blackoffice.component';
 import { InformaticaComponent } from './views/informatica/informatica.component';
 import { CajametropolitanaComponent } from './views/cajametropolitana/cajametropolitana.component';
+import { CyberstratComponent } from './views/cyberstrat/cyberstrat.component';
 
 @NgModule({
   declarations: [
@@ -88,7 +89,8 @@ import { CajametropolitanaComponent } from './views/cajametropolitana/cajametrop
     NiubizComponent,
     PrimaxBlackofficeComponent,
     InformaticaComponent,
-    CajametropolitanaComponent
+    CajametropolitanaComponent,
+    CyberstratComponent
   ],
   imports: [
     RouterModule,
