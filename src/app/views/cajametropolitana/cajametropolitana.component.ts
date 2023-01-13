@@ -12,9 +12,9 @@ export class CajametropolitanaComponent implements OnInit {
   date: number = 2021;
   industry: string = 'INTELIGENCIA ARTIFICIAL';
   client: string = 'Caja Metropolitana de Lima';
-  styles: string = 'w-[100%] ml-20'
+  styles: string = 'w-[100%] flex justify-end'
   display: string = 'hidden'
-  image: string = 'assets/img/cajametropolitanaimg.png';
+  image: string = 'assets/img/img-inicio-cajametropolitana.png';
   imageTwo: string = 'assets/img/cajametropolitana-logo.png';
   paragraphOne: string = 'During these uncertain times, many of us find ourselves in introspection mode, with new ideas and resolving to do better. We wish we could help everyone and fix everything. ';
   paragraphTwo: string = 'During these uncertain times, many of us find ourselves in introspection mode, with new ideas and resolving to do better. ';

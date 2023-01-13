@@ -11,7 +11,7 @@ export class CyberstratComponent implements OnInit {
   date: number = 2021;
   industry: string = 'INTELIGENCIA ARTIFICIAL';
   client: string = 'CyberStrat';
-  styles: string = 'w-[100%] ml-20'
+  styles: string = 'w-[100%] flex lg:justify-end'
   display: string = 'hidden'
   image: string = 'assets/img/primera-imgcyberstrat.png';
   imageTwo: string = 'assets/img/cyberstrat-logo.png';

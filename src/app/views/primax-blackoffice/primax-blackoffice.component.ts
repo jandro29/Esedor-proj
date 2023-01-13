@@ -17,7 +17,7 @@ export class PrimaxBlackofficeComponent implements OnInit {
   date: number = 2021;
   industry: string = 'INTELIGENCIA ARTIFICIAL';
   client: string = 'Primax-Backoffice';
-  styles: string = 'w-[100%] lg:ml-32'
+  styles: string = 'w-[100%] '
   display: string = 'hidden'
   imageTwo: string = 'assets/img/primax-solutionsicono.png'
   image: string = 'assets/img/primera-img-primax-backoffice-.png';
