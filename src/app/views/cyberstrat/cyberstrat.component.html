@@ -5,18 +5,25 @@
   [definitionsList]="definitionsList" [imageTwo]="imageTwo" [animatedTitle]="animatedTitle"></app-first-section>
 
   <section class="h-screen lg:mt-80 ">
-    <div class="w-full h-screen bg-no-repeat bg-cover bg-fixed h-[110%]"
+    <div class="w-full h-screen bg-no-repeat bg-cover bg-fixed h-[110%] lg:block hidden"
       style="background-image: url(assets/img/parallax1-cyberstrat.png);">
     </div>
+    <div class="w-full h-screen bg-no-repeat bg-cover bg-fixed h-[110%] block lg:hidden"
+    style="background-image: url(assets/img/parallax1mobil-cyberstrat.png);">
+  </div>
   </section>
 
   <app-second-section [firstText]="firstText" [secondText]="secondText" [displayImage]="displayImage">
   </app-second-section>
 
   <section class="h-screen">
-    <div class="w-full h-screen bg-no-repeat bg-cover bg-fixed h-[110%]"
+    <div class="w-full h-screen bg-no-repeat bg-cover bg-fixed h-[110%] lg:block hidden"
       style="background-image: url(assets/img/parallax2-cyberstrat.jpg);">
     </div>
+
+    <div class="w-full h-screen bg-no-repeat bg-cover bg-fixed h-[110%] block lg:hidden"
+    style="background-image: url(assets/img/parallax2mobil-cyberstrat.png);">
+  </div>
   </section>
 
 
@@ -69,8 +76,11 @@
 
 
   <section class="h-screen  mt-[428px]">
-    <div class="w-full h-screen bg-no-repeat bg-cover bg-fixed h-[110%]"
+    <div class="w-full h-screen bg-no-repeat bg-cover bg-fixed h-[110%] lg:block hidden"
       style="background-image: url(assets/img/parallax3-cyberstrat.png);">
+    </div>
+    <div class="w-full h-screen bg-no-repeat bg-cover bg-fixed h-[110%] block lg:hidden"
+      style="background-image: url(assets/img/parallax3mobil-cyberstrat.png);">
     </div>
   </section>
 
@@ -83,7 +93,7 @@
 
   <section>
     <div class="flex justify-center">
-      <img class="ml-20 w-[1000px] lg:w-[500px] xl:w-[600px] 2xl:w-[700px] 3xl:w-[990px]" src="assets/img/img4-cyberstrat.png" alt="">
+      <img class="lg:ml-20 w-[1000px] lg:w-[500px] xl:w-[600px] 2xl:w-[700px] 3xl:w-[990px]" src="assets/img/img4-cyberstrat.png" alt="">
     </div>
   </section>
 
