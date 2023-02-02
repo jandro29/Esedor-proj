@@ -1,222 +1,425 @@
 <ngu-carousel #myCarousel [inputs]="carouselConfig" [dataSource]="[first, second, third, fourth, fifth]">
-    <div *nguCarouselDef="let item;" class="item pb-0 2xl:py-4">
-        <div class="tile">
-            <ng-container *ngTemplateOutlet="item"></ng-container>
-        </div>
+  <div *nguCarouselDef="let item;" class="item pb-0 2xl:py-4">
+    <div class="tile">
+      <ng-container *ngTemplateOutlet="item"></ng-container>
     </div>
-    <ng-template #first>
-        <div class="grid grid-cols-1 lg:grid-cols-8 lg:gap-4 xl:gap-[2.5rem] 2xl:gap-[4rem] items-center">
-            <div class="hidden lg:block text-[#141C26] space-y-4 pb-[4.5rem] w-[100px]">
-                <p class="lexendb leading-[20px]">Notifai</p>
-                <p class="lexend text-[11.5px] leading-[14.38px]">Voice Bot con Machine Learning</p>
-            </div>
-            <div
-                class="col-span-6 flex flex-col-reverse lg:grid grid-cols-2 items-center justify-items-center xl:pr-[8rem] px-[3rem] lg:px-0 pt-[4rem] lg:pt-[2rem]">
-                <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_uzamaojr.json"
-                    background="transparent" speed="1" class="w-[200px] lg:w-[300px] h-[200px] lg:h-[300px]" autoplay>
-                </lottie-player>
-                <div class="space-y-4 lg:space-y-[2.5rem]">
-                    <h5
-                        class="lexendzettaextrali text-[26px] lg:text-[42px] xl:text-[66px] leading-[32.5px] lg:leading-[53.3px] xl:leading-[82.5px] text-[#5682FF] ml-[-0.6rem]">
-                        Acelera.
-                        Diseña.
-                        Desarrolla.</h5>
-                    <p class="lexendb text-sm leading-[17.5px] text-[#141C26]">En Esedor podemos ofrecerte equipos de producto de clase global para crear proyectos innovadores de forma eficiente y ágil.</p>
-                </div>
-
-            </div>
-            <div class="hidden lg:block text-[#141C26] space-y-4 text-right pb-[4.5rem] w-[100px] ml-auto">
-                <p class="lexendb leading-[20px]">Primax</p>
-                <p class="lexend text-[11.5px] leading-[14.38px]">La primera tienda virtual b2b regional</p>
-            </div>
+  </div>
+  <ng-template #first>
+    <div class="grid grid-cols-1 lg:grid-cols-8 lg:gap-4 xl:gap-[2.5rem] 2xl:gap-[4rem] items-center">
+      <div class="hidden lg:block text-[#141C26] space-y-4 pb-[4.5rem] w-[100px]">
+        <p class="lexendb leading-[20px]">Notifai</p>
+        <p class="lexend text-[11.5px] leading-[14.38px]">Voice Bot con Machine Learning</p>
+      </div>
+      <div
+        class="col-span-6 flex flex-col-reverse lg:grid grid-cols-2 items-center justify-items-center xl:pr-[8rem] px-[0.5rem] lg:px-0 pt-[4rem] lg:pt-[2rem]">
+        <div class="lg:block hidden">
+          <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_uzamaojr.json" background="transparent"
+            speed="1" class=" w-[200px] lg:w-[300px] h-[200px] lg:h-[300px]" autoplay>
+          </lottie-player>
         </div>
-    </ng-template>
+        <div class="space-y-4 lg:space-y-[2.5rem]">
 
-    <ng-template #second>
-        <div class="grid grid-cols-1 lg:grid-cols-8 lg:gap-4 xl:gap-[2.5rem] 2xl:gap-[4rem] items-center">
-            <div class="hidden lg:block text-[#141C26] space-y-4 pb-[9.5rem] w-[100px]">
-                <p class="lexendb leading-[20px]">Esedor</p>
-                <p class="lexend text-[11.5px] leading-[14.38px]">Acelera. <br> Diseña. Desarrolla.</p>
-            </div>
-            <div
-                class="col-span-6 flex flex-col-reverse lg:grid grid-cols-2 items-center justify-items-center xl:pr-[8rem] px-[3rem] lg:px-0 pt-[4rem] lg:pt-[2rem]">
-                <img src="assets/img/main-slide2.svg" alt="">
-                <div class="space-y-4 lg:space-y-[2.5rem]">
-                    <h5
-                        class="lexendzettaextrali text-[26px] lg:text-[42px] xl:text-[66px] leading-[32.5px] lg:leading-[53.3px] xl:leading-[82.5px] text-[#5682FF] ml-[-0.6rem]">
-                        Primax</h5>
-                    <p class="lexendb text-sm leading-[17.5px] text-[#141C26]">En Esedor podemos ofrecerte equipos de
-                        producto de clase global para crear proyectos de forma eficiente y ágil.</p>
-                    <button matRipple (mouseover)="btnStyle = true" (mouseout)="btnStyle = false"
-                        [ngClass]="{ 'arrow' : btnStyle}" routerLink="/proyectos/primax"
-                        class="lexendli cursor-pointer bg-white lg:hover:bg-[#5682FF] text-[15.5px] text-[#141C26] lg:hover:text-white flex items-center justify-start lg:justify-center shadow w-full lg:w-[159px] h-[60px] px-6 lg:p-4 rounded-[50px]">
-                        <svg class="transition duration-700 ease-in-out mr-16 lg:mr-4 w-[24px] lg:w-[32px]" width="33"
-                            height="31" viewBox="0 0 33 31" [ngClass]="{ 'arrow-rotate' : btnStyle }" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <g class="text-white">
-                                <line x1="5.7105e-09" y1="14.7539" x2="30.6479" y2="14.7539" stroke="black"
-                                    stroke-width="2" />
-                                <path d="M16.2585 1.00146L30.5917 15.2188L16.2585 29.436" stroke="black"
-                                    stroke-width="2" />
-                            </g>
-                        </svg>
-                        Ver caso
-                    </button>
-                </div>
+          <!-- desktop -->
+          <h5
+            class="lexendzettaextrali hidden lg:block text-[26px] lg:text-[42px] xl:text-[66px] leading-[32.5px] lg:leading-[53.3px] xl:leading-[82.5px] text-[#5682FF] ml-[-0.6rem]">
+            Acelera.
+            Diseña.
+            Desarrolla.</h5>
+          <!-- mobil -->
 
-            </div>
-            <div class="hidden lg:block text-[#141C26] space-y-4 text-right pb-[9.5rem] w-[100px] ml-auto">
-                <p class="lexendb leading-[20px]">Redeban</p>
-                <p class="lexend text-[11.5px] leading-[14.38px]">Empresa de origen Colombiano</p>
-            </div>
+          <div class="lg:hidden block">
+            <h5
+              class="lexendzettaextrali flex justify-center text-[14px] leading-[32.5px] lg:leading-[53.3px] xl:leading-[82.5px] text-[#5682FF] ml-[-0.6rem]">
+              Acelera.
+              Diseña.
+              Desarrolla.</h5>
+          </div>
+
+          <div class="lg:block hidden">
+            <p class="lexendb text-sm leading-[17.5px] text-[#141C26]">En Esedor podemos ofrecerte equipos de producto
+              de clase global para crear proyectos innovadores de forma eficiente y ágil.</p>
+          </div>
+
+          <div class="block lg:hidden">
+            <p class="lexend text-sm leading-[17.5px] text-[#141C26] flex  justify-center">En Esedor podemos ofrecerte
+              equipos de</p>
+            <p class="lexend text-sm leading-[17.5px] text-[#141C26] flex  justify-center">producto de clase global para
+              crear proyectos</p>
+            <p class="lexend text-sm leading-[17.5px] text-[#141C26] flex  justify-center">innovadores de forma
+              eficiente y ágil.</p>
+          </div>
+
         </div>
-    </ng-template>
-
-    <ng-template #third>
-        <div class="grid grid-cols-1 lg:grid-cols-8 lg:gap-4 xl:gap-[2.5rem] 2xl:gap-[4rem] items-center">
-            <div class="hidden lg:block text-[#141C26] space-y-4 pb-[4.5rem] w-[100px]">
-                <p class="lexendb leading-[20px]">Primax</p>
-                <p class="lexend text-[11.5px] leading-[14.38px]">Plataforma marketplace b2b</p>
-            </div>
-            <div
-                class="col-span-6 flex flex-col-reverse lg:grid grid-cols-2 items-center justify-items-center pr-[5rem] 2xl:pr-[8rem] px-[3rem] lg:px-0 pt-[4rem] lg:pt-[2rem] lg:min-h-[350px]">
-                <img src="assets/img/main-slide3.svg" alt="">
-
-                <div class="space-y-4 lg:space-y-[2.5rem] pl-[2rem] 2xl:pl-0">
-                    <h5
-                        class="lexendzettaextrali text-[26px] lg:text-[42px] xl:text-[66px] leading-[32.5px] lg:leading-[53.3px] xl:leading-[82.5px] text-[#5682FF] ml-[-0.6rem]">
-                        Redeban</h5>
-                    <p class="lexendb text-sm leading-[17.5px] text-[#141C26]">En Esedor podemos ofrecerte equipos de
-                        producto de clase global para crear proyectos de forma eficiente y ágil.</p>
-                    <button matRipple (mouseover)="btnStyle = true" (mouseout)="btnStyle = false"
-                        [ngClass]="{ 'arrow' : btnStyle}" routerLink="/proyectos"
-                        class="lexendli cursor-pointer bg-white lg:hover:bg-[#5682FF] text-[15.5px] text-[#141C26] lg:hover:text-white flex items-center justify-start lg:justify-center shadow w-full lg:w-[159px] h-[60px] px-6 lg:p-4 rounded-[50px]">
-                        <svg class="transition duration-700 ease-in-out mr-16 lg:mr-4 w-[24px] lg:w-[32px]" width="33"
-                            height="31" viewBox="0 0 33 31" [ngClass]="{ 'arrow-rotate' : btnStyle }" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <g class="text-white">
-                                <line x1="5.7105e-09" y1="14.7539" x2="30.6479" y2="14.7539" stroke="black"
-                                    stroke-width="2" />
-                                <path d="M16.2585 1.00146L30.5917 15.2188L16.2585 29.436" stroke="black"
-                                    stroke-width="2" />
-                            </g>
-                        </svg>
-                        Ver caso
-                    </button>
-                </div>
-
-            </div>
-            <div class="hidden lg:block text-[#141C26] space-y-4 text-right pb-[4.5rem] w-[100px] ml-auto">
-                <p class="lexendb leading-[20px]">Ripley</p>
-                <p class="lexend text-[11.5px] leading-[14.38px]">Diseño de sistema y migración a la Nube</p>
-            </div>
+        <div class="block lg:hidden">
+          <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_uzamaojr.json" background="transparent"
+            speed="1" class=" w-[200px] lg:w-[300px] h-[200px] lg:h-[300px]" autoplay>
+          </lottie-player>
         </div>
-    </ng-template>
+      </div>
+      <div class="hidden lg:block text-[#141C26] space-y-4 text-right pb-[4.5rem] w-[100px] ml-auto">
+        <p class="lexendb leading-[20px]">Primax</p>
+        <p class="lexend text-[11.5px] leading-[14.38px]">La primera tienda virtual b2b regional</p>
+      </div>
+    </div>
+  </ng-template>
 
-    <ng-template #fourth>
-        <div class="grid grid-cols-1 lg:grid-cols-8 lg:gap-4 xl:gap-[2.5rem] 2xl:gap-[4rem] items-center">
-            <div class="hidden lg:block text-[#141C26] space-y-4 pb-[4.5rem] w-[100px]">
-                <p class="lexendb leading-[20px]">Redeban</p>
-                <p class="lexend text-[11.5px] leading-[14.38px]">Empresa de origen Colombiano</p>
-            </div>
-            <div
-                class="col-span-6 flex flex-col-reverse lg:grid grid-cols-2 items-center justify-items-center xl:pr-[8rem] px-[3rem] lg:px-0 pt-[4rem] lg:pt-[2rem] lg:min-h-[350px]">
-                <img src="assets/img/main-slide4.svg" alt="">
-
-                <div class="space-y-4 lg:space-y-[2.5rem]">
-                    <h5
-                        class="lexendzettaextrali text-[26px] lg:text-[42px] xl:text-[66px] leading-[32.5px] lg:leading-[53.3px] xl:leading-[82.5px] text-[#5682FF] ml-[-0.6rem]">
-                        Ripley</h5>
-                    <p class="lexendb text-sm leading-[17.5px] text-[#141C26]">En Esedor podemos ofrecerte equipos de
-                        producto de clase global para crear proyectos de forma eficiente y ágil.</p>
-                    <button matRipple (mouseover)="btnStyle = true" (mouseout)="btnStyle = false"
-                        [ngClass]="{ 'arrow' : btnStyle}" routerLink="/proyectos/ripley"
-                        class="lexendli cursor-pointer bg-white lg:hover:bg-[#5682FF] text-[15.5px] text-[#141C26] lg:hover:text-white flex items-center justify-start lg:justify-center shadow w-full lg:w-[159px] h-[60px] px-6 lg:p-4 rounded-[50px]">
-                        <svg class="transition duration-700 ease-in-out mr-16 lg:mr-4 w-[24px] lg:w-[32px]" width="33"
-                            height="31" viewBox="0 0 33 31" [ngClass]="{ 'arrow-rotate' : btnStyle }" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <g class="text-white">
-                                <line x1="5.7105e-09" y1="14.7539" x2="30.6479" y2="14.7539" stroke="black"
-                                    stroke-width="2" />
-                                <path d="M16.2585 1.00146L30.5917 15.2188L16.2585 29.436" stroke="black"
-                                    stroke-width="2" />
-                            </g>
-                        </svg>
-                        Ver caso
-                    </button>
-                </div>
-
-            </div>
-            <div class="hidden lg:block text-[#141C26] space-y-4 text-right pb-[4.5rem] w-[100px] ml-auto">
-                <p class="lexendb leading-[20px]">Notifai</p>
-                <p class="lexend text-[11.5px] leading-[14.38px]">Machine Learning y plataforma SaaS</p>
-            </div>
+  <ng-template #second>
+    <div class="mb-10 grid grid-cols-1 lg:grid-cols-8 lg:gap-4 xl:gap-[2.5rem] 2xl:gap-[4rem] items-center">
+      <div class="hidden lg:block text-[#141C26] space-y-4 pb-[9.5rem] w-[100px]">
+        <p class="lexendb leading-[20px]">Esedor</p>
+        <p class="lexend text-[11.5px] leading-[14.38px]">Acelera. <br> Diseña. Desarrolla.</p>
+      </div>
+      <div
+        class="col-span-6 flex flex-col-reverse lg:grid grid-cols-2 items-center justify-items-center xl:pr-[8rem] px-[0.5rem] lg:px-0 pt-[4rem] lg:pt-[2rem]">
+        <div class="lg:block hidden">
+          <img src="assets/img/main-slide2.svg" alt="">
         </div>
-    </ng-template>
+        <div class="space-y-4 lg:space-y-[2.5rem]">
 
-    <ng-template #fifth>
-        <div class="grid grid-cols-1 lg:grid-cols-8 lg:gap-4 xl:gap-[2.5rem] 2xl:gap-[4rem] items-center">
-            <div class="hidden lg:block text-[#141C26] space-y-4 pb-[4.5rem] w-[100px]">
-                <p class="lexendb leading-[20px]">Ripley</p>
-                <p class="lexend text-[11.5px] leading-[14.38px]">Diseño de sistema y migración a la Nube</p>
-            </div>
-            <div
-                class="col-span-6 flex flex-col-reverse lg:grid grid-cols-2 items-center justify-items-center xl:pr-[8rem] px-[3rem] lg:px-0 pt-[4rem] lg:pt-[2rem] lg:min-h-[350px]">
-                <img src="assets/img/main-slide5.svg" alt="">
-                <div class="space-y-4 lg:space-y-[2.5rem]">
-                    <h5
-                        class="lexendzettaextrali text-[26px] lg:text-[42px] xl:text-[66px] leading-[32.5px] lg:leading-[53.3px] xl:leading-[82.5px] text-[#5682FF] ml-[-0.6rem]">
-                        Notifai</h5>
-                    <p class="lexendb text-sm leading-[17.5px] text-[#141C26]">En Esedor podemos ofrecerte equipos de
-                        producto de clase global para crear proyectos de forma eficiente y ágil.</p>
-                    <button matRipple (mouseover)="btnStyle = true" (mouseout)="btnStyle = false"
-                        [ngClass]="{ 'arrow' : btnStyle}" routerLink="/proyectos/notifai"
-                        class="lexendli cursor-pointer bg-white lg:hover:bg-[#5682FF] text-[15.5px] text-[#141C26] lg:hover:text-white flex items-center justify-start lg:justify-center shadow w-full lg:w-[159px] h-[60px] px-6 lg:p-4 rounded-[50px]">
-                        <svg class="transition duration-700 ease-in-out mr-16 lg:mr-4 w-[24px] lg:w-[32px]" width="33"
-                            height="31" viewBox="0 0 33 31" [ngClass]="{ 'arrow-rotate' : btnStyle }" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <g class="text-white">
-                                <line x1="5.7105e-09" y1="14.7539" x2="30.6479" y2="14.7539" stroke="black"
-                                    stroke-width="2" />
-                                <path d="M16.2585 1.00146L30.5917 15.2188L16.2585 29.436" stroke="black"
-                                    stroke-width="2" />
-                            </g>
-                        </svg>
-                        Ver caso
-                    </button>
-                </div>
 
-            </div>
-            <div class="hidden lg:block text-[#141C26] space-y-4 text-right pb-[4.5rem] w-[100px] ml-auto">
-                <p class="lexendb leading-[20px]">Esedor</p>
-                <p class="lexend text-[11.5px] leading-[14.38px]">Acelera. <br> Diseña. Desarrolla.</p>
-            </div>
+          <!-- desktop -->
+
+          <h5
+            class="lexendzettaextrali lg:block hidden text-[26px] lg:text-[42px] xl:text-[66px]  lg:leading-[53.3px] xl:leading-[82.5px] text-[#5682FF] ml-[-0.6rem]">
+            Primax</h5>
+          <p class="lexendb text-sm lg:block hidden leading-[17.5px] text-[#141C26]">En Esedor podemos ofrecerte equipos
+            de
+            producto de clase global para crear proyectos de forma eficiente y ágil.</p>
+
+          <!-- mobil -->
+          <div class="block lg:hidden">
+            <h5
+              class="lexendzettaextrali flex justify-center text-[14px] leading-[32.5px] lg:leading-[53.3px] xl:leading-[82.5px] text-[#5682FF] ml-[-0.6rem]">
+              Primax</h5>
+            <p class="lexend text-sm leading-[17.5px] text-[#141C26] flex justify-center">En Esedor podemos ofrecerte
+              equipos de</p>
+            <p class="lexend text-sm leading-[17.5px] text-[#141C26] flex justify-center">producto de clase global para
+              crear proyectos</p>
+            <p class="lexend text-sm leading-[17.5px] text-[#141C26] flex justify-center">de forma eficiente y ágil.</p>
+          </div>
+          <div class="px-[3rem] lg:hidden block ">
+            <button matRipple (mouseover)="btnStyle = true" (mouseout)="btnStyle = false"
+              [ngClass]="{ 'arrow' : btnStyle}" routerLink="/proyectos/primax"
+              class="lexendli cursor-pointer bg-white lg:hover:bg-[#5682FF] text-[15.5px] text-[#141C26] lg:hover:text-white flex items-center justify-start lg:justify-center shadow w-full lg:w-[159px] h-[60px] px-6 lg:p-4 rounded-[50px]">
+              <svg class="transition duration-700 ease-in-out mr-16 lg:mr-4 w-[24px] lg:w-[32px]" width="33" height="31"
+                viewBox="0 0 33 31" [ngClass]="{ 'arrow-rotate' : btnStyle }" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <g class="text-white">
+                  <line x1="5.7105e-09" y1="14.7539" x2="30.6479" y2="14.7539" stroke="black" stroke-width="2" />
+                  <path d="M16.2585 1.00146L30.5917 15.2188L16.2585 29.436" stroke="black" stroke-width="2" />
+                </g>
+              </svg>
+              Ver caso
+            </button>
+          </div>
+
+          <div class="hidden lg:block ">
+            <button matRipple (mouseover)="btnStyle = true" (mouseout)="btnStyle = false"
+              [ngClass]="{ 'arrow' : btnStyle}" routerLink="/proyectos/primax"
+              class="lexendli  cursor-pointer bg-white lg:hover:bg-[#5682FF] text-[15.5px] text-[#141C26] lg:hover:text-white flex items-center justify-start lg:justify-center shadow w-full lg:w-[159px] h-[60px] px-6 lg:p-4 rounded-[50px]">
+              <svg class="transition duration-700 ease-in-out mr-16 lg:mr-4 w-[24px] lg:w-[32px]" width="33" height="31"
+                viewBox="0 0 33 31" [ngClass]="{ 'arrow-rotate' : btnStyle }" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <g class="text-white">
+                  <line x1="5.7105e-09" y1="14.7539" x2="30.6479" y2="14.7539" stroke="black" stroke-width="2" />
+                  <path d="M16.2585 1.00146L30.5917 15.2188L16.2585 29.436" stroke="black" stroke-width="2" />
+                </g>
+              </svg>
+              Ver caso
+            </button>
+          </div>
         </div>
-    </ng-template>
+        <div class="block lg:hidden">
+          <img class="w-[190px]" src="assets/img/main-slide2.svg" alt="">
+        </div>
+      </div>
+      <div class="hidden lg:block text-[#141C26] space-y-4 text-right pb-[9.5rem] w-[100px] ml-auto">
+        <p class="lexendb leading-[20px]">Redeban</p>
+        <p class="lexend text-[11.5px] leading-[14.38px]">Empresa de origen Colombiano</p>
+      </div>
+    </div>
+  </ng-template>
 
-    <button NguCarouselNext class="rightRs">
-        <svg class="ml-auto" width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M11.5601 24L23.0601 12.5L11.5601 1" stroke="black" />
-            <line x1="23.0601" y1="13.0898" x2="-6.67135e-05" y2="13.0898" stroke="black" />
-        </svg>
-    </button>
-    <button NguCarouselPrev class="leftRs">
-        <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M12.5 1L1 12.5L12.5 24" stroke="black" />
-            <line x1="1" y1="11.9102" x2="24.0601" y2="11.9102" stroke="black" />
-        </svg>
-    </button>
-    <ul class="myPoint hidden lg:block" NguCarouselPoint>
-        <span class="text-[#141C26] text-sm lexendzetta pr-2">01</span>
-        <li *ngFor="let i of myCarousel.pointNumbers; let ind = index" [class.active]="i==myCarousel.activePoint"
-            (click)="myCarousel.moveTo(i)"></li>
-        <span class="text-[#141C26] text-sm lexendzetta pl-2">05</span>
+  <ng-template #third>
+    <div class=" mb-10 grid grid-cols-1 lg:grid-cols-8 lg:gap-4 xl:gap-[2.5rem] 2xl:gap-[4rem] items-center">
+      <div class="hidden lg:block text-[#141C26] space-y-4 pb-[4.5rem] w-[100px]">
+        <p class="lexendb leading-[20px]">Primax</p>
+        <p class="lexend text-[11.5px] leading-[14.38px]">Plataforma marketplace b2b</p>
+      </div>
+      <div
+        class="col-span-6 flex flex-col-reverse lg:grid grid-cols-2 items-center justify-items-center lg:pr-[5rem] 2xl:pr-[8rem] px-[0.5rem] lg:px-0 pt-[4rem] lg:pt-[2rem] lg:min-h-[350px]">
+        <div class="lg:block hidden">
+          <img src="assets/img/main-slide3.svg" alt="">
+        </div>
+        <div class="space-y-4 lg:space-y-[2.5rem] lg:pl-[2rem] 2xl:pl-0">
 
-    </ul>
+          <!-- desktop -->
+          <h5
+            class="lexendzettaextrali lg:block hidden text-[26px] lg:text-[42px] xl:text-[66px] leading-[32.5px] lg:leading-[53.3px] xl:leading-[82.5px] text-[#5682FF] ml-[-0.6rem]">
+            Redeban</h5>
+          <p class="lexendb text-sm leading-[17.5px] lg:block hidden text-[#141C26]">En Esedor podemos ofrecerte equipos
+            de
+            producto de clase global para crear proyectos de forma eficiente y ágil.</p>
+
+          <!-- mobil -->
+          <div class="lg:hidden block">
+            <h5
+              class="lexendzettaextrali flex justify-center text-[14px] leading-[32.5px] lg:leading-[53.3px] xl:leading-[82.5px] text-[#5682FF] ml-[-0.6rem]">
+              Redeban</h5>
+            <p class="lexend text-sm leading-[17.5px] text-[#141C26] flex justify-center">En Esedor podemos ofrecerte
+              equipos </p>
+            <p class="lexend text-sm leading-[17.5px] text-[#141C26] flex justify-center">de producto de clase global
+              para crear </p>
+            <p class="lexend text-sm leading-[17.5px] text-[#141C26] flex justify-center">proyectos de forma eficiente y
+              ágil.
+            </p>
+          </div>
+          <div class="px-[3rem] lg:hidden block">
+            <button matRipple (mouseover)="btnStyle = true" (mouseout)="btnStyle = false"
+              [ngClass]="{ 'arrow' : btnStyle}" routerLink="/proyectos"
+              class="lexendli cursor-pointer bg-white lg:hover:bg-[#5682FF] text-[15.5px] text-[#141C26] lg:hover:text-white flex items-center justify-start lg:justify-center shadow w-full lg:w-[159px] h-[60px] px-6 lg:p-4 rounded-[50px]">
+              <svg class="transition duration-700 ease-in-out mr-16 lg:mr-4 w-[24px] lg:w-[32px]" width="33" height="31"
+                viewBox="0 0 33 31" [ngClass]="{ 'arrow-rotate' : btnStyle }" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <g class="text-white">
+                  <line x1="5.7105e-09" y1="14.7539" x2="30.6479" y2="14.7539" stroke="black" stroke-width="2" />
+                  <path d="M16.2585 1.00146L30.5917 15.2188L16.2585 29.436" stroke="black" stroke-width="2" />
+                </g>
+              </svg>
+              Ver caso
+            </button>
+          </div>
+
+
+          <div class="hidden lg:block ">
+            <button matRipple (mouseover)="btnStyle = true" (mouseout)="btnStyle = false"
+              [ngClass]="{ 'arrow' : btnStyle}" routerLink="/proyectos"
+              class="lexendli cursor-pointer bg-white lg:hover:bg-[#5682FF] text-[15.5px] text-[#141C26] lg:hover:text-white flex items-center justify-start lg:justify-center shadow w-full lg:w-[159px] h-[60px] px-6 lg:p-4 rounded-[50px]">
+              <svg class="transition duration-700 ease-in-out mr-16 lg:mr-4 w-[24px] lg:w-[32px]" width="33" height="31"
+                viewBox="0 0 33 31" [ngClass]="{ 'arrow-rotate' : btnStyle }" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <g class="text-white">
+                  <line x1="5.7105e-09" y1="14.7539" x2="30.6479" y2="14.7539" stroke="black" stroke-width="2" />
+                  <path d="M16.2585 1.00146L30.5917 15.2188L16.2585 29.436" stroke="black" stroke-width="2" />
+                </g>
+              </svg>
+              Ver caso
+            </button>
+          </div>
+        </div>
+        <div class="block lg:hidden">
+          <img src="assets/img/main-slide3.svg" alt="">
+        </div>
+      </div>
+      <div class="hidden lg:block text-[#141C26] space-y-4 text-right pb-[4.5rem] w-[100px] ml-auto">
+        <p class="lexendb leading-[20px]">Ripley</p>
+        <p class="lexend text-[11.5px] leading-[14.38px]">Diseño de sistema y migración a la Nube</p>
+      </div>
+    </div>
+  </ng-template>
+
+  <ng-template #fourth>
+    <div class="mb-10 grid grid-cols-1 lg:grid-cols-8 lg:gap-4 xl:gap-[2.5rem] 2xl:gap-[4rem] items-center">
+      <div class="hidden lg:block text-[#141C26] space-y-4 pb-[4.5rem] w-[100px]">
+        <p class="lexendb leading-[20px]">Redeban</p>
+        <p class="lexend text-[11.5px] leading-[14.38px]">Empresa de origen Colombiano</p>
+      </div>
+      <div
+        class="col-span-6 flex flex-col-reverse lg:grid grid-cols-2 items-center justify-items-center xl:pr-[8rem] px-[0.5rem] lg:px-0 pt-[4rem] lg:pt-[2rem] lg:min-h-[350px]">
+
+        <div class="lg:block hidden">
+          <img src="assets/img/main-slide4.svg" alt="">
+        </div>
+        <div class="space-y-4 lg:space-y-[2.5rem]">
+
+
+          <!-- mobil -->
+          <div class="block lg:hidden">
+            <h5
+              class="lexendzettaextrali text-[14px] flex justify-center  leading-[32.5px] lg:leading-[53.3px] xl:leading-[82.5px] text-[#5682FF] ml-[-0.6rem]">
+              Ripley</h5>
+            <p class="lexend text-sm leading-[17.5px] text-[#141C26] flex justify-center">En Esedor podemos ofrecerte
+              equipos</p>
+            <p class="lexend text-sm leading-[17.5px] text-[#141C26] flex justify-center">de producto de clase global
+              para crear</p>
+            <p class="lexend text-sm leading-[17.5px] text-[#141C26] flex justify-center">proyectos de forma eficiente y
+              ágil.</p>
+          </div>
+
+          <!-- desktop -->
+          <h5
+            class="lexendzettaextrali lg:block hidden text-[26px] lg:text-[42px] xl:text-[66px] leading-[32.5px] lg:leading-[53.3px] xl:leading-[82.5px] text-[#5682FF] ml-[-0.6rem]">
+            Ripley</h5>
+          <p class="lexendb text-sm lg:block hidden leading-[17.5px] text-[#141C26]">En Esedor podemos ofrecerte equipos
+            de
+            producto de clase global para crear proyectos de forma eficiente y ágil.</p>
+
+          <div class="px-[3rem] lg:hidden block ">
+            <button matRipple (mouseover)="btnStyle = true" (mouseout)="btnStyle = false"
+              [ngClass]="{ 'arrow' : btnStyle}" routerLink="/proyectos/ripley"
+              class="lexendli cursor-pointer bg-white lg:hover:bg-[#5682FF] text-[15.5px] text-[#141C26] lg:hover:text-white flex items-center justify-start lg:justify-center shadow w-full lg:w-[159px] h-[60px] px-6 lg:p-4 rounded-[50px]">
+              <svg class="transition duration-700 ease-in-out mr-16 lg:mr-4 w-[24px] lg:w-[32px]" width="33" height="31"
+                viewBox="0 0 33 31" [ngClass]="{ 'arrow-rotate' : btnStyle }" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <g class="text-white">
+                  <line x1="5.7105e-09" y1="14.7539" x2="30.6479" y2="14.7539" stroke="black" stroke-width="2" />
+                  <path d="M16.2585 1.00146L30.5917 15.2188L16.2585 29.436" stroke="black" stroke-width="2" />
+                </g>
+              </svg>
+              Ver caso
+            </button>
+          </div>
+
+
+          <div class="hidden lg:block">
+            <button matRipple (mouseover)="btnStyle = true" (mouseout)="btnStyle = false"
+              [ngClass]="{ 'arrow' : btnStyle}" routerLink="/proyectos/ripley"
+              class="lexendli cursor-pointer bg-white lg:hover:bg-[#5682FF] text-[15.5px] text-[#141C26] lg:hover:text-white flex items-center justify-start lg:justify-center shadow w-full lg:w-[159px] h-[60px] px-6 lg:p-4 rounded-[50px]">
+              <svg class="transition duration-700 ease-in-out mr-16 lg:mr-4 w-[24px] lg:w-[32px]" width="33" height="31"
+                viewBox="0 0 33 31" [ngClass]="{ 'arrow-rotate' : btnStyle }" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <g class="text-white">
+                  <line x1="5.7105e-09" y1="14.7539" x2="30.6479" y2="14.7539" stroke="black" stroke-width="2" />
+                  <path d="M16.2585 1.00146L30.5917 15.2188L16.2585 29.436" stroke="black" stroke-width="2" />
+                </g>
+              </svg>
+              Ver caso
+            </button>
+          </div>
+
+        </div>
+        <div class="block lg:hidden">
+          <img src="assets/img/main-slide4.svg" alt="">
+        </div>
+      </div>
+      <div class="hidden lg:block text-[#141C26] space-y-4 text-right pb-[4.5rem] w-[100px] ml-auto">
+        <p class="lexendb leading-[20px]">Notifai</p>
+        <p class="lexend text-[11.5px] leading-[14.38px]">Machine Learning y plataforma SaaS</p>
+      </div>
+    </div>
+  </ng-template>
+
+  <ng-template #fifth>
+    <div class="  mb-10 grid grid-cols-1 lg:grid-cols-8 lg:gap-4 xl:gap-[2.5rem] 2xl:gap-[4rem] items-center">
+      <div class="hidden lg:block text-[#141C26] space-y-4 pb-[4.5rem] w-[100px]">
+        <p class="lexendb leading-[20px]">Ripley</p>
+        <p class="lexend text-[11.5px] leading-[14.38px]">Diseño de sistema y migración a la Nube</p>
+      </div>
+      <div
+        class="col-span-6 flex flex-col-reverse lg:grid grid-cols-2 items-center justify-items-center xl:pr-[8rem] px-[0.5rem] lg:px-0 pt-[4rem] lg:pt-[2rem] lg:min-h-[350px]">
+
+        <div class="lg:block hidden">
+          <img src="assets/img/main-slide5.svg" alt="">
+        </div>
+
+        <div class="space-y-4 lg:space-y-[2.5rem]">
+
+          <!-- desktop -->
+          <h5
+            class="lexendzettaextrali lg:block hidden text-[26px] lg:text-[42px] xl:text-[66px] leading-[32.5px] lg:leading-[53.3px] xl:leading-[82.5px] text-[#5682FF] ml-[-0.6rem]">
+            Notifai</h5>
+          <p class="lexendb text-sm lg:block hidden leading-[17.5px] text-[#141C26]">En Esedor podemos ofrecerte equipos
+            de
+            producto de clase global para crear proyectos de forma eficiente y ágil.</p>
+
+
+          <!-- mobil -->
+          <div class="block lg:hidden">
+            <h5
+              class="lexendzettaextrali flex justify-center text-[14px] leading-[32.5px] lg:leading-[53.3px] xl:leading-[82.5px] text-[#5682FF] ml-[-0.6rem]">
+              Notifai</h5>
+            <p class="lexend text-sm leading-[17.5px] text-[#141C26] flex justify-center  ">En Esedor podemos ofrecerte
+              equipos</p>
+            <p class="lexend text-sm leading-[17.5px] text-[#141C26] flex justify-center">de producto de clase global
+              para crear</p>
+            <p class="lexend text-sm leading-[17.5px] text-[#141C26] flex justify-center">proyectos de forma eficiente y
+              ágil.</p>
+          </div>
+
+          <div class="px-[3rem] lg:hidden block ">
+            <button matRipple (mouseover)="btnStyle = true" (mouseout)="btnStyle = false"
+              [ngClass]="{ 'arrow' : btnStyle}" routerLink="/proyectos/notifai"
+              class="lexendli cursor-pointer bg-white lg:hover:bg-[#5682FF] text-[15.5px] text-[#141C26] lg:hover:text-white flex items-center justify-start lg:justify-center shadow w-full lg:w-[159px] h-[60px] px-6 lg:p-4 rounded-[50px]">
+              <svg class="transition duration-700 ease-in-out mr-16 lg:mr-4 w-[24px] lg:w-[32px]" width="33" height="31"
+                viewBox="0 0 33 31" [ngClass]="{ 'arrow-rotate' : btnStyle }" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <g class="text-white">
+                  <line x1="5.7105e-09" y1="14.7539" x2="30.6479" y2="14.7539" stroke="black" stroke-width="2" />
+                  <path d="M16.2585 1.00146L30.5917 15.2188L16.2585 29.436" stroke="black" stroke-width="2" />
+                </g>
+              </svg>
+              Ver caso
+            </button>
+          </div>
+
+          <div class="hidden lg:block">
+            <button matRipple (mouseover)="btnStyle = true" (mouseout)="btnStyle = false"
+              [ngClass]="{ 'arrow' : btnStyle}" routerLink="/proyectos/notifai"
+              class="lexendli cursor-pointer bg-white lg:hover:bg-[#5682FF] text-[15.5px] text-[#141C26] lg:hover:text-white flex items-center justify-start lg:justify-center shadow w-full lg:w-[159px] h-[60px] px-6 lg:p-4 rounded-[50px]">
+              <svg class="transition duration-700 ease-in-out mr-16 lg:mr-4 w-[24px] lg:w-[32px]" width="33" height="31"
+                viewBox="0 0 33 31" [ngClass]="{ 'arrow-rotate' : btnStyle }" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <g class="text-white">
+                  <line x1="5.7105e-09" y1="14.7539" x2="30.6479" y2="14.7539" stroke="black" stroke-width="2" />
+                  <path d="M16.2585 1.00146L30.5917 15.2188L16.2585 29.436" stroke="black" stroke-width="2" />
+                </g>
+              </svg>
+              Ver caso
+            </button>
+          </div>
+        </div>
+        <div class="block lg:hidden">
+          <img src="assets/img/main-slide5.svg" alt="">
+        </div>
+      </div>
+      <div class="hidden lg:block text-[#141C26] space-y-4 text-right pb-[4.5rem] w-[100px] ml-auto">
+        <p class="lexendb leading-[20px]">Esedor</p>
+        <p class="lexend text-[11.5px] leading-[14.38px]">Acelera. <br> Diseña. Desarrolla.</p>
+      </div>
+    </div>
+  </ng-template>
+
+  <button NguCarouselNext class="rightRs">
+    <svg class="ml-auto" width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M11.5601 24L23.0601 12.5L11.5601 1" stroke="black" />
+      <line x1="23.0601" y1="13.0898" x2="-6.67135e-05" y2="13.0898" stroke="black" />
+    </svg>
+  </button>
+  <button NguCarouselPrev class="leftRs">
+    <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M12.5 1L1 12.5L12.5 24" stroke="black" />
+      <line x1="1" y1="11.9102" x2="24.0601" y2="11.9102" stroke="black" />
+    </svg>
+  </button>
+  <ul class="myPoint hidden lg:block" NguCarouselPoint>
+    <span class="text-[#141C26] text-sm lexendzetta pr-2">01</span>
+    <li *ngFor="let i of myCarousel.pointNumbers; let ind = index" [class.active]="i==myCarousel.activePoint"
+      (click)="myCarousel.moveTo(i)"></li>
+    <span class="text-[#141C26] text-sm lexendzetta pl-2">05</span>
+
+  </ul>
+
+
+
+  <ul class="myPoint lg:hidden block" NguCarouselPoint>
+    <div class="flex justify-center">
+      <li class="" *ngFor="let i of myCarousel.pointNumbers; let ind = index" [class.active]="i==myCarousel.activePoint"
+        (click)="myCarousel.moveTo(i)"></li>
+
+    </div>
+  </ul>
+
+
+
 </ngu-carousel>
+
+<div class="flex justify-center">
+  <img src="assets/img/flechaabajomobil.jpg" alt="">
+</div>
+<!--
 <div class="absolute bottom-[2.5rem] left-[-3rem] h-[150px] flex flex-col justify-between items-center">
     <p class="lexend text-[11.5px] text-rotate">Desplazarse hacia abajo</p>
     <button matRipple class="cursor-pointer rounded-[50%]" (click)="getDown.emit()">
         <img  class="w-[49px]" src="assets/img/btn_down.svg" alt="go_down">
     </button>
-</div>
+</div> -->

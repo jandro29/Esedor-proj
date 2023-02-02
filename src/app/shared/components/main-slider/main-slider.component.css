@@ -19,14 +19,14 @@ img {
     padding: 10px;
     box-sizing: border-box;
   } */
-  
+
 .tile {
     display: flex;
     flex-direction: column;
     height: 100%;
     justify-content: center;
 }
-  
+
 .leftRs {
     position: absolute;
     margin: auto;
@@ -39,7 +39,7 @@ img {
     left: 0;
     z-index: 9;
 }
-   
+
 .rightRs {
     position: absolute;
     margin: auto;
@@ -51,7 +51,7 @@ img {
     border-radius: 999px; */
     right: 0;
 }
-  
+
 .myPoint {
     list-style-type: none;
     text-align: right;
@@ -68,18 +68,20 @@ img {
     display: inline-block;
     /* border-radius: 10%; */
     border: 1px solid transparent;
-    background: #141C26;
-    border-bottom: 1px solid #141C26;
+    /*background: #141C26;*/
+    /*border-bottom: 1px solid #141C26;*/
     padding: 2px;
     width: 30px;
     margin: 0px;
     transition-timing-function: cubic-bezier(0.17, 0.67, 0.83, 0.67);
     transition: 0.4s;
+    background-image: url(../../../../assets/img/slideroption.png);
 }
 
 .myPoint  li.active {
     background: transparent;
     transform: scale(1);
+    background-image: url(../../../../assets/img/slideroptionactive.png);
 }
 
 @media screen and (min-width: 1024px) {
@@ -95,7 +97,7 @@ img {
     .arrow:hover g line {
         stroke: #FFFFFF;
     }
-    
+
     .arrow:hover g path {
         stroke: #FFFFFF;
     }
@@ -115,5 +117,5 @@ img {
     .myPoint {
         padding-bottom: 0;
     }
-    
+
 }

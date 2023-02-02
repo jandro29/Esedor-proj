@@ -95,6 +95,7 @@
           *ngFor="let item of servicesItems" (mouseover)="item.state = true" (mouseout)="item.state = false">
           <!-- max-w-[400px] h-[270px]  h-[330px]-->
           <div data-aos="fade-up" data-aos-duration="500" class="space-y-[2rem]">
+            <img src="{{item.img}}" alt="">
             <p class="lexendzettali text-[24px] leading-[35.8px] {{item.length}}">{{item.title}}</p>
             <h4 class="lexendli text-[21px] leading-[33.6px]">{{item.text}}</h4>
           </div>
