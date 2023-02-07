@@ -56,6 +56,8 @@ import { PrimaxBlackofficeComponent } from './views/primax-blackoffice/primax-bl
 import { InformaticaComponent } from './views/informatica/informatica.component';
 import { CajametropolitanaComponent } from './views/cajametropolitana/cajametropolitana.component';
 import { CyberstratComponent } from './views/cyberstrat/cyberstrat.component';
+import { ClipboardModule } from '@angular/cdk/clipboard';
+
 
 @NgModule({
   declarations: [
@@ -114,6 +116,8 @@ import { CyberstratComponent } from './views/cyberstrat/cyberstrat.component';
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
+    MatSnackBarModule,
+    ClipboardModule
   ],
   providers: [
     {provide: LocationStrategy, useClass: HashLocationStrategy},

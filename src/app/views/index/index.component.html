@@ -4,7 +4,8 @@
 
 <div class="fixed top-0 z-[99] w-full h-screen bg-[#000000] pt-3" *ngIf="showVideo">
   <div class="flex justify-end px-[1.5rem]">
-    <button class="rounded-[50%] w-[46px] h-[46px] bg-[#141C26] flex justify-center items-center" (click)="showVideo = false">
+    <button class="rounded-[50%] w-[46px] h-[46px] bg-[#141C26] flex justify-center items-center"
+      (click)="showVideo = false">
       <!-- (click)="closeForm.emit()" -->
       <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path
@@ -31,7 +32,7 @@
   </section>
 
   <section class="py-[5rem] lg:py-[13rem] px-4 bg-white" id="nextContent">
-    <div class="grid grid-cols-1 lg:grid-cols-3 xl:gap-x-[5rem] border-b border-black pb-[5rem] lg:pb-[13rem]" >
+    <div class="grid grid-cols-1 lg:grid-cols-3 xl:gap-x-[5rem] border-b border-black pb-[5rem] lg:pb-[13rem]">
       <div
         class="flex flex-row-reverse lg:flex-col justify-between items-center lg:items-start pt-[4rem] lg:pt-0 lg:py-4 pr-[2.5rem] lg:pr-0 order-last lg:order-none">
         <h4 data-aos="fade-right" data-aos-duration="500" class="text-[21px] lexendli">Conócenos</h4>
@@ -54,8 +55,9 @@
           </defs>
         </svg> -->
         <!-- <img class="max-w-[102px] ml-[-1rem]" src="assets/img/video_play.png" alt=""> -->
-        <lottie-player (click)="showVideo = true" class="ml-[-4rem]" src="https://assets10.lottiefiles.com/packages/lf20_getcwdyd.json"
-          background="transparent" speed="1" style="width: 200px; height: 200px;" hover></lottie-player>
+        <lottie-player (click)="showVideo = true" class="ml-[-4rem]"
+          src="https://assets10.lottiefiles.com/packages/lf20_getcwdyd.json" background="transparent" speed="1"
+          style="width: 200px; height: 200px;" hover></lottie-player>
       </div>
       <div class="col-span-2 space-y-[3rem]">
         <h1 data-aos="fade-up" data-aos-duration="500"
@@ -95,14 +97,17 @@
           *ngFor="let item of servicesItems" (mouseover)="item.state = true" (mouseout)="item.state = false">
           <!-- max-w-[400px] h-[270px]  h-[330px]-->
           <div data-aos="fade-up" data-aos-duration="500" class="space-y-[2rem]">
-            <img src="{{item.img}}" alt="">
+            <div>
+              <img id="img1" src="{{item.img}}" alt="">
+              <img id="img2" class="hidden" src="{{item.imgwhite}}" alt="">
+            </div>
             <p class="lexendzettali text-[24px] leading-[35.8px] {{item.length}}">{{item.title}}</p>
-            <h4 class="lexendli text-[21px] leading-[33.6px]">{{item.text}}</h4>
+            <h4 id="text" class="lexendli text-[21px] leading-[33.6px]">{{item.text}}</h4>
           </div>
-          <button data-aos="fade-right" data-aos-duration="500"
+          <button id="btn-sabermas" data-aos="fade-right" data-aos-duration="500"
             class="lexendli text-[21px] flex items-center mt-auto pt-6"
             [ngClass]="{ 'lg:text-[#5682FF] lg:font-bold' : item.state}">
-            <svg [ngClass]="{ 'arrow-rotate' : item.state}"
+            <svg [ngClass]="{ 'arrow-rotate' : item.state}" id="black"
               class="transition duration-700 ease-in-out w-[20px] lg:w-auto mr-5" width="33" height="31"
               viewBox="0 0 33 31" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g>
@@ -110,7 +115,21 @@
                 <path d="M16.2585 1.00146L30.5917 15.2188L16.2585 29.436" stroke="black" stroke-width="2" />
               </g>
             </svg>
+
+
+
+            <!----> <svg [ngClass]="{ 'arrow-rotate' : item.state}"
+              id="white" class="transition duration-700 ease-in-out w-[20px] lg:w-auto mr-5 " width="33" height="31"
+              viewBox="0 0 33 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+              <line  x1="5.7105e-09" y1="14.7539" x2="30.6479" y2="14.7539" stroke="white" stroke-width="2" />
+              <path  d="M16.2585 1.00146L30.5917 15.2188L16.2585 29.436" stroke="white" stroke-width="2"
+                style="transition: 0.5s;" />
+
+            </svg>
+
             Saber más
+
           </button>
         </div>
       </div>
@@ -202,22 +221,32 @@
     <div
       class="col-span-2 grid grid-cols-1 lg:grid-cols-2 pb-[4rem] lg:pt-[8rem] 2xl:pt-[10rem] lg:pb-[5rem] 2xl:pb-[7rem] text-white">
       <h3 data-aos="fade-right" data-aos-duration="500"
-        class="lexendli text-[18px] lg:text-[21px] pb-8 lg:pb-[5rem] 2xl:pb-[8rem] lg:col-span-2 ">Level Up</h3>
+        class="lexendli text-[18px] lg:text-[21px] pb-8 lg:pb-[5rem] 2xl:pb-[8rem] lg:col-span-2 lg:block hidden">Level Up</h3>
       <div class="space-y-8 lg:space-y-[4rem] 2xl:space-y-[6rem] lg:col-span-2 ">
         <h1 data-aos="fade-up" data-aos-duration="500"
           class="text-[28px] lg:text-[36px] xl:text-[46px] leading-[35px] lg:leading-[57.5px] ">
           ¿Buscas una manera de iniciar tu carrera?</h1>
         <h4 data-aos="fade-up" data-aos-duration="500"
           class="lexendli text-[18px] xl:text-[21px] leading-[25.6px] lg:leading-[33.6px]">
-          Se parte de nuestro Programa Trainee y desarrolla tu potencial en 6 meses. ¡Será una experiencia increíble! En el que no sólo ofrecemos habilidades prácticas, sino también tutoría de personas realmente talentosas en un ambiente increíble centrado en las personas, mientras pone sus manos en proyectos reales junto con nuestro equipo calificado de Diseño y Desarrollo de Productos en Esedor.
+          Se parte de nuestro Programa Trainee y desarrolla tu potencial en 6 meses. ¡Será una experiencia increíble! En
+          el que no sólo ofrecemos habilidades prácticas, sino también tutoría de personas realmente talentosas en un
+          ambiente increíble centrado en las personas, mientras pone sus manos en proyectos reales junto con nuestro
+          equipo calificado de Diseño y Desarrollo de Productos en Esedor.
         </h4>
         <h4 data-aos="fade-up" data-aos-duration="500"
           class="lexendli text-[18px] xl:text-[21px] leading-[25.6px] lg:leading-[33.6px]">Envia
           tu CV y datos personales:</h4>
 
       </div>
-      <p data-aos="fade-up" data-aos-duration="500"
-        class="lexendzettali text-[32px] pt-[2rem] col-span-2 hidden lg:block">talento@esedor.com</p>
+
+
+
+
+        <p [(ngModel)]="value" data-aos="fade-up" data-aos-duration="500"
+          class="lexendzettali flex flex-wrap lg:text-[32px] text-[16px] pt-[2rem] col-span-2">talento@esedor.com  <button class="flex justify-end items-center ml-8" [cdkCopyToClipboard]="copy(value)"><i><img
+            src="assets/img/copia.png" alt=""></i></button>
+  </p>
+
     </div>
   </section>
 

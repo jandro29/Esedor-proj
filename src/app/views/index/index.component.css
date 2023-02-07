@@ -45,7 +45,37 @@ g:hover  path{
     background: #4F57EB;
     box-shadow: 0px 5px 80px rgba(79, 87, 235, 0.4);
     color: #FFFFFF;
+    border-radius: 20px;
+    transition: 0.2s;
   }
+
+  .service-shadow #btn-sabermas{
+    color: white;
+  }
+
+
+  .service-shadow #black{
+    display: none;
+  }
+
+  .service-shadow #white{
+
+    display: block;
+  }
+
+
+  .service-shadow #img1{
+    display: none;
+  }
+
+  .service-shadow #img2{
+    display: block;
+  }
+  .service-shadow #text{
+    color: #D8D8D8;
+  }
+
+
 
   .type-family {
     font-family: LexendZettaExtraLight;

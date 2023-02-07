@@ -379,13 +379,13 @@
     </div>
   </ng-template>
 
-  <button NguCarouselNext class="rightRs">
+  <button NguCarouselNext class="rightRs lg:block hidden">
     <svg class="ml-auto" width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M11.5601 24L23.0601 12.5L11.5601 1" stroke="black" />
       <line x1="23.0601" y1="13.0898" x2="-6.67135e-05" y2="13.0898" stroke="black" />
     </svg>
   </button>
-  <button NguCarouselPrev class="leftRs">
+  <button NguCarouselPrev class="leftRs lg:block hidden">
     <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M12.5 1L1 12.5L12.5 24" stroke="black" />
       <line x1="1" y1="11.9102" x2="24.0601" y2="11.9102" stroke="black" />
@@ -413,13 +413,18 @@
 
 </ngu-carousel>
 
-<div class="flex justify-center">
-  <img src="assets/img/flechaabajomobil.jpg" alt="">
+<div class="flex justify-center lg:hidden block">
+<button matRipple class="cursor-pointer rounded-[50%]" (click)="getDown.emit()" >
+  <lottie-player src="https://assets8.lottiefiles.com/packages/lf20_wdhvjeex.json" background="transparent" speed="1"
+    style="width: 35px; height: 35px;" loop autoplay></lottie-player>
+</button>
 </div>
-<!--
-<div class="absolute bottom-[2.5rem] left-[-3rem] h-[150px] flex flex-col justify-between items-center">
-    <p class="lexend text-[11.5px] text-rotate">Desplazarse hacia abajo</p>
-    <button matRipple class="cursor-pointer rounded-[50%]" (click)="getDown.emit()">
-        <img  class="w-[49px]" src="assets/img/btn_down.svg" alt="go_down">
-    </button>
-</div> -->
+
+
+
+<div _ngcontent-aiy-c86=""
+  class="absolute bottom-[-2rem] left-[0rem] h-[150px] flex flex-col justify-between items-center lg:block hidden">
+  <button matRipple class="cursor-pointer rounded-[50%]" (click)="getDown.emit()" class="mat-ripple cursor-pointer rounded-[50%]">
+    <lottie-player src="https://assets9.lottiefiles.com/packages/lf20_Rq8jJk.json"  background="transparent"  speed="1.5"  style="width: 80px; height: 80px;"  loop  autoplay></lottie-player>
+  </button>
+</div>

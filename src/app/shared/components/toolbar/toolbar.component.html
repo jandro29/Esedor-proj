@@ -55,10 +55,12 @@
         <h4 data-aos="fade-down-left" class="lexendli text-[21px]">Trabajar con Esedor es optimizar tus oportunidades.</h4>
         <p data-aos="fade-down-left" class="lexend text-[14.5px]">¿Qué proyecto podemos construir para ti?</p>
       </div>
-      <button
+      <button  [routerLink]="['/contacto']"
         class="h-[46px] lg:h-[50px] 2xl:h-[65px] w-[192px] lg:w-[236px] rounded-[50px] bg-white text-[15.5px] text-black flex justify-center items-center p-4">
         <img class="pr-5 w-[42px] xl:w-auto" src="assets/img/arrow-black.png" alt="">
+        <a href="" [routerLink]="['/contacto']" style="text-decoration: none;">
         Conversemos
+      </a>
       </button>
     </div>
     <div class="absolute top-2 lg:top-auto lg:bottom-[-3.5rem] right-4" (click)="openMenu = false">
@@ -68,7 +70,7 @@
       </button>
     </div>
   </div>
-  <div data-aos="fade-right" class="h-[75%] lg:h-[70%] px-4 pt-4 lg:pt-[12rem] pb-2 flex flex-col lg:justify-between">
+  <div data-aos="fade-right" class="h-[75%] lg:h-[70%] px-4 pt-4 lg:pt-[10rem] pb-2 flex flex-col lg:justify-between mt-[-30px]">
     <ul class="open-menu lg:flex flex-wrap">
       <li class="cursor-pointer" *ngFor="let list of listGroup" (click)="redirectInternas(list.ruta)"
         (mouseover)="list.state = false" (mouseout)="list.state = true">{{list.name}}
@@ -78,20 +80,20 @@
     </ul>
     <div class="hidden lg:flex justify-between items-end">
       <p class="lexend text-[13px] font-medium text-white">Esedor © 2022</p>
-      <ul class="space-y-[1.2rem]">
+      <ul class="space-y-[0.5rem]">
         <li>
-          <a class="block" href="">
-            <img src="assets/img/Linkedin.png" alt="">
+          <a class="block" href="https://www.linkedin.com/company/esedor/" target="_blank">
+            <img src="assets/img/Linkedin.png" alt="" >
           </a>
         </li>
         <li>
-          <a class="block" href="">
+          <a class="block" href="https://www.facebook.com/esedorla" target="_blank">
             <img src="assets/img/Facebook.png" alt="">
           </a>
         </li>
         <li>
-          <a class="block" href="">
-            <img src="assets/img/Instagram.png" alt="">
+          <a class="block" href="https://www.instagram.com/esedor.latam/" target="_blank">
+            <img src="assets/img/Instagram.png" alt="" >
           </a>
         </li>
       </ul>
