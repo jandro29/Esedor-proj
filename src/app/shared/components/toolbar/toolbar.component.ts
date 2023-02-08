@@ -1,4 +1,4 @@
-import {Component, HostListener, OnInit, Input, ViewChild, ElementRef} from '@angular/core';
+import {Component, HostListener, OnInit, Input, ViewChild, ElementRef, EventEmitter, Output} from '@angular/core';
 import { Router } from "@angular/router";
 
 @Component({
@@ -7,6 +7,8 @@ import { Router } from "@angular/router";
   styleUrls: ['./toolbar.component.css']
 })
 export class ToolbarComponent implements OnInit {
+
+
 
   @ViewChild('menu', { static: true }) menu!: ElementRef<HTMLDivElement>;
   @ViewChild('logo', { static: true }) logo!: ElementRef<HTMLDivElement>;
@@ -20,7 +22,7 @@ export class ToolbarComponent implements OnInit {
   constructor(private router: Router) { }
 
   listGroup = [
-    {name: 'Servicios', ruta: '/servicios', state: true},
+    {id:'/inicio', name: 'Servicios', ruta: '/servicios', state: true},
     {name: 'Proyectos', ruta: '/proyectos', state: true},
     {name: 'Nosotros', ruta: '/nosotros', state: true},
     {name: 'Talento', ruta: '/talento', state: true},

@@ -72,11 +72,13 @@
   </div>
   <div data-aos="fade-right" class="h-[75%] lg:h-[70%] px-4 pt-4 lg:pt-[10rem] pb-2 flex flex-col lg:justify-between mt-[-30px]">
     <ul class="open-menu lg:flex flex-wrap">
+      <a [routerLink]="'{{list.id}}'">
       <li class="cursor-pointer" *ngFor="let list of listGroup" (click)="redirectInternas(list.ruta)"
         (mouseover)="list.state = false" (mouseout)="list.state = true">{{list.name}}
         <img [ngClass]="{ 'arrow-rotate' : !list.state }" class="translate-x-0 transition duration-700 ease-in-out w-[31px] lg:w-[42px] xl:w-auto"
           src="assets/img/short-arrow-right.png" alt="">
       </li>
+    </a>
     </ul>
     <div class="hidden lg:flex justify-between items-end">
       <p class="lexend text-[13px] font-medium text-white">Esedor © 2022</p>
