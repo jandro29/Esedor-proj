@@ -22,7 +22,7 @@ export class ToolbarComponent implements OnInit {
   constructor(private router: Router) { }
 
   listGroup = [
-    {id:'/inicio', name: 'Servicios', ruta: '/servicios', state: true},
+    {id: '#inicio', name: 'Servicios', ruta: '/servicios', state: true},
     {name: 'Proyectos', ruta: '/proyectos', state: true},
     {name: 'Nosotros', ruta: '/nosotros', state: true},
     {name: 'Talento', ruta: '/talento', state: true},

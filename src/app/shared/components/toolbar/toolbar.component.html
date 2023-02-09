@@ -1,4 +1,4 @@
-<mat-toolbar class="main-header text-black -mt-6 bg-transparent">
+<mat-toolbar class="main-header text-black -mt-6 bg-transparent" id="inicio">
   <div class="flex justify-between w-full text-[0.875rem] 3xl:text-[1.875rem]" [ngClass]="{ 'text-white' : colorWhite}">
     <div class="flex items-center w-full lg:w-[30%]" #logo>
       <div class="cursor-pointer" routerLink="/">
@@ -41,7 +41,7 @@
   <div class="bg-nav"></div>
 
 </div> -->
-<div class="h-screen w-full flex flex-col-reverse lg:block top-0 fixed bg-black z-50" *ngIf="openMenu">
+<div class="h-screen w-full flex flex-col-reverse lg:block top-0 fixed bg-black" style="z-index: 9999999999999999999999;" *ngIf="openMenu">
   <div class="lg:h-[30%] menu-celes text-white flex items-center lg:items-start lg:justify-between lg:pb-[1.5rem] 2xl:pb-[3rem] p-4 lg:relative min-h-[99px] lg:min-h-[220px]">
     <div class="flex items-center absolute lg:relative top-4 lg:top-auto">
       <img routerLink="/" class="w-[2.313] h-[2rem] cursor-pointer" src="assets/img/logo_white.png">
@@ -72,8 +72,8 @@
   </div>
   <div data-aos="fade-right" class="h-[75%] lg:h-[70%] px-4 pt-4 lg:pt-[10rem] pb-2 flex flex-col lg:justify-between mt-[-30px]">
     <ul class="open-menu lg:flex flex-wrap">
-      <a [routerLink]="'{{list.id}}'">
-      <li class="cursor-pointer" *ngFor="let list of listGroup" (click)="redirectInternas(list.ruta)"
+      <a>
+      <li class="cursor-pointer" *ngFor="let list of listGroup" (click)="redirectInternas(list.ruta)"  routerLink="'{{list.id}}'"
         (mouseover)="list.state = false" (mouseout)="list.state = true">{{list.name}}
         <img [ngClass]="{ 'arrow-rotate' : !list.state }" class="translate-x-0 transition duration-700 ease-in-out w-[31px] lg:w-[42px] xl:w-auto"
           src="assets/img/short-arrow-right.png" alt="">
