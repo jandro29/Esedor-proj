@@ -10,7 +10,7 @@
     </div>
     <div #menu class="flex justify-end w-full lexendzetta font-bold">
       <div [class.header_variable]="header_variable"
-        class="lg:grid grid-cols-6 gap-4 hidden space-x-10 justify-between items-center w-full lexendzetta font-bold">
+        class="lg:grid grid-cols-6 gap-4 hidden space-x-10 justify-between items-center w-full lexendzetta font-bold" #scroll>
         <span class="cursor-pointer col-span-2 text-[1rem]" (click)="redirectService()">Servicios</span>
         <span class="cursor-pointer col-span-2 text-[1rem]" (click)="redirectProject()">Proyectos</span>
         <span class="cursor-pointer col-span-2 text-[1rem]" (click)="redirectUs()">Nosotros</span>
@@ -73,7 +73,7 @@
   <div data-aos="fade-right" class="h-[75%] lg:h-[70%] px-4 pt-4 lg:pt-[10rem] pb-2 flex flex-col lg:justify-between mt-[-30px]">
     <ul class="open-menu lg:flex flex-wrap">
       <a>
-      <li class="cursor-pointer" *ngFor="let list of listGroup" (click)="redirectInternas(list.ruta)"  routerLink="'{{list.id}}'"
+      <li  class="cursor-pointer" *ngFor="let list of listGroup" (click)="redirectInternas(list.ruta); scrollTop()" routerLink="'{{list.id}}'"
         (mouseover)="list.state = false" (mouseout)="list.state = true">{{list.name}}
         <img [ngClass]="{ 'arrow-rotate' : !list.state }" class="translate-x-0 transition duration-700 ease-in-out w-[31px] lg:w-[42px] xl:w-auto"
           src="assets/img/short-arrow-right.png" alt="">

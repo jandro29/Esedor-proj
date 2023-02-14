@@ -13,7 +13,7 @@ export class ToolbarComponent implements OnInit {
   @ViewChild('menu', { static: true }) menu!: ElementRef<HTMLDivElement>;
   @ViewChild('logo', { static: true }) logo!: ElementRef<HTMLDivElement>;
   @ViewChild('search', { static: true }) search!: ElementRef<HTMLDivElement>;
-
+  @ViewChild('scroll')  scroll!: ElementRef;
   @Input() colorWhite: any;
 
   openMenu!: boolean;
@@ -42,6 +42,12 @@ export class ToolbarComponent implements OnInit {
     }else {
       this.header_variable = false;
     }
+  }
+
+
+
+  scrollTop(){
+    this.scroll.nativeElement.scrollTop = 0;
   }
 
   public redirectProject() {

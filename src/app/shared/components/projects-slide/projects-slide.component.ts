@@ -15,11 +15,14 @@ export class ProjectsSlideComponent implements AfterViewInit {
   bgColorFifth: boolean = true;
   bgColorSixth: boolean = true;
   bgColorSeventh: boolean = true;
+  bgColorEight: boolean = true;
+  bgColorNine: boolean = true;
+  bgColorTen: boolean = true;
 
 
   slideNo = 1;
   withAnim = true;
-  resetAnim = true; 
+  resetAnim = true;
 
   @ViewChild('myCarousel') myCarousel!: NguCarousel<any>;
 

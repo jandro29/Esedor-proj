@@ -65,6 +65,22 @@ img {
     transition: all .4s ease-in;
     height: 700px;
   }
+
+  .bg-eight{
+    background: #ced0d2;
+    transition: all .4s ease-in;
+    height: 700px;
+  }
+  .bg-nine{
+    background: #281f78;
+    transition: all .4s ease-in;
+    height: 700px;
+  }
+  .bg-ten{
+    background: #da6f1d;
+    transition: all .4s ease-in;
+    height: 700px;
+  }
 }
 
 

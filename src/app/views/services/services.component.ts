@@ -1,4 +1,5 @@
-import { Component, OnInit, HostListener, ViewChild } from '@angular/core';
+import { Component, OnInit, HostListener, ViewChild, ErrorHandler } from '@angular/core';
+import { InitialNavigation, UrlSerializer, UrlTree } from '@angular/router';
 
 import * as AOS from 'aos';
 
@@ -127,6 +128,7 @@ export class ServicesComponent implements OnInit {
     {title: 'Creación rápida de prototipos', text: 'Extrae información detallada sobre las necesidades de sus clientes.', img: 'assets/img/prototypes.png'},
     {title: 'Talleres de Co-creación', text: 'Un taller destinado a dar forma a tu idea de negocio, respondiendo dudas sobre planificación de proyectos, estimación de tiempos y presupuestos.', img: 'assets/img/scope.png'},
   ]
+
 
 
 }
