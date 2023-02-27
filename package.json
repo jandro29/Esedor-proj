@@ -8,6 +8,7 @@
     "build:gh": "ng build --base-href=/Esedor-proj/",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
+
   },
   "private": true,
   "dependencies": {

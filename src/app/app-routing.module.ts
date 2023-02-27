@@ -24,6 +24,7 @@ import { PrimaxBlackofficeComponent } from './views/primax-blackoffice/primax-bl
 import { InformaticaComponent } from './views/informatica/informatica.component';
 import { CajametropolitanaComponent } from './views/cajametropolitana/cajametropolitana.component';
 import { CyberstratComponent } from './views/cyberstrat/cyberstrat.component';
+import { LevelupComponent } from './views/levelup/levelup.component';
 
 const PROJECTS_METADATA = {
   seo: {
@@ -200,6 +201,37 @@ const routes: Routes = [
             property: 'og:title',
             content:
               'Talento - Aplica a Esedor  | Esedor',
+          },
+          {
+            proprety: 'og:description',
+            content:
+              'Aplicar a Esedor es dar un salto en tu carrera y nuestros valores definen el propósito de crear talento tech| Esedor',
+          },
+          // { property: 'og:image', content: environment.appUrl + 'assets/image/characters.png' },
+          // { property: 'og:url', content: environment.appUrl + 'characters' },
+          // { name: "twitter:card", content: "summary_large_image" },
+        ],
+      },
+    },
+  },
+
+
+  {
+    path: 'level-up',
+    component: LevelupComponent,
+    data: {
+      seo: {
+        title: 'Level-up - Aplica a Esedor  | Esedor',
+        metaTags: [
+          {
+            name: 'description',
+            content:
+              'Aplicar a Esedor es dar un salto en tu carrera y nuestros valores definen el propósito de crear talento tech| Esedor',
+          },
+          {
+            property: 'og:title',
+            content:
+              'Level-up - Aplica a Esedor  | Esedor',
           },
           {
             proprety: 'og:description',
