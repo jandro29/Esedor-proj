@@ -19,7 +19,7 @@
   <section id="inicio" class="bg2  text-white flex flex-col">
     <!-- py-[6rem]  h-screen 2xl:grid-cols-2 *ngIf="bgTab" h-screen lg:h-screen-->
     <div
-      class="text-[36px] mb-12 lg:text-[27px] xl:text-[36px] 2xl:text-[42px] 3xl:text-[46px] lg:pl-28 2xl:pl-44 2xl:pt-44 lg:pt-20 w-[85%] lg:h-[250px] xl:h-[400px] lexendzettaextrali flex ">
+      class="text-[36px] mb-12 lg:text-[27px] xl:text-[36px] 2xl:text-[42px] 3xl:text-[46px] lg:pl-28 2xl:pl-44 2xl:pt-44 lg:pt-20 w-[85%] lg:h-[210px] xl:h-[250px] 2xl:h-[370px] 3xl:h-[400px] lexendzettaextrali flex ">
       <p>¡Bienvenido a nuestro programa de capacitación en desarrollo de software y experiencia de usuario!</p>
     </div>
 
@@ -29,11 +29,12 @@
             border-image-slice: 1;">
       <div class="flex justify-between  ">
         <div class="flex">
-          <p class="lexend lg:pl-28 2xl:pl-44 pt-12 w-[70%]  lg:text-[14px] xl:text-[17px] 2xl:text-[20px] 3xl:text-[23px]">Aquí te contamos cómo funciona nuestro programa y cómo puede
+          <p
+            class="lexend lg:pl-28 2xl:pl-44 pt-12 w-[70%]  lg:text-[14px] xl:text-[17px] 2xl:text-[20px] 3xl:text-[23px]">
+            Aquí te contamos cómo funciona nuestro programa y cómo puede
             ayudarte a impulsar tu carrera en el mundo del desarrollo de software.</p>
         </div>
-        <div
-          class="absolute  right-0 h-[150px] flex flex-col justify-between items-center">
+        <div class="absolute  right-0 h-[150px] flex flex-col justify-between items-center">
           <p class="lexend text-[11.5px] text-rotate">Desplazarse hacia abajo</p>
           <button matRipple class="cursor-pointer rounded-[50%]" (click)="getDown.emit()">
             <img class="w-[49px]" src="assets/img/btn_down.svg" alt="go_down">
@@ -62,7 +63,8 @@
 
     <div class="bottom-0  ">
       <p class="absolute right-0 2xl:mt-[-110px] xl:mt-[-90px]  lg:mt-[-75px] 2xl:w-[775px] xl:w-[635px] lg:w-[505px]">
-        <img src="assets/img/Level Up.svg" alt=""></p>
+        <img src="assets/img/Level Up.svg" alt="">
+      </p>
     </div>
   </section>
 
@@ -78,11 +80,107 @@
     </div>
   </section>
 
-  <section class="bg-tab3 h-[310px] lg:h-[760px] mt-[20rem]">
-    <div>
 
+
+  <section class="bg-tab3 h-[310px] lg:h-[1370px] lg:mt-[20rem] xl:mt-[35rem] 2xl:mt-[40rem] 3xl:mt-[50rem] text-white">
+
+    <div class="flex justify-end relative">
+      <img class="2xl:mt-[-7rem] xl:mt-[-4rem] lg:mt-[2rem]" src="assets/img/resorte-levelup.svg" alt="">
     </div>
 
+    <div class="flex grid relative">
+
+      <div class="relative flex 2xl:bottom-[-14rem] xl:bottom-[-10rem] lg:bottom-[-20.5rem]">
+        <img class=" absolute lg:w-[340px] xl:w-[520px]" src="assets/img/img-inscribite.svg" alt="">
+      </div>
+
+      <div class="flex justify-end 3xl:mr-40 2xl:mr-32 xl:mr-28 lg:mr-24">
+        <div>
+          <h2
+            class="lexend 2xl:text-[30px] xl:text-[26px] lg:text-[23px] 3xl:w-[934px] 2xl:w-[830px] xl:w-[620px] lg:w-[570px] font-light">
+            ¡Inscríbete hoy en nuestro programa de capacitación y
+            comienza a mejorar tus habilidades en el desarrollo de
+            software y experiencia de usuario!</h2>
+        </div>
+      </div>
+
+      <div class="flex justify-end 3xl:mr-40  2xl:mr-32 xl:mr-28 lg:mr-24 mt-16">
+        <div
+          class="flex flex-col 2xl:text-[18px] 3xl:text-[21px] lexend font-light 3xl:w-[934px] 2xl:w-[830px] xl:w-[620px] lg:w-[570px]"
+          style="color: #D8D8D8; ">
+          <p>
+            Una vez que completes el programa, tendrás la oportunidad de ser colocado en una de nuestras empresas
+            asociadas, lo que aumentará tus oportunidades de empleo en el campo de la tecnología.
+          </p>
+
+          <p class="mt-12">
+            Paga por la capacitación al ser colocado dentro de una empresa, lo que te permitirá disfrutar de una
+            formación
+            de alta calidad mientras obtienes experiencia práctica en proyectos reales.
+          </p>
+
+          <div
+            class="bg-[#5682FF] lg:bg-transparent fixed bottom-0 ml-[-1rem] lg:ml-0 w-full lg:w-auto lg:relative z-50 2xl:mt-28 xl:mt-20 lg:mt-12">
+            <button matRipple (mouseover)="btnStyle = true" (mouseout)="btnStyle = false"
+              [ngClass]="{ 'arrow' : btnStyle}" (click)="showFormEvent()"
+              class="lexendli cursor-pointer mb-28 bg-white lg:hover:bg-[#5682FF] text-[15.5px] text-[#141C26] lg:hover:text-white flex items-center justify-start lg:justify-center shadow w-full lg:w-[236px] h-[45px] lg:h-[65px] 2xl:h-[82px] lg:ml-4 px-6 lg:p-4 rounded-[50px]">
+              <svg class="transition duration-700 ease-in-out mr-16 lg:mr-4 w-[24px] lg:w-[32px]" width="33" height="31"
+                viewBox="0 0 33 31" [ngClass]="{ 'arrow-rotate' : btnStyle }" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <g class="text-white">
+                  <line x1="5.7105e-09" y1="14.7539" x2="30.6479" y2="14.7539" stroke="black" stroke-width="2" />
+                  <path d="M16.2585 1.00146L30.5917 15.2188L16.2585 29.436" stroke="black" stroke-width="2" />
+                </g>
+              </svg>
+              Inscribirme
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
+
+  <section>
+
+    <div class="mt-28">
+
+      <div class="flex pl-80">
+        <h2 class="lexendzettali font-extralight text-[66px]">Beneficios</h2>
+      </div>
+
+
+      <div class="flex justify-center mt-36">
+        <div class="lexend grid grid-cols-3 w-[80%] text-[21px]" style="color: #626973;">
+          <div class="flex justify-center">
+            <div class="flex flex-col w-[301px]  flex justify-center">
+              <img src="assets/img/img1-beneficios.svg" alt="">
+              <p class="mt-16">Ofrecemos un programa de capacitación que te brindará las habilidades y conocimientos
+                necesarios para
+                destacarte en el campo del desarrollo de software y experiencia de usuario.</p>
+            </div>
+          </div>
+          <div class="flex justify-center">
+            <div class="flex flex-col w-[301px]  flex justify-center">
+              <img src="assets/img/img2-beneficios.svg" alt="">
+              <p class="mt-16">Nuestro programa se enfoca en la práctica, brindándote la oportunidad de trabajar en
+                proyectos reales y
+                adquirir experiencia práctica mientras aprendes.</p>
+            </div>
+          </div>
+          <div class="flex justify-center">
+            <div class="flex flex-col w-[301px]">
+              <img src="assets/img/img3-beneficios.svg" alt="">
+              <p class="mt-16">Al finalizar el programa, tendrás la oportunidad de ser colocado en una empresa como
+                desarrollador de
+                software o diseñador de experiencia de usuario.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
 
 </div>
