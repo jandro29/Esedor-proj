@@ -22,30 +22,27 @@ export class CajacuzcoComponent implements OnInit {
   constructor() { }
 
   date: number = 2021;
-  industry: string = 'INTELIGENCIA ARTIFICIAL';
+  industry: string = 'BANCA Y FINANZAS';
   client: string = 'Caja Cuzco';
   styles: string = 'w-[100%] flex justify-end'
   display: string = 'hidden';
   image: string = 'assets/img/cajacuzco.jpg';
-  paragraphOne: string = 'Caja Cusco y el reto Es una de las financieras municipales más importantes a nivel nacional, con una red de 105 agencias en 13 regiones del país, uno de los principales problemas era el tiempo de evaluación de los clientes que buscaban acceder a una tarjeta de crédito.';
-  paragraphTwo: string = 'El trabajo de Esedor Evaluamos los requerimientos del sistema y las necesidades del usuario, definiendo un producto digital que los ayude a reducir la carga en la ejecución de las tareas más recurrentes en la evaluación de los créditos de los clientes.';
+  paragraphOne: string = 'Caja Cusco es una de las financieras municipales más importantes a nivel nacional, con una red de 105 agencias en 13 regiones del país. Uno de los principales retos fue migrar a la nube su sistema interactivo, optimizar el rendimiento y reducir el tiempo de evaluación de los usuarios.';
+  paragraphTwo: string = 'Iniciamos evaluando los requerimientos del sistema y las necesidades de los usuarios, definiendo una experiencia de usuario (UX) enfocada en mejorar las características del sistema actual, investigamos las funcionalidades ya implementadas para definir una nueva generación de componentes modernos UI que les permitiera llevar la experiencia al siguiente nivel, logrando así reducir el tiempo de una evaluación crediticia en un 30% y un otorgándole un sistema intuitivo para los nuevos colaboradores.';
   imageTwo: string = 'assets/img/cajacuzcologo.png';
 
   serviceList: Array<String> = [
-    'INTEGRATED',
-    'CAMPIGN',
-    'HYPE FILM',
-    'TECH FILM',
-    'KEY VISUAL',
-    'SOCIAL TEASERS',
+    'Descubrimiento de producto',
+    'Diseño de producto',
+    'Desarrollo de software',
   ];
 
   definitionsList: Array<String> = [
-    'STRATEGY',
-    'CONCEPT',
-    'ART DIRECTION',
-    'DESIGN',
-    'PRODUCTION',
+    'UX Board',
+    'User Flow',
+    'Wireframe',
+    'Diseño UI',
+    'Desarrollo Front-End',
   ]
 
 
@@ -58,7 +55,8 @@ export class CajacuzcoComponent implements OnInit {
   ]
 
   firstText: string = 'Sistema Backoffice';
-  secondText: string = 'Definimos un backoffice que le permitiera gestionar todos los procesos como resolución de reclamos, consultas, cancelación de tarjetas, bloqueo de tarjetas, reprogramación de deudas, entre otros requerimientos.';
+  secondText: string = 'Cuándo iniciamos el proyecto nos enfrentamos a un sistema previo desarrollado por el equipo de ingenieros, con la ayuda del equipo de analistas funcionales documentamos las historias de usuario de todo el sistema e implementamos un sistema interactivo con funcionalidades mejoradas para las siguientes problemas:';
+  thirdText: string = 'Resolución de reclamosㅤ⠀ㅤㅤ⠀ㅤㅤ⠀ㅤㅤ⠀ㅤㅤ⠀ㅤㅤ⠀ㅤ Consultas ㅤ⠀ㅤㅤ⠀ㅤㅤ⠀ㅤㅤ⠀ㅤㅤ⠀ㅤㅤ⠀ㅤ⠀ㅤ⠀ㅤ⠀ㅤ Cancelación de tarjetasㅤ⠀ㅤㅤ⠀ㅤㅤ⠀ㅤㅤ⠀ㅤㅤ⠀ㅤ⠀ㅤ⠀ㅤ⠀ㅤ Bloqueo de tarjetasㅤ⠀ㅤㅤ⠀ㅤㅤ⠀ㅤㅤ⠀ㅤㅤ⠀ㅤ⠀ㅤ⠀ㅤ⠀ㅤ Reprogramación de deudas '
   displayImage:string = 'hidden'
   ngOnInit(): void {
   }

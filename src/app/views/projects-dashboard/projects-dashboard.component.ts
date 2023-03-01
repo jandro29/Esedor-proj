@@ -67,13 +67,17 @@ export class ProjectsDashboardComponent implements OnInit {
   bgColorSeventh: boolean = true;
 
   empresas = [
-    {name: 'Primax', descripcion: 'INVESTIGACIÓN Y CONSULTORÍA - DESCUBRIMIENTO DE PRODUCTO - DISEÑO DE PRODUCTO - DESIGN SYSTEM', img: 'assets/img/phone-right.png', alt: 'Primax', tipo: 'automotriz', ruta: '/proyectos/primax', state: true, background: 'bg-color'},
-    {name: 'Ripley', descripcion: 'DESCUBRIMIENTO DE PRODUCTO - DISEÑO DE PRODUCTO - DESARROLLO DE SOFTWARE ', img: 'assets/img/Ripley-slider.png', alt: 'Ripley', tipo: 'banca', ruta: '/proyectos/ripley', state: true, background: 'bg-two'},
-    {name: 'Redeban', descripcion: 'DESCUBRIMIENTO DE PRODUCTO - DISEÑO DE PRODUCTO - DESARROLLO DE SOFTWARE', img: 'assets/img/proyect-laptop.png', alt: 'Redeban', tipo: 'ecommerce', ruta: '/descripcion', state: true, background: 'bg-three'},
-    {name: 'Notifai', descripcion: 'DESCUBRIMIENTO DE PRODUCTO - DISEÑO DE PRODUCTO - DESARROLLO DE SOFTWARE', img: 'assets/img/laptop-estadis.png', alt: 'Notifai', tipo: 'ecommerce', ruta: '/proyectos/notifai', state: true, background: 'bg-fourth'},
-    {name: 'En Proceso', descripcion: 'CAJA METROPOLITANA DE LIMA - HOME BANKING ', img: 'assets/img/cmetropolitano-slider.png', alt: 'CajaMetropolitana', tipo: 'ecommerce', ruta: '/proyectos', state: true, background: 'bg-color'},
-    {name: 'En Proceso', descripcion: 'CAJA CUSCO - UN NUEVO SISTEMA DE GESTION DE TARJETAS ', img: 'assets/img/CCusco-slider.png', alt: 'CajaCusco', tipo: 'banca', ruta: '/proyectos', state: true, background: 'bg-fifth'},
-    {name: 'En Proceso', descripcion: 'NIUBIZ - SISTEMA DE GESTIÓN DE USUARIOS ', img: 'assets/img/nubiz-sileder.png', alt: 'Nubiz', tipo: 'banca', ruta: '/proyectos', state: true, background: 'bg-fifth'}
+    {name: 'Primax Solutions', descripcion: 'Sistema backoffice', img: 'assets/img/phone-right.png', alt: 'Primax', tipo: 'automotriz', ruta: '/proyectos/primax', state: true, background: 'bg-color'},
+    {name: 'Ripley', descripcion: 'Descubrimiento de producto - Diseño de producto - Desarrollo de Software', img: 'assets/img/Ripley-slider.png', alt: 'Ripley', tipo: 'banca', ruta: '/proyectos/ripley', state: true, background: 'bg-two'},
+    {name: 'Redeban', descripcion: 'Descubrimiento de producto - Diseño de producto - Desarrollo de Software', img: 'assets/img/proyect-laptop.png', alt: 'Redeban', tipo: 'ecommerce', ruta: '/proyectos/redeban', state: true, background: 'bg-three'},
+    {name: 'Notifai', descripcion: 'Descubrimiento de producto - Diseño de producto - Desarrollo de Software', img: 'assets/img/laptop-estadis.png', alt: 'Notifai', tipo: 'ecommerce', ruta: '/proyectos/notifai', state: true, background: 'bg-fourth'},
+    {name: 'Caja Metropolitana', descripcion: 'Descubrimiento de producto - Diseño de producto - Desarrollo de Software ', img: 'assets/img/Caja Metropolitana.png', alt: 'CajaMetropolitana', tipo: 'ecommerce', ruta: '/proyectos/cajametropolitanadelima', state: true, background: 'bg-color'},
+    {name: 'Caja Cusco', descripcion: 'Descubrimiento de producto - Diseño de producto - Desarrollo de Software', img: 'assets/img/CajaCuzco.png', alt: 'CajaCusco', tipo: 'banca', ruta: '/proyectos/cajacuzco', state: true, background: 'bg-sixth'},
+    {name: 'Niubiz', descripcion: 'Niubiz - Sistema de gestión de usuarios', img: 'assets/img/nubiz-sileder.png', alt: 'Nubiz', tipo: 'banca', ruta: '/proyectos/niubiz', state: true, background: 'bg-seventh'},
+    {name: 'Primax Backoffice', descripcion: 'Primax-BackOffice - Estaciones de servicio de venta de combustibles y tiendas por conveniencia', img: 'assets/img/Primax-BackOffice.png', alt: 'Primax-backoffice', tipo: 'banca', ruta: '/proyectos/primax-blackoffice', state: true, background: 'bg-ten'},
+    {name: 'Cyber Strat', descripcion: 'Cyber Strat - Proceso estratégico de planificación digital', img: 'assets/img/CyberStrat.png', alt: 'Cyber-Strat', tipo: 'banca', ruta: '/proyectos/cyberstrat', state: true, background: 'bg-eight'},
+    {name: 'Informatica', descripcion: 'Informatica - Administra y gestiona tu negocio', img: 'assets/img/Infomatiza.png', alt: 'Informatiza', tipo: 'banca', ruta: '/proyectos/infomatica', state: true, background: 'bg-nine'}
+
   ]
 
   filtrado = this.empresas;

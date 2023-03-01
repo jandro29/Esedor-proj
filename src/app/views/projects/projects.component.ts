@@ -34,8 +34,8 @@ export class ProjectsComponent implements OnInit {
   display: string = 'hidden'
   imageTwo: string = 'hidden'
   image: string = 'assets/img/iphone.png';
-  paragraphOne: string = 'Nuestro cliente tenía la necesidad de  involucrar a todos sus equipos dentro de esta tienda virtual y crear una plataforma de venta de productos y servicios de marketing.';
-  paragraphTwo: string = 'Definir la nueva generación de productos digitales y crear su primera tienda virtual b2b de productos y servicios de marketing que ofrece primax';
+  paragraphOne: string = 'Primax es una de las empresas del Grupo Romero y cuenta con la más importante red de estaciones de servicio de venta de combustibles y tiendas por conveniencia en el Perú y Ecuador.';
+  paragraphTwo: string = 'Al iniciar el proyecto enfocamos el producto digital para que pueda cubrir las necesidades de los diferentes clientes de la marca en Perú y Ecuador, creando un ecommerce donde cada cliente encuentra lo que busca.';
 
   serviceList: Array<String> = [
     'INVESTIGACIÓN Y CONSULTORÍA',
@@ -45,14 +45,14 @@ export class ProjectsComponent implements OnInit {
   ];
 
   definitionsList: Array<String> = [
-    'SESIÓN DE ALCANCE',
-    'AUDITORÍA UX/UI',
-    'COMPORATAMIENTO DE USUARIOS',
-    'SESIÓN DE ALCANCE',
-    'DISEÑO VISUAL',
-    'SESIONES DE EQUIPO',
-    'IU/BIBLIOTECA DE PATRONES',
-    'ESTRUCTURA DEL SITIO WEB',
+    'UX Roadmap',
+    'Impact mapping',
+    'Hallazgos y features',
+    'Arquitectura de información',
+    'Flujograma de usuario',
+    'Wireframes',
+    'Diseño UI',
+    'Design System',
   ]
 
   animatedTitle: Array<{aos: number, label: String}> = [
@@ -62,11 +62,11 @@ export class ProjectsComponent implements OnInit {
     {aos: 1000, label: 'B2B'},
   ]
 
-  firstText: string = 'Investigación y arquitectura de información';
-  secondText: string = 'La búsqueda queda del insight de ux al entender a nuestros usuarios empatizando con ellos y creando escenarios y contextos donde puedan validar features, dentro de sesiones cognitivas de nuestros productos.  ';
-  thirdText: string = '““Sesiones lúdicas y divertidas que puedan romper el hielo en cada usuario que deseamos explorar en las sesiones cognitivas“  “';
+  firstText: string = 'La investigación que se trabajó, fue en base a dos pilares importantes.';
+  secondText: string = 'Orientación comercial:‍‍‍‍‍ㅤ‍‍‍‍‍ㅤ‍‍‍‍‍ㅤ‍‍‍‍‍ㅤ‍‍‍‍‍ㅤ‍‍‍‍‍ㅤ‍‍‍‍‍ㅤ‍‍‍‍‍ㅤ‍‍‍‍‍ㅤ‍‍‍‍‍ㅤ‍‍‍‍‍ㅤ‍‍‍‍‍ㅤ‍‍‍‍‍ㅤ‍‍‍‍‍ㅤ‍‍‍‍‍ㅤ‍‍‍‍‍ㅤ‍‍‍‍‍ㅤ‍‍‍‍‍ㅤ‍‍‍‍‍ㅤ‍‍‍‍‍ㅤ‍‍‍‍‍ el foco inicial fue en la facilidad de acceder, encontrar y comprar productos de Primax y Pecsa. En esta línea, conceptualizamos un buscador inteligente, Trabajamos además en filtros amigables y visuales que permiten explorar fácilmente en las listas de productos y en todas las casuísticas promocionales en diferentes momentos para el usuario';
+  thirdText: string = 'Biblioteca de recursos:ㅤ‍‍‍‍‍ㅤ‍‍‍‍‍ㅤ‍‍‍‍‍ㅤ‍‍‍‍‍ㅤ‍‍‍‍‍ㅤ‍‍‍‍‍ㅤ‍‍‍‍‍ㅤ‍‍‍‍‍ㅤ‍‍‍‍‍ㅤ‍‍‍‍‍ㅤ‍‍‍‍‍ㅤ‍‍‍‍‍ㅤ‍‍‍‍‍ㅤ‍‍‍‍‍ㅤ‍‍‍‍‍ㅤ‍‍‍‍‍ㅤ‍‍‍‍‍ㅤ‍‍‍‍‍ㅤ‍‍‍‍‍ㅤ‍‍‍‍‍ uno de los objetivos de Primax es poder atender otras necesidades del negocio. En este nuevo sistema interactivo creamos un módulo llamado “Biblioteca” que permite explorar fácilmente y descargar recursos de marketing promocional como videos promocionales, banners impresos, materiales POP, afiches y hasta audios.';
   fourthText: string = 'Cómo empatizar con ellos';
-  displayContent: any = 'hidden';
+
   imageSection: any = 'assets/img/videollamada.png';
 
 

@@ -139,12 +139,13 @@ const routes: Routes = [
       },
     },
   },
-  { path: 'descripcion', component: DescripcionComponent },
+
   {
     path: 'proyectos',
     component: ProjectsDashboardComponent,
     data: PROJECTS_METADATA
   },
+  { path: 'proyectos/redeban', component: DescripcionComponent, data: PROJECTS_METADATA  },
   { path: 'proyectos/primax', component: ProjectsComponent, data: PROJECTS_METADATA },
   { path: 'proyectos/notifai', component: NotifaiComponent, data: PROJECTS_METADATA },
   { path: 'proyectos/ripley', component: RipleyComponent, data: PROJECTS_METADATA },

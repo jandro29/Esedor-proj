@@ -3,6 +3,11 @@
   background-repeat: no-repeat;
 }
 
+.bg-tab-responsive{
+  background-image: url('../../../assets/img/level-up-responsive.svg');
+  background-repeat: no-repeat;
+}
+
 .bg2{
   background-image: url('../../../assets/img/bglevelup2.svg');
   background-repeat: no-repeat;

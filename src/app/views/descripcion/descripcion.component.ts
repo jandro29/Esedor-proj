@@ -26,21 +26,24 @@ export class DescripcionComponent implements OnInit {
   imageTwo: string = 'hidden'
   image: string = 'assets/img/laptop-estadisticas.png';
   styles: string = 'lg:relative lg:bottom-[5rem] lg:left-[4rem] 2xl:bottom-0 2xl:left-0 2xl:w-[55%]'
-  paragraphOne: string = 'Redeban es un banco de origen Colombiano, tenía como objetivo crear nuevos métodos de pago para los comercios y tarjetahabientes, además necesitaban identificar las necesidades del usuario.';
-  paragraphTwo: string = 'Iniciamos con sesiones de entendimiento e ideación con el P.O y líderes del proyecto, una las principales tareas fue definir realmente los requerimiento de usuario y sistema, para llevar a cabo esta tarea definimos las historias de usuario, diseñamos un prototipo UX/UI y terminamos implementando la solución en Amazon Cloud.';
+  paragraphOne: string = 'Redeban es un banco de origen Colombiano facilitador de la industria de medios de pago, desarrolla soluciones innovadoras y seguras para pagos electrónicos mediante el uso de los datafonos.';
+  paragraphTwo: string = 'Al iniciar contaban con un sistema previamente desarrollado por el equipo de ingenieros, el reto fue llevar la experiencia al siguiente nivel. Nos reunimos con diferentes stakeholders de la empresa para entender sus necesidades. Permitimos a los usuarios tomar decisiones basadas en datos con una experiencia intuitiva en la ejecución de tareas dentro del sistema. ';
 
   serviceList: Array<String> = [
+    'DESCUBRIMIENTO DE PRODUCTO',
     'DISEÑO DE PRODUCTO',
     'DESARROLLO DE SOFTWARE',
   ];
 
   definitionsList: Array<String> = [
-    'SESIÓN DE ALCANCE',
-    'AUDITORÍA UX/UI',
-    'COMPORATAMIENTO DE USUARIOS',
-    'DISEÑO VISUAL',
-    'SESIONES DE EQUIPO',
-    'ESTRUCTURA DEL SITIO WEB',
+    'Historias de usuario',
+    'Auditoría UX/UI',
+    'Hallazgos y features',
+    'Arquitectura de información',
+    'Flujograma de usuario',
+    'Wireframes',
+    'Diseño UI',
+    'Desarrollo de software',
   ]
 
   animatedTitle: Array<{aos: number, label:String}> = [
@@ -50,8 +53,8 @@ export class DescripcionComponent implements OnInit {
   ]
 
   firstText: string = 'Visualización de datos P2P y P2M';
-  secondText: string = 'Uno de los requerimientos del usuario era poder acceder a más información que les ayude a tomar mejores decisiones para impulsar las ventas en sus comercios.';
-  // thirdText: string = '“Sesiones ludicas y divertidas que puedan romper el hielo en cada usuario que deseamos explorar en las sesiones cognitivas“';
+  secondText: string = 'Se implementó una nueva forma de visualizar los datos existentes y nuevos. Con la ayuda de los analistas de datos definimos nuevos gráficos de visualización de datos que le permitieran al usuario procesar datos de manera casi magistral.';
+  thirdText: string = 'Enfoque: inicialmente nos centramos en darle prioridad a los problemas detectados actualmente en el sistema de esta forma agilizamos la entrega de los primeros Sprint. Las nuevas necesidades fueron priorizadas en base a una puntuación y fueron implementadas en el primer release. Las de mayor puntuación las dejamos en el backlog.';
   // fourthText: string = 'Cómo empatizar con ellos';
   displayImage:any = "hidden"
   constructor() { }

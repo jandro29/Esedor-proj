@@ -28,32 +28,37 @@ export class NotifaiComponent implements OnInit {
   display: string = 'hidden'
   imageTwo: string = 'hidden'
   image: string = 'assets/img/laptop-notifai.png';
-  paragraphOne: string = 'Nuestro cliente es una solución SaaS que permite automatizar las comunicaciones outbound usando bots de inteligencia artificial, tenía como objetivo posicionar su marca y realizar investigación en sus usuarios actuales para realizar mejoras en su producto digital.';
-  paragraphTwo: string = 'Pasamos muchas horas con el equipo de Notifai identificando el viaje de cliente, a partir de ahí , identificamos oportunidades y puntos de estrés, que validamos con usuarios con sesiones de recorrido cognitivo, mejorando las funcionalidades del sistema.';
+  paragraphOne: string = 'La empresa Notifai es una solución “SaaS” que permite automatizar las comunicaciones outbound usando inteligencia artificial, simplifica la contactabilidad de tus cobranzas usando bots de voz que se encargan de llamar de manera automatizada a cualquier usuario que sus clientes necesiten.';
+  paragraphTwo: string = 'Al iniciar el proyecto Notifai contaba con un sistema previamente desarrollado por los propios fundadores. Realizamos diferentes métodos de investigación para poder ayudarlos a entender a sus clientes y sus necesidades.';
 
   serviceList: Array<String> = [
-    'DESCUBRIMIENTO DE PRODUCTO',
-    'DISEÑO DE PRODUCTO',
-    'DESARROLLO DE SOFTWARE',
+    'Sesión de alcance',
+    'Auditoría UX/UI',
+    'Hallazgos y features',
+    'Arquitectura de información',
+    'Flujograma de usuario',
+    'Wireframes',
+    'Diseño UI',
   ];
 
   definitionsList: Array<String> = [
-    'SESIÓN DE ALCANCE',
-    'AUDITORÍA UX/UI',
+    'Sesión de alcance',
+    'Auditoría UX/UI',
     'COMPORATAMIENTO DE USUARIOS',
-    'DISEÑO VISUAL',
-    'SESIONES DE EQUIPO',
-    'ESTRUCTURA DEL SITIO WEB',
+    'Diseño visual',
+    'Sesiones de equipo',
+    'Estructura del sitio web',
   ]
 
   animatedTitle: Array<{aos: number, label: String}> = [
-    {aos: 1000, label: 'Brading y'},
-    {aos: 1000, label: 'Design system'},
+    {aos: 1000, label: 'Diseño y '},
+    {aos: 1000, label: 'Desarrollo'},
+    {aos: 1000, label: 'de software'},
   ]
 
-  firstText: string = 'Investigación y definición de experiencia de cliente (CX)';
-  secondText: string = 'Realizamos sesiones de trabajo con el cliente y los usuarios involucrados para poder entender los recorridos de cada cliente y perfil de usuario, generamos escenarios hipotéticos que le permitieran ver las oportunidades de mejora.';
-  thirdText: string = ' “During these uncertain times, many of us find ourselves in introspection mode, with new ideas and resolving to do better. We wish we could help everyone and fix everything. “ ';
+  firstText: string = 'Investigación y problemática';
+  secondText: string = 'En esta línea iniciamos con una evaluación heurística, recorridos cognitivos, experience y customer journey maps donde detectamos insight de ux que nos ayudarán a construir los nuevos lineamientos de diseño de las funcionalidades del sistema.';
+  //thirdText: string = ' “During these uncertain times, many of us find ourselves in introspection mode, with new ideas and resolving to do better. We wish we could help everyone and fix everything. “ ';
   // fourthText: string = 'Cómo empatizar con ellos';
   displayContent: any = 'block';
   imageSection: any = 'assets/img/img-notifai.png';

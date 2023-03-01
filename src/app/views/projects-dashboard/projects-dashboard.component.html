@@ -16,17 +16,7 @@
 </section>
 
 <mat-drawer-container class="w-full mt-12 min-h-full px-4 lg:px-24 bg-white">
-  <mat-drawer mode="side" class="lg:w-[250px] flex justify-end hidden lg:block" opened>
-    <div class="border-l border-black">
-      <mat-list role="list" class="mt-20 ml-6 lexend text-[0.875rem] sidebar">
-        <mat-list-item data-aos="fade-right" *ngFor="let list of listGroup" class="cursor-pointer" role="listitem"
-          (click)="filterEmpresas(list.types); list.state = true" [ngClass]="{ 'item-focus' : list.state }">
-          <mat-icon class="opacity-0" [ngClass]="{ 'icon-hover' : list.state}">arrow_right</mat-icon>
-          {{list.name}}
-        </mat-list-item>
-      </mat-list>
-    </div>
-  </mat-drawer>
+
   <mat-drawer-content class="flex bg-white justify-center flex-wrap content-center">
     <div class="overflow-hidden lg:pt-[6rem]">
       <p data-aos="fade-up" style="line-height: 17px; letter-spacing: 0.0015em" class="text-sm lexendb pb-5">Proyectos
@@ -40,7 +30,7 @@
         <mat-tab label="First"> Content 1 </mat-tab>
         <mat-tab label="Second"> Content 2 </mat-tab>
         <mat-tab label="Third"> Content 3 </mat-tab>
-      </mat-tab-group> -->
+      </mat-tab-group>
       <div class="my-[2rem] flex overflow-x-auto border-b border-black space-x-4 btn-list lg:hidden">
         <button (click)="filterEmpresas('todos')">Todos</button>
         <button (click)="filterEmpresas('banca')">Banca</button>
@@ -48,7 +38,7 @@
         <button (click)="filterEmpresas('salud')">Salud</button>
         <button (click)="filterEmpresas('automotriz')">Automotriz</button>
         <button (click)="filterEmpresas('ecomerce')">Ecommerce</button>
-      </div>
+      </div>-->
       <section class="grid lg:grid-cols-2 gap-10 my-[3rem] lg:my-16">
         <div *ngFor="let emp of filtrado">
           <div data-aos="fade-down-left" class="cursor-pointer relative h-[650px]" (click)="redirectInternas(emp.ruta)"

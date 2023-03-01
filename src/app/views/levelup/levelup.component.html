@@ -1,26 +1,53 @@
 <app-toolbar [colorWhite]="colorWhite"></app-toolbar>
 <div>
-  <section id="inicio"
-    class="bg-tab h-[310px] lg:h-[760px] text-white flex justify-center items-center py-8 2xl:py-[4rem]">
-    <!-- py-[6rem]  h-screen 2xl:grid-cols-2 *ngIf="bgTab"-->
-    <div
-      class="text-[36px] lg:text-[140px]  xl:text-[160px] 2xl:text-[180px] lexendzettaextrali leading-[125px] flex textleft">
-      <div data-aos="fade-down-right" data-aos-duration="500">L</div>
-      <div data-aos="fade-down-right" data-aos-duration="550">e</div>
-      <div data-aos="fade-down-right" data-aos-duration="600">v</div>
-      <div data-aos="fade-down-right" data-aos-duration="650">e</div>
-      <div data-aos="fade-down-right" data-aos-duration="700">l</div>
-      <div data-aos="fade-down-right" data-aos-duration="750"></div>
-      <div class="lg:ml-24 ml-6" data-aos="fade-down-right" data-aos-duration="800">u</div>
-      <div data-aos="fade-down-right" data-aos-duration="850">p</div>
-    </div>
-  </section>
-
+  <div class="lg:block hidden">
+    <section id="inicio"
+      class="bg-tab h-[310px] lg:h-[760px] text-white flex justify-center items-center py-8 2xl:py-[4rem]">
+      <!-- py-[6rem]  h-screen 2xl:grid-cols-2 *ngIf="bgTab"-->
+      <div
+        class="text-[36px] lg:text-[140px]  xl:text-[160px] 2xl:text-[180px] lexendzettaextrali leading-[125px] flex textleft">
+        <div data-aos="fade-down-right" data-aos-duration="500">L</div>
+        <div data-aos="fade-down-right" data-aos-duration="550">e</div>
+        <div data-aos="fade-down-right" data-aos-duration="600">v</div>
+        <div data-aos="fade-down-right" data-aos-duration="650">e</div>
+        <div data-aos="fade-down-right" data-aos-duration="700">l</div>
+        <div data-aos="fade-down-right" data-aos-duration="750"></div>
+        <div class="lg:ml-24 ml-6" data-aos="fade-down-right" data-aos-duration="800">u</div>
+        <div data-aos="fade-down-right" data-aos-duration="850">p</div>
+      </div>
+    </section>
+  </div>
+  <div class="lg:hidden block">
+    <section id="inicio" class="bg-tab-responsive h-[304px] text-white flex justify-center items-center ">
+      <!-- py-[6rem]  h-screen 2xl:grid-cols-2 *ngIf="bgTab"-->
+      <div class="text-[36px] lexendzettaextrali leading-[125px] flex textleft">
+        <div data-aos="fade-down-right" data-aos-duration="500">L</div>
+        <div data-aos="fade-down-right" data-aos-duration="550">e</div>
+        <div data-aos="fade-down-right" data-aos-duration="600">v</div>
+        <div data-aos="fade-down-right" data-aos-duration="650">e</div>
+        <div data-aos="fade-down-right" data-aos-duration="700">l</div>
+        <div data-aos="fade-down-right" data-aos-duration="750"></div>
+        <div class="lg:ml-24 ml-6" data-aos="fade-down-right" data-aos-duration="800">u</div>
+        <div data-aos="fade-down-right" data-aos-duration="850">p</div>
+      </div>
+    </section>
+  </div>
   <section id="inicio" class="bg2  text-white flex flex-col">
     <!-- py-[6rem]  h-screen 2xl:grid-cols-2 *ngIf="bgTab" h-screen lg:h-screen-->
-    <div
-      class="text-[36px] mb-12 lg:text-[27px] xl:text-[36px] 2xl:text-[42px] 3xl:text-[46px] lg:pl-28 2xl:pl-44 2xl:pt-44 lg:pt-20 w-[85%] lg:h-[210px] xl:h-[250px] 2xl:h-[370px] 3xl:h-[400px] lexendzettaextrali flex ">
-      <p>¡Bienvenido a nuestro programa de capacitación en desarrollo de software y experiencia de usuario!</p>
+    <!-- TEXTO EN DESKTOP-->
+    <div class="lg:block hidden">
+      <div
+        class="text-[36px] mb-12 lg:text-[27px] xl:text-[36px] 2xl:text-[42px] 3xl:text-[46px] pl-[0px] lg:pl-28 2xl:pl-44 2xl:pt-44 lg:pt-20 w-[85%] lg:h-[210px] xl:h-[250px] 2xl:h-[370px] 3xl:h-[400px] lexendzettaextrali flex ">
+        <p>¡Bienvenido a nuestro programa de capacitación en desarrollo de software y experiencia de usuario!</p>
+      </div>
+    </div>
+    <!-- TEXTO EN MOVIL-->
+    <div class="block lg:hidden">
+      <div class="flex justify-center">
+        <div class="text-[36px] mb-12 text-[18px]  w-[75%] pl-[0px] lexendzettaextrali flex justify-center mt-11">
+          <p>¡Bienvenido a nuestro programa de capacitación en desarrollo de software y experiencia de usuario!</p>
+        </div>
+      </div>
     </div>
 
 
@@ -28,55 +55,94 @@
             border-image: linear-gradient(0.25turn, rgb(255, 255, 255), rgba(161, 222, 255, 0));
             border-image-slice: 1;">
       <div class="flex justify-between  ">
-        <div class="flex">
-          <p
-            class="lexend lg:pl-28 2xl:pl-44 pt-12 w-[70%]  lg:text-[14px] xl:text-[17px] 2xl:text-[20px] 3xl:text-[23px]">
-            Aquí te contamos cómo funciona nuestro programa y cómo puede
-            ayudarte a impulsar tu carrera en el mundo del desarrollo de software.</p>
+        <div class="lg:block hidden">
+          <div class="flex">
+            <p
+              class="lexend lg:pl-28 2xl:pl-44 pt-12 w-[70%]  lg:text-[14px] xl:text-[17px] 2xl:text-[20px] 3xl:text-[23px]">
+              Aquí te contamos cómo funciona nuestro programa y cómo puede
+              ayudarte a impulsar tu carrera en el mundo del desarrollo de software.</p>
+          </div>
         </div>
-        <div class="absolute  right-0 h-[150px] flex flex-col justify-between items-center">
-          <p class="lexend text-[11.5px] text-rotate">Desplazarse hacia abajo</p>
-          <button matRipple class="cursor-pointer rounded-[50%]" (click)="getDown.emit()">
-            <img class="w-[49px]" src="assets/img/btn_down.svg" alt="go_down">
-          </button>
+
+        <div class="lg:hidden block">
+          <div class="flex justify-center  ">
+            <p
+              class="lexend lg:pl-28 2xl:pl-44 pt-12 w-[70%]  lg:text-[14px] xl:text-[17px] 2xl:text-[20px] 3xl:text-[23px]">
+              Aquí te contamos cómo funciona nuestro programa y cómo puede
+              ayudarte a impulsar tu carrera en el mundo del desarrollo de software.</p>
+          </div>
+          <div>
+            <button matRipple (mouseover)="btnStyle = true" (mouseout)="btnStyle = false"
+              [ngClass]="{ 'arrow' : btnStyle}" (click)="showFormEvent()"
+              class="lexendli cursor-pointer mb-28 bg-white lg:hover:bg-[#5682FF] text-[15.5px] text-[#141C26] lg:hover:text-white flex items-center justify-start lg:justify-center shadow w-[60%] h-[45px] ml-14 px-6 mt-10 rounded-[50px]">
+              <svg class="transition duration-700 ease-in-out mr-8 w-[24px]" width="33" height="31" viewBox="0 0 33 31"
+                [ngClass]="{ 'arrow-rotate' : btnStyle }" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g class="text-white">
+                  <line x1="5.7105e-09" y1="14.7539" x2="30.6479" y2="14.7539" stroke="black" stroke-width="2" />
+                  <path d="M16.2585 1.00146L30.5917 15.2188L16.2585 29.436" stroke="black" stroke-width="2" />
+                </g>
+              </svg>
+              Inscribirme
+            </button>
+          </div>
+        </div>
+        <div class="lg:block hidden">
+          <div class="absolute  right-0 h-[150px] flex flex-col justify-between items-center">
+            <p class="lexend text-[11.5px] text-rotate">Desplazarse hacia abajo</p>
+            <button matRipple class="cursor-pointer rounded-[50%]" (click)="getDown.emit()">
+              <img class="w-[49px]" src="assets/img/btn_down.svg" alt="go_down">
+            </button>
+          </div>
         </div>
       </div>
-      <div
-        class="2xl:pl-44 lg:pl-28 bg-[#5682FF] lg:bg-transparent fixed bottom-0 ml-[-1rem] lg:ml-0 w-full lg:w-auto lg:relative z-50 2xl:mt-28 xl:mt-20 lg:mt-12">
-        <button matRipple (mouseover)="btnStyle = true" (mouseout)="btnStyle = false" [ngClass]="{ 'arrow' : btnStyle}"
-          (click)="showFormEvent()"
-          class="lexendli cursor-pointer mb-28 bg-white lg:hover:bg-[#5682FF] text-[15.5px] text-[#141C26] lg:hover:text-white flex items-center justify-start lg:justify-center shadow w-full lg:w-[236px] h-[45px] lg:h-[65px] 2xl:h-[82px] lg:ml-4 px-6 lg:p-4 rounded-[50px]">
-          <svg class="transition duration-700 ease-in-out mr-16 lg:mr-4 w-[24px] lg:w-[32px]" width="33" height="31"
-            viewBox="0 0 33 31" [ngClass]="{ 'arrow-rotate' : btnStyle }" fill="none"
-            xmlns="http://www.w3.org/2000/svg">
-            <g class="text-white">
-              <line x1="5.7105e-09" y1="14.7539" x2="30.6479" y2="14.7539" stroke="black" stroke-width="2" />
-              <path d="M16.2585 1.00146L30.5917 15.2188L16.2585 29.436" stroke="black" stroke-width="2" />
-            </g>
-          </svg>
-          Ver proyecto
-        </button>
+      <div class="lg:block hidden">
+        <div
+          class="2xl:pl-44 lg:pl-28 bg-[#5682FF] lg:bg-transparent fixed bottom-0 ml-[-1rem] lg:ml-0 w-full lg:w-auto lg:relative z-50 2xl:mt-28 xl:mt-20 lg:mt-12">
+          <button matRipple (mouseover)="btnStyle = true" (mouseout)="btnStyle = false"
+            [ngClass]="{ 'arrow' : btnStyle}" (click)="showFormEvent()"
+            class="lexendli cursor-pointer mb-28 bg-white lg:hover:bg-[#5682FF] text-[15.5px] text-[#141C26] lg:hover:text-white flex items-center justify-start lg:justify-center shadow w-full lg:w-[236px] h-[45px] lg:h-[65px] 2xl:h-[82px] lg:ml-4 px-6 lg:p-4 rounded-[50px]">
+            <svg class="transition duration-700 ease-in-out mr-16 lg:mr-4 w-[24px] lg:w-[32px]" width="33" height="31"
+              viewBox="0 0 33 31" [ngClass]="{ 'arrow-rotate' : btnStyle }" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <g class="text-white">
+                <line x1="5.7105e-09" y1="14.7539" x2="30.6479" y2="14.7539" stroke="black" stroke-width="2" />
+                <path d="M16.2585 1.00146L30.5917 15.2188L16.2585 29.436" stroke="black" stroke-width="2" />
+              </g>
+            </svg>
+            Inscribirme
+          </button>
+        </div>
       </div>
     </div>
 
 
-
+<div class="lg:block hidden">
     <div class="bottom-0  ">
       <p class="absolute right-0 2xl:mt-[-110px] xl:mt-[-90px]  lg:mt-[-75px] 2xl:w-[775px] xl:w-[635px] lg:w-[505px]">
         <img src="assets/img/Level Up.svg" alt="">
       </p>
     </div>
+  </div>
   </section>
 
   <section>
-
-    <div class="w-[778px] mt-48 pl-44">
-      <h2 class="text-[#454C59] Lexend 2xl:text-[128px] lg:text-[75px] font-bold">¿Por qué elegirnos?</h2>
+    <div class="lg:block hidden">
+      <div class="w-[778px] mt-48 pl-44">
+        <h2 class="text-[#454C59] Lexend 2xl:text-[128px] lg:text-[75px] font-bold">¿Por qué elegirnos?</h2>
+      </div>
     </div>
 
-    <div class="flex justify-center  2xl:mt-[-80px] xl:mt-[-50px] lg:mt-[-20px] relative">
-      <img class=" absolute mt-[-150px] lg:w-[900px] xl:w-[1200px] 2xl:w-[1300px] 3xl:w-[1400px]"
-        src="assets/img/grafica-levelup.svg" alt="">
+    <div class="block lg:hidden">
+      <div class="text-[32px] w-[215px] -16 pl-9">
+        <h2 class="text-[#454C59] Lexend 2xl:text-[128px] lg:text-[75px] font-bold">¿Por qué elegirnos?</h2>
+      </div>
+    </div>
+
+    <div class="lg:block hidden">
+      <div class="flex justify-center  2xl:mt-[-80px] xl:mt-[-50px] lg:mt-[-20px] relative">
+        <img class=" absolute mt-[-150px] lg:w-[900px] xl:w-[1200px] 2xl:w-[1300px] 3xl:w-[1400px]"
+          src="assets/img/grafica-levelup.svg" alt="">
+      </div>
     </div>
   </section>
 
@@ -150,7 +216,8 @@
 
 
       <div class="flex justify-center mt-36">
-        <div class="lexend grid grid-cols-3 w-[80%] text-[21px]" style="color: #626973;">
+        <div class="lexend grid grid-cols-3 w-[80%] 2xl:text-[21px] xl:text-[18px] lg:text-[14px]"
+          style="color: #626973;">
           <div class="flex justify-center">
             <div class="flex flex-col w-[301px]  flex justify-center">
               <img src="assets/img/img1-beneficios.svg" alt="">
@@ -181,6 +248,37 @@
     </div>
   </section>
 
+  <section class="bg-[#F2F4F5] mt-[225px] relative">
+    <div class=" flex flex-col">
+      <div class=" mt-[233px] flex justify-center">
+        <h2 class="2xl:text-[44px] xl:text-[31px] lg:text-[25px] w-[75%] lexendzetta">Inscríbete hoy en nuestro programa
+          de capacitación y prepárate para
+          impulsar tu carrera en el mundo de la tecnología.
 
+
+          <button matRipple (mouseover)="btnStyle = true" (mouseout)="btnStyle = false"
+            [ngClass]="{ 'arrow' : btnStyle}" (click)="showFormEvent()"
+            class="mt-20 lexendli cursor-pointer mb-28 bg-white lg:hover:bg-[#5682FF] text-[15.5px] text-[#141C26] lg:hover:text-white flex items-center justify-start lg:justify-center shadow w-full lg:w-[236px] h-[45px] lg:h-[65px] 2xl:h-[82px]  px-6 lg:p-4 rounded-[50px]">
+            <svg class="transition duration-700 ease-in-out mr-16 lg:mr-4 w-[24px] lg:w-[32px]" width="33" height="31"
+              viewBox="0 0 33 31" [ngClass]="{ 'arrow-rotate' : btnStyle }" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <g class="text-white">
+                <line x1="5.7105e-09" y1="14.7539" x2="30.6479" y2="14.7539" stroke="black" stroke-width="2" />
+                <path d="M16.2585 1.00146L30.5917 15.2188L16.2585 29.436" stroke="black" stroke-width="2" />
+              </g>
+            </svg>
+            Inscribirme
+          </button>
+        </h2>
+      </div>
+      <div class="flex right-0 bottom-0 absolute">
+        <lottie-player src="https://assets10.lottiefiles.com/packages/lf20_2juopw8b.json" background="transparent"
+          speed="1" style="width: 300px; height: 300px;" loop autoplay></lottie-player>
+      </div>
+    </div>
+
+  </section>
+
+  <app-footer></app-footer>
 
 </div>

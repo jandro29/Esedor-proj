@@ -15,28 +15,27 @@ export class PrimaxBlackofficeComponent implements OnInit {
   }
 
   date: number = 2021;
-  industry: string = 'INTELIGENCIA ARTIFICIAL';
+  industry: string = 'BANCA';
   client: string = 'Primax-Backoffice';
   styles: string = 'w-[100%] '
   display: string = 'hidden'
   imageTwo: string = 'assets/img/primax-solutionsicono.png'
   image: string = 'assets/img/primera-img-primax-backoffice-.png';
-  paragraphOne: string = 'Nuestro cliente es una solución SaaS que permite automatizar las comunicaciones outbound usando bots de inteligencia artificial, tenía como objetivo posicionar su marca y realizar investigación en sus usuarios actuales para realizar mejoras en su producto digital.';
-  paragraphTwo: string = 'Pasamos muchas horas con el equipo de Notifai identificando el viaje de cliente, a partir de ahí , identificamos oportunidades y puntos de estrés, que validamos con usuarios con sesiones de recorrido cognitivo, mejorando las funcionalidades del sistema.';
+  paragraphOne: string = 'Primax es una de las empresas del Grupo Romero y cuenta con la más importante red de estaciones de servicio de venta de combustibles y tiendas por conveniencia en el Perú y Ecuador.';
+  paragraphTwo: string = 'Al iniciar el proyecto nos topamos con un producto previamente desarrollado llamado “Primax Solutions” este sistema fue la base de la nueva experiencia de usuario';
 
   serviceList: Array<String> = [
-    'DESCUBRIMIENTO DE PRODUCTO',
-    'DISEÑO DE PRODUCTO',
-    'DESARROLLO DE SOFTWARE',
+    'Descubrimiento de producto',
+    'Diseño De Producto',
   ];
 
   definitionsList: Array<String> = [
-    'SESIÓN DE ALCANCE',
-    'AUDITORÍA UX/UI',
-    'COMPORATAMIENTO DE USUARIOS',
-    'DISEÑO VISUAL',
-    'SESIONES DE EQUIPO',
-    'ESTRUCTURA DEL SITIO WEB',
+    'Impact Mapping',
+    'Product Visión',
+    'Design Sprint',
+    'User flow',
+    'Wireframes',
+    'Diseño UI Desktop',
   ]
 
   animatedTitle: Array<{aos: number, label: String}> = [
@@ -46,7 +45,8 @@ export class PrimaxBlackofficeComponent implements OnInit {
   ]
 
 
-  firstText: string = 'Visualización de datos P2P y P2M';
-  secondText: string = 'During these uncertain times, many of us find ourselves in introspection mode, with new ideas and resolving to do better. We wish we could help everyone and fix everything. ';
+  firstText: string = 'Diseño centrado en el humano';
+  secondText: string = 'La información relevante se podía ver en un vistazo, ser rápido de escanear y fácil de entender. Es por eso, cuando hablamos de mejorar sistema interactivo, hablamos de dos ejes importantes:';
+  thirdText: string = '1. Proporcionar una descripción general hermosa, simple y procesable de las transacciones de los usuarios.ㅤ⠀ㅤㅤ⠀ㅤㅤ⠀⠀ㅤ⠀ㅤㅤ⠀ㅤㅤ⠀⠀ㅤ⠀ㅤㅤ⠀ㅤㅤ⠀⠀ㅤ⠀ㅤㅤ⠀ㅤㅤ⠀⠀ㅤ⠀ㅤㅤ⠀ㅤㅤ⠀⠀ㅤ2. Resaltar acciones relevantes e información crítica para que los usuarios resuelvan sus preguntas, gestionen problemas y, en consecuencia, reduzcan la sobrecarga de solicitudes de atención al cliente.  '
   displayImage:string = 'hidden'
 }

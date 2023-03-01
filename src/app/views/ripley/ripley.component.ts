@@ -28,19 +28,19 @@ export class RipleyComponent implements OnInit {
   imageTwo: string = 'hidden'
   image: string = 'assets/img/Ripley-FP.png';
   paragraphOne: string = 'Ripley es una empresa de retail en Perú y Chile, su objetivo era migrar su sistema de puntos a la nube, teniendo como primer objetivo rediseñar el producto actual';
-  paragraphTwo: string = 'Realizamos sesiones de trabajo con los equipos técnicos para entender un sistema que fue creado hace más de 8 años, listando los requerimientos del sistema, una vez identificado a los usuarios realizamos entrevistas de usuario y recorridos cognitivos. Identificamos los requerimientos del usuario, creamos un nuevo prototipo y utilizamos su sistema de diseño llamado “Morita” para el diseño UI y Frontend. Migramos a la nube todo el sistema con ayuda del equipo de arquitectos y backend. ';
+  paragraphTwo: string = 'Realizamos sesiones de trabajo con los equipos técnicos para entender un sistema previamente desarrollado, listando los requerimientos del sistema, una vez identificado a los usuarios,  realizamos entrevistas y recorridos cognitivos. Identificamos los requerimientos del usuario, creamos un nuevo prototipo y utilizamos su sistema de diseño llamado “Morita” para el diseño UI y Frontend. Migramos a la nube todo el sistema con ayuda del equipo de arquitectos y backend. ';
 
   serviceList: Array<String> = [
-    'DESCUBRIMIENTO DE PRODUCTO',
-    'DISEÑO DE PRODUCTO',
+    'Descubrimiento De Producto',
+    'Diseño De Producto',
   ];
 
   definitionsList: Array<String> = [
-    'SESIÓN DE ALCANCE',
-    'AUDITORÍA UX/UI',
-    'DISEÑO VISUAL',
-    'SESIONES DE EQUIPO',
-    'ESTRUCTURA DEL SITIO WEB',
+    'Sesión de alcance',
+    'Auditoría UX/UI',
+    'Diseño visual',
+    'Sesiones de equipo',
+    'Estructura del sitio web',
   ]
 
   animatedTitle: Array<{aos: number, label: String}> = [
@@ -49,7 +49,7 @@ export class RipleyComponent implements OnInit {
   ]
 
   firstText: string = 'Auditoría UX';
-  secondText: string = 'Realizamos una revisión exhaustiva del sistema actual, haciendo uso de la heurística detectamos una serie de oportunidades que le permitieran mejorar en el rediseño del nuevo sistema de puntos de Ripley.';
+  secondText: string = 'Realizamos una revisión exhaustiva del sistema actual, haciendo uso de la heurística identificamos una serie de oportunidades que le permitieran mejorar en el rediseño del nuevo sistema de puntos de Ripley';
   thirdText: string = '';
   // fourthText: string = 'Cómo empatizar con ellos';
   displayContent: any = 'block';
