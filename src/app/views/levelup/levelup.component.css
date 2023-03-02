@@ -6,6 +6,7 @@
 .bg-tab-responsive{
   background-image: url('../../../assets/img/level-up-responsive.svg');
   background-repeat: no-repeat;
+  background-size:cover ;
 }
 
 .bg2{
@@ -16,6 +17,11 @@
 .bg-tab3{
   background-image: url('../../../assets/img/fondonegro-inclinado.svg');
   background-repeat: no-repeat;
+}
+.bg-tab3-responsive{
+  background-image: url('../../../assets/img/fondonegro-responsive.png');
+  background-repeat: no-repeat;
+  background-size:cover ;
 }
 
 .text-rotate {
