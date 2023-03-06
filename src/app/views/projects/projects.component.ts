@@ -63,8 +63,8 @@ export class ProjectsComponent implements OnInit {
   ]
 
   firstText: string = 'La investigación que se trabajó, fue en base a dos pilares importantes.';
-  secondText: string = 'Orientación comercial:‍‍‍‍‍ㅤ‍‍‍‍‍ㅤ‍‍‍‍‍ㅤ‍‍‍‍‍ㅤ‍‍‍‍‍ㅤ‍‍‍‍‍ㅤ‍‍‍‍‍ㅤ‍‍‍‍‍ㅤ‍‍‍‍‍ㅤ‍‍‍‍‍ㅤ‍‍‍‍‍ㅤ‍‍‍‍‍ㅤ‍‍‍‍‍ㅤ‍‍‍‍‍ㅤ‍‍‍‍‍ㅤ‍‍‍‍‍ㅤ‍‍‍‍‍ㅤ‍‍‍‍‍ㅤ‍‍‍‍‍ㅤ‍‍‍‍‍ㅤ‍‍‍‍‍ el foco inicial fue en la facilidad de acceder, encontrar y comprar productos de Primax y Pecsa. En esta línea, conceptualizamos un buscador inteligente, Trabajamos además en filtros amigables y visuales que permiten explorar fácilmente en las listas de productos y en todas las casuísticas promocionales en diferentes momentos para el usuario';
-  thirdText: string = 'Biblioteca de recursos:ㅤ‍‍‍‍‍ㅤ‍‍‍‍‍ㅤ‍‍‍‍‍ㅤ‍‍‍‍‍ㅤ‍‍‍‍‍ㅤ‍‍‍‍‍ㅤ‍‍‍‍‍ㅤ‍‍‍‍‍ㅤ‍‍‍‍‍ㅤ‍‍‍‍‍ㅤ‍‍‍‍‍ㅤ‍‍‍‍‍ㅤ‍‍‍‍‍ㅤ‍‍‍‍‍ㅤ‍‍‍‍‍ㅤ‍‍‍‍‍ㅤ‍‍‍‍‍ㅤ‍‍‍‍‍ㅤ‍‍‍‍‍ㅤ‍‍‍‍‍ uno de los objetivos de Primax es poder atender otras necesidades del negocio. En este nuevo sistema interactivo creamos un módulo llamado “Biblioteca” que permite explorar fácilmente y descargar recursos de marketing promocional como videos promocionales, banners impresos, materiales POP, afiches y hasta audios.';
+  secondText: string = 'Orientación comercial:‍‍‍‍‍ el foco inicial fue en la facilidad de acceder, encontrar y comprar productos de Primax y Pecsa. En esta línea, conceptualizamos un buscador inteligente, Trabajamos además en filtros amigables y visuales que permiten explorar fácilmente en las listas de productos y en todas las casuísticas promocionales en diferentes momentos para el usuario';
+  thirdText: string = 'Biblioteca de recursos: uno de los objetivos de Primax es poder atender otras necesidades del negocio. En este nuevo sistema interactivo creamos un módulo llamado “Biblioteca” que permite explorar fácilmente y descargar recursos de marketing promocional como videos promocionales, banners impresos, materiales POP, afiches y hasta audios.';
   fourthText: string = 'Cómo empatizar con ellos';
 
   imageSection: any = 'assets/img/videollamada.png';

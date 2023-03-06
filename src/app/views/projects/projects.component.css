@@ -59,7 +59,7 @@ textarea:focus, input:focus {
   width: 100%;
   height: 110vh;
   padding:7rem 0;
-  background:url('https://firma.esedor.com/portafolio1.jpeg') center center / cover no-repeat fixed;
+  background:url('/assets/img/parallax-primax.svg') center center / cover no-repeat fixed;
 }
 
 #parallax2{

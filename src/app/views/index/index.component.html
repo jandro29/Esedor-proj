@@ -32,7 +32,8 @@
   </section>
 
   <section class="py-[5rem] lg:py-[13rem] px-4 bg-white" id="nextContent">
-    <div class="grid grid-cols-1 lg:grid-cols-3 xl:gap-x-[5rem] border-b border-black pb-[5rem] lg:pb-[13rem]">
+    <div class="grid grid-cols-1 lg:grid-cols-3 xl:gap-x-[5rem] border-b border-black pb-[5rem] lg:pb-[13rem]" style=" border-image: linear-gradient(0.25turn, rgba(216, 216, 216, 1), rgb(255, 255, 255));
+    border-image-slice: 1;">
       <div
         class="flex flex-row-reverse lg:flex-col justify-between items-center lg:items-start pt-[4rem] lg:pt-0 lg:py-4 pr-[2.5rem] lg:pr-0 order-last lg:order-none">
         <h4 data-aos="fade-right" data-aos-duration="500" class="text-[21px] lexendli">Conócenos</h4>
@@ -79,7 +80,8 @@
       <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_kmabq1m3.json"  background="transparent"  speed="1"  style="width: 390px; height: 390px;"  loop  autoplay></lottie-player>
     </div>
       <div
-        class="border-b border-black col-span-2 col-end-4 pb-[5rem] lg:pb-[13rem] space-y-[3rem] xl:pr-[4rem] 2xl:pr-[6rem]">
+        class="border-b col-span-2 col-end-4 pb-[5rem] lg:pb-[13rem] space-y-[3rem] xl:pr-[4rem] 2xl:pr-[6rem]" style=" border-image: linear-gradient(0.25turn, rgba(216, 216, 216, 1), rgb(255, 255, 255));
+        border-image-slice: 1;">
         <div data-aos="fade-right" data-aos-duration="500" class="flex space-x-4 items-center">
           <div class="border-b border-black w-[43px]"></div>
           <p class="text-[17.5px] lexend">Conozca lo que necesita su negocio</p>
@@ -89,6 +91,7 @@
         <h1 data-aos="fade-up-right" data-aos-duration="500"
           class="text-[28px] lg:text-[40px] xl:text-[46px] lexendzettali leading-[35px] lg:leading-[57.5px]">¿Cuál es
           tu objetivo final? </h1>
+          <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_kmabq1m3.json"  background="transparent"  speed="1"  style="width: 324px; height: 324px;"  loop  autoplay></lottie-player>
         <h3 data-aos="fade-up" data-aos-duration="500"
           class="text-[21px] lg:text-[30px] xl:text-[36px] lexendli leading-[33.5px] lg:leading-[53.3px]">Permítenos
           ayudarte a cumplirlo con nuestras
@@ -111,16 +114,14 @@
             <h4 id="text" class="lexendli text-[21px] leading-[33.6px]">{{item.text}}</h4>
           </div>
           <button id="btn-sabermas" data-aos="fade-right" data-aos-duration="500"
-            class="lexendli text-[21px] flex items-center mt-auto pt-6"
+            class="lexendli text-[21px] text-[#626973] flex items-center mt-auto pt-6"
             [ngClass]="{ 'lg:text-[#5682FF] lg:font-bold' : item.state}">
-            <svg [ngClass]="{ 'arrow-rotate' : item.state}" id="black"
-              class="transition duration-700 ease-in-out w-[20px] lg:w-auto mr-5" width="33" height="31"
-              viewBox="0 0 33 31" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <g>
-                <line x1="5.7105e-09" y1="14.7539" x2="30.6479" y2="14.7539" stroke="black" stroke-width="2" />
-                <path d="M16.2585 1.00146L30.5917 15.2188L16.2585 29.436" stroke="black" stroke-width="2" />
-              </g>
-            </svg>
+            <svg  [ngClass]="{ 'arrow-rotate' : item.state}" id="black"
+            class="transition duration-700 ease-in-out w-[20px] lg:w-auto mr-5" width="33" height="31"
+             viewBox="0 0 33 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <line x1="5.7105e-09" y1="14.7539" x2="30.6479" y2="14.7539" stroke="#626973" stroke-width="2"/>
+              <path d="M16.2585 1.00146L30.5917 15.2188L16.2585 29.436" stroke="#626973" stroke-width="2"/>
+              </svg>
 
 
 
