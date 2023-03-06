@@ -72,11 +72,11 @@ export class ProjectsDashboardComponent implements OnInit {
     {name: 'Redeban', descripcion: 'Descubrimiento de producto - Diseño de producto - Desarrollo de Software', img: 'assets/img/proyect-laptop.png', alt: 'Redeban', tipo: 'ecommerce', ruta: '/proyectos/redeban', state: true, background: 'bg-three'},
     {name: 'Notifai', descripcion: 'Descubrimiento de producto - Diseño de producto - Desarrollo de Software', img: 'assets/img/laptop-estadis.png', alt: 'Notifai', tipo: 'ecommerce', ruta: '/proyectos/notifai', state: true, background: 'bg-fourth'},
     {name: 'Caja Metropolitana', descripcion: 'Descubrimiento de producto - Diseño de producto - Desarrollo de Software ', img: 'assets/img/Caja Metropolitana.png', alt: 'CajaMetropolitana', tipo: 'ecommerce', ruta: '/proyectos/cajametropolitanadelima', state: true, background: 'bg-color'},
-    {name: 'Caja Cusco', descripcion: 'Descubrimiento de producto - Diseño de producto - Desarrollo de Software', img: 'assets/img/CajaCuzco.png', alt: 'CajaCusco', tipo: 'banca', ruta: '/proyectos/cajacuzco', state: true, background: 'bg-sixth'},
-    {name: 'Niubiz', descripcion: 'Niubiz - Sistema de gestión de usuarios', img: 'assets/img/nubiz-sileder.png', alt: 'Nubiz', tipo: 'banca', ruta: '/proyectos/niubiz', state: true, background: 'bg-seventh'},
-    {name: 'Primax Backoffice', descripcion: 'Primax-BackOffice - Estaciones de servicio de venta de combustibles y tiendas por conveniencia', img: 'assets/img/Primax-BackOffice.png', alt: 'Primax-backoffice', tipo: 'banca', ruta: '/proyectos/primax-blackoffice', state: true, background: 'bg-ten'},
+    {name: 'Caja Cusco', descripcion: 'Descubrimiento de producto - Diseño de producto - Desarrollo de Software', img: 'assets/img/logo-mockup-cajacuzco.png', alt: 'CajaCusco', tipo: 'banca', ruta: '/proyectos/cajacuzco', state: true, background: 'bg-sixth'},
+    {name: 'Niubiz', descripcion: 'Niubiz - Sistema de gestión de usuarios', img: 'assets/img/logo-mockup-niubiz.png', alt: 'Nubiz', tipo: 'banca', ruta: '/proyectos/niubiz', state: true, background: 'bg-seventh'},
+    {name: 'Primax Backoffice', descripcion: 'Primax-BackOffice - Estaciones de servicio de venta de combustibles y tiendas por conveniencia', img: 'assets/img/logo-mockup-primax-blackoffice.png', alt: 'Primax-backoffice', tipo: 'banca', ruta: '/proyectos/primax-blackoffice', state: true, background: 'bg-ten'},
     {name: 'Cyber Strat', descripcion: 'Cyber Strat - Proceso estratégico de planificación digital', img: 'assets/img/CyberStrat.png', alt: 'Cyber-Strat', tipo: 'banca', ruta: '/proyectos/cyberstrat', state: true, background: 'bg-eight'},
-    {name: 'Informatica', descripcion: 'Informatica - Administra y gestiona tu negocio', img: 'assets/img/Infomatiza.png', alt: 'Informatiza', tipo: 'banca', ruta: '/proyectos/infomatica', state: true, background: 'bg-nine'}
+    {name: 'Informatica', descripcion: 'Informatica - Administra y gestiona tu negocio', img: 'assets/img/logo-mockup-informatica.png', alt: 'Informatiza', tipo: 'banca', ruta: '/proyectos/infomatica', state: true, background: 'bg-nine'}
 
   ]
 
