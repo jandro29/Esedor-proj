@@ -15,8 +15,8 @@ export class CyberstratComponent implements OnInit {
   display: string = 'hidden'
   image: string = 'assets/img/primera-imgcyberstrat.png';
   imageTwo: string = 'assets/img/cyberstrat-logo.png';
-  paragraphOne: string = 'During these uncertain times, many of us find ourselves in introspection mode, with new ideas and resolving to do better. We wish we could help everyone and fix everything. ';
-  paragraphTwo: string = 'During these uncertain times, many of us find ourselves in introspection mode, with new ideas and resolving to do better. ';
+  paragraphOne: string = 'Es una Startup que ofrece planificación estratégica con ayuda de un asistente de voz llamado C.I.A.(Cyberstrat Interactive Assistance), esta herramienta ayudará a generar big data competitiva más granular y mucho más rápido. Además, las ideas y el plan se pueden compartir y discutir en toda la organización, democratizando así el proceso de planificación.';
+  paragraphTwo: string = 'Al iniciar el proyecto teníamos el reto de crear un MLP de un sistema interactivo que ofreciera digitalizar las herramientas estratégicas e impulsar la colaboración entre la organización a tiempo real usando la virtualización.';
 
 
   serviceList: Array<String> = [
@@ -43,8 +43,8 @@ export class CyberstratComponent implements OnInit {
     {aos: 1000, label: 'digital'},
   ]
 
-  firstText: string = 'Visualización de datos P2P y P2M';
-  secondText: string = 'During these uncertain times, many of us find ourselves in introspection mode, with new ideas and resolving to do better. We wish we could help everyone and fix everything. ';
+  firstText: string = 'Asistente de voz';
+  secondText: string = 'En el proceso de descubrimiento nos enfocamos en poder tener una interacción más cercana creando a C.I.A. (Cyberstrat Interactive Assistance) basado en un diseño conversacional a medida con una lógica enfocada en ayudar a los negocios a tomar mejores decisiones e informales que esta pasando en todo momento con sus negocios.';
   displayImage:string = 'hidden'
 
 

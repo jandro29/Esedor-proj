@@ -32,16 +32,17 @@ export class ProjectsComponent implements OnInit {
   client: string = 'Primax';
   styles: string = 'w-[40%]'
   display: string = 'hidden'
-  imageTwo: string = 'hidden'
+  display2: string = 'hidden'
+  imageTwo: string = 'assets/img/iphone.png'
   image: string = 'assets/img/iphone.png';
   paragraphOne: string = 'Primax es una de las empresas del Grupo Romero y cuenta con la más importante red de estaciones de servicio de venta de combustibles y tiendas por conveniencia en el Perú y Ecuador.';
   paragraphTwo: string = 'Al iniciar el proyecto enfocamos el producto digital para que pueda cubrir las necesidades de los diferentes clientes de la marca en Perú y Ecuador, creando un ecommerce donde cada cliente encuentra lo que busca.';
 
   serviceList: Array<String> = [
-    'INVESTIGACIÓN Y CONSULTORÍA',
-    'DESCUBRIMIENTO DE PRODUCTO',
-    'DISEÑO DE PRODUCTO',
-    'DESIGN SYSTEM',
+    'Investigación y consultoría',
+    'Descubrimiento de Producto',
+    'Diseño de Producto',
+    'Design System',
   ];
 
   definitionsList: Array<String> = [

@@ -25,6 +25,7 @@ export class NotifaiComponent implements OnInit {
   industry: string = 'INTELIGENCIA ARTIFICIAL';
   client: string = 'Notifai';
   styles: string = 'w-[100%] '
+  display2: string = 'hidden'
   display: string = 'hidden'
   imageTwo: string = 'hidden'
   image: string = 'assets/img/laptop-notifai.png';
