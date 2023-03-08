@@ -67,7 +67,7 @@ export class ProjectsDashboardComponent implements OnInit {
   bgColorSeventh: boolean = true;
 
   empresas = [
-    {name: 'Primax Solutions', descripcion: 'Sistema backoffice', img: 'assets/img/phone-right.png', alt: 'Primax', tipo: 'automotriz', ruta: '/proyectos/primax', state: true, background: 'bg-color'},
+    {name: 'Primax', descripcion: 'Investigación y Consultoría - Descubrimiento de Producto - Diseño de Producto - Design System', img: 'assets/img/phone-right.png', alt: 'Primax', tipo: 'automotriz', ruta: '/proyectos/primax', state: true, background: 'bg-color'},
     {name: 'Ripley', descripcion: 'Descubrimiento de producto - Diseño de producto - Desarrollo de Software', img: 'assets/img/Ripley-slider.png', alt: 'Ripley', tipo: 'banca', ruta: '/proyectos/ripley', state: true, background: 'bg-two'},
     {name: 'Redeban', descripcion: 'Descubrimiento de producto - Diseño de producto - Desarrollo de Software', img: 'assets/img/proyect-laptop.png', alt: 'Redeban', tipo: 'ecommerce', ruta: '/proyectos/redeban', state: true, background: 'bg-three'},
     {name: 'Notifai', descripcion: 'Descubrimiento de producto - Diseño de producto - Desarrollo de Software', img: 'assets/img/laptop-estadis.png', alt: 'Notifai', tipo: 'ecommerce', ruta: '/proyectos/notifai', state: true, background: 'bg-fourth'},
