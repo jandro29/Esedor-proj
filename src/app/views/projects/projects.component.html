@@ -4,8 +4,14 @@
   [display]="display" [display2]="display2" [imageTwo]="imageTwo" [paragraphOne]="paragraphOne" [paragraphTwo]="paragraphTwo"
   [serviceList]="serviceList" [definitionsList]="definitionsList" [animatedTitle]="animatedTitle"></app-first-section>
 
-<section id="parallax" class="h-[80%]">
-</section>
+  <div class="h-screen lg:mt-40 ">
+    <div class="w-full h-screen bg-no-repeat bg-cover bg-fixed h-[110%] lg:block hidden"
+      style="background-image: url(assets/img/parallax-primax.png);">
+    </div>
+    <div class="w-full h-screen bg-no-repeat bg-cover bg-fixed h-[110%] block lg:hidden"
+    style="background-image: url(assets/img/parallax-primax-mobil.jpg);">
+  </div>
+</div>
 
 <app-second-section [firstText]="firstText" [secondText]="secondText" [imageSection]="imageSection"
   [thirdText]="thirdText" [fourthText]="fourthText">
