@@ -14,6 +14,12 @@ export class SecondSectionComponent implements OnInit {
   @Input() displayContent!: any;
   @Input() displayImage!: any;
   @Input() imageSection!: any;
+  @Input() displayOptions!:any;
+  @Input() optionOne!:any;
+  @Input() optionTwo!:any;
+  @Input() optionThree!:any;
+  @Input() optionFour!:any;
+  @Input() optionFive!:any;
   // @Input() aosText!: any;
   // @Input() aosImage!: any;
 

@@ -56,7 +56,12 @@ export class CajacuzcoComponent implements OnInit {
 
   firstText: string = 'Sistema Backoffice';
   secondText: string = 'Cuándo iniciamos el proyecto nos enfrentamos a un sistema previo desarrollado por el equipo de ingenieros, con la ayuda del equipo de analistas funcionales documentamos las historias de usuario de todo el sistema e implementamos un sistema interactivo con funcionalidades mejoradas para las siguientes problemas:';
-  thirdText: string = 'Resolución de reclamosㅤ⠀ㅤㅤ⠀ㅤㅤ⠀ㅤㅤ⠀ㅤㅤ⠀ㅤㅤ⠀ㅤ Consultas ㅤ⠀ㅤㅤ⠀ㅤㅤ⠀ㅤㅤ⠀ㅤㅤ⠀ㅤㅤ⠀ㅤ⠀ㅤ⠀ㅤ⠀ㅤ Cancelación de tarjetasㅤ⠀ㅤㅤ⠀ㅤㅤ⠀ㅤㅤ⠀ㅤㅤ⠀ㅤ⠀ㅤ⠀ㅤ⠀ㅤ Bloqueo de tarjetasㅤ⠀ㅤㅤ⠀ㅤㅤ⠀ㅤㅤ⠀ㅤㅤ⠀ㅤ⠀ㅤ⠀ㅤ⠀ㅤ Reprogramación de deudas '
+  thirdText: string = ''
+  optionOne: string ='Resolución de reclamos';
+  optionTwo: string ='Consultas';
+  optionThree: string ='Cancelación de tarjetas';
+  optionFour: string ='Bloqueo de tarjetas';
+  optionFive: string ='Reprogramación de deudas';
   displayImage:string = 'hidden'
   ngOnInit(): void {
   }

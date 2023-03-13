@@ -45,7 +45,9 @@ export class NiubizComponent implements OnInit {
 
   firstText: string = 'Visualización de datos P2P y P2M';
   secondText: string = 'La información relevante se podía ver en un vistazo, ser rápido de escanear y fácil de entender. Es por eso, cuando hablamos de mejorar sistema interactivo, hablamos de dos ejes importantes:';
-  thirdText: string = '1.Proporcionar una descripción general hermosa, simple y procesable de las transacciones de los usuarios.ㅤ⠀ㅤㅤ⠀ㅤㅤ⠀⠀ㅤ⠀ㅤㅤ⠀ㅤㅤ⠀⠀ㅤ⠀ㅤㅤ⠀ㅤㅤ⠀⠀ㅤ⠀ㅤㅤ⠀ㅤㅤ⠀⠀ㅤ⠀ㅤㅤ⠀ㅤㅤ⠀⠀ㅤ 2. Resaltar acciones relevantes e información crítica para que los usuarios resuelvan sus preguntas, gestionen problemas y, en consecuencia, reduzcan la sobrecarga de solicitudes de atención al cliente. '
+  thirdText: string = '1.Proporcionar una descripción general hermosa, simple y procesable de las transacciones de los usuarios.';
+  optionOne: string = 'ㅤ'
+  optionTwo: string = '2. Resaltar acciones relevantes e información crítica para que los usuarios resuelvan sus preguntas, gestionen problemas y, en consecuencia, reduzcan la sobrecarga de solicitudes de atención al cliente.';
   displayImage:string = 'hidden'
 
   constructor() { }
