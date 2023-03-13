@@ -68,7 +68,7 @@ export class ProjectsComponent implements OnInit {
   thirdText: string = 'Biblioteca de recursos: uno de los objetivos de Primax es poder atender otras necesidades del negocio. En este nuevo sistema interactivo creamos un módulo llamado “Biblioteca” que permite explorar fácilmente y descargar recursos de marketing promocional como videos promocionales, banners impresos, materiales POP, afiches y hasta audios.';
   fourthText: string = 'Cómo empatizar con ellos';
 
-  imageSection: any = 'assets/img/videollamada.png';
+  imageSection: any = 'assets/img/videollamada.jpg';
 
 
   constructor() { }
