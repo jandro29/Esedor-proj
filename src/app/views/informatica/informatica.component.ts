@@ -14,6 +14,7 @@ export class InformaticaComponent implements OnInit {
   client: string = 'Infomatica';
   styles: string = 'w-[100%] lg:ml-20 2xl:ml-40'
   display: string = 'hidden'
+  optionImg: string = '2xl:mt-[140px]'
   image: string = 'assets/img/informatica-inicio.png';
   imageTwo: string = 'assets/img/informatica-logo.png';
   paragraphOne: string = 'During these uncertain times, many of us find ourselves in introspection mode, with new ideas and resolving to do better. We wish we could help everyone and fix everything. ';

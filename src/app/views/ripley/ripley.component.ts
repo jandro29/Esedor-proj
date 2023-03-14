@@ -26,6 +26,7 @@ export class RipleyComponent implements OnInit {
   styles: string = 'w-[100%] '
   display: string = 'hidden'
   display2: string = 'hidden'
+  optionImg: string = '2xl:mt-[140px]'
   imageTwo: string = 'hidden'
   image: string = 'assets/img/Ripley-FP.png';
   paragraphOne: string = 'Ripley es una empresa de retail en Perú y Chile, su objetivo era migrar su sistema de puntos a la nube, teniendo como primer objetivo rediseñar el producto actual';

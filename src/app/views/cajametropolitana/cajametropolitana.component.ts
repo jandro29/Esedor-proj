@@ -14,6 +14,7 @@ export class CajametropolitanaComponent implements OnInit {
   client: string = 'Caja Metropolitana de Lima';
   styles: string = 'w-[100%] flex justify-end'
   display: string = 'hidden'
+  optionImg: string = 'mt-[-320px] 2xl:w-[850px] 2xl:mt-[20px]'
   image: string = 'assets/img/img-inicio-cajametropolitana.png';
   imageTwo: string = 'assets/img/cajametropolitana-logo.png';
   paragraphOne: string = 'La Caja Metropolitana de Lima es una empresa de operaciones bancarias múltiples y tiene por finalidad fomentar el ahorro, desarrollar el crédito de consumo en las modalidades de préstamos pignoraticios y personales.';

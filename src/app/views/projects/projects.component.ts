@@ -33,6 +33,7 @@ export class ProjectsComponent implements OnInit {
   styles: string = 'w-[40%]'
   display: string = 'hidden'
   display2: string = 'hidden'
+  optionImg: string = 'w-[350px] 2xl:mt-[80px]'
   imageTwo: string = 'assets/img/iphone.png'
   image: string = 'assets/img/iphone.png';
   paragraphOne: string = 'Primax es una de las empresas del Grupo Romero y cuenta con la más importante red de estaciones de servicio de venta de combustibles y tiendas por conveniencia en el Perú y Ecuador.';
