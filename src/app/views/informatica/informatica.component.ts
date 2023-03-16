@@ -20,7 +20,7 @@ export class InformaticaComponent implements OnInit {
 
   date3: string = 'CLIENTE';
   date2: string = 'informatica.pe';
-  industry3: string = 'Featured';
+  industry3: string = 'FEATURED';
   industry2: string = 'Design Rush featured in “Luxury websites design”';
   date: number = 2021;
   industry: string = 'INTELIGENCIA ARTIFICIAL';
@@ -28,7 +28,7 @@ export class InformaticaComponent implements OnInit {
   hiddenhead: string = 'hidden';
   styles: string = 'w-[100%] lg:ml-20 2xl:ml-40'
   display: string = 'hidden'
-  optionImg: string = 'lg:w-[670px] 2xl:w-[850px] mt-[-320px] lg:mt-[-100px] xl:mt-[-230px] 2xl:mt-[-50px]'
+  optionImg: string = 'lg:w-[670px] 2xl:w-[850px] lg:mt-[-100px] xl:mt-[-230px] 2xl:mt-[-50px]'
   image: string = 'assets/img/informatica-inicio.png';
   imageTwo: string = 'assets/img/informatica-logo.png';
   paragraphOne: string = 'During these uncertain times, many of us find ourselves in introspection mode, with new ideas and resolving to do better. We wish we could help everyone and fix everything. ';

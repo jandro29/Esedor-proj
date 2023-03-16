@@ -26,7 +26,7 @@ export class NiubizComponent implements OnInit {
   industry: string = 'BANCA';
   client: string = 'Niubiz';
   styles: string = 'w-[100%] lg:ml-20'
-  optionImg: string = 'lg:w-[670px] 2xl:w-[850px] mt-[-320px] lg:mt-[-280px] xl:mt-[-170px] 2xl:mt-[-100px]'
+  optionImg: string = 'lg:w-[670px] 2xl:w-[850px] lg:mt-[-280px] xl:mt-[-170px] 2xl:mt-[-100px]'
   display: string = 'hidden'
   image: string = 'assets/img/primeraimg-niubiz.png';
   imageTwo: string = 'assets/img/niubiz-logo.png';
