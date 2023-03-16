@@ -2,7 +2,8 @@
 
 <app-first-section [date]="date" [industry]="industry" [client]="client" [image]="image" [styles]="styles"
   [display]="display" [imageTwo]="imageTwo" [paragraphOne]="paragraphOne" [paragraphTwo]="paragraphTwo"
-  [serviceList]="serviceList" [definitionsList]="definitionsList" [animatedTitle]="animatedTitle" [optionImg]="optionImg"></app-first-section>
+  [serviceList]="serviceList" [definitionsList]="definitionsList" [animatedTitle]="animatedTitle" [optionImg]="optionImg"
+  [arrowhidden]="arrowhidden"></app-first-section>
 
 <section class="h-screen lg:mt-80 ">
   <div class="w-full h-screen bg-no-repeat bg-cover bg-fixed h-[110%] lg:block hidden"
@@ -107,7 +108,15 @@
 </section>
 <section>
   <div data-aos="fade-up " data-aos-duration="700" class="flex justify-end">
-    <img class="lg:mt-[0px] mt-[100px] w-[1000px] lg:w-[650px] xl:w-[700px] 2xl:w-[850px] 3xl:w-[980px]"
+    <img class="lg:mt-[0px] mt-[100px] w-[1000px] lg:w-[650px] xl:w-[700px] 2xl:w-[850px] 3xl:w-[980px] mb-60"
       src="assets/img/img5-primax.png" alt="">
   </div>
 </section>
+
+<app-lets-talk (letsForm)="showFormEvent()"></app-lets-talk>
+
+<div *ngIf="showForm">
+  <app-contact-dashboard (closeForm)="closeFormEvent()"></app-contact-dashboard>
+</div>
+
+<app-footer></app-footer>

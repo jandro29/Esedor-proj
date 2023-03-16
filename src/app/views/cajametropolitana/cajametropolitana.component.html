@@ -2,7 +2,8 @@
 
 <app-first-section [date]="date" [industry]="industry" [client]="client" [image]="image" [styles]="styles"
   [display]="display" [paragraphOne]="paragraphOne" [paragraphTwo]="paragraphTwo" [serviceList]="serviceList"
-  [definitionsList]="definitionsList" [imageTwo]="imageTwo" [animatedTitle]="animatedTitle" [optionImg]="optionImg"></app-first-section>
+  [definitionsList]="definitionsList" [imageTwo]="imageTwo" [animatedTitle]="animatedTitle"
+   [optionImg]="optionImg" [arrowhidden]="arrowhidden"></app-first-section>
 
 
 <section class="h-screen lg:mt-80 ">
@@ -108,7 +109,15 @@
 
 <section>
   <div data-aos="fade-up" data-aos-duration="650" class="flex justify-center mt-20">
-    <img class=" w-[800px] lg:w-[650px] xl:w-[700px] 2xl:w-[70px] 3xl:w-[850px]"
+    <img class=" w-[800px] lg:w-[650px] xl:w-[700px] 2xl:w-[70px] 3xl:w-[850px] mb-40"
       src="assets/img/celular2-cajametropolitana.png" alt="">
   </div>
 </section>
+
+<app-lets-talk (letsForm)="showFormEvent()"></app-lets-talk>
+
+<div *ngIf="showForm">
+  <app-contact-dashboard (closeForm)="closeFormEvent()"></app-contact-dashboard>
+</div>
+
+<app-footer></app-footer>

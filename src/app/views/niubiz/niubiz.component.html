@@ -3,7 +3,8 @@
 
 <app-first-section [date]="date" [industry]="industry" [client]="client" [image]="image" [styles]="styles"
   [display]="display" [paragraphOne]="paragraphOne" [paragraphTwo]="paragraphTwo" [serviceList]="serviceList"
-  [definitionsList]="definitionsList" [imageTwo]="imageTwo" [animatedTitle]="animatedTitle"></app-first-section>
+  [definitionsList]="definitionsList" [imageTwo]="imageTwo" [animatedTitle]="animatedTitle" [optionImg]="optionImg"
+  [arrowhidden]="arrowhidden"></app-first-section>
 
 
   <section class="h-screen lg:mt-80 ">
@@ -83,12 +84,20 @@
 
 <section class="mt-60">
   <div data-aos="fade-up" data-aos-duration="600" class="flex justify-end">
-    <img class="lg:mr-32 w-[1000px] mr-16 lg:w-[650px] xl:w-[750px] 2xl:w-[900px] 3xl:w-[1000px]" src="assets/img/img3niubiz.jpg" alt="">
+    <img class="lg:mr-32 w-[1000px] mr-16 lg:w-[450px] xl:w-[550px] 2xl:w-[850px] 3xl:w-[900px]" src="assets/img/img3niubiz.jpg" alt="">
   </div>
 </section>
 
 <section>
   <div data-aos="fade-right" data-aos-duration="600" class=" flex">
-    <img class="lg:mt-[-100px] w-[1000px] lg:w-[950px] xl:w-[1050px] 2xl:w-[1150px] 3xl:w-[1250px]" src="assets/img/img4niubiz.png" alt="">
+    <img class="lg:mt-[-100px] w-[1000px] lg:w-[850px] xl:w-[950px] 2xl:w-[1000px] 3xl:w-[1050px]" src="assets/img/img4niubiz.png" alt="">
   </div>
 </section>
+
+<app-lets-talk (letsForm)="showFormEvent()"></app-lets-talk>
+
+<div *ngIf="showForm">
+  <app-contact-dashboard (closeForm)="closeFormEvent()"></app-contact-dashboard>
+</div>
+
+<app-footer></app-footer>

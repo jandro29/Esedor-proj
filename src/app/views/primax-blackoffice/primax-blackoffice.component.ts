@@ -9,17 +9,28 @@ export class PrimaxBlackofficeComponent implements OnInit {
 
   colorWhite = false;
 
+  showForm!: boolean;
+
+  showFormEvent() {
+    this.showForm = true;
+  }
+
+  closeFormEvent() {
+    this.showForm = false;
+  }
+
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  arrowhidden: string= 'hidden'
   date: number = 2021;
   industry: string = 'BANCA';
   client: string = 'Primax-Backoffice';
   styles: string = 'w-[100%] '
   display: string = 'hidden'
-  optionImg:string='2xl:mt-[140px]'
+  optionImg:string='lg:w-[670px] 2xl:w-[850px] mt-[-320px] lg:mt-[-280px] xl:mt-[-170px] 2xl:mt-[-50px]'
   imageTwo: string = 'assets/img/primax-solutionsicono.png'
   image: string = 'assets/img/primera-img-primax-backoffice-.png';
   paragraphOne: string = 'Primax es una de las empresas del Grupo Romero y cuenta con la más importante red de estaciones de servicio de venta de combustibles y tiendas por conveniencia en el Perú y Ecuador.';

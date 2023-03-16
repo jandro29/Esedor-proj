@@ -21,6 +21,7 @@ export class CajacuzcoComponent implements OnInit {
     }
   constructor() { }
 
+  arrowhidden: string= 'hidden'
   date: number = 2021;
   industry: string = 'BANCA Y FINANZAS';
   client: string = 'Caja Cuzco';
@@ -57,7 +58,7 @@ export class CajacuzcoComponent implements OnInit {
   firstText: string = 'Sistema Backoffice';
   secondText: string = 'Cuándo iniciamos el proyecto nos enfrentamos a un sistema previo desarrollado por el equipo de ingenieros, con la ayuda del equipo de analistas funcionales documentamos las historias de usuario de todo el sistema e implementamos un sistema interactivo con funcionalidades mejoradas para las siguientes problemas:';
   thirdText: string = ''
-  optionImg: string = '2xl:mt-[140px]'
+  optionImg: string = 'lg:w-[670px] 2xl:w-[850px] mt-[-320px] lg:mt-[-280px] xl:mt-[-250px] 2xl:mt-[-100px]'
   optionOne: string ='Resolución de reclamos';
   optionTwo: string ='Consultas';
   optionThree: string ='Cancelación de tarjetas';

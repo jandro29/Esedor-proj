@@ -20,13 +20,15 @@ export class RipleyComponent implements OnInit {
     this.showForm = false;
   }
 
+
+  arrowhidden: string= 'hidden'
   date: number = 2021;
   industry: string = 'RETAIL';
   client: string = 'Ripley';
   styles: string = 'w-[100%] '
   display: string = 'hidden'
   display2: string = 'hidden'
-  optionImg: string = '2xl:mt-[140px]'
+  optionImg: string = '2xl:mt-[-140px] lg:mt-[-300px] lg:w-[580px]'
   imageTwo: string = 'hidden'
   image: string = 'assets/img/Ripley-FP.png';
   paragraphOne: string = 'Ripley es una empresa de retail en Perú y Chile, su objetivo era migrar su sistema de puntos a la nube, teniendo como primer objetivo rediseñar el producto actual';

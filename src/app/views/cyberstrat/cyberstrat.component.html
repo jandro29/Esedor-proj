@@ -2,7 +2,7 @@
 
 <app-first-section [date]="date" [industry]="industry" [client]="client" [image]="image" [styles]="styles"
   [display]="display" [paragraphOne]="paragraphOne" [paragraphTwo]="paragraphTwo" [serviceList]="serviceList"
-  [definitionsList]="definitionsList" [imageTwo]="imageTwo" [animatedTitle]="animatedTitle"></app-first-section>
+  [definitionsList]="definitionsList" [imageTwo]="imageTwo" [animatedTitle]="animatedTitle" [optionImg]="optionImg" [arrowhidden]="arrowhidden"></app-first-section>
 
   <section class="h-screen lg:mt-80 ">
     <div class="w-full h-screen bg-no-repeat bg-cover bg-fixed h-[110%] lg:block hidden"
@@ -100,6 +100,14 @@
 
   <section>
     <div data-aos="fade-up" data-aos-duration="700" class=" flex justify-center">
-      <img class="mt-80 w-[1000px] lg:w-[450px] xl:w-[550px] 2xl:w-[650px] 3xl:w-[900px]" src="assets/img/img5-cyberstrat.png" alt="">
+      <img class="mt-80 w-[1000px] lg:w-[450px] xl:w-[550px] 2xl:w-[650px] 3xl:w-[900px] mb-60" src="assets/img/img5-cyberstrat.png" alt="">
     </div>
   </section>
+
+  <app-lets-talk (letsForm)="showFormEvent()"></app-lets-talk>
+
+  <div *ngIf="showForm">
+    <app-contact-dashboard (closeForm)="closeFormEvent()"></app-contact-dashboard>
+  </div>
+
+  <app-footer></app-footer>

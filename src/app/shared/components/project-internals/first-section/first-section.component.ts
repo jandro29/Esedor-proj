@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input,EventEmitter,Output } from '@angular/core';
 import * as AOS from 'aos';
 
 @Component({
@@ -8,6 +8,9 @@ import * as AOS from 'aos';
 })
 export class FirstSectionComponent implements OnInit {
 
+  @Output() letsForm = new EventEmitter<any>();
+
+  btnStyle!: boolean;
   @Input() date!: number;
   @Input() industry!: string;
   @Input() client!: string;
@@ -20,9 +23,15 @@ export class FirstSectionComponent implements OnInit {
   @Input() display2!: string;
   @Input() imageTwo!: string;
   @Input() optionImg!: string;
+  @Input() date2!: string;
+  @Input() date3!: string;
+  @Input() industry2!:string;
+  @Input() industry3!:string;
+  @Input() hiddenhead!:string;
   @Input() serviceList!: Array<String>;
   @Input() definitionsList!: Array<String>;
   @Input() animatedTitle!: Array<{aos: number, label:String}>;
+  @Input() arrowhidden!:string
 
   item!: number
   constructor() { }

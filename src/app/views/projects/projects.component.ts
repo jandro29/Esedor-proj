@@ -26,14 +26,14 @@ export class ProjectsComponent implements OnInit {
   closeFormEvent() {
     this.showForm = false;
   }
-
+  arrowhidden: string= 'hidden'
   date: number = 2021;
   industry: string = 'Energética';
   client: string = 'Primax';
   styles: string = 'w-[40%]'
   display: string = 'hidden'
   display2: string = 'hidden'
-  optionImg: string = 'w-[350px] 2xl:mt-[80px]'
+  optionImg: string = 'lg:w-[300px] xl:w-[380px] lg:mt-[-250px] xl:mt-[-100px] 3xl:mt-[80px]'
   imageTwo: string = 'assets/img/iphone.png'
   image: string = 'assets/img/iphone.png';
   paragraphOne: string = 'Primax es una de las empresas del Grupo Romero y cuenta con la más importante red de estaciones de servicio de venta de combustibles y tiendas por conveniencia en el Perú y Ecuador.';

@@ -9,12 +9,23 @@ export class CajametropolitanaComponent implements OnInit {
 
   colorWhite = false;
 
+  showForm!: boolean;
+
+  showFormEvent() {
+    this.showForm = true;
+  }
+
+  closeFormEvent() {
+    this.showForm = false;
+  }
+
+  arrowhidden: string= 'hidden'
   date: number = 2021;
   industry: string = 'BANCA';
   client: string = 'Caja Metropolitana de Lima';
   styles: string = 'w-[100%] flex justify-end'
   display: string = 'hidden'
-  optionImg: string = 'mt-[-320px] 2xl:w-[850px] 2xl:mt-[20px]'
+  optionImg: string = 'lg:w-[670px] 2xl:w-[850px] mt-[-320px] lg:mt-[-250px] xl:mt-[-300px] 2xl:mt-[-220px]'
   image: string = 'assets/img/img-inicio-cajametropolitana.png';
   imageTwo: string = 'assets/img/cajametropolitana-logo.png';
   paragraphOne: string = 'La Caja Metropolitana de Lima es una empresa de operaciones bancarias múltiples y tiene por finalidad fomentar el ahorro, desarrollar el crédito de consumo en las modalidades de préstamos pignoraticios y personales.';

@@ -21,13 +21,14 @@ export class NotifaiComponent implements OnInit {
     this.showForm = false;
   }
 
+  arrowhidden: string= 'hidden'
   date: number = 2021;
   industry: string = 'INTELIGENCIA ARTIFICIAL';
   client: string = 'Notifai';
   styles: string = 'w-[100%] '
   display2: string = 'hidden'
   display: string = 'hidden'
-  optionImg: string = '2xl:mt-[140px]'
+  optionImg: string = 'lg:w-[600px] lg:mt-[-250px] xl:mt-[-270px] 2xl:mt-[-180px]'
   imageTwo: string = 'hidden'
   image: string = 'assets/img/laptop-notifai.png';
   paragraphOne: string = 'La empresa Notifai es una solución “SaaS” que permite automatizar las comunicaciones outbound usando inteligencia artificial, simplifica la contactabilidad de tus cobranzas usando bots de voz que se encargan de llamar de manera automatizada a cualquier usuario que sus clientes necesiten.';

@@ -8,10 +8,22 @@ import { Component, OnInit } from '@angular/core';
 export class CyberstratComponent implements OnInit {
   colorWhite = false;
 
+  showForm!: boolean;
+
+  showFormEvent() {
+    this.showForm = true;
+  }
+
+  closeFormEvent() {
+    this.showForm = false;
+  }
+
   date: number = 2021;
   industry: string = 'INTELIGENCIA ARTIFICIAL';
+  arrowhidden: string= 'hidden'
   client: string = 'CyberStrat';
   styles: string = 'w-[100%] flex lg:justify-end'
+  optionImg:string='lg:w-[670px] 2xl:w-[850px] mt-[-320px] lg:mt-[-200px] xl:mt-[-230px] 2xl:mt-[-50px]'
   display: string = 'hidden'
   image: string = 'assets/img/primera-imgcyberstrat.png';
   imageTwo: string = 'assets/img/cyberstrat-logo.png';

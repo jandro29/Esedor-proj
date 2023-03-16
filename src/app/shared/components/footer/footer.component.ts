@@ -14,11 +14,11 @@ export class FooterComponent implements OnInit {
   }
 
   servicesList = [
-    {text: 'Descrubrimiento de Producto', route: '/servicios'},
+    {text: 'Descubrimiento de Producto', route: '/servicios'},
     {text: 'Diseño de Productos', route: '/servicios'},
     {text: 'Desarrollo de software', route: '/servicios'},
     {text: 'Sistemas de Diseños', route: '/servicios'},
-    {text: 'Investigación y Consultoria ', route: '/servicios'},
+    {text: 'Investigación y Consultoría ', route: '/servicios'},
     {text: 'Transformación cultural', route: '/servicios'}
   ]
 
