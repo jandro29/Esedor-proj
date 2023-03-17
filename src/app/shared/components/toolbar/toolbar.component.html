@@ -9,12 +9,31 @@
         class="text-sm lg:text-[1.125rem] lexend ml-2 lg:ml-4 leading-[22px] lexendzetta font-medium cursor-pointer">Esedor</span>
     </div>
     <div #menu class="flex justify-end w-full lexendzetta font-bold">
+
+      <div class="flex justify-center w-[98%] absolute">
       <div [class.header_variable]="header_variable"
-        class="lg:grid grid-cols-6 gap-4 hidden space-x-10 justify-between items-center w-full lexendzetta font-bold" #scroll>
-        <span class="cursor-pointer col-span-2 text-[1rem]" (click)="redirectService()">Servicios</span>
-        <span class="cursor-pointer col-span-2 text-[1rem]" (click)="redirectProject()">Proyectos</span>
-        <span class="cursor-pointer col-span-2 text-[1rem]" (click)="redirectUs()">Nosotros</span>
+        class="lg:grid grid-cols-3 gap-4 hidden space-x-3 justify-between items-center w-[35%] flex justify-center lexendb" #scroll>
+        <span class="cursor-pointer text-[1rem] lg:hover:text-[#626973]" (click)="redirectService()">Servicios</span>
+        <span class="cursor-pointer text-[1rem] lg:hover:text-[#626973]" (click)="redirectProject()">Proyectos</span>
+        <span class="cursor-pointer text-[1rem] lg:hover:text-[#626973]" (click)="redirectUs()">Nosotros</span>
       </div>
+    </div>
+
+    <button [class.header_variable]="header_variable" matRipple (mouseover)="btnStyle = true" (mouseout)="btnStyle = false" [ngClass]="{ 'arrow' : btnStyle}"
+    (click)="letsForm.emit()"
+    class="lexendb z-0 cursor-pointer bg-[#5682FF] lg:hover:bg-[#7282FF] text-[14.5px] text-white lg:hover:text-white flex items-center justify-start lg:justify-center shadow w-full lg:w-[192px] h-[38px] 2xl:h-[46px] lg:ml-4 px-6 lg:p-4 rounded-[50px] mr-6">
+    <svg class="transition duration-700 ease-in-out mr-16 lg:mr-4 w-[24px] lg:w-[13px]" width="33" height="31"
+        viewBox="0 0 33 31" [ngClass]="{ 'arrow-rotate' : btnStyle }" fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <g class="text-white">
+            <line x1="5.7105e-09" y1="14.7539" x2="30.6479" y2="14.7539" stroke="white" stroke-width="2" />
+            <path d="M16.2585 1.00146L30.5917 15.2188L16.2585 29.436" stroke="white" stroke-width="2" />
+        </g>
+    </svg>
+    Conversemos
+</button>
+
+
 
       <div #search (click)="openMenu = true" class="pb-2">
         <div [ngClass]="{ 'hidden' : colorWhite}" class="mt-[0.38rem]">

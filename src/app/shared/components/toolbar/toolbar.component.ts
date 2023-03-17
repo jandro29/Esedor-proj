@@ -8,6 +8,8 @@ import { Router } from "@angular/router";
 })
 export class ToolbarComponent implements OnInit {
 
+  btnStyle!: boolean;
+  @Output() letsForm = new EventEmitter<any>();
 
 
   @ViewChild('menu', { static: true }) menu!: ElementRef<HTMLDivElement>;
