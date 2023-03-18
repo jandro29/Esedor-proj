@@ -1,4 +1,5 @@
-import {Component, HostListener, OnInit, Input, ViewChild, ElementRef, EventEmitter, Output} from '@angular/core';
+import {HostListener, Input, ViewChild, ElementRef} from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { Router } from "@angular/router";
 
 @Component({
@@ -8,16 +9,15 @@ import { Router } from "@angular/router";
 })
 export class ToolbarComponent implements OnInit {
 
-  btnStyle!: boolean;
-  @Output() letsForm = new EventEmitter<any>();
-
-
   @ViewChild('menu', { static: true }) menu!: ElementRef<HTMLDivElement>;
   @ViewChild('logo', { static: true }) logo!: ElementRef<HTMLDivElement>;
   @ViewChild('search', { static: true }) search!: ElementRef<HTMLDivElement>;
   @ViewChild('scroll')  scroll!: ElementRef;
   @Input() colorWhite: any;
+  @Output() letsForm2 = new EventEmitter<any>();
 
+
+  btnStyle!: boolean;
   openMenu!: boolean;
   arrowRoate!: boolean;
 
