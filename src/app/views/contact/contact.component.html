@@ -58,7 +58,7 @@
     <div
       class="lg:ml-[-4rem] 2xl:ml-[0rem] mt-[-13%] 2xl:col-start-4 col-span-5 space-y-[3rem] pt-6 lg:pt-0 xl:pt-16 2xl:pt-20 lg:pl-[0rem] xl:pl-[0rem] 2xl:pl-0">
       <h3 data-aos="fade-up" class="lexendli text-[14px] lg:text-[20px] col-span-1">Conversemos</h3>
-      <p class="lexendli text-[18px] lg:text-[30px] col-span-1 pb-[1rem]"> en los siguientes canales:Contactanos</p>
+      <p class="lexendli text-[18px] lg:text-[30px] col-span-1 pb-[1rem]">Contáctanos en los siguientes canales:</p>
       <div data-aos="fade-up" class="flex flex-col lg:flex-row text-left">
         <div>
           <h3 class="text-[16px]">Correo</h3>
@@ -67,7 +67,7 @@
           </div>
         </div>
         <div class="lg:ml-40 2xl:ml-[35%]">
-          <h3 class="text-[16px]">Telefono</h3>
+          <h3 class="text-[16px]">Teléfono</h3>
           <div class="mt-[17px]">
             <a class="border-b border-black text-[18px] lg:text-[32px]" href="">(+01) 773 8905</a>
           </div>
@@ -76,7 +76,7 @@
 
       <div class="flex text-left ">
         <div class="mt-[20px] w-full">
-          <h3 data-aos="fade-up" class="text-[16px]">Siguenos</h3>
+          <h3 data-aos="fade-up" class="text-[16px]">Síguenos</h3>
           <div data-aos="fade-up" class="mt-[17px] flex text-left ">
             <a href=""><img src="assets/img/LinkedIn-gris.png" alt=""></a>
             <a class="px-[40px]" href=""> <img src="assets/img/Facebook-gris.png" alt=""></a>
@@ -89,21 +89,32 @@
 </section>
 
 <section class=" lg:flex justify-between">
-  <div class="lg:w-[50%] lg:h-auto bg-black pb-[12rem] flex flex-wrap ">
-    <div>
-      <h3 data-aos="fade-right" class="text-white mt-10 px-4 text-[18px] lg:text-[10px] xl:text-[15px] 2xl:text-[20px]">
-        ubicanos
+  <div class="lg:w-[50%] lg:h-auto bg-black pb-[12rem] flex justify-center ">
+    <div class="flex  flex-col">
+      <h3 data-aos="fade-right" class="text-white mt-16 text-[18px] lg:text-[20px] xl:text-[27px] 2xl:text-[36px]">
+        Ubícanos
       </h3>
-    </div>
-    <div data-aos="fade-right" class="text-[#626973] px-4 lg:px-0 lg:ml-[-2rem] flex flex-wrap mt-16 lg:mt-48">
+
+    <div data-aos="fade-right" class="text-[#626973] px-4 lg:px-0  flex flex-wrap mt-16 lg:mt-40">
       <a href="" class="lexendzetta text-sm lg:text-[20px] xl:text-[25px] 2xl:text-[32px] leading-[55px] ">
-        <a href="" class="text-white">Lima<br></a>
+
+        <a href="" class="text-white cursor-pointer" [ngClass]="{ 'arrow' : btnStyle}" matRipple (mouseover)="btnStyle = true" (mouseout)="btnStyle = false" >Lima<br></a>
         Swiss Tower <br>
         Av. Alfredo Benavides 1944<br>
         Piso 09<br>
         Miraflores<br>
-        <img class="w-[41.01px] h-[38.23px] mt-4" src="assets/img/arrow-footer.png" alt=""> </a>
+        <svg class="arrow-rotate transition duration-700 ease-in-out mr-16 lg:mr-4 w-[24px] lg:w-[41.01px]" width="33" height="31"
+        viewBox="0 0 33 31" [ngClass]="{ 'arrow-rotate' : btnStyle }" fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <g class="text-white">
+          <line x1="5.7105e-09" y1="14.7539" x2="30.6479" y2="14.7539" stroke="white" stroke-width="2" />
+          <path d="M16.2585 1.00146L30.5917 15.2188L16.2585 29.436" stroke="white" stroke-width="2" />
+        </g>
+      </svg> </a>
+
+
     </div>
+  </div>
   </div>
   <div class="lg:w-[50%] lg:h-auto flex flex-wrap bg-mitad">
   </div>
