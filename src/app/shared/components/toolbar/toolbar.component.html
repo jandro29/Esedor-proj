@@ -9,7 +9,7 @@
         class="z-30 text-sm lg:text-[1.125rem] lexend ml-2 lg:ml-4 leading-[22px] lexendzetta font-medium cursor-pointer">
 
         <img class="w-[70px] lg:w-[81.99px]" [ngClass]="{ 'hidden' : colorWhite}" src="assets/img/logoesedor/text-esedor-black.svg">
-        <img class="w-[70px] lg:w-[81.99px]" [ngClass]="{ 'hidden' : !colorWhite}"
+        <img class="w-[70|px] lg:w-[81.99px]" [ngClass]="{ 'hidden' : !colorWhite}"
           src="assets/img/logoesedor/text-esedor-white.svg">
       </span>
     </div>
@@ -26,7 +26,7 @@
       </div>
       <div class="hidden lg:block">
         <button [class.header_variable]="header_variable" matRipple (mouseover)="btnStyle = true"
-          (mouseout)="btnStyle = false" [ngClass]="{ 'arrow' : btnStyle}" (click)="letsForm2.emit()"
+          (mouseout)="btnStyle = false" [ngClass]="{ 'arrow' : btnStyle}" [routerLink]="['/contacto']"
           class="lexendb  cursor-pointer bg-[#5682FF] lg:hover:bg-[#7282FF] text-[14.5px] text-white lg:hover:text-white flex items-center justify-start lg:justify-center shadow w-full lg:w-[192px] h-[38px] 2xl:h-[46px] lg:ml-4 px-6 lg:p-4 rounded-[50px] mr-6">
           <svg class="transition duration-700 ease-in-out mr-16 lg:mr-4 w-[24px] lg:w-[13px]" width="33" height="31"
             viewBox="0 0 33 31" [ngClass]="{ 'arrow-rotate' : btnStyle }" fill="none"
