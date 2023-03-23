@@ -40,7 +40,7 @@ export class FooterComponent implements OnInit {
     {text: 'Blog', route: '/'},
     {text: 'Contacto', route: '/contacto'},
     {text: 'Talento', route: '/talento'},
-    {text: 'Level Up', route: '/'}
+    {text: 'Level Up', route: '/level-up'}
   ]
 
 
