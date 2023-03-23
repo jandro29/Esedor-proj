@@ -73,11 +73,11 @@ h1 {
   }
 
   .arrow:hover g line {
-      stroke: #FFFFFF;
+      stroke: #000000;
   }
 
   .arrow:hover g path {
-      stroke: #FFFFFF;
+      stroke: #000000;
   }
 
 }
