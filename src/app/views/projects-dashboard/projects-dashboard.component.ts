@@ -67,16 +67,17 @@ export class ProjectsDashboardComponent implements OnInit {
   bgColorSeventh: boolean = true;
 
   empresas = [
-    {name: 'Primax', descripcion: 'Investigación y Consultoría - Descubrimiento de Producto - Diseño de Producto - Design System', img: 'assets/img/phone-right.png', alt: 'Primax', tipo: 'automotriz', ruta: '/proyectos/primax', state: true, background: 'bg-color'},
-    {name: 'Ripley', descripcion: 'Descubrimiento de producto - Diseño de producto - Desarrollo de Software', img: 'assets/img/Ripley-slider.png', alt: 'Ripley', tipo: 'banca', ruta: '/proyectos/ripley', state: true, background: 'bg-two'},
-    {name: 'Redeban', descripcion: 'Descubrimiento de producto - Diseño de producto - Desarrollo de Software', img: 'assets/img/proyect-laptop.png', alt: 'Redeban', tipo: 'ecommerce', ruta: '/proyectos/redeban', state: true, background: 'bg-three'},
-    {name: 'Notifai', descripcion: 'Descubrimiento de producto - Diseño de producto - Desarrollo de Software', img: 'assets/img/laptop-estadis.png', alt: 'Notifai', tipo: 'ecommerce', ruta: '/proyectos/notifai', state: true, background: 'bg-fourth'},
-    {name: 'Caja Metropolitana', descripcion: 'Descubrimiento de producto - Diseño de producto - Desarrollo de Software ', img: 'assets/img/Caja Metropolitana.png', alt: 'CajaMetropolitana', tipo: 'ecommerce', ruta: '/proyectos/cajametropolitanadelima', state: true, background: 'bg-color'},
-    {name: 'Caja Cusco', descripcion: 'Descubrimiento de producto - Diseño de producto - Desarrollo de Software', img: 'assets/img/logo-mockup-cajacuzco.png', alt: 'CajaCusco', tipo: 'banca', ruta: '/proyectos/cajacuzco', state: true, background: 'bg-sixth'},
-    {name: 'Niubiz', descripcion: 'Niubiz - Sistema de gestión de usuarios', img: 'assets/img/logo-mockup-niubiz.png', alt: 'Nubiz', tipo: 'banca', ruta: '/proyectos/niubiz', state: true, background: 'bg-seventh'},
-    {name: 'Primax Backoffice', descripcion: 'Primax-BackOffice - Estaciones de servicio de venta de combustibles y tiendas por conveniencia', img: 'assets/img/logo-mockup-primax-blackoffice.png', alt: 'Primax-backoffice', tipo: 'banca', ruta: '/proyectos/primax-blackoffice', state: true, background: 'bg-ten'},
-    {name: 'Cyber Strat', descripcion: 'Cyber Strat - Proceso estratégico de planificación digital', img: 'assets/img/CyberStrat.png', alt: 'Cyber-Strat', tipo: 'banca', ruta: '/proyectos/cyberstrat', state: true, background: 'bg-eight'},
-    {name: 'Informatica', descripcion: 'Informatica - Administra y gestiona tu negocio', img: 'assets/img/logo-mockup-informatica.png', alt: 'Informatiza', tipo: 'banca', ruta: '/proyectos/infomatica', state: true, background: 'bg-nine'}
+    {name: 'Primax', descripcion: 'Investigación y Consultoría - Descubrimiento de Producto - Diseño UX/UI - Design System', img: 'assets/img/phone-right.png', alt: 'Primax', tipo: 'automotriz', ruta: '/proyectos/primax', state: true, background: 'bg-color'},
+    {name: 'Ripley', descripcion: 'Descubrimiento de Producto - Diseño UX/UI', img: 'assets/img/Ripley-slider.png', alt: 'Ripley', tipo: 'banca', ruta: '/proyectos/ripley', state: true, background: 'bg-two'},
+    {name: 'Redeban', descripcion: 'Descubrimiento de Producto - Diseño UX/UI - Desarrollo de Software', img: 'assets/img/proyect-laptop.png', alt: 'Redeban', tipo: 'ecommerce', ruta: '/proyectos/redeban', state: true, background: 'bg-three'},
+    {name: 'Informatica', descripcion: 'Descubrimiento de Producto - Diseño UX/UI - Desarrollo Web', img: 'assets/img/logo-mockup-informatica.png', alt: 'Informatiza', tipo: 'banca', ruta: '/proyectos/infomatica', state: true, background: 'bg-nine'},
+    {name: 'Notifai', descripcion: 'Descubrimiento de Producto - Diseño UX/UI - Desarrollo de Software', img: 'assets/img/laptop-estadis.png', alt: 'Notifai', tipo: 'ecommerce', ruta: '/proyectos/notifai', state: true, background: 'bg-fourth'},
+    {name: 'Caja Metropolitana', descripcion: 'Investigación y Consultoría - Descubrimiento de Producto - Diseño UX/UI - Desarrollo de Software - Desarrollo iOS Nativo - Desarrollo Android Nativo', img: 'assets/img/Caja Metropolitana.png', alt: 'CajaMetropolitana', tipo: 'ecommerce', ruta: '/proyectos/cajametropolitanadelima', state: true, background: 'bg-color'},
+    {name: 'Niubiz', descripcion: 'Investigación y Consultoría - Descubrimiento de Producto - Diseño UX/UI', img: 'assets/img/logo-mockup-niubiz.png', alt: 'Nubiz', tipo: 'banca', ruta: '/proyectos/niubiz', state: true, background: 'bg-seventh'},
+    {name: 'Caja Cusco', descripcion: 'Descubrimiento de Producto - Diseño UX/UI', img: 'assets/img/logo-mockup-cajacuzco.png', alt: 'CajaCusco', tipo: 'banca', ruta: '/proyectos/cajacuzco', state: true, background: 'bg-sixth'},
+    {name: 'Primax Solutions', descripcion: 'Investigación y Consultoría - Descubrimiento de Producto - Diseño UX/UI', img: 'assets/img/logo-mockup-primax-blackoffice.png', alt: 'Primax Solutions', tipo: 'banca', ruta: '/proyectos/primax-blackoffice', state: true, background: 'bg-ten'},
+    {name: 'Cyber Strat', descripcion: 'Investigación y Consultoría - Descubrimiento de Producto - Diseño UX/UI', img: 'assets/img/CyberStrat.png', alt: 'Cyber-Strat', tipo: 'banca', ruta: '/proyectos/cyberstrat', state: true, background: 'bg-eight'},
+
 
   ]
 
