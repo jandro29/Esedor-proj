@@ -54,7 +54,7 @@
 
 @media screen and (min-width: 1024px) {
   .open-menu li{
-    font-size: 40px;
+    font-size: 33px;
     display: inline;
     margin-bottom: 2rem;
   }
@@ -62,27 +62,27 @@
 
 @media screen and (min-width: 1280px) {
   .open-menu li{
-    font-size: 43px;
+    font-size: 35px;
   }
 }
 
 @media screen and (min-width: 1400px) {
   .open-menu li{
-    font-size: 48px;
+    font-size: 42px;
     margin-bottom: 5rem;
   }
 }
 
 @media screen and (min-width: 1505px) {
   .open-menu li{
-    font-size: 53px;
+    font-size: 46px;
     margin-right: 1.2rem;
   }
 }
 
 @media screen and (min-width: 1670px) {
   .open-menu li{
-    font-size: 60px;
+    font-size: 50px;
   }
 }
 

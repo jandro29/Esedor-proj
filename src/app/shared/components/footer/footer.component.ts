@@ -26,6 +26,8 @@ export class FooterComponent implements OnInit {
     this.router.navigateByUrl(route);
   }
 
+  colorWhite = true;
+
   usList = [
     {text: 'Nuestra Cultura', route: ''},
     {text: 'Cómo lo Hacemos', route: ''},
@@ -40,6 +42,8 @@ export class FooterComponent implements OnInit {
     {text: 'Talento', route: '/talento'},
     {text: 'Level Up', route: '/'}
   ]
+
+
 
   routesEvent(route: any) {
     this.router.navigateByUrl(route);

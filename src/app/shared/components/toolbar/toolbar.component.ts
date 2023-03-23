@@ -28,7 +28,8 @@ export class ToolbarComponent implements OnInit {
     {name: 'Proyectos', ruta: '/proyectos', state: true},
     {name: 'Nosotros', ruta: '/nosotros', state: true},
     {name: 'Talento', ruta: '/talento', state: true},
-    {name: 'Contacto', ruta: '/contacto', state: true},
+    {name: 'Level-Up', ruta: '/level-up', state: true},
+    {name: 'Blog', ruta: '', state: true, url:'https://esedor.com/blog/'},
     //{name: 'Blog', ruta: '/', state: true},
   ]
 
