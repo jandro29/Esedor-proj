@@ -18,6 +18,8 @@ export class ProjectsSlideComponent implements AfterViewInit {
   bgColorEight: boolean = true;
   bgColorNine: boolean = true;
   bgColorTen: boolean = true;
+  bgColorEleven: boolean = true;
+  bgColorTwelve: boolean = true;
 
 
   slideNo = 1;

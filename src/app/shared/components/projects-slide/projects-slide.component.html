@@ -17,7 +17,7 @@
             </div>
 </div> -->
 <ngu-carousel #myCarousel [inputs]="carouselConfig"
-  [dataSource]="[first, second, third, fourth, fifth, sixth, seventh, eight, nine, ten]">
+  [dataSource]="[first, second, third, fourth, fifth, sixth, seventh, eight, nine, ten, eleven, twelve]">
 
 
   <div *nguCarouselDef="let item;" class="item py-4">
@@ -32,7 +32,7 @@
         class="h-[380px] lg:h-[480px] flex items-center justify-center bg-[#454C59] transition-all duration-700 ease-in-out"
         [ngClass]="{ 'bg-color' : !bgColor }">
         <div class="h-[380px] lg:h-[455px] absolute top-0 flex justify-center items-center">
-          <img class="translate-x-0 transition duration-700 ease-in-out w-[85%] lg:w-auto"
+          <img class="translate-x-0 transition duration-700 ease-in-out w-[175px] lg:w-[85%] lg:w-auto"
             src="assets/img/primax-solutions.svg" alt="" [ngClass]="{ 'img-project' : !bgColor }">
         </div>
       </div>
@@ -104,15 +104,15 @@
   </ng-template>
 
   <ng-template #fourth>
-    <div class="cursor-pointer relative" (mouseover)="bgColorNine = false" (mouseout)="bgColorNine = true" routerLink="/proyectos/infomatica"
+    <div class="cursor-pointer relative" (mouseover)="bgColorFourth = false" (mouseout)="bgColorFourth = true" routerLink="/proyectos/infomatica"
       >
       <!-- routerLink="/proyectos/" -->
       <div
         class="h-[380px] lg:h-[480px] flex items-center justify-center bg-[#454C59] transition-all duration-700 ease-in-out"
-        [ngClass]="{ 'bg-nine' : !bgColorNine }">
+        [ngClass]="{ 'bg-nine' : !bgColorFourth }">
         <div class="h-[380px] lg:h-[455px] absolute top-0 flex justify-center items-center">
           <img class="translate-x-0 transition duration-700 ease-in-out" src="assets/img/logo-mockup-informatica.png" alt=""
-            [ngClass]="{ 'img-project' : !bgColorNine }">
+            [ngClass]="{ 'img-project' : !bgColorFourth }">
         </div>
       </div>
       <div
@@ -124,20 +124,20 @@
             </p>
         </div>
         <img class="w-[31px] lg:w-auto translate-x-0 transition duration-700 ease-in-out"
-          src="assets/img/short-arrow-right.png" alt="" [ngClass]="{ 'arrow-rotate' : !bgColorNine }">
+          src="assets/img/short-arrow-right.png" alt="" [ngClass]="{ 'arrow-rotate' : !bgColorFourth }">
       </div>
     </div>
   </ng-template>
 
   <ng-template #fifth>
     <div data-aos="fade-down-left" data-aos-duration="900" class="cursor-pointer relative"
-      (mouseover)="bgColorFourth = false" (mouseout)="bgColorFourth = true" routerLink="/proyectos/notifai">
+      (mouseover)="bgColorFifth = false" (mouseout)="bgColorFifth = true" routerLink="/proyectos/notifai">
       <div
         class="h-[380px] lg:h-[480px] flex items-center justify-center bg-[#454C59] transition-all duration-700 ease-in-out"
-        [ngClass]="{ 'bg-fourth' : !bgColorFourth }">
+        [ngClass]="{ 'bg-fourth' : !bgColorFifth }">
         <div class="h-[380px] lg:h-[455px] absolute top-0 flex justify-center items-center">
           <img class="translate-x-0 transition duration-700 ease-in-out w-[300px]" src="assets/img/laptop-estadis.png" alt=""
-            [ngClass]="{ 'img-project' : !bgColorFourth }">
+            [ngClass]="{ 'img-project' : !bgColorFifth }">
         </div>
       </div>
       <div
@@ -150,21 +150,21 @@
             Descubrimiento de Producto - Diseño UX/UI - Desarrollo de Software </p>
         </div>
         <img class="w-[31px] lg:w-auto translate-x-0 transition duration-700 ease-in-out"
-          src="assets/img/short-arrow-right.png" alt="" [ngClass]="{ 'arrow-rotate' : !bgColorFourth }">
+          src="assets/img/short-arrow-right.png" alt="" [ngClass]="{ 'arrow-rotate' : !bgColorFifth}">
       </div>
     </div>
   </ng-template>
 
   <ng-template #sixth>
-    <div class="cursor-pointer relative" (mouseover)="bgColorFifth = false" (mouseout)="bgColorFifth = true" routerLink="/proyectos/cajametropolitanadelima"
+    <div class="cursor-pointer relative" (mouseover)="bgColorSixth = false" (mouseout)="bgColorSixth = true" routerLink="/proyectos/cajametropolitanadelima"
       >
       <!-- routerLink="/proyectos/" -->
       <div
         class="h-[380px] lg:h-[480px] flex items-center justify-center bg-[#454C59] transition-all duration-700 ease-in-out"
-        [ngClass]="{ 'bg-fifth' : !bgColorFifth }">
+        [ngClass]="{ 'bg-sixth' : !bgColorSixth }">
         <div class="h-[380px] lg:h-[455px] absolute top-0 flex justify-center items-center">
-          <img class="translate-x-0 transition duration-700 ease-in-out w-[100%] lg:w-[280px]"
-            src="assets/img/Caja Metropolitana.svg" alt="" [ngClass]="{ 'img-project' : !bgColorFifth }">
+          <img class="translate-x-0 transition duration-700 ease-in-out w-[200px] lg:w-[280px]"
+            src="assets/img/Caja Metropolitana.svg" alt="" [ngClass]="{ 'img-project' : !bgColorSixth }">
         </div>
       </div>
       <div
@@ -176,7 +176,7 @@
          </p>
         </div>
         <img class="w-[31px] lg:w-auto translate-x-0 transition duration-700 ease-in-out"
-          src="assets/img/short-arrow-right.png" alt="" [ngClass]="{ 'arrow-rotate' : !bgColorFifth }">
+          src="assets/img/short-arrow-right.png" alt="" [ngClass]="{ 'arrow-rotate' : !bgColorSixth }">
 
       </div>
     </div>
@@ -209,14 +209,14 @@
   </ng-template>
 
   <ng-template #eight>
-    <div class="cursor-pointer relative" (mouseover)="bgColorSixth = false" (mouseout)="bgColorSixth = true" routerLink="/proyectos/cajacuzco"
+    <div class="cursor-pointer relative" (mouseover)="bgColorEight = false" (mouseout)="bgColorEight = true" routerLink="/proyectos/cajacuzco"
       >
       <!-- routerLink="/proyectos/" -->
       <div
         class="h-[380px] lg:h-[480px] flex items-center justify-center bg-[#454C59] transition-all duration-700 ease-in-out"
-        [ngClass]="{ 'bg-sixth' : !bgColorSixth }">
+        [ngClass]="{ 'bg-eight' : !bgColorEight }">
         <img class="w-[350px] translate-x-0 transition duration-700 ease-in-out absolute top-[100px]"
-          src="assets/img/logo-mockup-cajacuzco.png" alt="" [ngClass]="{ 'img-project' : !bgColorSixth }">
+          src="assets/img/logo-mockup-cajacuzco.png" alt="" [ngClass]="{ 'img-project' : !bgColorEight }">
       </div>
       <div
         class="flex flex-wrap items-start p-2 justify-between absolute top-[24rem] lg:top-[30.5rem] xl:top-[30rem] 2xl:top-[31rem]">
@@ -227,22 +227,22 @@
            </p>
         </div>
         <img class="w-[31px] lg:w-auto translate-x-0 transition duration-700 ease-in-out"
-          src="assets/img/short-arrow-right.png" alt="" [ngClass]="{ 'arrow-rotate' : !bgColorSixth }">
+          src="assets/img/short-arrow-right.png" alt="" [ngClass]="{ 'arrow-rotate' : !bgColorEight }">
       </div>
     </div>
   </ng-template>
 
 
   <ng-template #nine>
-    <div class="cursor-pointer relative" (mouseover)="bgColorTen = false" (mouseout)="bgColorTen = true" routerLink="/proyectos/primax-blackoffice"
+    <div class="cursor-pointer relative" (mouseover)="bgColorNine = false" (mouseout)="bgColorNine = true" routerLink="/proyectos/primax-blackoffice"
       >
       <!-- routerLink="/proyectos/" -->
       <div
         class="h-[380px] lg:h-[480px] flex items-center justify-center bg-[#454C59] transition-all duration-700 ease-in-out"
-        [ngClass]="{ 'bg-ten' : !bgColorTen }">
+        [ngClass]="{ 'bg-nine' : !bgColorNine }">
         <div class="h-[380px] lg:h-[455px] absolute top-0 flex justify-center items-center">
           <img class="translate-x-0 transition duration-700 ease-in-out" src="assets/img/logo-mockup-primax-blackoffice.png" alt=""
-            [ngClass]="{ 'img-project' : !bgColorTen }">
+            [ngClass]="{ 'img-project' : !bgColorNine }">
         </div>
       </div>
       <div
@@ -254,21 +254,21 @@
             </p>
         </div>
         <img class="w-[31px] lg:w-auto translate-x-0 transition duration-700 ease-in-out"
-          src="assets/img/short-arrow-right.png" alt="" [ngClass]="{ 'arrow-rotate' : !bgColorTen }">
+          src="assets/img/short-arrow-right.png" alt="" [ngClass]="{ 'arrow-rotate' : !bgColorNine }">
       </div>
     </div>
   </ng-template>
 
   <ng-template #ten>
-    <div class="cursor-pointer relative" (mouseover)="bgColorEight = false" (mouseout)="bgColorEight = true" routerLink="/proyectos/cyberstrat"
+    <div class="cursor-pointer relative" (mouseover)="bgColorTen = false" (mouseout)="bgColorTen = true" routerLink="/proyectos/cyberstrat"
       >
       <!-- routerLink="/proyectos/" -->
       <div
         class="h-[380px] lg:h-[480px] flex items-center justify-center bg-[#454C59] transition-all duration-700 ease-in-out"
-        [ngClass]="{ 'bg-eight' : !bgColorEight }">
+        [ngClass]="{ 'bg-ten' : !bgColorTen }">
         <div class="h-[380px] lg:h-[455px] absolute top-0 flex justify-center items-center">
           <img class="translate-x-0 transition duration-700 ease-in-out" src="assets/img/CyberStrat.png" alt=""
-            [ngClass]="{ 'img-project' : !bgColorEight }">
+            [ngClass]="{ 'img-project' : !bgColorTen }">
         </div>
       </div>
       <div
@@ -280,7 +280,59 @@
             </p>
         </div>
         <img class="w-[31px] lg:w-auto translate-x-0 transition duration-700 ease-in-out"
-          src="assets/img/short-arrow-right.png" alt="" [ngClass]="{ 'arrow-rotate' : !bgColorEight }">
+          src="assets/img/short-arrow-right.png" alt="" [ngClass]="{ 'arrow-rotate' : !bgColorTen }">
+      </div>
+    </div>
+  </ng-template>
+
+  <ng-template #eleven>
+    <div class="cursor-pointer relative" (mouseover)="bgColorEleven = false" (mouseout)="bgColorEleven = true" routerLink="/"
+      >
+      <!-- routerLink="/proyectos/" -->
+      <div
+        class="h-[380px] lg:h-[480px] flex items-center justify-center bg-[#454C59] transition-all duration-700 ease-in-out"
+        [ngClass]="{ 'bg-eleven' : !bgColorEleven }">
+        <div class="h-[380px] lg:h-[455px] absolute top-0 flex justify-center items-center">
+          <img class="translate-x-0 transition duration-700 ease-in-out" src="assets/img/rebeca-img.svg" alt=""
+            [ngClass]="{ 'img-project' : !bgColorEleven }">
+        </div>
+      </div>
+      <div
+        class="flex flex-wrap items-start p-2 justify-between absolute top-[24rem] lg:top-[30.5rem] xl:top-[30rem] 2xl:top-[31rem]">
+        <div class="w-[77%] lg:w-[80%] xl:w-[85%] space-y-3">
+          <p data-aos="fade-up" data-aos-duration="900" class="text-[24px] lg:text-[24.5px] xl:text-[27.5px] lexendzettali text-white">Próximamente</p>
+          <p data-aos="fade-up" data-aos-duration="900" class="text-[9.5px] lg:text-[12.5px] xl:text-[13.5px] lexendregular text-white tracking-[0.005em]">
+            Rebeca el chatbot de Ripley Perú rediseña su nueva propuesta de diseño conversacional y diseño UX/UI
+            </p>
+        </div>
+        <img class="w-[31px] lg:w-auto translate-x-0 transition duration-700 ease-in-out"
+          src="assets/img/short-arrow-right.png" alt="" [ngClass]="{ 'arrow-rotate' : !bgColorEleven }">
+      </div>
+    </div>
+  </ng-template>
+
+  <ng-template #twelve>
+    <div class="cursor-pointer relative" (mouseover)="bgColorTwelve = false" (mouseout)="bgColorTwelve = true" routerLink="/"
+      >
+      <!-- routerLink="/proyectos/" -->
+      <div
+        class="h-[380px] lg:h-[480px] flex items-center justify-center bg-[#454C59] transition-all duration-700 ease-in-out"
+        [ngClass]="{ 'bg-twelve' : !bgColorTwelve }">
+        <div class="h-[380px] lg:h-[455px] absolute top-0 flex justify-center items-center">
+          <img class="translate-x-0 transition duration-700 ease-in-out" src="assets/img/link-miners-img.svg" alt=""
+            [ngClass]="{ 'img-project' : !bgColorTwelve}">
+        </div>
+      </div>
+      <div
+        class="flex flex-wrap items-start p-2 justify-between absolute top-[24rem] lg:top-[30.5rem] xl:top-[30rem] 2xl:top-[31rem]">
+        <div class="w-[77%] lg:w-[80%] xl:w-[85%] space-y-3">
+          <p data-aos="fade-up" data-aos-duration="900" class="text-[24px] lg:text-[24.5px] xl:text-[27.5px] lexendzettali text-white">Próximamente</p>
+          <p data-aos="fade-up" data-aos-duration="900" class="text-[9.5px] lg:text-[12.5px] xl:text-[13.5px] lexendregular text-white tracking-[0.005em]">
+            Linkminers confía en nosotros para el rediseño UX/UI del nuevo sistema interactivo
+            </p>
+        </div>
+        <img class="w-[31px] lg:w-auto translate-x-0 transition duration-700 ease-in-out"
+          src="assets/img/short-arrow-right.png" alt="" [ngClass]="{ 'arrow-rotate' : !bgColorTwelve }">
       </div>
     </div>
   </ng-template>

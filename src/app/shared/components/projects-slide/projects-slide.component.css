@@ -81,6 +81,16 @@ img {
     transition: all .4s ease-in;
     height: 700px;
   }
+  .bg-eleven{
+    background: #4A0E63;
+    transition: all .4s ease-in;
+    height: 700px;
+  }
+  .bg-twelve{
+    background: #FFF520;
+    transition: all .4s ease-in;
+    height: 700px;
+  }
 }
 
 

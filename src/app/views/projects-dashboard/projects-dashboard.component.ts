@@ -77,8 +77,8 @@ export class ProjectsDashboardComponent implements OnInit {
     {name: 'Caja Cusco', descripcion: 'Descubrimiento de Producto - Diseño UX/UI', img: 'assets/img/logo-mockup-cajacuzco.png', alt: 'CajaCusco', tipo: 'banca', ruta: '/proyectos/cajacuzco', state: true, background: 'bg-sixth'},
     {name: 'Primax Solutions', descripcion: 'Investigación y Consultoría - Descubrimiento de Producto - Diseño UX/UI', img: 'assets/img/logo-mockup-primax-blackoffice.png', alt: 'Primax Solutions', tipo: 'banca', ruta: '/proyectos/primax-blackoffice', state: true, background: 'bg-ten'},
     {name: 'Cyber Strat', descripcion: 'Investigación y Consultoría - Descubrimiento de Producto - Diseño UX/UI', img: 'assets/img/CyberStrat.png', alt: 'Cyber-Strat', tipo: 'banca', ruta: '/proyectos/cyberstrat', state: true, background: 'bg-eight'},
-
-
+    {name: 'Próximamente', descripcion: 'Rebeca el chatbot de Ripley Perú rediseña su nueva propuesta de diseño conversacional y diseño UX/UI', img: 'assets/img/rebeca-img.svg', alt: 'Rebeca', tipo: 'banca', ruta: '/', state: true, background: 'bg-eleven'},
+    {name: 'Próximamente', descripcion: 'Linkminers confía en nosotros para el rediseño UX/UI del nuevo sistema interactivo', img: 'assets/img/link-miners-img.svg', alt: 'Link-Miners', tipo: 'banca', ruta: '/', state: true, background: 'bg-twelve'},
   ]
 
   filtrado = this.empresas;
