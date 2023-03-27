@@ -10,8 +10,6 @@ export class LevelupComponent implements OnInit {
   btnStyle!: boolean;
   showForm!: boolean;
 
-  @Output() getDown = new EventEmitter<any>();
-
   showFormEvent() {
     this.showForm = true;
   }
@@ -19,6 +17,11 @@ export class LevelupComponent implements OnInit {
   closeFormEvent() {
     this.showForm = false;
   }
+
+
+  @Output() getDown = new EventEmitter<any>();
+
+
 
   @ViewChild('.mat-tab-header') headerTab: any;
 
