@@ -8,8 +8,9 @@
       <span [class.header_variable]="header_variable" routerLink="/"
         class="z-30 text-sm lg:text-[1.125rem] lexend ml-2 lg:ml-4 leading-[22px] lexendzetta font-medium cursor-pointer">
 
-        <img class="w-[70px] lg:w-[81.99px]" [ngClass]="{ 'hidden' : colorWhite}" src="assets/img/logoesedor/text-esedor-black.svg">
-        <img class="w-[70|px] lg:w-[81.99px]" [ngClass]="{ 'hidden' : !colorWhite}"
+        <img class="w-[70px] lg:w-[81.99px]" [ngClass]="{ 'hidden' : colorWhite}"
+          src="assets/img/logoesedor/text-esedor-black.svg">
+        <img class="w-[70px] lg:w-[81.99px]" [ngClass]="{ 'hidden' : !colorWhite}"
           src="assets/img/logoesedor/text-esedor-white.svg">
       </span>
     </div>
@@ -26,10 +27,10 @@
       </div>
       <div class="hidden lg:block">
         <button [class.header_variable]="header_variable" matRipple (mouseover)="btnStyle = true"
-          (mouseout)="btnStyle = false" [ngClass]="{ 'arrow' : btnStyle}" [routerLink]="['/contacto']"
+          (mouseout)="btnStyle = false" [ngClass]="{ 'arrow2' : btnStyle}" [routerLink]="['/contacto']"
           class="lexendb  cursor-pointer bg-[#5682FF] lg:hover:bg-[#7282FF] text-[14.5px] text-white lg:hover:text-white flex items-center justify-start lg:justify-center shadow w-full lg:w-[192px] h-[38px] 2xl:h-[46px] lg:ml-4 px-6 lg:p-4 rounded-[50px] mr-6">
           <svg class="transition duration-700 ease-in-out mr-16 lg:mr-4 w-[24px] lg:w-[13px]" width="33" height="31"
-            viewBox="0 0 33 31" [ngClass]="{ 'arrow-rotate' : btnStyle }" fill="none"
+            viewBox="0 0 33 31" [ngClass]="{ 'arrow-rotate2' : btnStyle }" fill="none"
             xmlns="http://www.w3.org/2000/svg">
             <g class="text-white">
               <line x1="5.7105e-09" y1="14.7539" x2="30.6479" y2="14.7539" stroke="white" stroke-width="2" />
@@ -70,7 +71,7 @@
     class="lg:h-[30%] menu-celes text-white flex items-center lg:items-start lg:justify-between lg:pb-[1.5rem] 2xl:pb-[3rem] p-4 lg:relative min-h-[99px] lg:min-h-[220px]">
     <div class="flex items-center absolute lg:relative top-4 lg:top-auto cursor-pointer" routerLink="/">
       <img routerLink="/" class="w-[2.313] h-[2rem]" src="assets/img/logo_white.png">
-      <img class="w-[70px] lg:w-[81.99px]"src="assets/img/logoesedor/text-esedor-white.svg">
+      <img class="w-[70px] lg:w-[81.99px]" src="assets/img/logoesedor/text-esedor-white.svg">
     </div>
     <!-- space-y-[3.5rem] -->
     <div class="flex flex-col justify-center lg:justify-between pr-[6rem] h-full">
@@ -82,32 +83,30 @@
       <button [routerLink]="['/contacto']"
         class="cursor-pointer text-[14.5px] text-black lg:hover:text-[#626973] h-[46px] lg:h-[50px] 2xl:h-[65px] w-[192px] lg:w-[236px] rounded-[50px] bg-white text-[15.5px] text-black flex justify-center items-center p-4 hidden">
         <svg class="transition duration-700 ease-in-out mr-16 lg:mr-4 w-[24px] lg:w-[13px]" width="33" height="31"
-            viewBox="0 0 33 31" [ngClass]="{ 'arrow-rotate' : btnStyle }" fill="none"
-            xmlns="http://www.w3.org/2000/svg">
-            <g class="text-white">
-              <line x1="5.7105e-09" y1="14.7539" x2="30.6479" y2="14.7539" stroke="black" stroke-width="2" />
-              <path d="M16.2585 1.00146L30.5917 15.2188L16.2585 29.436" stroke="black" stroke-width="2" />
-            </g>
-          </svg>
+          viewBox="0 0 33 31" [ngClass]="{ 'arrow-rotate' : btnStyle }" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g class="text-white">
+            <line x1="5.7105e-09" y1="14.7539" x2="30.6479" y2="14.7539" stroke="black" stroke-width="2" />
+            <path d="M16.2585 1.00146L30.5917 15.2188L16.2585 29.436" stroke="black" stroke-width="2" />
+          </g>
+        </svg>
         <a href="" [routerLink]="['/contacto']" style="text-decoration: none;">
           Contacto
         </a>
       </button>
 
-      <button matRipple (mouseover)="btnStyle = true"
-          (mouseout)="btnStyle = false" [ngClass]="{ 'arrow' : btnStyle}" [routerLink]="['/contacto']"
-          class="cursor-pointer text-[14.5px] text-black lg:hover:text-[#626973]
+      <button matRipple (mouseover)="btnStyle = true" (mouseout)="btnStyle = false" [ngClass]="{ 'arrow' : btnStyle}"
+        [routerLink]="['/contacto']"
+        class="cursor-pointer text-[14.5px] text-black lg:hover:text-[#626973]
            lg:hover:text-white h-[46px] lg:h-[50px] 2xl:h-[65px] w-[192px] lg:w-[236px] rounded-[50px] bg-white text-[15.5px] text-black flex justify-center items-center p-4">
-          <svg class="transition duration-700 ease-in-out mr-16 lg:mr-4 w-[24px] lg:w-[30px]" width="33" height="31"
-            viewBox="0 0 33 31" [ngClass]="{ 'arrow-rotate' : btnStyle }" fill="none"
-            xmlns="http://www.w3.org/2000/svg">
-            <g class="text-white">
-              <line x1="5.7105e-09" y1="14.7539" x2="30.6479" y2="14.7539" stroke="black" stroke-width="2" />
-              <path d="M16.2585 1.00146L30.5917 15.2188L16.2585 29.436" stroke="black" stroke-width="2" />
-            </g>
-          </svg>
-          Contacto
-        </button>
+        <svg class="transition duration-700 ease-in-out mr-16 lg:mr-4 w-[24px] lg:w-[30px]" width="33" height="31"
+          viewBox="0 0 33 31" [ngClass]="{ 'arrow-rotate' : btnStyle }" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g class="text-white">
+            <line x1="5.7105e-09" y1="14.7539" x2="30.6479" y2="14.7539" stroke="black" stroke-width="2" />
+            <path d="M16.2585 1.00146L30.5917 15.2188L16.2585 29.436" stroke="black" stroke-width="2" />
+          </g>
+        </svg>
+        Contacto
+      </button>
     </div>
     <div class="absolute top-2 lg:top-auto lg:bottom-[-3.5rem] right-4" (click)="openMenu = false">
       <!-- top-[16rem] -->
@@ -118,17 +117,39 @@
     </div>
   </div>
   <div data-aos="fade-right"
-    class="h-[75%] lg:h-[70%] px-4 pt-4 lg:pt-[10rem] pb-2 flex flex-col lg:justify-between mt-[-30px] ">
-    <ul class="open-menu lg:flex flex-wrap  ">
-      <a>
-        <li class="cursor-pointer" *ngFor="let list of listGroup"(click)="redirectInternas(list.ruta); scrollTop()"
-          routerLink="'{{list.id}}'"  (mouseover)="list.state = false" (mouseout)="list.state = true">{{list.name}}
+    class="h-[75%] lg:h-[70%] px-4 lg:pt-10 2xl:pt-[10rem] pb-2 flex flex-col lg:justify-between mt-[-30px] ">
+    <div class="flex justify-center ">
+    <ul class="open-menu lg:flex flex-col  ">
+      <a class="flex flex-col text-[20px]">
+        <li class="cursor-pointer " *ngFor="let list of listGroup" (click)="redirectInternas(list.ruta); scrollTop()"
+          routerLink="'{{list.id}}'" (mouseover)="list.state = false" (mouseout)="list.state = true">{{list.name}}
           <img [ngClass]="{ 'arrow-rotate' : !list.state }"
             class="translate-x-0 transition duration-700 ease-in-out w-[31px] lg:w-[42px] xl:w-[39px]"
             src="assets/img/short-arrow-right.png" alt="">
+
         </li>
+
+        <div>
+          <a href="https://esedor.com/blog/" target="_blank" data-aos="fade-right" matRipple (mouseover)="btnStyle2 = true" (mouseout)="btnStyle2 = false"
+            [ngClass]="{ 'arrow2' : btnStyle2}"
+            class="lexendzettali cursor-pointer lg:text-[21px] xl:text-[25.5px] 2xl:text-[35px] 3xl:text-[50px] text-white flex items-center ">
+            Blog
+            <svg class="transition duration-700 ease-in-out w-[31px] lg:w-[42px]  xl:w-[30px] ml-2" width="33" height="31"
+              viewBox="0 0 33 31" [ngClass]="{ 'arrow-rotate2' : btnStyle2 }" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <g class="text-white">
+                <line x1="5.7105e-09" y1="14.7539" x2="30.6479" y2="14.7539" stroke="white" stroke-width="2" />
+                <path d="M16.2585 1.00146L30.5917 15.2188L16.2585 29.436" stroke="white" stroke-width="2" />
+              </g>
+            </svg>
+          </a>
+        </div>
+
       </a>
+
+
     </ul>
+  </div>
     <div class="hidden lg:flex justify-between items-end">
       <p class="lexend text-[13px] font-medium text-white">Esedor © 2023</p>
       <ul class="space-y-[0.5rem]">

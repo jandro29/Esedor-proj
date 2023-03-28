@@ -54,28 +54,28 @@
 
 @media screen and (min-width: 1024px) {
   .open-menu li{
-    font-size: 33px;
+    font-size: 21px;
     display: inline;
-    margin-bottom: 2rem;
+    margin-bottom: 0.5rem;
   }
 }
 
 @media screen and (min-width: 1280px) {
   .open-menu li{
-    font-size: 35px;
+    font-size: 25.5px;
   }
 }
 
 @media screen and (min-width: 1400px) {
   .open-menu li{
-    font-size: 42px;
-    margin-bottom: 5rem;
+    font-size: 30px;
+    margin-bottom: 2.5rem;
   }
 }
 
 @media screen and (min-width: 1505px) {
   .open-menu li{
-    font-size: 46px;
+    font-size: 35px;
     margin-right: 1.2rem;
   }
 }
@@ -85,6 +85,8 @@
     font-size: 50px;
   }
 }
+
+
 
 /* .open-nav {
   height: 100vh;
@@ -129,3 +131,37 @@
     z-index: 700;
 } */
 
+@media screen and (min-width: 1024px ) {
+
+  .arrow-rotate{
+      transform: rotate(-45deg);
+      transition: transform .6s cubic-bezier(.4,0,0,1);
+  }
+
+  .arrow:hover g line {
+      stroke: #000000;
+  }
+
+  .arrow:hover g path {
+      stroke: #000000;
+  }
+
+}
+
+
+@media screen and (min-width: 1024px ) {
+
+  .arrow-rotate2{
+      transform: rotate(-45deg);
+      transition: transform .6s cubic-bezier(.4,0,0,1);
+  }
+
+  .arrow2:hover g line {
+      stroke: #ffffff;
+  }
+
+  .arrow2:hover g path {
+      stroke: #ffffff;
+  }
+
+}

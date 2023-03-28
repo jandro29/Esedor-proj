@@ -16,7 +16,7 @@ export class ToolbarComponent implements OnInit {
   @Input() colorWhite: any;
   @Output() letsForm2 = new EventEmitter<any>();
 
-
+  btnStyle2!: boolean;
   btnStyle!: boolean;
   openMenu!: boolean;
   arrowRoate!: boolean;
@@ -29,7 +29,6 @@ export class ToolbarComponent implements OnInit {
     {name: 'Nosotros', ruta: '/nosotros', state: true},
     {name: 'Talento', ruta: '/talento', state: true},
     {name: 'Level-Up', ruta: '/level-up', state: true},
-    {name: 'Blog', ruta: '', state: true, url:'https://esedor.com/blog/'},
     //{name: 'Blog', ruta: '/', state: true},
   ]
 
