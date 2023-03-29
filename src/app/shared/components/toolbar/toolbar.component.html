@@ -18,14 +18,14 @@
 
       <div class="flex justify-center lg:w-[100%] xl:w-[89%] 2xl:w-[82%] 3xl:w-[80%] absolute">
         <div [class.header_variable]="header_variable"
-          class="lg:grid grid-cols-3 hidden space-x-3 justify-between items-center w-[30%] flex justify-center lexendb"
+          class="lg:grid grid-cols-3 hidden space-x-3 justify-between items-center w-[30%] flex justify-center lexendb mt-3"
           #scroll>
           <span class="cursor-pointer text-[1rem] lg:hover:text-[#626973]" (click)="redirectService()">Servicios</span>
           <span class="cursor-pointer text-[1rem] lg:hover:text-[#626973]" (click)="redirectProject()">Proyectos</span>
           <span class="cursor-pointer text-[1rem] lg:hover:text-[#626973]" (click)="redirectUs()">Nosotros</span>
         </div>
       </div>
-      <div class="hidden lg:block">
+      <div class="hidden lg:block  mt-3">
         <button [class.header_variable]="header_variable" matRipple (mouseover)="btnStyle = true"
           (mouseout)="btnStyle = false" [ngClass]="{ 'arrow2' : btnStyle}" [routerLink]="['/contacto']"
           class="lexendb  cursor-pointer bg-[#5682FF] lg:hover:bg-[#7282FF] text-[14.5px] text-white lg:hover:text-white flex items-center justify-start lg:justify-center shadow w-full lg:w-[192px] h-[38px] 2xl:h-[46px] lg:ml-4 px-6 lg:p-4 rounded-[50px] mr-6">
@@ -50,12 +50,11 @@
           </svg>
         </div>
         <div [ngClass]="{ 'hidden' : !colorWhite}" class="mt-[0.38rem]">
-          <svg class="cursor-pointer" width="42" height="22" viewBox="0 0 42 22" fill="none"
-            xmlns="http://www.w3.org/2000/svg">
-            <line y1="1" x2="42" y2="1" stroke="#FFFFFF" stroke-width="2" />
-            <path d="M0 11L23 11" stroke="#FFFFFF" stroke-width="2" />
-            <line y1="21" x2="42" y2="21" stroke="#FFFFFF" stroke-width="2" />
-          </svg>
+          <div class="flex flex-col men-tol space-y-[7px] cursor-pointer ">
+          <div class="line-men"></div>
+          <div class="line-men"></div>
+          <div class="line-men"></div>
+        </div>
         </div>
       </div>
     </div>
@@ -134,7 +133,7 @@
             [ngClass]="{ 'arrow2' : btnStyle2}"
             class="lexendzettali cursor-pointer lg:text-[21px] xl:text-[25.5px] 2xl:text-[35px] 3xl:text-[50px] text-white flex items-center ">
             Blog
-            <svg class="transition duration-700 ease-in-out w-[31px] lg:w-[42px]  xl:w-[30px] ml-2" width="33" height="31"
+            <svg class="transition duration-700 ease-in-out w-[31px] lg:w-[42px]  xl:w-[30px]" width="33" height="31"
               viewBox="0 0 33 31" [ngClass]="{ 'arrow-rotate2' : btnStyle2 }" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <g class="text-white">

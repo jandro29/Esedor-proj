@@ -165,3 +165,28 @@
   }
 
 }
+
+.men-tol{
+  width: 47px;
+height: 46px;
+background: #FFFFFF;
+border-radius: 50px;
+transform: matrix(-1, 0, 0, 1, 0, 0);
+align-items: center;
+justify-content: center;
+}
+.line-men{
+  width: 27px;
+  height: 2px;
+  background: #000000;
+}
+
+.men-tol:hover{
+background: #5682FF;
+}
+
+.men-tol:hover .line-men{
+  background: #FFFFFF;
+}
+
+
