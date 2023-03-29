@@ -41,15 +41,8 @@
         </button>
       </div>
       <div #search (click)="openMenu = true" class="pb-2">
-        <div [ngClass]="{ 'hidden' : colorWhite}" class="mt-[0.38rem]">
-          <svg class="cursor-pointer" width="42" height="22" viewBox="0 0 42 22" fill="none"
-            xmlns="http://www.w3.org/2000/svg">
-            <line y1="1" x2="42" y2="1" stroke="#000000" stroke-width="2" />
-            <path d="M0 11L23 11" stroke="#000000" stroke-width="2" />
-            <line y1="21" x2="42" y2="21" stroke="#000000" stroke-width="2" />
-          </svg>
-        </div>
-        <div [ngClass]="{ 'hidden' : !colorWhite}" class="mt-[0.38rem]">
+
+        <div class="mt-[0.38rem]">
           <div class="flex flex-col men-tol space-y-[7px] cursor-pointer ">
           <div class="line-men"></div>
           <div class="line-men"></div>
