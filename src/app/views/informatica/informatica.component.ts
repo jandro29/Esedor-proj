@@ -31,8 +31,8 @@ export class InformaticaComponent implements OnInit {
   optionImg: string = 'lg:w-[670px] 2xl:w-[850px] lg:mt-[-100px] xl:mt-[-230px] 2xl:mt-[-50px]'
   image: string = 'assets/img/informatica-inicio.png';
   imageTwo: string = 'assets/img/informatica-logo.png';
-  paragraphOne: string = 'During these uncertain times, many of us find ourselves in introspection mode, with new ideas and resolving to do better. We wish we could help everyone and fix everything. ';
-  paragraphTwo: string = 'During these uncertain times, many of us find ourselves in introspection mode, with new ideas and resolving to do better. ';
+  paragraphOne: string = 'Es una empresa dedicada a la implementación de soluciones de gestión informática integral y consultoría para hoteles, restaurantes y afines. Posicionados en las principales cadenas hoteleras y en los más importantes restaurantes de primera línea de varios países con sus software INFOhotel e INFOrest.';
+  paragraphTwo: string = 'Al iniciar el proyecto nos enfocamos en entender realmente el objetivo del negocio y las necesidades de sus clientes para poder brindarles una experiencia UX superior al acceder a la información de servicio postventa y captar leads de manera holística en el sitio web.';
 
 
   serviceList: Array<String> = [
