@@ -109,9 +109,9 @@
     </div>
   </div>
   <div data-aos="fade-right"
-    class="h-[75%] lg:h-[70%] px-4 lg:pt-10 2xl:pt-[10rem] pb-2 flex flex-col lg:justify-between mt-[-30px] ">
+    class="h-[75%] lg:h-[70%] px-4 lg:pt-10 2xl:pt-[10rem] flex flex-col lg:justify-between mt-[-30px] ">
     <div class="flex justify-center ">
-    <ul class="open-menu lg:flex flex-col  ">
+    <ul class="open-menu lg:flex lg:flex-col  ">
       <a class="flex flex-col text-[20px]">
         <li class="cursor-pointer " *ngFor="let list of listGroup" (click)="redirectInternas(list.ruta); scrollTop()"
           routerLink="'{{list.id}}'" (mouseover)="list.state = false" (mouseout)="list.state = true">{{list.name}}
