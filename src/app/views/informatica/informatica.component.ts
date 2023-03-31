@@ -59,8 +59,10 @@ export class InformaticaComponent implements OnInit {
     {aos: 1000, label: 'digital'},
   ]
 
-  firstText: string = 'Visualización de datos P2P y P2M';
-  secondText: string = 'During these uncertain times, many of us find ourselves in introspection mode, with new ideas and resolving to do better. We wish we could help everyone and fix everything. ';
+  firstText: string = 'Diseño UX Multiplataforma';
+  secondText: string = 'En el proceso de diseño nos enfocamos en definir una estructura del sitio web accesible y organizada, para ello realizamos un trabajo enfocado en 2 puntos:';
+  thirdText: string = 'Arquitectura de información: diseñamos con los clientes la estructura del sitio al identificar sus modelos mentales con una técnica de investigación UX llamada cardsorting que les di'
+  fourText: string = 'Diseño multiplataforma: enfocamos el diseño en bajo la metodología mobilefirst, posterior a ellos diseñamos las pantallas en los soportes tablet y desktop, ofreciendo una experiencia excepcional e intuitiva.'
   displayImage:string = 'hidden'
 
   constructor() { }

@@ -10,8 +10,10 @@ export class SecondSectionComponent implements OnInit {
   @Input() firstText!: string;
   @Input() secondText!: string;
   @Input() thirdText!: string;
+  @Input() fourText!: string;
   // @Input() fourthText!: string;
   @Input() displayContent!: any;
+  @Input() displayContent2!: any;
   @Input() displayImage!: any;
   @Input() imageSection!: any;
   @Input() displayOptions!:any;

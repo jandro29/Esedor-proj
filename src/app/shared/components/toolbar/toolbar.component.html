@@ -25,7 +25,7 @@
           <span class="cursor-pointer text-[1rem] lg:hover:text-[#626973]" (click)="redirectUs()">Nosotros</span>
         </div>
       </div>
-      <div class="hidden lg:block  mt-3">
+      <div class="hidden lg:block  lg:mt-3 2xl:mt-[0.3rem]">
         <button [class.header_variable]="header_variable" matRipple (mouseover)="btnStyle = true"
           (mouseout)="btnStyle = false" [ngClass]="{ 'arrow2' : btnStyle}" [routerLink]="['/contacto']"
           class="lexendb  cursor-pointer bg-[#5682FF] lg:hover:bg-[#7282FF] text-[14.5px] text-white lg:hover:text-white flex items-center justify-start lg:justify-center shadow w-full lg:w-[192px] h-[38px] 2xl:h-[46px] lg:ml-4 px-6 lg:p-4 rounded-[50px] mr-6">
@@ -142,6 +142,7 @@
 
     </ul>
   </div>
+  <div class="lg:block hidden">
     <div class="hidden lg:flex justify-between items-end">
       <p class="lexend text-[13px] font-medium text-white">Esedor © 2023</p>
       <ul class="space-y-[0.5rem]">
@@ -162,5 +163,6 @@
         </li>
       </ul>
     </div>
+  </div>
   </div>
 </div>
