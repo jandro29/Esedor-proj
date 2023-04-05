@@ -36,20 +36,19 @@ export class InformaticaComponent implements OnInit {
 
 
   serviceList: Array<String> = [
-    'INTEGRATED',
-    'CAMPIGN',
-    'HYPE FILM',
-    'TECH FILM',
-    'KEY VISUAL',
-    'SOCIAL TEASERS',
+    'Descubrimiento de producto',
+    'Diseño De Producto',
+    'Desarrollo de software',
   ];
 
   definitionsList: Array<String> = [
-    'STRATEGY',
-    'CONCEPT',
-    'ART DIRECTION',
-    'DESIGN',
-    'PRODUCTION',
+    'Product Visión',
+    'Arquitectura de información',
+    'User flow',
+    'Wireframes',
+    'Diseño UI Multidispositivo',
+    'Desarrollo Frontend',
+    'Desarrollo Backend ',
   ]
 
   animatedTitle: Array<{aos: number, label: String}> = [
