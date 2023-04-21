@@ -22,6 +22,14 @@ export class TalentComponent implements OnInit {
     this.showForm = false;
   }
 
+
+  getDownSection() {
+    let x = document.querySelector("#nextContent");
+    if (x){
+        x.scrollIntoView({behavior: "smooth"});
+    }
+  }
+
   talentGroup = [
     {text: 'Front-end Developer', state: false},
     {text: 'Delivery Manager', state: false},

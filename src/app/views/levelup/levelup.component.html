@@ -15,6 +15,9 @@
         <div class="lg:ml-24 ml-6" data-aos="fade-down-right" data-aos-duration="800">u</div>
         <div data-aos="fade-down-right" data-aos-duration="850">p</div>
       </div>
+
+      <app-button-down  (getDown)="getDownSection()"></app-button-down>
+
     </section>
   </div>
   <div class="lg:hidden block">
@@ -35,7 +38,7 @@
   <section id="inicio" class="bg2  text-white flex flex-col">
     <!-- py-[6rem]  h-screen 2xl:grid-cols-2 *ngIf="bgTab" h-screen lg:h-screen-->
     <!-- TEXTO EN DESKTOP-->
-    <div class="lg:block hidden">
+    <div class="lg:block hidden" id="nextContent">
       <div
         class="text-[36px] mb-12 lg:text-[27px] xl:text-[36px] 2xl:text-[42px] 3xl:text-[46px] pl-[0px] lg:pl-28 2xl:pl-44 2xl:pt-44 lg:pt-20 w-[85%] lg:h-[210px] xl:h-[250px] 2xl:h-[370px] 3xl:h-[400px] lexendzettaextrali flex ">
         <p>¡Bienvenido a nuestro programa de capacitación en desarrollo de software y experiencia de usuario!</p>
@@ -89,7 +92,7 @@
         <div class="lg:block hidden">
           <div class="absolute  right-0 h-[150px] flex flex-col justify-between items-center">
             <p class="lexend text-[11.5px] text-rotate">Desplazarse hacia abajo</p>
-            <button matRipple class="cursor-pointer rounded-[50%]" (click)="getDown.emit()">
+            <button matRipple class="cursor-pointer rounded-[50%]" >
               <img class="w-[49px]" src="assets/img/btn_down.svg" alt="go_down">
             </button>
           </div>
@@ -338,9 +341,10 @@
             <div class="flex justify-center mt-28">
               <div class="flex flex-col w-[301px]">
                 <div class="flex justify-center">
-                <img class="w-[146px] flex justify-center " src="assets/img/benefeicios3-responsive.svg" alt="">
-              </div>
-                <p class="mt-16 text-center">Al finalizar el programa, tendrás la oportunidad de ser colocado en una empresa como
+                  <img class="w-[146px] flex justify-center " src="assets/img/benefeicios3-responsive.svg" alt="">
+                </div>
+                <p class="mt-16 text-center">Al finalizar el programa, tendrás la oportunidad de ser colocado en una
+                  empresa como
                   desarrollador de
                   software o diseñador de experiencia de usuario.</p>
               </div>
@@ -355,20 +359,21 @@
   <section class="bg-[#F2F4F5] mt-[225px] relative">
     <div class=" flex flex-col">
       <div class=" lg:mt-[233px] mt-20 flex justify-center">
-        <h2 class="2xl:text-[44px] xl:text-[31px] lg:text-[25px] text-[20px] w-[80%] lg:w-[75%] lexendzetta">Inscríbete hoy en nuestro programa
+        <h2 class="2xl:text-[44px] xl:text-[31px] lg:text-[25px] text-[20px] w-[80%] lg:w-[75%] lexendzetta">Inscríbete
+          hoy en nuestro programa
           de capacitación y prepárate para
           impulsar tu carrera en el mundo de la tecnología.
 
           <div class="lg:block hidden">
             <button matRipple (mouseover)="btnStyle = true" (mouseout)="btnStyle = false"
-              [ngClass]="{ 'arrow' : btnStyle}" (click)="showFormEvent()"
-              class="mt-20 lexendli cursor-pointer mb-28 bg-white lg:hover:bg-[#5682FF] text-[15.5px] text-[#141C26] lg:hover:text-white flex items-center justify-start lg:justify-center shadow w-full lg:w-[236px] h-[45px] lg:h-[65px] 2xl:h-[82px]  px-6 lg:p-4 rounded-[50px]">
+              [ngClass]="{ 'arrow2' : btnStyle}" (click)="showFormEvent()"
+              class="mt-20 lexendli cursor-pointer mb-28 bg-[#5682FF] lg:hover:bg-white text-[15.5px] text-white lg:hover:text-[#141C26] flex items-center justify-start lg:justify-center shadow w-full lg:w-[236px] h-[45px] lg:h-[65px] 2xl:h-[82px]  px-6 lg:p-4 rounded-[50px]">
               <svg class="transition duration-700 ease-in-out mr-16 lg:mr-4 w-[24px] lg:w-[32px]" width="33" height="31"
-                viewBox="0 0 33 31" [ngClass]="{ 'arrow-rotate' : btnStyle }" fill="none"
+                viewBox="0 0 33 31" [ngClass]="{ 'arrow-rotate2' : btnStyle }" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <g class="text-white">
-                  <line x1="5.7105e-09" y1="14.7539" x2="30.6479" y2="14.7539" stroke="black" stroke-width="2" />
-                  <path d="M16.2585 1.00146L30.5917 15.2188L16.2585 29.436" stroke="black" stroke-width="2" />
+                  <line x1="5.7105e-09" y1="14.7539" x2="30.6479" y2="14.7539" stroke="white" stroke-width="2" />
+                  <path d="M16.2585 1.00146L30.5917 15.2188L16.2585 29.436" stroke="white" stroke-width="2" />
                 </g>
               </svg>
               Inscribirme
@@ -376,8 +381,8 @@
           </div>
 
           <div class="block lg:hidden">
-            <button matRipple (mouseover)="btnStyle = true" (mouseout)="btnStyle = false" [ngClass]="{ 'arrow' : btnStyle}"
-              (click)="showFormEvent()"
+            <button matRipple (mouseover)="btnStyle = true" (mouseout)="btnStyle = false"
+              [ngClass]="{ 'arrow' : btnStyle}" (click)="showFormEvent()"
               class="lexendli cursor-pointer  mb-16 bg-white lg:hover:bg-[#5682FF] text-[15.5px] text-[#141C26] lg:hover:text-white flex items-center justify-start shadow w-[60%] h-[45px] ml-14 px-6 mt-10 rounded-[50px]">
               <svg class="transition duration-700 ease-in-out mr-8 w-[24px]" width="33" height="31" viewBox="0 0 33 31"
                 [ngClass]="{ 'arrow-rotate' : btnStyle }" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -392,17 +397,17 @@
         </h2>
       </div>
       <div class="lg:block hidden">
-      <div class="flex right-0 bottom-0 absolute">
-        <lottie-player src="https://assets10.lottiefiles.com/packages/lf20_2juopw8b.json" background="transparent"
-          speed="1" style="width: 300px; height: 300px;" loop autoplay></lottie-player>
+        <div class="flex right-0 bottom-0 absolute">
+          <lottie-player src="https://assets10.lottiefiles.com/packages/lf20_2juopw8b.json" background="transparent"
+            speed="1" style="width: 300px; height: 300px;" loop autoplay></lottie-player>
+        </div>
       </div>
-    </div>
-    <div class="block lg:hidden">
-      <div class="flex right-0 bottom-0 justify-end">
-        <lottie-player src="https://assets10.lottiefiles.com/packages/lf20_2juopw8b.json" background="transparent"
-          speed="1" style="width: 250px; height: 250px;" loop autoplay></lottie-player>
+      <div class="block lg:hidden">
+        <div class="flex right-0 bottom-0 justify-end">
+          <lottie-player src="https://assets10.lottiefiles.com/packages/lf20_2juopw8b.json" background="transparent"
+            speed="1" style="width: 250px; height: 250px;" loop autoplay></lottie-player>
+        </div>
       </div>
-    </div>
     </div>
 
   </section>

@@ -13,9 +13,11 @@
     <div data-aos="fade-down-right" data-aos-duration="850">o</div>
     <div data-aos="fade-down-right" data-aos-duration="900">s</div>
   </div>
+
+  <app-button-down class="lg:block hidden" (getDown)="getDownSection()"></app-button-down>
 </section>
 
-<mat-drawer-container class="w-full mt-12 min-h-full px-4 lg:px-24 bg-white">
+<mat-drawer-container id="nextContent" class="w-full mt-12 min-h-full px-4 lg:px-24 bg-white">
 
   <mat-drawer-content class="flex bg-white justify-center flex-wrap content-center">
     <div class="overflow-hidden lg:pt-[6rem]">

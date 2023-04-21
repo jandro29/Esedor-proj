@@ -27,6 +27,13 @@ export class ServicesComponent implements OnInit {
     }
   }
 
+  getDownSection() {
+    let x = document.querySelector("#nextContent");
+    if (x){
+        x.scrollIntoView({behavior: "smooth"});
+    }
+  }
+
   colorWhite = true;
   bgTab: boolean = true;
   bgTab2!: boolean;

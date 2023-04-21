@@ -59,6 +59,7 @@ import { CyberstratComponent } from './views/cyberstrat/cyberstrat.component';
 import { ClipboardModule } from '@angular/cdk/clipboard';
 import { LevelupComponent } from './views/levelup/levelup.component';
 import { ServicesFormularioComponent } from './shared/components/services-formulario/services-formulario.component';
+import { ButtonDownComponent } from './shared/components/button-down/button-down.component';
 
 
 @NgModule({
@@ -96,7 +97,8 @@ import { ServicesFormularioComponent } from './shared/components/services-formul
     CajametropolitanaComponent,
     CyberstratComponent,
     LevelupComponent,
-    ServicesFormularioComponent
+    ServicesFormularioComponent,
+    ButtonDownComponent
   ],
   imports: [
     RouterModule,

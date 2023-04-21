@@ -22,6 +22,12 @@ export class ContactComponent implements OnInit {
   closeFormEvent() {
     this.showForm = false;
   }
+  getDownSection() {
+    let x = document.querySelector("#nextContent");
+    if (x){
+        x.scrollIntoView({behavior: "smooth"});
+    }
+  }
 
   ngOnInit(): void {
 

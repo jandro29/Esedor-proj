@@ -22,6 +22,13 @@ export class ProjectsDashboardComponent implements OnInit {
     this.showForm = false;
   }
 
+  getDownSection() {
+    let x = document.querySelector("#nextContent");
+    if (x){
+        x.scrollIntoView({behavior: "smooth"});
+    }
+  }
+
   listGroup = [
     {types: 'todos', name: 'Todos', state: false},
     {types: 'banca', name: 'Banca', state: false},

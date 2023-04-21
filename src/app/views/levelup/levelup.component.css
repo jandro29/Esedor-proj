@@ -27,3 +27,52 @@
 .text-rotate {
   transform: rotate(-90deg);
 }
+
+.shadow {
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+@media screen and (min-width: 1024px ) {
+
+  .arrow-rotate{
+      transform: rotate(-45deg);
+      transition: transform .6s cubic-bezier(.4,0,0,1);
+  }
+
+  .arrow:hover g line {
+      stroke: #ffffff;
+  }
+
+  .arrow:hover g path {
+      stroke: #ffffff;
+  }
+
+}
+
+@media screen and (min-width: 1024px ) {
+
+  .arrow-rotate2{
+      transform: rotate(-45deg);
+      transition: transform .6s cubic-bezier(.4,0,0,1);
+  }
+
+  .arrow2:hover g line {
+      stroke: #000000;
+  }
+
+  .arrow2:hover g path {
+      stroke: #000000;
+  }
+
+}
+
+
+body{
+  font-family: 'Lexend', sans-serif !important;
+  scroll-behavior: smooth;
+}
+
+html {
+  font-family: 'Lexend', sans-serif !important;
+  scroll-behavior: smooth;
+}

@@ -21,6 +21,13 @@ export class NosotrosComponent implements OnInit {
     this.showForm = false;
   }
 
+  getDownSection() {
+    let x = document.querySelector("#nextContent");
+    if (x){
+        x.scrollIntoView({behavior: "smooth"});
+    }
+  }
+
   featureGroup = [
     {title: 'Sobrepasar las expectativas de los clientes y colegas', text: 'Nunca te conformes con lo “suficientemente bueno” cuando sabes que puedes y debes hacerlo mejor.'},
     {title: 'Reconocer la excelencia y el compromiso.', text: 'Conocemos el valor del respeto bien ganado y la retroalimentación constructiva.'},

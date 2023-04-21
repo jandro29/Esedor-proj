@@ -10,6 +10,7 @@ export class LevelupComponent implements OnInit {
   btnStyle!: boolean;
   showForm!: boolean;
 
+
   showFormEvent() {
     this.showForm = true;
   }
@@ -18,8 +19,14 @@ export class LevelupComponent implements OnInit {
     this.showForm = false;
   }
 
+  getDownSection() {
+    let x = document.querySelector("#nextContent");
+    if (x){
+        x.scrollIntoView({behavior: "smooth"});
+    }
+  }
 
-  @Output() getDown = new EventEmitter<any>();
+
 
 
 
