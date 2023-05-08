@@ -157,7 +157,7 @@ const routes: Routes = [
   { path: 'proyectos/infomatica', component:InformaticaComponent, data:PROJECTS_METADATA},
   { path: 'proyectos/cajametropolitanadelima', component:CajametropolitanaComponent, data:PROJECTS_METADATA},
   { path: 'proyectos/cyberstrat', component:CyberstratComponent, data:PROJECTS_METADATA},
-  { path: '/chatbots', component:ChatbotsComponent, data:PROJECTS_METADATA },
+  { path: 'chatbots', component:ChatbotsComponent, data:PROJECTS_METADATA },
   { path: 'proyectos/cookies', component: CookiesComponent, data: PROJECTS_METADATA },
   {
     path: 'servicios',

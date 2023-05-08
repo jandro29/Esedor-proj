@@ -29,6 +29,7 @@ export class ToolbarComponent implements OnInit {
     {name: 'Nosotros', ruta: '/nosotros', state: true},
     {name: 'Talento', ruta: '/talento', state: true},
     {name: 'Level-Up', ruta: '/level-up', state: true},
+    {name: 'Chatbots', ruta: '/chatbots', state: true},
     //{name: 'Blog', ruta: '/', state: true},
   ]
 
