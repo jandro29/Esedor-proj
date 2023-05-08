@@ -60,6 +60,9 @@ import { ClipboardModule } from '@angular/cdk/clipboard';
 import { LevelupComponent } from './views/levelup/levelup.component';
 import { ServicesFormularioComponent } from './shared/components/services-formulario/services-formulario.component';
 import { ButtonDownComponent } from './shared/components/button-down/button-down.component';
+import { ChatbotsComponent } from './views/chatbots/chatbots.component';
+import { ChatbotsFormComponent } from './shared/components/chatbots-form/chatbots-form.component';
+import { FooterBlackComponent } from './shared/components/footer-black/footer-black.component';
 
 
 @NgModule({
@@ -98,7 +101,10 @@ import { ButtonDownComponent } from './shared/components/button-down/button-down
     CyberstratComponent,
     LevelupComponent,
     ServicesFormularioComponent,
-    ButtonDownComponent
+    ButtonDownComponent,
+    ChatbotsComponent,
+    ChatbotsFormComponent,
+    FooterBlackComponent
   ],
   imports: [
     RouterModule,

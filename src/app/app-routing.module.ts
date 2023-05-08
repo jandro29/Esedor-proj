@@ -25,6 +25,7 @@ import { InformaticaComponent } from './views/informatica/informatica.component'
 import { CajametropolitanaComponent } from './views/cajametropolitana/cajametropolitana.component';
 import { CyberstratComponent } from './views/cyberstrat/cyberstrat.component';
 import { LevelupComponent } from './views/levelup/levelup.component';
+import { ChatbotsComponent } from './views/chatbots/chatbots.component';
 
 const PROJECTS_METADATA = {
   seo: {
@@ -156,6 +157,7 @@ const routes: Routes = [
   { path: 'proyectos/infomatica', component:InformaticaComponent, data:PROJECTS_METADATA},
   { path: 'proyectos/cajametropolitanadelima', component:CajametropolitanaComponent, data:PROJECTS_METADATA},
   { path: 'proyectos/cyberstrat', component:CyberstratComponent, data:PROJECTS_METADATA},
+  { path: 'chatbots', component:ChatbotsComponent, data:PROJECTS_METADATA },
   { path: 'proyectos/cookies', component: CookiesComponent, data: PROJECTS_METADATA },
   {
     path: 'servicios',
