@@ -1,4 +1,4 @@
-<div class="flex items-center w-full lg:w-[30%] lg:ml-8 2xl:ml-24 h-[10%]" #logo>
+<div class="flex items-center w-full lg:w-[30%] ml-4 lg:ml-8 2xl:ml-24 h-[10%]" #logo>
   <div class="cursor-pointer" routerLink="/">
     <img class="w-[2.313] h-[2rem]" src="assets/img/logoE.svg">
   </div>
@@ -7,24 +7,26 @@
     <img class="w-[70px] lg:w-[81.99px]" src="assets/img/logoesedor/text-esedor-black.svg">
   </span>
   <div class=" absolute top-0 right-0  xl:left-52 2xl:left-96 z-10 ">
-    <img src="assets/img/spring.png" class="2xl:w-[440px] xl:w-[260px] lg:w-[160px]" alt="">
+    <img src="assets/img/spring.png" class="2xl:w-[330px] xl:w-[260px] w-[160px]" alt="">
   </div>
 </div>
 
+<div class="lg:block hidden">
 <div class=" absolute top-20 right-0 z-10 ">
-  <img src="assets/img/sphere.png" class="2xl:w-[200px] xl:w-[115px] lg:w-[85px]" alt="">
+  <img src="assets/img/sphere.png" class="2xl:w-[155px] xl:w-[115px] lg:w-[85px]" alt="">
+</div>
 </div>
 
 
 <section class="flex flex-col">
 <section class="z-30 h-[90%]">
-  <div class="flex flex-wrap lg:ml-8 2xl:ml-24">
-    <div class="flex flex-col w-[50%] mt-10">
-      <p class="2xl:text-[26px] lg:text-[20px] z-30">Reporte Q4 2023</p>
-      <h2 class="lexend font-bold 2xl:text-[60px] lg:text-[45px] 2xl:mt-28 lg:mt-14 z-30 2xl:w-[700px] lg:w-[500px]">Chatbots en la industria
+  <div class="flex lg:flex-wrap grid lg:grid-cols-2 ml-4 lg:ml-8 2xl:ml-24">
+    <div class="flex flex-col lg:mt-10 mt-8">
+      <p data-aos="fade-right" data-aos-duration="500" class="2xl:text-[26px] lg:text-[20px] text-[14.5px] z-30 font-normal">Reporte Q4 2023</p>
+      <h2 data-aos="fade-right" data-aos-duration="600" class="lexend font-bold 2xl:text-[60px] lg:text-[45px] text-[42px] 2xl:mt-28 lg:mt-14 mt-8 z-30 2xl:w-[700px] lg:w-[500px] w-[290px]">Chatbots en la industria
         peruana
       </h2>
-      <p class="2xl:text-[16.5px] lg:text-[13.5px] 2xl:w-[550px] lg:w-[450px] 2xl:mt-14 lg:mt-9">El objetivo de este informe sobre diseño
+      <p data-aos="fade-right" data-aos-duration="700"  class="2xl:text-[16.5px] lg:text-[13.5px] text-[14px] 2xl:w-[550px] lg:w-[450px] w-[290px] 2xl:mt-14 lg:mt-9 mt-12 font-light">El objetivo de este informe sobre diseño
         y
         desarrollo de chatbots es proporcionar a nuestros clientes una guía
         completa sobre cómo aprovechar esta tecnología para mejorar su comunicación con los clientes y aumentar la
@@ -32,7 +34,7 @@
     </div>
 
 
-    <div class="w-[50%]">
+    <div class="w-[100%]">
       <div class="flex justify-center ">
         <div class="w-[100%] z-30">
           <app-chatbots-form class="flex justify-center"></app-chatbots-form>
@@ -41,7 +43,7 @@
     </div>
   </div>
 <div class="relative">
-  <div class="  absolute bottom-[-95px] z-10 ">
+  <div class="absolute bottom-[-95px] z-10 ">
     <img class="bg-no-repeat" src="assets/img/fondo-firstsection.png" alt="">
   </div>
 </div>
@@ -52,16 +54,16 @@
   <div class="flex flex-wrap bg-[#0B032E]">
     <div class="w-[50%]">
       <div class="ml-14">
-        <img src="assets/img/portada-chatbots.png" alt="">
+        <img data-aos="fade-right" data-aos-duration="700" src="assets/img/portada-chatbots.png" alt="">
       </div>
     </div>
     <div class="w-[50%]">
       <div class="flex flex-col mt-32">
         <div class="text-white lexendzetta ">
-          <h2 class="2xl:text-[46px] lg:text-[40px]">Indice</h2>
+          <h2 data-aos="fade-down" data-aos-duration="700" class="2xl:text-[46px] lg:text-[40px]">Indice</h2>
         </div>
         <div class="flex flex-col ">
-          <ul class="text-white space-y-1 2xl:mt-12 lg:mt-6">
+          <ul data-aos="fade-up" data-aos-duration="700" class="text-white space-y-1 2xl:mt-12 lg:mt-6">
             <li>1. Objetivos de la Investigación</li>
             <li>2. Distribución de respuestas</li>
             <li>3. ¿Qué son los Chatbots?</li>
@@ -72,18 +74,20 @@
             <li>8. Conclusiones</li>
           </ul>
 
-          <button [class.header_variable]="header_variable" matRipple (mouseover)="btnStyle = true"
+          <button data-aos="fade-up" data-aos-duration="700" [class.header_variable]="header_variable" matRipple (mouseover)="btnStyle = true"
             (mouseout)="btnStyle = false" [ngClass]="{ 'arrow2' : btnStyle}" [routerLink]="['/']"
-            class="lexendb 2xl:mt-16 lg:mt-8 cursor-pointer bg-[#0166FF] lg:hover:bg-white text-[14.5px] text-white lg:hover:text-black flex items-center justify-start lg:justify-center shadow w-full lg:w-[192px] h-[38px] 2xl:h-[46px]  px-6 lg:p-4 rounded-[50px] mr-6">
-            <svg class="transition duration-700 ease-in-out mr-16 lg:mr-4 w-[24px] lg:w-[20px]" width="33" height="31"
+            class="lexend font-light 2xl:mt-16 lg:mt-8 cursor-pointer bg-[#0166FF] lg:hover:bg-white text-[14.5px] text-white lg:hover:text-black flex items-center justify-start lg:justify-center shadow w-full lg:w-[192px] h-[38px] 2xl:h-[46px]  px-6 lg:p-4 rounded-[50px] mr-6">
+            <svg   class="transition duration-700 ease-in-out mr-16 lg:mr-4 w-[24px] lg:w-[20px]" width="33" height="31"
               viewBox="0 0 33 31" [ngClass]="{ 'arrow-rotate2' : btnStyle }" fill="none"
               xmlns="http://www.w3.org/2000/svg">
-              <g class="text-white">
-                <line x1="5.7105e-09" y1="14.7539" x2="30.6479" y2="14.7539" stroke="white" stroke-width="2" />
-                <path d="M16.2585 1.00146L30.5917 15.2188L16.2585 29.436" stroke="white" stroke-width="2" />
+              <g  class="text-white">
+                <line data-aos-duration="700" x1="5.7105e-09" y1="14.7539" x2="30.6479" y2="14.7539" stroke="white" stroke-width="2" />
+                <path data-aos-duration="700" d="M16.2585 1.00146L30.5917 15.2188L16.2585 29.436" stroke="white" stroke-width="2" />
               </g>
             </svg>
+            <span data-aos="fade-right" data-aos-duration="700" >
             Descargar
+          </span>
           </button>
         </div>
       </div>
@@ -97,12 +101,12 @@
 
     <div class="flex flex-col">
       <div class="flex justify-center">
-        <h2 class="text-center 2xl:text-[36px] lg:text-[26px] lexendzetta 2xl:w-[70%] lg:w-[65%] mt-24">Los beneficios
+        <h2 data-aos="fade-up" data-aos-duration="700" class="text-center 2xl:text-[36px] lg:text-[26px] lexendzetta 2xl:w-[70%] lg:w-[65%] mt-24">Los beneficios
           del diseño y
           desarrollo de chatbots para tu negocio</h2>
       </div>
       <div class="flex justify-center">
-        <p class="text-center lexend w-[65%] 2xl:text-[21px] lg:text-[17px] lexendli mt-11 text-[#454C59]">A través de
+        <p  data-aos="fade-up" data-aos-duration="700" class="text-center lexend w-[65%] 2xl:text-[21px] lg:text-[17px] lexendli mt-11 text-[#454C59]">A través de
           este informe,
           deseamos brindar a nuestros clientes
           una comprensión profunda de los beneficios y oportunidades que los chatbots pueden ofrecer a sus negocios,
@@ -113,7 +117,7 @@
 
       <div class="flex justify-center mt-20 z-30">
         <div class="w-[90%] flex justify-between 2xl:space-x-20 lg:space-x-3">
-          <div class="w-[32%] flex justify-center bg-white drop-shadow-lg rounded-lg">
+          <div data-aos="fade-down-right" data-aos-duration="700" class="w-[32%] flex justify-center bg-white drop-shadow-lg rounded-lg">
             <div class="w-[100%]">
               <div class="flex flex-col">
                 <div>
@@ -139,7 +143,7 @@
               </div>
             </div>
           </div>
-          <div class="w-[32%] flex justify-center bg-white drop-shadow-lg rounded-lg">
+          <div data-aos="fade-down-right" data-aos-duration="700" class="w-[32%] flex justify-center bg-white drop-shadow-lg rounded-lg">
             <div class="w-[100%]">
               <div class="flex flex-col">
                 <div>
@@ -160,7 +164,7 @@
               </div>
             </div>
           </div>
-          <div class="w-[32%] flex justify-center bg-white drop-shadow-lg rounded-lg">
+          <div data-aos="fade-down-right" data-aos-duration="700" class="w-[32%] flex justify-center bg-white drop-shadow-lg rounded-lg">
             <div class="w-[100%]">
               <div class="flex flex-col">
                 <div>
@@ -206,16 +210,16 @@
       <div class="flex justify-center ">
         <div class="flex flex-col text-white  ">
           <div class="flex justify-center 2xl:text-[40px] lg:text-[35px] lexendzetta mt-28">
-            <h3 class="2xl:w-[65%] lg:w-[80%] text-center">Los beneficios del diseño y desarrollo de chatbots para tu negocio</h3>
+            <h3 data-aos="fade-up" data-aos-duration="700" class="2xl:w-[65%] lg:w-[80%] text-center">Los beneficios del diseño y desarrollo de chatbots para tu negocio</h3>
           </div>
           <div class="flex justify-center 2xl:text-[21px] lg:text-[17.5px] lexend mt-10">
-            <p class="w-[50%] text-center">Esperamos que esta información les ayude a tomar decisiones informadas sobre
+            <p data-aos="fade-up" data-aos-duration="700" class="w-[50%] text-center">Esperamos que esta información les ayude a tomar decisiones informadas sobre
               la
               implementación de chatbots en su empresa y a diseñar soluciones personalizadas que se adapten a sus
               necesidades específicas.</p>
           </div>
           <div class="flex justify-center mb-24">
-            <button [class.header_variable]="header_variable" matRipple (mouseover)="btnStyle = true"
+            <button data-aos="fade-right" data-aos-duration="700" [class.header_variable]="header_variable" matRipple (mouseover)="btnStyle = true"
               (mouseout)="btnStyle = false" [ngClass]="{ 'arrow2' : btnStyle}" [routerLink]="['/']"
               class="lexend 2xl:mt-8 lg:mt-8 cursor-pointer bg-white lg:hover:bg-white  text-[14.5px] text-black lg:hover:text-black flex items-center justify-start lg:justify-center shadow w-full lg:w-[192px] h-[50px] 2xl:h-[46px]  px-6 lg:p-4 rounded-[50px] ">
               <svg class="transition duration-700 ease-in-out mr-16 lg:mr-4 w-[24px] lg:w-[20px]" width="33" height="31"
@@ -242,7 +246,7 @@
 <section class="lg:ml-8 2xl:ml-24 2xl:mt-32 lg:mt-20">
   <div class="flex flex-wrap h-[100%] items-center">
     <div class="flex flex-col w-[50%]">
-      <h2 class="lexend font-bold 2xl:text-[64px] lg:text-[44px] ">¡Ponte en contacto con nosotros
+      <h2 data-aos="fade-right" data-aos-duration="700" class="lexend font-bold 2xl:text-[64px] lg:text-[44px] ">¡Ponte en contacto con nosotros
         para implementar un Chatbot en tu organización!
       </h2>
     </div>
