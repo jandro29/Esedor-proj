@@ -10,6 +10,22 @@ import * as AOS from 'aos';
 })
 export class ServicesComponent implements OnInit {
 
+  showFormEvent() {
+    this.showForm = true;
+  }
+
+  closeFormEvent() {
+    this.showForm = false;
+  }
+
+
+  getDownSection() {
+    let x = document.querySelector("#nextContent");
+    if (x){
+        x.scrollIntoView({behavior: "smooth"});
+    }
+  }
+
   navbarfixed:boolean = false;
   btnStyle!: boolean;
 
@@ -27,12 +43,7 @@ export class ServicesComponent implements OnInit {
     }
   }
 
-  getDownSection() {
-    let x = document.querySelector("#nextContent");
-    if (x){
-        x.scrollIntoView({behavior: "smooth"});
-    }
-  }
+
 
   colorWhite = true;
   bgTab: boolean = true;
@@ -52,13 +63,7 @@ export class ServicesComponent implements OnInit {
 
   showForm!: boolean;
 
-  showFormEvent() {
-    this.showForm = true;
-  }
 
-  closeFormEvent() {
-    this.showForm = false;
-  }
 
   constructor() { }
 
