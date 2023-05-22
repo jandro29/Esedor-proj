@@ -1,5 +1,5 @@
 .menu-celes{
-  background: #5682FF;
+
   transition: 0.3s;
 
 }
@@ -190,3 +190,28 @@ background: #5682FF;
 }
 
 
+.img-menu{
+  width: 100%;
+  background-image: url(../../../../assets/img/img-menu.png) ;
+  background-size: cover;
+
+
+}
+
+@media screen and (min-width: 1024px) {
+  .img-menu{
+    height: 70%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .img-menu{
+    height: 65%;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .img-menu{
+    height: 55%;
+  }
+}
