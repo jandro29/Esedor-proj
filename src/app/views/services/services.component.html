@@ -1,11 +1,11 @@
 <app-toolbar [colorWhite]="colorWhite"></app-toolbar>
 <div>
   <section id="inicio"
-    class="bg-tab h-[310px] lg:h-[437px] text-white flex justify-start items-center py-8 2xl:py-[4rem] lg:rounded-br-[50px]">
+    class="bg-tab relative h-[310px] lg:h-[437px] text-white flex  items-center lg:justify-start justify-center py-8 2xl:pt-[4rem] lg:rounded-br-[50px]">
     <!-- py-[6rem]  h-screen 2xl:grid-cols-2 *ngIf="bgTab"-->
     <div class="flex flex-col">
       <div
-        class="text-[36px] lg:text-[120px]  xl:text-[140px] 2xl:text-[160px] lexendzettaextrali leading-[125px] flex textleft">
+        class="text-[36px] lg:text-[110px] lg:justify-start justify-center xl:text-[125px] 2xl:text-[145px] lexendzettaextrali leading-[125px] flex textleft">
         <div data-aos="fade-down-right" data-aos-duration="500">S</div>
         <div data-aos="fade-down-right" data-aos-duration="550">e</div>
         <div data-aos="fade-down-right" data-aos-duration="600">r</div>
@@ -16,13 +16,16 @@
         <div data-aos="fade-down-right" data-aos-duration="850">o</div>
         <div data-aos="fade-down-right" data-aos-duration="900">s</div>
       </div>
-      <div class="lexend 2xl:text-[36px] xl:text-[27px] lg:text-[22px] py-8 2xl:py-[4rem]">
+      <div
+        class="lexend lg:block hidden flex lg:justify-start justify-center 2xl:text-[28px] xl:text-[23px] lg:text-[18px] py-5 lg:py-8 2xl:pt-[2.5rem]">
 
-        <h3 class="lg:   ml-6">Soluciones a medida para su negocio</h3>
+        <h3 class="lg:ml-6">Soluciones a medida para su negocio</h3>
 
       </div>
     </div>
-    <app-button-down class="lg:block hidden button-down" (getDown)="getDownSection()"></app-button-down>
+    <div class="lg:block hidden">
+      <app-button-down class=" button-down " (getDown)="getDownSection()"></app-button-down>
+    </div>
   </section>
   <!-- <section class="bg-tab2 h-[310px] lg:h-[760px] text-white flex flex-col justify-end py-8 2xl:py-[4rem]"
         *ngIf="bgTab2">
@@ -37,7 +40,7 @@
   <section class="flex flex-col w-full p-4 relative">
     <div
       class="hidden grid grid-cols-1 lg:grid-cols-4 lg:gap-[3rem] xl:gap-[5rem] py-[2rem] lg:pb-[15rem] lg:pt-[9rem] justify-items-center items-center">
-      <img  class="w-[94px] lg:w-auto" src="assets/img/services-icon.svg" alt="">
+      <img class="w-[94px] lg:w-auto" src="assets/img/services-icon.svg" alt="">
       <!-- 2xl:w-[60%] -->
       <h5 data-aos="fade-up"
         class="col-start-2 col-span-4 lexendzettaextrali lg:ml-[-15px] text-[24px] lg:text-[55px] xl:text-[60px] 2xl:text-[66px] leading-[30px] lg:leading-[80px] 2xl:leading-[82.5px] pt-[3.5rem] lg:mt-[15rem] border-t border-black">
@@ -58,7 +61,7 @@
     <!-- <mat-tab-header (scroll)="onscroll()" [ngClass]="navbarfixed?'fixed':'nofixed'"></mat-tab-header> -->
     <mat-tab-group id="nextContent">
       <mat-tab label="Chatbot & Voicebot">
-        <div  class="grid grid-cols-4 gap-[2.5rem] lg:gap-[5rem] py-[2.5rem] lg:py-[4rem]">
+        <div class="grid grid-cols-4 gap-[2.5rem] lg:gap-[5rem] py-[2.5rem] lg:py-[4rem]">
           <h1 data-aos="fade-up" class="col-span-4 lg:col-span-2 lg:ml-[-8px] lg:text-[46px] lexendzettali">Transforma
             tu área de atención al cliente y ventas</h1>
           <h3 data-aos="fade-up"

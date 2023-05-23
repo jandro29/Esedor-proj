@@ -194,6 +194,7 @@ background: #5682FF;
   width: 100%;
   background-image: url(../../../../assets/img/img-menu.png) ;
   background-size: cover;
+  background-position: center center;
 
 
 }

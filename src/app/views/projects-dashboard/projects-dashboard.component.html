@@ -1,5 +1,5 @@
 <app-toolbar [colorWhite]="colorWhite"></app-toolbar>
-<section class="bg-image h-[310px] lg:h-[760px] text-white flex justify-center items-center py-8 2xl:py-[4rem]">
+<section class="bg-image relative h-[310px] lg:h-[760px] text-white flex justify-center items-center py-8 2xl:py-[4rem]">
 
 
   <div class="text-[36px] lg:text-[140px]  xl:text-[160px] 2xl:text-[180px] lexendzettaextrali leading-[125px] flex textleft">
@@ -14,7 +14,9 @@
     <div data-aos="fade-down-right" data-aos-duration="900">s</div>
   </div>
 
-  <app-button-down class="lg:block hidden" (getDown)="getDownSection()"></app-button-down>
+  <div class="lg:block hidden">
+    <app-button-down class=" button-down " (getDown)="getDownSection()"></app-button-down>
+  </div>
 </section>
 
 <mat-drawer-container id="nextContent" class="w-full mt-12 min-h-full px-4 lg:px-24 bg-white">

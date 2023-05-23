@@ -1,7 +1,40 @@
+
 .bg-image {
+  background-image: url('../../../assets/img/nosotros-esedor.png' );
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media screen and (min-width:1024) {
+  .bg-image {
     background-image: url('../../../assets/img/nosotros-esedor.png' );
     background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
 }
+}
+
+@media screen and (max-width:1280) {
+  .bg-image {
+    background-image: url('../../../assets/img/nosotros-esedor.png' );
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+}
+}
+
+@media screen and (max-width:1536px) {
+  .bg-image {
+    background-image: url('../../../assets/img/nosotros-esedor.png' );
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+}
+}
+
 
 .bg-image2 {
     background-image: url('../../../assets/img/3d_us.png');

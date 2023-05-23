@@ -76,7 +76,7 @@
           <div class="w-[100%] hidden lg:block h-[100%] flex items-center justify-center">
             <div class="w-[100%] h-[100%] flex items-center justify-center">
               <div class="img-menu relative">
-                <div class="w-[65%] h-[45%] flex justify-center backdrop-blur items-center absolute bottom-0 left-0 flex-col">
+                <div class="2xl:w-[65%] lg:w-[60%] h-[45%] flex justify-center backdrop-blur items-center absolute bottom-0 left-0 flex-col">
                   <div class="flex flex-col flex justify-center lg:w-[90%]">
                     <div class="w-[80%]">
                       <div class="2xl:text-[21px] lg:text-[17px]">
@@ -90,7 +90,7 @@
                   <div>
                     <button matRipple (mouseover)="btnStyle = true" (mouseout)="btnStyle = false"
                       [ngClass]="{ 'arrow' : btnStyle}" [routerLink]="['/contacto']"
-                      class="absolute cursor-pointer text-[14.5px] text-black lg:hover:text-[#626973] lg:hover:text-white lg:h-[50px] 2xl:h-[67.43px] 2xl:w-[236px] lg:w-[195px] rounded-[50px] bg-white text-[15.5px] text-black flex justify-center items-center right-0 2xl:mt-8 lg:mt-5">
+                      class="absolute cursor-pointer text-[14.5px] text-black lg:hover:text-[#626973] lg:hover:text-white lg:h-[50px] 2xl:h-[67.43px] 2xl:w-[236px] lg:w-[195px] rounded-[50px] bg-white text-[15.5px] text-black flex justify-center items-center right-0 3xl:mt-12 2xl:mt-10 lg:mt-5">
                       <svg class="transition duration-700 ease-in-out mr-6 lg:mr-4 w-[24px] lg:w-[30px]" width="33"
                         height="31" viewBox="0 0 33 31" [ngClass]="{ 'arrow-rotate' : btnStyle }" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
@@ -146,10 +146,10 @@
                   src="assets/img/short-arrow-right.png" alt="">
 
               </li>
-              <div>
+              <div class="">
                 <a href="https://esedor.com/blog/" target="_blank" data-aos="fade-right" matRipple
                   (mouseover)="btnStyle2 = true" (mouseout)="btnStyle2 = false" [ngClass]="{ 'arrow2' : btnStyle2}"
-                  class="lexendzettali option-a cursor-pointer text-white flex items-center ">
+                  class="lexendzettali option-a cursor-pointer text-white flex items-center mt-[0.3rem]">
                   Blog
                   <svg class="transition duration-700 ease-in-out w-[31px] lg:w-[20px] xl:w-[25px]" width="33"
                     height="31" viewBox="0 0 33 31" [ngClass]="{ 'arrow-rotate2' : btnStyle2 }" fill="none"
@@ -172,7 +172,7 @@
     </div>
 
     <div class="lg:block hidden">
-      <div class="hidden lg:flex justify-between items-end">
+      <div class="hidden lg:flex justify-between items-end 2xl:mr-5 lg:mr-3">
         <p class="lexend text-[13px] font-medium text-white">Esedor © 2023</p>
         <ul class="space-x-[0.5rem] flex flex-wrap">
           <li>
