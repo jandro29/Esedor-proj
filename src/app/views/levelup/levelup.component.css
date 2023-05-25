@@ -1,6 +1,7 @@
 .bg-tab {
   background-image: url('../../../assets/img/bglevelup.svg');
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .bg-tab-responsive{
@@ -12,11 +13,13 @@
 .bg2{
   background-image: url('../../../assets/img/bglevelup2.svg');
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .bg-tab3{
   background-image: url('../../../assets/img/fondonegro-inclinado.svg');
   background-repeat: no-repeat;
+  background-size: cover;
 }
 .bg-tab3-responsive{
   background-image: url('../../../assets/img/fondonegro-responsive.png');

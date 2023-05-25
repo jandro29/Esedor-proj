@@ -1,6 +1,7 @@
 .bg-image {
   background-image: url('../../../assets/img/proyectos-esedor.png');
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .icon-hover {

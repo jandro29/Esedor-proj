@@ -54,8 +54,8 @@
     </div>
   </section>
 
-
-  <section class="mt-24">
+  <!-- Desktop-->
+  <section class="mt-24 lg:block hidden">
     <div class="flex flex-wrap bg-[#0B032E]">
       <div class="w-[50%]">
         <div class="ml-14">
@@ -102,18 +102,78 @@
       </div>
     </div>
   </section>
+
+  <!--MOVIL-->
+  <section class="mt-24 block lg:hidden">
+    <div class="flex flex-col bg-[#0B032E]">
+      <div class="w-[100%]">
+        <img data-aos="fade-right" data-aos-duration="700" src="assets/img/portada-chatbots.png" alt="">
+      </div>
+      <div class="w-[100%]">
+        <div class="flex flex-col mt-6 p-4">
+          <div class="text-white lexendzetta ">
+            <h2 data-aos="fade-down" data-aos-duration="700" class="text-[36px]">Indice</h2>
+          </div>
+          <div class="flex flex-col ">
+            <ul data-aos="fade-up" data-aos-duration="700" class="text-white space-y-1 text-[15px] w-[85%]">
+              <li>1. Objetivos de la Investigación</li>
+              <li>2. Distribución de respuestas</li>
+              <li>3. ¿Qué son los Chatbots?</li>
+              <li>4. Uso de chatbot por rubros</li>
+              <li>5. Canales de servicio atención al cliente</li>
+              <li>6. Interacción con los chatbots</li>
+              <li>7. ¿Cómo afectan los errores de chatbots a tu empresa?</li>
+              <li>8. Conclusiones</li>
+            </ul>
+
+            <button data-aos="fade-up" data-aos-duration="700" [class.header_variable]="header_variable" matRipple
+              (mouseover)="btnStyle = true" (mouseout)="btnStyle = false" [ngClass]="{ 'arrow2' : btnStyle}"
+              [routerLink]="['/']"
+              class="lexend font-light mt-12 cursor-pointer bg-[#0166FF] text-[15.5px] text-white flex items-center justify-start shadow w-[80%] h-[65px] px-6 rounded-[50px] mr-6 mb-14">
+              <svg class="transition duration-700 ease-in-out mr-16 w-[32px]" width="33" height="31" viewBox="0 0 33 31"
+                [ngClass]="{ 'arrow-rotate2' : btnStyle }" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g class="text-white">
+                  <line data-aos-duration="700" x1="5.7105e-09" y1="14.7539" x2="30.6479" y2="14.7539" stroke="white"
+                    stroke-width="2" />
+                  <path data-aos-duration="700" d="M16.2585 1.00146L30.5917 15.2188L16.2585 29.436" stroke="white"
+                    stroke-width="2" />
+                </g>
+              </svg>
+              <span data-aos="fade-right" data-aos-duration="700">
+                Descargar
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
 </section>
+
+
 <section class="flex flex-col">
   <section class="z-30 2xl:h-[90%] lg:h-[170%]">
 
 
     <div class="flex flex-col">
-      <div class="flex justify-center">
-        <h2 data-aos="fade-up" data-aos-duration="700"
-          class="text-center 2xl:text-[36px] lg:text-[26px] lexendzetta 2xl:w-[70%] lg:w-[65%] mt-24">Los beneficios
+      <div class="lg:block hidden">
+        <div class="flex justify-center">
+          <h2 data-aos="fade-up" data-aos-duration="700"
+            class="text-center 2xl:text-[36px] lg:text-[26px] lexendzetta 2xl:w-[70%] lg:w-[65%] mt-24">Los beneficios
+            del diseño y
+            desarrollo de chatbots para tu negocio</h2>
+        </div>
+      </div>
+
+      <div class="block lg:hidden">
+        <h2 data-aos="fade-up" data-aos-duration="700" class="block lg:hidden text-[21px] lexend mt-12 p-3.5">Los
+          beneficios
           del diseño y
           desarrollo de chatbots para tu negocio</h2>
       </div>
+
       <div class="flex justify-center">
         <p data-aos="fade-up" data-aos-duration="700"
           class="text-center lexend w-[65%] 2xl:text-[21px] lg:text-[17px] lexendli mt-11 text-[#454C59]">A través de
@@ -125,95 +185,9 @@
       </div>
 
 
-      <div class="flex justify-center mt-20 z-30">
-        <div class="w-[90%] flex justify-between 2xl:space-x-20 lg:space-x-3">
-          <div data-aos="fade-down-right" data-aos-duration="700"
-            class="w-[32%] 2xl:h-[590px] lg:h-[395px] flex justify-center bg-white drop-shadow-lg rounded-lg">
-            <div class="w-[100%] h-[100%]">
-              <div class="flex flex-col h-[100%]">
-                <div class="w-[100%]">
-                  <div class="flex justify-start">
-                    <img class="w-[110px]" src="assets/img/reduccion-de-costos.png" alt="">
-                  </div>
-                </div>
-                <div class="justify-center flex flex-col  flex items-center">
-
-                  <div class="2xl:text-[20px] lg:text-[15px] w-[85%]">
-                    <h3>Reducción de costos
-                    </h3>
-                  </div>
-                  <div class="2xl:text-[14.5px] lg:text-[13px] mt-7 w-[85%]  text-[#626973]">
-                    <div class="flex items-center">
-                      <p>El informe sobre diseño y desarrollo de chatbots puede ayudar a reducir los costos en los
-                        procesos
-                        de atención al cliente y soporte técnico al permitir la automatización de tareas repetitivas y
-                        la
-                        resolución de problemas comunes a través de chatbots. Esto significa que las empresas pueden
-                        reducir
-                        el número de empleados necesarios para realizar estas tareas y, en última instancia, reducir sus
-                        costos operativos.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+      <app-cuadro-benef></app-cuadro-benef>
 
 
-          <div data-aos="fade-down-right" data-aos-duration="700"
-            class="w-[32%] 2xl:h-[590px] lg:h-[395px] flex justify-center bg-white drop-shadow-lg rounded-lg">
-            <div class="w-[100%] h-[100%]">
-              <div class="flex flex-col h-[100%]">
-                <div class="w-[100%]">
-                  <div class="flex justify-start">
-                    <img class="w-[110px]" src="assets/img/mejroas-experiencia.png" alt="">
-                  </div>
-                </div>
-                <div class="justify-center flex flex-col  flex items-center">
-
-                  <div class="2xl:text-[20px] lg:text-[14.5px] w-[85%]">
-                    <h3>Mejora de la experiencia de atención al cliente</h3>
-                  </div>
-                  <div class="2xl:text-[14.5px] lg:text-[13px] mt-7 w-[85%] text-[#626973]">
-                    <p>La implementación de chatbots efectivos puede mejorar significativamente la experiencia del
-                      cliente
-                      al brindar una atención más rápida y eficiente, lo que aumenta la satisfacción del cliente. Los
-                      chatbots también pueden estar disponibles 24/7, lo que significa que los clientes pueden recibir
-                      atención en cualquier momento, lo que puede mejorar la retención y la lealtad del cliente.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div data-aos="fade-down-right" data-aos-duration="700"
-            class="w-[32%] 2xl:h-[590px] lg:h-[395px] flex justify-center bg-white drop-shadow-lg rounded-lg">
-            <div class="w-[100%] h-[100%]">
-              <div class="flex flex-col h-[100%]">
-                <div class="w-[100%]">
-                  <div class="flex justify-start">
-                    <img class="w-[110px]" src="assets/img/potencial-chatgpt.png" alt="">
-                  </div>
-                </div>
-                <div class="justify-center flex flex-col  flex items-center">
-
-                  <div class="2xl:text-[20px] lg:text-[15px] w-[85%]">
-                    <h3>Potencial de ChatGPT
-                    </h3>
-                  </div>
-                  <div class="2xl:text-[14.5px] lg:text-[13px] mt-7 w-[85%] mb-20 text-[#626973]">
-                    <p>Además de los beneficios obvios de implementar chatbots en los procesos de atención al cliente,
-                      el
-                      informe también puede ayudar a las empresas a comprender el potencial de tecnologías como ChatGPT.
-                      Con el uso de ChatGPT, los chatbots pueden comprender mejor el lenguaje natural y proporcionar
-                      respuestas más precisas y personalizadas a los clientes. Esto puede aumentar la eficacia y la
-                      satisfacción del cliente, y ayudar a las empresas a diferenciarse de la competencia.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
 
     <div class="relative">
@@ -237,7 +211,8 @@
               diseño y desarrollo de chatbots para tu negocio</h3>
           </div>
           <div class="flex justify-center 2xl:text-[21px] lg:text-[17.5px] lexend mt-10">
-            <p data-aos="fade-up" data-aos-duration="700" class="lg:w-[50%] 2xl:w-[55%] text-center">Esperamos que esta información les
+            <p data-aos="fade-up" data-aos-duration="700" class="lg:w-[50%] 2xl:w-[55%] text-center">Esperamos que esta
+              información les
               ayude a tomar decisiones informadas sobre
               la
               implementación de chatbots en su empresa y a diseñar soluciones personalizadas que se adapten a sus

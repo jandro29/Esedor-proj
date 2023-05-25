@@ -3,12 +3,14 @@
   background-repeat: no-repeat;
   background-position-x: center;
   background-position-y: top;
+  background-size: cover;
 }
 
 .bg-responsive{
   background-image: url('../../../assets/img/contacto-esedor.png');
   background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 h1 {

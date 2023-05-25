@@ -63,6 +63,7 @@ import { ButtonDownComponent } from './shared/components/button-down/button-down
 import { ChatbotsComponent } from './views/chatbots/chatbots.component';
 import { ChatbotsFormComponent } from './shared/components/chatbots-form/chatbots-form.component';
 import { FooterBlackComponent } from './shared/components/footer-black/footer-black.component';
+import { CuadroBenefComponent } from './views/chatbots/cuadro-benef/cuadro-benef.component';
 
 
 @NgModule({
@@ -104,7 +105,8 @@ import { FooterBlackComponent } from './shared/components/footer-black/footer-bl
     ButtonDownComponent,
     ChatbotsComponent,
     ChatbotsFormComponent,
-    FooterBlackComponent
+    FooterBlackComponent,
+    CuadroBenefComponent
   ],
   imports: [
     RouterModule,

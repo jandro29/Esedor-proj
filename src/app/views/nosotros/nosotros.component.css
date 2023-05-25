@@ -1,6 +1,6 @@
 
 .bg-image {
-  background-image: url('../../../assets/img/nosotros-esedor.png' );
+  background-image: url('../../../assets/img/nosotros-esedor.png' ) center;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -9,8 +9,6 @@
   .bg-image {
     background-image: url('../../../assets/img/nosotros-esedor.png' );
     background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center center;
     background-size: cover;
 }
 }
@@ -29,7 +27,6 @@
   .bg-image {
     background-image: url('../../../assets/img/nosotros-esedor.png' );
     background-repeat: no-repeat;
-    background-attachment: fixed;
     background-position: center center;
     background-size: cover;
 }

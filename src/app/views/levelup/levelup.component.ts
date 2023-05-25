@@ -1,5 +1,7 @@
 import { Component, HostListener, OnInit, ViewChild, EventEmitter, Output } from '@angular/core';
 
+import * as AOS from 'aos';
+
 @Component({
   selector: 'app-levelup',
   templateUrl: './levelup.component.html',
@@ -63,6 +65,8 @@ test(a: any){
   constructor() { }
 
   ngOnInit(): void {
+    AOS.init()
   }
+
 
 }
