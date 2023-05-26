@@ -1,26 +1,26 @@
 .bg-tab {
-  background-image: url('../../../assets/img/bglevelup.svg');
+  background-image: url('../../../assets/img/bglevelup.jpg');
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .bg-tab-responsive{
-  background-image: url('../../../assets/img/level-up-responsive.svg');
+  background-image: url('../../../assets/img/bglevelup.jpg');
   background-position: center center;
   background-repeat: no-repeat;
   background-size:cover ;
 }
 
 .bg2{
-  background-image: url('../../../assets/img/bglevelup2.svg');
+  background-image: url('../../../assets/img/bglevelup2.jpg');
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .bg-tab3{
-  background-image: url('../../../assets/img/fondonegro-inclinado.svg');
+  background-image: url('../../../assets/img/fondonegro-inclinado.jpg');
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
