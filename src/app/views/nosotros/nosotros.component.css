@@ -1,7 +1,8 @@
 
 .bg-image {
-  background-image: url('../../../assets/img/nosotros-esedor.png' ) center;
+  background-image: url('../../../assets/img/nosotros-esedor.png' );
   background-repeat: no-repeat;
+  background-position: center center;
   background-size: cover;
 }
 
@@ -9,6 +10,7 @@
   .bg-image {
     background-image: url('../../../assets/img/nosotros-esedor.png' );
     background-repeat: no-repeat;
+    background-position: center center;
     background-size: cover;
 }
 }

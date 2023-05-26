@@ -1,8 +1,7 @@
 .bg-image {
     background-image: url('../../../assets/img/talento-esedor.png');
     background-repeat: no-repeat;
-    background-position-x: center;
-    background-position-y: top;
+    background-position: center center;
     background-size: cover;
 }
 
@@ -17,8 +16,7 @@ h1 {
 @media screen and (min-width: 1024px) {
 
     .bg-image {
-        background-position-x: inherit;
-        background-position-y: inherit;
+        background-position: center center;
     }
 
     .arrow:hover g line {

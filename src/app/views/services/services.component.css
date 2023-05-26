@@ -1,22 +1,30 @@
 .bg-tab {
     background-image: url('../../../assets/img/servicios-esedor.png');
     background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
 
 }
 
 .bg-tab2 {
     background-image: url('../../../assets/img/bg-tab2.svg');
     background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
 }
 
 .bg-tab3 {
     background-image: url('../../../assets/img/bg-tab3.svg');
     background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
 }
 
 .bg-tab4 {
     background-image: url('../../../assets/img/bg-tab4.svg');
     background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
 }
 
 section {
