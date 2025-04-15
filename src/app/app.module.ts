@@ -64,6 +64,7 @@ import { ChatbotsComponent } from './views/chatbots/chatbots.component';
 import { ChatbotsFormComponent } from './shared/components/chatbots-form/chatbots-form.component';
 import { FooterBlackComponent } from './shared/components/footer-black/footer-black.component';
 import { CuadroBenefComponent } from './views/chatbots/cuadro-benef/cuadro-benef.component';
+import { WhatsappIconComponent } from './shared/components/whatsapp-icon/whatsapp-icon.component';
 
 
 @NgModule({
@@ -106,7 +107,8 @@ import { CuadroBenefComponent } from './views/chatbots/cuadro-benef/cuadro-benef
     ChatbotsComponent,
     ChatbotsFormComponent,
     FooterBlackComponent,
-    CuadroBenefComponent
+    CuadroBenefComponent,
+    WhatsappIconComponent
   ],
   imports: [
     RouterModule,
